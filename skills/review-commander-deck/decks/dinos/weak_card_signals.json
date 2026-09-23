@@ -12,12 +12,12 @@
     },
     {
       "category": "ramp",
-      "count": 12,
+      "count": 14,
       "target_range": [
         10,
         12
       ],
-      "status": "within"
+      "status": "over"
     },
     {
       "category": "card_draw",
@@ -30,7 +30,7 @@
     },
     {
       "category": "targeted_removal",
-      "count": 11,
+      "count": 10,
       "target_range": [
         10,
         14
@@ -71,11 +71,6 @@
       "name": "Personify",
       "cmc": 2.0,
       "type_line": "Instant"
-    },
-    {
-      "name": "Bonehoard Dracosaur",
-      "cmc": 5.0,
-      "type_line": "Creature \u2014 Dinosaur Dragon"
     },
     {
       "name": "Cream of the Crop",

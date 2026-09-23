@@ -29,6 +29,14 @@ RAMP_PATTERNS = [
     r"add \{[cwubrg]\}\{[cwubrg]\}",
     r"lands? you control.*(?:untap|additional)",
     r"you may play an additional land",
+    # Classic mana-doubler templating (Mirari's Wake, Zendikar Resurgent, ...)
+    # - catches it regardless of exactly how the extra mana is worded ("of
+    # any type that land produced", "of any color", etc.), since the
+    # distinctive, low-false-positive-risk part is "tap a land for mana,
+    # add" itself. Found because Mirari's Wake, added to the dinos deck,
+    # wasn't recognized as ramp at all - the existing pattern only expected
+    # "of any color," not "of any type."
+    r"whenever you tap a land for mana, add",
 ]
 
 _UP_TO = r"(?:up to \w+ )?"
@@ -52,9 +60,18 @@ TARGETED_REMOVAL_PATTERNS = [
 ]
 
 
+# "you own" is the same exclusion as "you control" - Magic uses it on
+# effects like Sword of Hearth and Home ("exile up to one target creature
+# you own") specifically because ownership persists even through a theft
+# effect, where "you control" wouldn't. Found because that exact card got
+# miscategorized as removal for blinking your own creature - the "you
+# control" exclusion this check already had didn't cover the synonym.
+_OWN_PERMANENT_MARKERS = ("you control", "you own")
+
+
 def _has_opponent_removal(text: str) -> bool:
     for sentence in re.split(r"(?<=[.;])\s+", text):
-        if _DESTROY_EXILE_TARGET_RE.search(sentence) and "you control" not in sentence:
+        if _DESTROY_EXILE_TARGET_RE.search(sentence) and not any(m in sentence for m in _OWN_PERMANENT_MARKERS):
             return True
     return False
 

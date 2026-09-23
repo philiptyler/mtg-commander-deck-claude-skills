@@ -63,9 +63,14 @@ not reviewing a new one.
    ```
    python3 scripts/diff_after.py --deck-dir ../review-commander-deck/decks/<slug>
    ```
-   Writes `../review-commander-deck/decks/<slug>/last_update_diff.json` and
-   cleans up the snapshot. Read it and lead with what matters most, in this
-   order:
+   Writes `../review-commander-deck/decks/<slug>/last_update_diff.json`.
+   The `.update-tmp` snapshot is deliberately left in place (not
+   auto-deleted) — safe to re-run this diff step again against the same
+   baseline if you need to (e.g. you found and fixed a tooling bug
+   mid-update and need to re-run `analyze_deck.py` before re-diffing).
+   `snapshot_before.py` is what refreshes it, the next time it's explicitly
+   run for a new update cycle. Read the diff and lead with what matters
+   most, in this order:
    - `combos_lost` — **this is the headline if it's non-empty.** A swap that
      silently breaks a combo is exactly the kind of thing a mechanical
      "regenerate the report" pass would miss. Say plainly which combo broke

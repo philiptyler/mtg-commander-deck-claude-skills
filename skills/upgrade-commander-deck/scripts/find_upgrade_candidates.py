@@ -97,12 +97,17 @@ def combo_completions(combos: dict, candidate_name: str) -> list:
     ]
 
 
-# A "destroy/exile target X you control" match is a blink/protection effect
-# that superficially matches removal-shaped query text, not actual removal -
-# same false positive analyze_deck.py already had to filter out. Drop a
+# A "destroy/exile target X you control/own" match is a blink/protection
+# effect that superficially matches removal-shaped query text, not actual
+# removal - same false positive analyze_deck.py already had to filter out
+# (including "you own", a synonym Magic uses on effects like Sword of
+# Hearth and Home specifically because ownership survives a theft effect
+# where "you control" wouldn't - found when that exact card, added to the
+# dinos deck, got miscategorized as removal by analyze_deck.py; fixed there
+# and mirrored here since this script has the identical check). Drop a
 # candidate for the removal/board_wipe categories if every destroy/exile
 # clause in its text targets the caster's own stuff.
-_OWN_PERMANENT_RE = re.compile(r"(destroy|exile) (?:up to \w+ )?target [\w\s]+ you control")
+_OWN_PERMANENT_RE = re.compile(r"(destroy|exile) (?:up to \w+ )?target [\w\s]+ you (control|own)")
 _ANY_DESTROY_EXILE_RE = re.compile(r"(destroy|exile) (?:up to \w+ )?target")
 
 

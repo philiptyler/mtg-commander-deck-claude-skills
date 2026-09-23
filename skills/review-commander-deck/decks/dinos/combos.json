@@ -18,7 +18,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": null,
       "bracket_tag": "P",
-      "popularity": 24698,
+      "popularity": 24727,
       "color_identity": "RG"
     },
     {
@@ -40,7 +40,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You have a way to give Forerunner of the Empire indestructible.\n{6}{G}{G}available.",
       "bracket_tag": "S",
-      "popularity": 13466,
+      "popularity": 13482,
       "color_identity": "RG"
     }
   ],
@@ -71,7 +71,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "The Reaver Cleaver attached to a creature with power five or greater that can attack this turn.\nAn opponent is unable to block the creature with The Reaver Cleaver attached.",
       "bracket_tag": "S",
-      "popularity": 45907,
+      "popularity": 45984,
       "color_identity": "R"
     },
     {
@@ -94,7 +94,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "An opponent has six or more cards in their hand.",
       "bracket_tag": "P",
-      "popularity": 36818,
+      "popularity": 36866,
       "color_identity": "R"
     },
     {
@@ -114,7 +114,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "Sword of Feast and Famine attached to a creature that can attack this turn.\nAn opponent is unable to block and kill the creature with Sword of Feast and Famine attached.\nLands you control can tap to produce at least {3}{R}{R}.",
       "bracket_tag": "S",
-      "popularity": 36291,
+      "popularity": 36326,
       "color_identity": "R"
     },
     {
@@ -139,7 +139,7 @@
       "easy_prerequisites": "Ancient Copper Dragon cannot be blocked by an opponent.",
       "notable_prerequisites": null,
       "bracket_tag": "R",
-      "popularity": 29891,
+      "popularity": 29936,
       "color_identity": "R"
     },
     {
@@ -161,7 +161,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": null,
       "bracket_tag": "E",
-      "popularity": 25565,
+      "popularity": 25583,
       "color_identity": "RGW"
     },
     {
@@ -189,7 +189,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You control creatures that can deal at least six combat damage that cannot be blocked by an opponent.",
       "bracket_tag": "S",
-      "popularity": 23114,
+      "popularity": 23144,
       "color_identity": "RG"
     },
     {
@@ -212,7 +212,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "Your opponents have lost at least five life this turn.",
       "bracket_tag": "S",
-      "popularity": 23099,
+      "popularity": 23124,
       "color_identity": "R"
     },
     {
@@ -237,7 +237,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "Savage Ventmaw does not have summoning sickness.\nAn opponent is unable to block and kill Savage Ventmaw.",
       "bracket_tag": "S",
-      "popularity": 18789,
+      "popularity": 18808,
       "color_identity": "RG"
     },
     {
@@ -260,7 +260,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "Selvala does not have summoning sickness.\nYou control a creature with power seven or greater.",
       "bracket_tag": "S",
-      "popularity": 17859,
+      "popularity": 17888,
       "color_identity": "RG"
     },
     {
@@ -280,7 +280,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You control an additional creature.\nAn additional creature does not have summoning sickness.\nBear Umbra attached to that additional creature you control.\nYou control lands that can tap to produce at least {3}{R}{R}.\nAn opponent is unable to block and kill creatures you control.",
       "bracket_tag": "S",
-      "popularity": 16781,
+      "popularity": 16807,
       "color_identity": "RG"
     },
     {
@@ -302,7 +302,7 @@
       "easy_prerequisites": "You control another creature with power 4 or greater.",
       "notable_prerequisites": null,
       "bracket_tag": "R",
-      "popularity": 15322,
+      "popularity": 15342,
       "color_identity": "RG"
     },
     {
@@ -322,28 +322,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": null,
       "bracket_tag": "C",
-      "popularity": 15246,
-      "color_identity": "R"
-    },
-    {
-      "id": "3750-5988",
-      "url": "https://commanderspellbook.com/combo/3750-5988/",
-      "cards": [
-        "Cavern-Hoard Dragon",
-        "Aggravated Assault"
-      ],
-      "missing_cards": [
-        "Cavern-Hoard Dragon"
-      ],
-      "produces": [
-        "Target opponent loses the game",
-        "Infinite combat damage to one opponent"
-      ],
-      "notes": null,
-      "easy_prerequisites": null,
-      "notable_prerequisites": "An opponent controls five or more artifacts.",
-      "bracket_tag": "S",
-      "popularity": 12463,
+      "popularity": 15256,
       "color_identity": "R"
     },
     {
@@ -368,8 +347,53 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "Lands you control can tap to produce at least {3}{R}{R}.\nYou control a creature that can attack this turn, and that cannot be blocked by an opponent.",
       "bracket_tag": "S",
-      "popularity": 12461,
+      "popularity": 12471,
       "color_identity": "RG"
+    },
+    {
+      "id": "3750-5988",
+      "url": "https://commanderspellbook.com/combo/3750-5988/",
+      "cards": [
+        "Cavern-Hoard Dragon",
+        "Aggravated Assault"
+      ],
+      "missing_cards": [
+        "Cavern-Hoard Dragon"
+      ],
+      "produces": [
+        "Target opponent loses the game",
+        "Infinite combat damage to one opponent"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "An opponent controls five or more artifacts.",
+      "bracket_tag": "S",
+      "popularity": 12470,
+      "color_identity": "R"
+    },
+    {
+      "id": "1550-4364",
+      "url": "https://commanderspellbook.com/combo/1550-4364/",
+      "cards": [
+        "Aurelia, the Warleader",
+        "Sword of Hearth and Home"
+      ],
+      "missing_cards": [
+        "Aurelia, the Warleader"
+      ],
+      "produces": [
+        "Infinite combat damage",
+        "Infinite combat phases",
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Put all basic lands from your library onto the battlefield"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Sword of Hearth and Home attached to any other creature you control.\nThe creature with Sword of Hearth and Home attached can attack this turn.\nAn opponent cannot block and kill the creature with Sword of Hearth and Home attached and Aurelia.",
+      "bracket_tag": "S",
+      "popularity": 12404,
+      "color_identity": "RW"
     },
     {
       "id": "3779-6323",
@@ -388,7 +412,7 @@
       "easy_prerequisites": "Jumbo Cactuar does not have summoning sickness.",
       "notable_prerequisites": null,
       "bracket_tag": "R",
-      "popularity": 11143,
+      "popularity": 11165,
       "color_identity": "GW"
     },
     {
@@ -408,7 +432,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You control at least 5 Dwarfs who do not have summoning sickness.\nOpponents can not block.",
       "bracket_tag": "S",
-      "popularity": 10168,
+      "popularity": 10182,
       "color_identity": "R"
     },
     {
@@ -428,7 +452,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": null,
       "bracket_tag": "R",
-      "popularity": 8124,
+      "popularity": 8143,
       "color_identity": "R"
     },
     {
@@ -450,7 +474,7 @@
       "easy_prerequisites": "There are legal target(s) for Ephemerate.",
       "notable_prerequisites": null,
       "bracket_tag": "E",
-      "popularity": 7217,
+      "popularity": 7221,
       "color_identity": "RW"
     },
     {
@@ -470,7 +494,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": null,
       "bracket_tag": "C",
-      "popularity": 6666,
+      "popularity": 6681,
       "color_identity": "R"
     },
     {
@@ -494,7 +518,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You control at least five other creatures that can attack.\nAn opponent is unable to block and kill creatures you control.",
       "bracket_tag": "S",
-      "popularity": 6509,
+      "popularity": 6511,
       "color_identity": "RG"
     },
     {
@@ -517,7 +541,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You control at least five enchantments.\nSanctum Weaver does not have summoning sickness.",
       "bracket_tag": "S",
-      "popularity": 6064,
+      "popularity": 6069,
       "color_identity": "RG"
     },
     {
@@ -543,7 +567,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You have at least five cards in hand.\nAn opponent cannot block Neheb.\nNeheb does not have summoning sickness.",
       "bracket_tag": "S",
-      "popularity": 5740,
+      "popularity": 5743,
       "color_identity": "R"
     },
     {
@@ -566,7 +590,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You control at least five creatures that do not have summoning sickness.",
       "bracket_tag": "S",
-      "popularity": 4749,
+      "popularity": 4752,
       "color_identity": "RG"
     },
     {
@@ -593,7 +617,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You have a way to deal damage to Polyraptor.",
       "bracket_tag": "E",
-      "popularity": 4550,
+      "popularity": 4563,
       "color_identity": "RG"
     },
     {
@@ -619,7 +643,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You control ten or more creature tokens.",
       "bracket_tag": "S",
-      "popularity": 3575,
+      "popularity": 3573,
       "color_identity": "RGW"
     },
     {
@@ -644,7 +668,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You have max speed.\nYou control five or more Goblins.",
       "bracket_tag": "S",
-      "popularity": 3502,
+      "popularity": 3511,
       "color_identity": "R"
     },
     {
@@ -667,8 +691,33 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You have a way to deal damage to Polyraptor.",
       "bracket_tag": "E",
-      "popularity": 3500,
+      "popularity": 3503,
       "color_identity": "RG"
+    },
+    {
+      "id": "1550-4367",
+      "url": "https://commanderspellbook.com/combo/1550-4367/",
+      "cards": [
+        "Akki Battle Squad",
+        "Sword of Hearth and Home"
+      ],
+      "missing_cards": [
+        "Akki Battle Squad"
+      ],
+      "produces": [
+        "Infinite combat damage",
+        "Infinite combat phases",
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite untap of modified creatures you control",
+        "Put all basic lands from your library onto the battlefield"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Sword of Hearth and Home attached to another creature without summoning sickness.\nAn opponent cannot block the creature with Sword of Hearth and Home attached.",
+      "bracket_tag": "S",
+      "popularity": 3231,
+      "color_identity": "R"
     },
     {
       "id": "215-2226",
@@ -694,7 +743,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "Lands you control can tap to produce at least {8}{R}{G}{G}{W}.",
       "bracket_tag": "S",
-      "popularity": 3048,
+      "popularity": 3052,
       "color_identity": "RGW"
     },
     {
@@ -716,7 +765,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You control at least five creatures that can attack this turn.\nAn opponent is unable to block and kill your creatures.",
       "bracket_tag": "S",
-      "popularity": 2940,
+      "popularity": 2941,
       "color_identity": "RG"
     },
     {
@@ -739,7 +788,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You have a way to give Vrondiss indestructible.\nYou have a way to deal damage to Vrondiss.",
       "bracket_tag": "E",
-      "popularity": 2528,
+      "popularity": 2529,
       "color_identity": "RG"
     },
     {
@@ -761,7 +810,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "Polyraptor is indestructible.",
       "bracket_tag": "S",
-      "popularity": 2316,
+      "popularity": 2320,
       "color_identity": "RG"
     },
     {
@@ -782,7 +831,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": null,
       "bracket_tag": "R",
-      "popularity": 2271,
+      "popularity": 2274,
       "color_identity": "RW"
     },
     {
@@ -811,7 +860,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "Hoard Hauler is a creature and does not have summoning sickness.\nAn opponent cannot block Hoard Hauler and controls at least five artifacts.",
       "bracket_tag": "S",
-      "popularity": 2132,
+      "popularity": 2128,
       "color_identity": "R"
     },
     {
@@ -834,7 +883,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": null,
       "bracket_tag": "R",
-      "popularity": 2018,
+      "popularity": 2024,
       "color_identity": "RW"
     },
     {
@@ -855,7 +904,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You have a way to give Vrondiss indestructible.\nYou have a way to deal damage to Vrondiss.",
       "bracket_tag": "S",
-      "popularity": 1936,
+      "popularity": 1937,
       "color_identity": "RG"
     },
     {
@@ -878,7 +927,7 @@
       "easy_prerequisites": "Redshift, Rocketeer Chief does not have summoning sickness.",
       "notable_prerequisites": "Redshift, Rocketeer Chief has power 5 or greater.",
       "bracket_tag": "S",
-      "popularity": 1917,
+      "popularity": 1918,
       "color_identity": "RG"
     },
     {
@@ -905,7 +954,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "Lands you control other than Sanctum of Eternity can tap to produce at least {9}{R}{G}{W}.",
       "bracket_tag": "S",
-      "popularity": 1534,
+      "popularity": 1536,
       "color_identity": "RGW"
     },
     {
@@ -951,7 +1000,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "Spellbinder attached to a creature that can attack this turn and that cannot be blocked and killed by an opponent.",
       "bracket_tag": "S",
-      "popularity": 1351,
+      "popularity": 1355,
       "color_identity": "W"
     },
     {
@@ -979,7 +1028,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You control at least five creatures that have menace and that do not have summoning sickness.",
       "bracket_tag": "S",
-      "popularity": 1221,
+      "popularity": 1222,
       "color_identity": "R"
     },
     {
@@ -1000,7 +1049,7 @@
       "easy_prerequisites": "You control a creature that can attack this turn.",
       "notable_prerequisites": "Dawnsire has ten or more charge counters on it.",
       "bracket_tag": "S",
-      "popularity": 1103,
+      "popularity": 1108,
       "color_identity": "R"
     },
     {
@@ -1024,7 +1073,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "Lands and creatures you control can tap to produce at least {3}{R}{R}.",
       "bracket_tag": "S",
-      "popularity": 1085,
+      "popularity": 1087,
       "color_identity": "RG"
     },
     {
@@ -1047,7 +1096,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You control at least one additional creature.",
       "bracket_tag": "E",
-      "popularity": 1051,
+      "popularity": 1052,
       "color_identity": "G"
     },
     {
@@ -1070,7 +1119,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "Enchanted permanents you control can tap to produce at least {3}{R}.\nYou control at least one land that does not have a Settlement token attached to it, or enchanted permanents you control can tap to produce at least {3}{R}{R}.\nAn opponent cannot block and kill Preston.",
       "bracket_tag": "S",
-      "popularity": 980,
+      "popularity": 981,
       "color_identity": "RGW"
     },
     {
@@ -1091,7 +1140,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You have a way to give Hornet Nest indestructible.\nYou have a way to deal damage to Hornet Nest.",
       "bracket_tag": "S",
-      "popularity": 858,
+      "popularity": 862,
       "color_identity": "RG"
     },
     {
@@ -1111,7 +1160,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You have a way to cause Wrathful Raptors to take damage.",
       "bracket_tag": "E",
-      "popularity": 856,
+      "popularity": 857,
       "color_identity": "RW"
     },
     {
@@ -1140,7 +1189,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You control at least three Dwarves that don't have summoning sickness and that cannot be blocked by an opponent.",
       "bracket_tag": "S",
-      "popularity": 822,
+      "popularity": 830,
       "color_identity": "R"
     },
     {
@@ -1167,7 +1216,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "Lands you control can tap to produce at least {4}{R}.",
       "bracket_tag": "S",
-      "popularity": 790,
+      "popularity": 795,
       "color_identity": "RGW"
     },
     {
@@ -1190,7 +1239,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "Aerie Ouphes does not have a -1/-1 counter on it.\nThere is a creature with flying on the battlefield.",
       "bracket_tag": "E",
-      "popularity": 742,
+      "popularity": 744,
       "color_identity": "RG"
     },
     {
@@ -1239,7 +1288,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": null,
       "bracket_tag": "R",
-      "popularity": 707,
+      "popularity": 709,
       "color_identity": "W"
     },
     {
@@ -1264,7 +1313,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You control up to five lands that can tap to produce at least {3}{R}{R}.\nYou control a creature with power 5 or greater that does not have summoning sickness, and that cannot be blocked and killed by an opponent.",
       "bracket_tag": "S",
-      "popularity": 703,
+      "popularity": 702,
       "color_identity": "RG"
     },
     {
@@ -1286,7 +1335,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You control up to five lands that can tap to produce at least {3}{R}{R}.",
       "bracket_tag": "S",
-      "popularity": 641,
+      "popularity": 643,
       "color_identity": "RG"
     },
     {
@@ -1314,7 +1363,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You control at least five creatures with total power 1 or greater.\nAn opponent cannot block and kill Luxurious Locomotive.\nLuxurious Locomotive does not have summoning sickness.",
       "bracket_tag": "S",
-      "popularity": 640,
+      "popularity": 639,
       "color_identity": "R"
     },
     {
@@ -1337,7 +1386,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You control at least four other Elves.\nWirewood Channeler does not have summoning sickness.",
       "bracket_tag": "S",
-      "popularity": 607,
+      "popularity": 606,
       "color_identity": "RG"
     },
     {
@@ -1358,7 +1407,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You have a way to give Raptor Hatchling indestructible.\nYou have a way to cause a creature to enter the battlefield or to deal damage to Raptor Hatchling.",
       "bracket_tag": "S",
-      "popularity": 601,
+      "popularity": 602,
       "color_identity": "R"
     },
     {
@@ -1380,7 +1429,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": null,
       "bracket_tag": "R",
-      "popularity": 586,
+      "popularity": 587,
       "color_identity": "RW"
     },
     {
@@ -1402,7 +1451,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": null,
       "bracket_tag": "E",
-      "popularity": 373,
+      "popularity": 374,
       "color_identity": "RW"
     },
     {
@@ -1487,7 +1536,28 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You have a way to give Overgrown Armasaur indestructible.\nYou have a way to deal damage to Overgrown Armasaur.",
       "bracket_tag": "S",
-      "popularity": 210,
+      "popularity": 211,
+      "color_identity": "RG"
+    },
+    {
+      "id": "2773-3760",
+      "url": "https://commanderspellbook.com/combo/2773-3760/",
+      "cards": [
+        "Broodhatch Nantuko",
+        "Warstorm Surge"
+      ],
+      "missing_cards": [
+        "Broodhatch Nantuko"
+      ],
+      "produces": [
+        "Infinite creature tokens",
+        "Infinite creature ETB"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have a way to give Broodhatch Nantuko indestructible.\nYou have a way to deal damage to Broodhatch Nantuko.",
+      "bracket_tag": "S",
+      "popularity": 208,
       "color_identity": "RG"
     },
     {
@@ -1508,29 +1578,8 @@
       "easy_prerequisites": null,
       "notable_prerequisites": null,
       "bracket_tag": "P",
-      "popularity": 208,
-      "color_identity": "GW"
-    },
-    {
-      "id": "2773-3760",
-      "url": "https://commanderspellbook.com/combo/2773-3760/",
-      "cards": [
-        "Broodhatch Nantuko",
-        "Warstorm Surge"
-      ],
-      "missing_cards": [
-        "Broodhatch Nantuko"
-      ],
-      "produces": [
-        "Infinite creature tokens",
-        "Infinite creature ETB"
-      ],
-      "notes": null,
-      "easy_prerequisites": null,
-      "notable_prerequisites": "You have a way to give Broodhatch Nantuko indestructible.\nYou have a way to deal damage to Broodhatch Nantuko.",
-      "bracket_tag": "S",
       "popularity": 207,
-      "color_identity": "RG"
+      "color_identity": "GW"
     },
     {
       "id": "487-2773",
@@ -1552,7 +1601,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You have a way to give Sporeweb Weaver indestructible.\nYou have a way to cause a creature to enter the battlefield under your control.",
       "bracket_tag": "S",
-      "popularity": 171,
+      "popularity": 172,
       "color_identity": "RG"
     },
     {
@@ -1576,7 +1625,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": null,
       "bracket_tag": "P",
-      "popularity": 143,
+      "popularity": 144,
       "color_identity": "RG"
     },
     {
@@ -1650,8 +1699,34 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You have a way to give Saber Ants indestructible.\nYou have a way to deal damage to Saber Ants.",
       "bracket_tag": "S",
-      "popularity": 114,
+      "popularity": 115,
       "color_identity": "RG"
+    },
+    {
+      "id": "1550-2105-6791",
+      "url": "https://commanderspellbook.com/combo/1550-2105-6791/",
+      "cards": [
+        "Sword of Hearth and Home",
+        "Combat Celebrant",
+        "Tannuk, Steadfast Second"
+      ],
+      "missing_cards": [
+        "Combat Celebrant"
+      ],
+      "produces": [
+        "Infinite creature LTB",
+        "Infinite creature ETB",
+        "Infinite combat phases",
+        "Near-infinite landfall triggers",
+        "Infinite combat damage",
+        "Put all basic lands from your library onto the battlefield"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Sword of Hearth and Home attached to any creature you control except Combat Celebrant.\nAn opponent is unable to block Combat Celebrant or the creature with Sword of Hearth and Home attached.\nYou have not exerted Combat Celebrant this turn.",
+      "bracket_tag": "E",
+      "popularity": 99,
+      "color_identity": "R"
     },
     {
       "id": "2214-3259-4373",
@@ -1701,7 +1776,7 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You have a way to give Sporeweb Weaver indestructible.\nYou have a way to cause a creature to enter the battlefield under your control.",
       "bracket_tag": "S",
-      "popularity": 84,
+      "popularity": 85,
       "color_identity": "RG"
     },
     {
@@ -1722,8 +1797,35 @@
       "easy_prerequisites": null,
       "notable_prerequisites": "You have a way to give Broodhatch Nantuko indestructible.\nYou have a way to deal damage to Broodhatch Nantuko.",
       "bracket_tag": "S",
-      "popularity": 81,
+      "popularity": 82,
       "color_identity": "RG"
+    },
+    {
+      "id": "1550-4251-6791",
+      "url": "https://commanderspellbook.com/combo/1550-4251-6791/",
+      "cards": [
+        "Godo, Bandit Warlord",
+        "Sword of Hearth and Home",
+        "Tannuk, Steadfast Second"
+      ],
+      "missing_cards": [
+        "Godo, Bandit Warlord"
+      ],
+      "produces": [
+        "Infinite creature LTB",
+        "Infinite creature ETB",
+        "Infinite combat phases",
+        "Put all Equipment cards from your library onto the battlefield",
+        "Infinite combat damage",
+        "Put all basic lands from your library onto the battlefield",
+        "Infinite untap of Samurai you control"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Sword of Hearth and Home attached to any Samurai you control.\nGodo and the Samurai with Sword of Hearth and Home attached cannot be blocked by an opponent.",
+      "bracket_tag": "E",
+      "popularity": 64,
+      "color_identity": "R"
     },
     {
       "id": "1110-3046",
@@ -1853,6 +1955,40 @@
       "bracket_tag": "E",
       "popularity": 2,
       "color_identity": "RGW"
+    },
+    {
+      "id": "914-1550-3750",
+      "url": "https://commanderspellbook.com/combo/914-1550-3750/",
+      "cards": [
+        "Dockside Extortionist",
+        "Sword of Hearth and Home",
+        "Aggravated Assault"
+      ],
+      "missing_cards": [
+        "Dockside Extortionist"
+      ],
+      "produces": [
+        "Infinite artifact ETB",
+        "Infinite artifact LTB",
+        "Infinite artifact sacrifice triggers",
+        "Infinite artifact tokens",
+        "Infinite colored mana",
+        "Infinite combat damage",
+        "Infinite combat phases",
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite mana creatures you control can produce",
+        "Infinite Treasure tokens",
+        "Infinite untap of creatures you control",
+        "Near-infinite landfall triggers",
+        "Put all basic lands from your library onto the battlefield"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Opponents control at least six artifacts and/or enchantments.\nSword of Hearth and Home attached to another creature you control that can attack this turn, and that cannot be blocked by an opponent.",
+      "bracket_tag": "B",
+      "popularity": 0,
+      "color_identity": "R"
     },
     {
       "id": "2226-3727",

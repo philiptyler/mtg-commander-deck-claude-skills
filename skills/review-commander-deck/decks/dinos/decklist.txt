@@ -6,7 +6,7 @@
 1x Atzocan Seer (lcc) 265 [Ramp,Recursion]
 1x Austere Command (msc) 121 [Removal]
 1x Birds of Paradise (rvr) 133 [Ramp]
-1x Bonehoard Dracosaur (lci) 134 [Draw]
+1 Mirari's Wake
 1x Bountiful Promenade (msc) 226 [Land]
 1x Branchloft Pathway // Boulderloft Pathway (plst) ZNR-258 [Land]
 1x Bronzebeak Foragers (lcc) 69 [Removal]
@@ -69,7 +69,7 @@
 1x Sol Ring (drc) 57 [Ramp]
 1x Spire Garden (clb) 361 [Land]
 1x Stomping Ground (eoe) 258 [Land]
-1x Swooping Pteranodon (rex) 19 [Removal]
+1 Sword of Hearth and Home
 1x Swords to Plowshares (drc) 37 [Removal]
 1x Sylvan Library (dmr) 179 [Draw]
 1x Tannuk, Steadfast Second (eoe) 162 [Ramp]

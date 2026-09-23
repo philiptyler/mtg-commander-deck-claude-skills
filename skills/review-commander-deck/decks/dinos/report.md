@@ -1,9 +1,20 @@
 # Dinos (Pantlaza, Sun-Favored) — Review
 
-**Updated:** swapped `Annie Joins Up` out for `Personify`. See **Personify's
-actual impact** below for the analysis you asked for on what else it
-triggers — it's more than you might have guessed. Numbers throughout this
-report reflect the swap; `last_update_diff.json` has the raw before/after.
+**Updated:** swapped `Annie Joins Up` out for `Personify` (see **Personify's
+actual impact** below), then separately swapped `Bonehoard Dracosaur` out
+for `Mirari's Wake` and `Swooping Pteranodon` out for `Sword of Hearth and
+Home` — cutting the two cards whose Dinosaur-ETB/flying-Dinosaur synergy
+had gotten weaker as the deck changed (`Bonehoard Dracosaur`'s upkeep
+Dinosaur was accidentally burning Pantlaza's once-per-turn discover on a
+low-value trigger instead of saving it for a real payoff, and once it's
+gone `Swooping Pteranodon` has no other flying Dinosaur left to retrigger
+its own ability). `Mirari's Wake` and `Sword of Hearth and Home` pushed
+`ramp` to 14 cards, over Bracket 3's typical 10-12 target — worth knowing,
+but not obviously a problem for a deck this top-heavy on curve; both new
+cards are doing real work (`Mirari's Wake` doubles all land mana, `Sword of
+Hearth and Home` is a second way to blink Pantlaza while also fetching a
+land off combat damage). Numbers throughout this report reflect all three
+swaps; `last_update_diff.json` has the latest raw before/after.
 
 **Bracket estimate: 3 (Upgraded).** Matches your stated target. The deck carries
 exactly 3 Game Changers (`Jeska's Will`, `Teferi's Protection`, `Worldly Tutor`)
@@ -151,39 +162,51 @@ deck's existing engine.
 |---|---|
 | Total cards | 100 |
 | Lands | 36 |
-| Creatures | 37 |
+| Creatures | 35 |
 | Instants / Sorceries | 7 / 7 |
-| Artifacts / Enchantments | 6 / 8 |
-| Color identity (pips) | G 54, R 36, W 30 |
+| Artifacts / Enchantments | 7 / 9 |
+| Color identity (pips) | G 54, R 33, W 30 |
 
 **Mana curve** (nonland, 64 cards):
 
 | CMC | 1 | 2 | 3 | 4 | 5 | 6 | 7+ |
 |---|---|---|---|---|---|---|---|
-| Count | 7 | 11 | 10 | 11 | 8 | 6 | **11** |
+| Count | 7 | 12 | 11 | 10 | 7 | 6 | **11** |
 
 11 cards at CMC 7+ is a lot for a 100-card deck — about 17% of your nonland
 slots. That's a deliberate top-heavy build (matches the "big Dinosaurs" plan),
-and you've got 12 ramp sources plus discover to compensate, but it does mean
-a hand without early ramp or discover fuel can feel clunky. Worth watching,
+and you've now got 14 ramp sources plus discover to compensate, but it does
+mean a hand without early ramp or discover fuel can feel clunky. Worth watching,
 not necessarily worth fixing.
 
-**Ramp (12):** `Arcane Signet`, `Atzocan Seer`, `Birds of Paradise`, `Gwenna,
-Eyes of Gaea`, `Herd Heirloom`, `Hulking Raptor`, `Intrepid Paleontologist`,
-`Jeska's Will`, `Regal Behemoth`, `Sol Ring`, `The Great Henge`, `Three
-Visits`. Healthy count for the curve above. Note: `Hunting Velociraptor`,
-`Marauding Raptor`, and `Tannuk, Steadfast Second` are tagged `[Ramp]` in
-your list but are actually cost-reduction/haste effects, not mana
-acceleration — they help you deploy threats cheaper or faster, but they
-don't get you ahead on lands/mana the way the 12 above do. Worth knowing the
-difference if you're ever counting on "ramp" to hit a specific land drop.
+**Ramp (14, over Bracket 3's typical 10-12 target):** `Arcane Signet`,
+`Atzocan Seer`, `Birds of Paradise`, `Gwenna, Eyes of Gaea`, `Herd
+Heirloom`, `Hulking Raptor`, `Intrepid Paleontologist`, `Jeska's Will`,
+`Mirari's Wake`, `Regal Behemoth`, `Sol Ring`, `Sword of Hearth and Home`,
+`The Great Henge`, `Three Visits`. `Mirari's Wake` and `Sword of Hearth and
+Home` are the two new additions — a real mana doubler and a land-fetching
+equipment respectively, both genuinely pulling weight, not padding. Being
+over target isn't automatically a problem for a deck this top-heavy on
+curve, but it's worth knowing this category has room to give something up
+before it needs more.
 
-**Removal (13 total: 11 targeted + 2 board wipes):** `Swords to Plowshares`,
+Separately — `Hunting Velociraptor`, `Marauding Raptor`, and `Tannuk,
+Steadfast Second` now have their own tracked category, `cost_reduction`
+(prowl/warp/"spells cost {N} less" — added to `analyze_deck.py` after a
+direct correction: these aren't mana ramp, but getting a Dinosaur onto the
+battlefield for less mana is still a real function in this ETB-heavy deck,
+worth seeing on its own rather than folded into "roleless").
+
+**Removal (12 total: 10 targeted + 2 board wipes):** `Swords to Plowshares`,
 `Bronzebeak Foragers`, `Itzquinth, Firstborn of Gishath`,
-`Kogla and Yidaro`, `Swooping Pteranodon`, `Terror of the Peaks`, `Tranquil
+`Kogla and Yidaro`, `Terror of the Peaks`, `Tranquil
 Frillback`, `Trumpeting Carnosaur`, `Warstorm Surge`, `Wrathful Raptors`,
 `Zacama, Primal Calamity` / board wipes: `Austere Command`, `Wakening Sun's
-Avatar`. (`Annie Joins Up` dropped off this list when it left the deck —
+Avatar`. (`Swooping Pteranodon` left with this update — a 3/3 flying haste
+for 5 whose only other text needed another flying Dinosaur to retrigger,
+and `Bonehoard Dracosaur` was the only one; cutting both together was the
+right call, not two separate ones. `Annie Joins Up` dropped off this list
+earlier —
 her static ability doubling legendary creatures' triggered abilities was
 mostly dead text here anyway: doubling `Pantlaza`'s own discover trigger
 does nothing, since a "do this only once each turn" restriction blocks a

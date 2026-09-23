@@ -12,7 +12,6 @@ Usage:
 
 import argparse
 import json
-import shutil
 from pathlib import Path
 
 
@@ -98,8 +97,15 @@ def main():
     out_path = args.deck_dir / "last_update_diff.json"
     out_path.write_text(json.dumps(diff, indent=2))
 
-    if tmp_dir.exists():
-        shutil.rmtree(tmp_dir)
+    # Deliberately NOT deleting tmp_dir here. It used to be auto-cleaned on
+    # every run, which meant re-running this script after any mid-update
+    # fix (e.g. an analyze_deck.py regex bug found and fixed partway
+    # through applying a swap) lost the baseline with no clean way to
+    # re-diff - the only recovery was pulling analysis.json/combos.json
+    # back out of git by hand. snapshot_before.py already overwrites this
+    # directory fresh each time it's explicitly run for a new update cycle,
+    # which is the right place for "clean slate" to happen - not here,
+    # automatically, as a side effect of computing a diff.
 
     print(f"Wrote {out_path}")
     if diff["combos_lost"]:

@@ -2,33 +2,34 @@
   "counts": {
     "total_cards": 100,
     "lands": 36,
-    "creatures": 37,
+    "creatures": 35,
     "instants": 7,
     "sorceries": 7,
-    "artifacts": 6,
-    "enchantments": 8,
+    "artifacts": 7,
+    "enchantments": 9,
     "planeswalkers": 0,
     "battles": 1
   },
   "mana_curve": {
     "1": 7,
     "2": 12,
-    "3": 10,
+    "3": 11,
     "4": 10,
-    "5": 8,
+    "5": 7,
     "6": 6,
     "7+": 11
   },
   "color_identity_pip_counts": {
-    "R": 35,
+    "R": 33,
     "W": 30,
-    "G": 53
+    "G": 54
   },
   "categories": {
     "ramp": [
       "Arcane Signet",
       "Atzocan Seer",
       "Birds of Paradise",
+      "Mirari's Wake",
       "Gwenna, Eyes of Gaea",
       "Herd Heirloom",
       "Hulking Raptor",
@@ -36,6 +37,7 @@
       "Jeska's Will",
       "Regal Behemoth",
       "Sol Ring",
+      "Sword of Hearth and Home",
       "The Great Henge",
       "Three Visits"
     ],
@@ -43,7 +45,6 @@
       "Bronzebeak Foragers",
       "Itzquinth, Firstborn of Gishath",
       "Kogla and Yidaro",
-      "Swooping Pteranodon",
       "Swords to Plowshares",
       "Terror of the Peaks",
       "Tranquil Frillback",
@@ -73,6 +74,7 @@
       "Arid Mesa",
       "Fabled Passage",
       "Prismatic Vista",
+      "Sword of Hearth and Home",
       "Windswept Heath",
       "Wooded Foothills"
     ],

@@ -195,27 +195,31 @@
       "is_commander": false
     },
     {
-      "name": "Bonehoard Dracosaur",
-      "mana_cost": "{3}{R}{R}",
+      "name": "Mirari's Wake",
+      "mana_cost": "{3}{G}{W}",
       "cmc": 5.0,
-      "type_line": "Creature \u2014 Dinosaur Dragon",
-      "oracle_text": "Flying, first strike\nAt the beginning of your upkeep, exile the top two cards of your library. You may play them this turn. If you exiled a land card this way, create a 3/1 red Dinosaur creature token. If you exiled a nonland card this way, create a Treasure token.",
+      "type_line": "Enchantment",
+      "oracle_text": "Creatures you control get +1/+1.\nWhenever you tap a land for mana, add one mana of any type that land produced.",
       "color_identity": [
-        "R"
+        "G",
+        "W"
       ],
       "colors": [
-        "R"
+        "G",
+        "W"
       ],
       "game_changer": false,
-      "power": "5",
-      "toughness": "5",
+      "power": null,
+      "toughness": null,
       "loyalty": null,
-      "keywords": [
-        "Flying",
-        "First strike",
-        "Treasure"
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
       ],
-      "produced_mana": null,
       "commander_legal": "legal",
       "quantity": 1,
       "is_commander": false
@@ -1701,26 +1705,19 @@
       "is_commander": false
     },
     {
-      "name": "Swooping Pteranodon",
-      "mana_cost": "{3}{R}{W}",
-      "cmc": 5.0,
-      "type_line": "Creature \u2014 Dinosaur",
-      "oracle_text": "Flying, haste\nWhenever this creature or another Dinosaur you control with flying enters, gain control of target creature an opponent controls until end of turn. Untap that creature. It gains flying and haste until end of turn. At the beginning of the next end step, target land deals 3 damage to that creature.",
-      "color_identity": [
-        "R",
-        "W"
-      ],
-      "colors": [
-        "R",
-        "W"
-      ],
+      "name": "Sword of Hearth and Home",
+      "mana_cost": "{3}",
+      "cmc": 3.0,
+      "type_line": "Artifact \u2014 Equipment",
+      "oracle_text": "Equipped creature gets +2/+2 and has protection from green and from white.\nWhenever equipped creature deals combat damage to a player, exile up to one target creature you own, then search your library for a basic land card. Put both cards onto the battlefield under your control, then shuffle.\nEquip {2}",
+      "color_identity": [],
+      "colors": [],
       "game_changer": false,
-      "power": "3",
-      "toughness": "3",
+      "power": null,
+      "toughness": null,
       "loyalty": null,
       "keywords": [
-        "Flying",
-        "Haste"
+        "Equip"
       ],
       "produced_mana": null,
       "commander_legal": "legal",

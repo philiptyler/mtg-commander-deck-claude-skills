@@ -1,15 +1,29 @@
 {
   "has_baseline": true,
   "counts_delta": {
-    "instants": 1,
-    "enchantments": -1
+    "artifacts": 1,
+    "enchantments": 1,
+    "creatures": -2
   },
   "category_changes": {
+    "ramp": {
+      "added": [
+        "Mirari's Wake",
+        "Sword of Hearth and Home"
+      ],
+      "removed": []
+    },
     "targeted_removal": {
       "added": [],
       "removed": [
-        "Annie Joins Up"
+        "Swooping Pteranodon"
       ]
+    },
+    "land_tutor": {
+      "added": [
+        "Sword of Hearth and Home"
+      ],
+      "removed": []
     }
   },
   "bracket_before": "3 (Upgraded)",
