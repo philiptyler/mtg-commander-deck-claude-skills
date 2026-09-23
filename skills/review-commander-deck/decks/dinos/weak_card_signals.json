@@ -1,0 +1,633 @@
+{
+  "bracket_used_for_targets": 3,
+  "category_saturation": [
+    {
+      "category": "lands",
+      "count": 36,
+      "target_range": [
+        35,
+        38
+      ],
+      "status": "within"
+    },
+    {
+      "category": "ramp",
+      "count": 12,
+      "target_range": [
+        10,
+        12
+      ],
+      "status": "within"
+    },
+    {
+      "category": "card_draw",
+      "count": 10,
+      "target_range": [
+        10,
+        12
+      ],
+      "status": "within"
+    },
+    {
+      "category": "targeted_removal",
+      "count": 12,
+      "target_range": [
+        10,
+        14
+      ],
+      "status": "within"
+    },
+    {
+      "category": "board_wipe",
+      "count": 2,
+      "target_range": [
+        2,
+        3
+      ],
+      "status": "within"
+    },
+    {
+      "category": "tutors",
+      "count": 5,
+      "target_range": [
+        3,
+        6
+      ],
+      "status": "within"
+    }
+  ],
+  "roleless_nonland_cards": [
+    {
+      "name": "Aggravated Assault",
+      "cmc": 3.0,
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Akroma's Will",
+      "cmc": 4.0,
+      "type_line": "Instant"
+    },
+    {
+      "name": "Bonehoard Dracosaur",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Dinosaur Dragon"
+    },
+    {
+      "name": "Cream of the Crop",
+      "cmc": 2.0,
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Curator of Sun's Creation",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Human Artificer"
+    },
+    {
+      "name": "Daydream",
+      "cmc": 1.0,
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Ephemerate",
+      "cmc": 1.0,
+      "type_line": "Instant"
+    },
+    {
+      "name": "Etali, Primal Conqueror // Etali, Primal Sickness",
+      "cmc": 7.0,
+      "type_line": "Legendary Creature \u2014 Elder Dinosaur // Legendary Creature \u2014 Phyrexian Elder Dinosaur"
+    },
+    {
+      "name": "Etali, Primal Storm",
+      "cmc": 6.0,
+      "type_line": "Legendary Creature \u2014 Elder Dinosaur"
+    },
+    {
+      "name": "Ghalta and Mavren",
+      "cmc": 7.0,
+      "type_line": "Legendary Creature \u2014 Dinosaur Vampire"
+    },
+    {
+      "name": "Ghalta, Stampede Tyrant",
+      "cmc": 8.0,
+      "type_line": "Legendary Creature \u2014 Elder Dinosaur"
+    },
+    {
+      "name": "Gishath, Sun's Avatar",
+      "cmc": 8.0,
+      "type_line": "Legendary Creature \u2014 Dinosaur Avatar"
+    },
+    {
+      "name": "Grand Abolisher",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Human Cleric"
+    },
+    {
+      "name": "Heroic Intervention",
+      "cmc": 2.0,
+      "type_line": "Instant"
+    },
+    {
+      "name": "Hunting Velociraptor",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Dinosaur"
+    },
+    {
+      "name": "Invasion of Ikoria // Zilortha, Apex of Ikoria",
+      "cmc": 2.0,
+      "type_line": "Battle \u2014 Siege // Legendary Creature \u2014 Dinosaur"
+    },
+    {
+      "name": "Marauding Raptor",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Dinosaur"
+    },
+    {
+      "name": "Polyraptor",
+      "cmc": 8.0,
+      "type_line": "Creature \u2014 Dinosaur"
+    },
+    {
+      "name": "Quartzwood Crasher",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Dinosaur Beast"
+    },
+    {
+      "name": "Regisaur Alpha",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Dinosaur"
+    },
+    {
+      "name": "Rhythm of the Wild",
+      "cmc": 3.0,
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Roaming Throne",
+      "cmc": 4.0,
+      "type_line": "Artifact Creature \u2014 Golem"
+    },
+    {
+      "name": "Tannuk, Steadfast Second",
+      "cmc": 4.0,
+      "type_line": "Legendary Creature \u2014 Kavu Pilot"
+    },
+    {
+      "name": "Teleportation Circle",
+      "cmc": 4.0,
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Temple Altisaur",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Dinosaur"
+    },
+    {
+      "name": "The Skullspore Nexus",
+      "cmc": 8.0,
+      "type_line": "Legendary Artifact"
+    }
+  ],
+  "high_cmc_low_role_cards": [
+    {
+      "name": "Austere Command",
+      "cmc": 6.0,
+      "roles": [
+        "board_wipe"
+      ]
+    },
+    {
+      "name": "Etali, Primal Conqueror // Etali, Primal Sickness",
+      "cmc": 7.0,
+      "roles": []
+    },
+    {
+      "name": "Etali, Primal Storm",
+      "cmc": 6.0,
+      "roles": []
+    },
+    {
+      "name": "Ghalta and Mavren",
+      "cmc": 7.0,
+      "roles": []
+    },
+    {
+      "name": "Ghalta, Stampede Tyrant",
+      "cmc": 8.0,
+      "roles": []
+    },
+    {
+      "name": "Gishath, Sun's Avatar",
+      "cmc": 8.0,
+      "roles": []
+    },
+    {
+      "name": "Last March of the Ents",
+      "cmc": 8.0,
+      "roles": [
+        "card_draw"
+      ]
+    },
+    {
+      "name": "Polyraptor",
+      "cmc": 8.0,
+      "roles": []
+    },
+    {
+      "name": "Regal Behemoth",
+      "cmc": 6.0,
+      "roles": [
+        "ramp"
+      ]
+    },
+    {
+      "name": "The Skullspore Nexus",
+      "cmc": 8.0,
+      "roles": []
+    },
+    {
+      "name": "Trumpeting Carnosaur",
+      "cmc": 6.0,
+      "roles": [
+        "targeted_removal"
+      ]
+    },
+    {
+      "name": "Vaultborn Tyrant",
+      "cmc": 7.0,
+      "roles": [
+        "card_draw"
+      ]
+    },
+    {
+      "name": "Wakening Sun's Avatar",
+      "cmc": 8.0,
+      "roles": [
+        "board_wipe"
+      ]
+    },
+    {
+      "name": "Warstorm Surge",
+      "cmc": 6.0,
+      "roles": [
+        "targeted_removal"
+      ]
+    },
+    {
+      "name": "Zacama, Primal Calamity",
+      "cmc": 9.0,
+      "roles": [
+        "targeted_removal"
+      ]
+    }
+  ],
+  "land_signals": [
+    {
+      "name": "Arid Mesa",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [],
+      "off_color": false
+    },
+    {
+      "name": "Bountiful Promenade",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Branchloft Pathway // Boulderloft Pathway",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Cavern of Souls",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "City of Brass",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Command Tower",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Cragcrown Pathway // Timbercrown Pathway",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Exotic Orchard",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Fabled Passage",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [],
+      "off_color": false
+    },
+    {
+      "name": "Fire-Lit Thicket",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "C",
+        "G",
+        "R"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Forest",
+      "is_basic": true,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "G"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Hushwood Verge",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Jetmir's Garden",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "G",
+        "R",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Karplusan Forest",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "C",
+        "G",
+        "R"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Mana Confluence",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Mosswort Bridge",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": true,
+      "produced_mana": [
+        "G"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Mountain",
+      "is_basic": true,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "R"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Needleverge Pathway // Pillarverge Pathway",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Overgrown Farmland",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Plains",
+      "is_basic": true,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Prismatic Vista",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [],
+      "off_color": false
+    },
+    {
+      "name": "Rockfall Vale",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Rugged Prairie",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "C",
+        "R",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Sacred Foundry",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Spire Garden",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Stomping Ground",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Temple Garden",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Unclaimed Territory",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Windswept Heath",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [],
+      "off_color": false
+    },
+    {
+      "name": "Wooded Bastion",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "C",
+        "G",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Wooded Foothills",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [],
+      "off_color": false
+    }
+  ]
+}

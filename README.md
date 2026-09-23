@@ -18,39 +18,61 @@ to do.
 No third-party Python dependencies — the Scryfall client uses the standard
 library only, so there's no install step to use the skill.
 
+### [`find-weakest-cards`](skills/find-weakest-cards/SKILL.md)
+
+Finds the weakest N cards in a deck already reviewed by
+`review-commander-deck` — the whole deck, just the lands, or a specific
+category ("weakest 2 removal spells", "weakest 3 lands"). Combines category
+oversaturation (compared against bracket-scaled targets), cards with no
+detected functional role, high-CMC single-purpose cards, and land quality
+checks (enters tapped with no upside, off-color) into signals — then reads
+each candidate's actual card text before concluding anything, since the
+signals are heuristics that can miss real upside phrased unusually.
+
+**Depends on `review-commander-deck`'s output** (`context.json` and
+`analysis.json` for the deck in question) rather than re-implementing
+decklist parsing/Scryfall fetching — install both together.
+
+No EDHREC integration: their public JSON endpoint exists, but their Terms
+of Service explicitly prohibit automated queries against it, so this skill
+doesn't hit it. If EDHREC context matters for a specific card, check it
+yourself in your browser and paste the number in.
+
 ## Installing
 
 Works with Claude Code (CLI) or the Claude.ai / desktop apps. Personal-scope
-install is the low-friction option since it makes the skill available in
-every project, not just this repo checkout.
+install is the low-friction option since it makes skills available in every
+project, not just this repo checkout.
 
 ### Claude Code (CLI)
 
-Clone the repo, then symlink the skill folder into Claude Code's personal
+Clone the repo, then symlink each skill folder into Claude Code's personal
 skills directory (create it if it doesn't exist yet):
 
 ```
 git clone git@github.com:philiptyler/mtg-commander-deck-claude-skills.git
 mkdir -p ~/.claude/skills
 ln -s "$(pwd)/mtg-commander-deck-claude-skills/skills/review-commander-deck" ~/.claude/skills/review-commander-deck
+ln -s "$(pwd)/mtg-commander-deck-claude-skills/skills/find-weakest-cards" ~/.claude/skills/find-weakest-cards
 ```
 
-Start (or restart) a Claude Code session and it'll show up in the available
-skills. To scope it to a single project instead of every project, symlink
-into `<project>/.claude/skills/review-commander-deck` rather than the
+Start (or restart) a Claude Code session and they'll show up in the
+available skills. To scope them to a single project instead of every
+project, symlink into `<project>/.claude/skills/<name>` rather than the
 `~/.claude` path above.
 
 ### Claude.ai / desktop app
 
-Zip the skill folder and upload it as a Skill capability:
+Zip each skill folder and upload it as a Skill capability:
 
 ```
 cd mtg-commander-deck-claude-skills/skills
 zip -r review-commander-deck.zip review-commander-deck
+zip -r find-weakest-cards.zip find-weakest-cards
 ```
 
 Then in the app: **Settings → Capabilities → Skills → Upload skill**, and
-pick `review-commander-deck.zip`.
+pick the zip.
 
 ## Trying it out
 
@@ -82,12 +104,17 @@ skills/
     scripts/           # parse decklist -> fetch Scryfall -> build context -> analyze
     references/         # editable rubrics (e.g. bracket criteria)
     cache/scryfall/      # cached Scryfall responses, reused across decks
-    decks/               # one folder per deck you've reviewed
+    decks/               # one folder per deck you've reviewed (context.json,
+                          #   analysis.json, report.md, weak_card_signals.json)
+  find-weakest-cards/
+    SKILL.md          # depends on review-commander-deck's decks/<slug>/ output
+    scripts/           # find_weak_cards.py - computes signals, doesn't rank
+    references/         # category_targets.md - bracket-scaled saturation targets
 ```
 
 ## Roadmap
 
-Only `review-commander-deck` exists today. Ideas for later, not yet built:
+Ideas for later, not yet built:
 
 - `optimize-commander-deck` — suggest concrete swaps toward a target bracket
 - `suggest-commander` — recommend commanders for a given strategy/budget
