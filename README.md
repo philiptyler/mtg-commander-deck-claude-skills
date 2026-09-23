@@ -81,6 +81,43 @@ unrelated combo in that deck untouched.
 `find-deck-combos`/`find-weakest-cards` if either was already in use for
 the deck being changed.
 
+### [`upgrade-commander-deck`](skills/upgrade-commander-deck/SKILL.md)
+
+Proposes N nonland card swaps — this is the "suggest changes" skill the
+roadmap above used to describe as not-yet-built. Sources candidates via
+Scryfall's own `edhrec_rank` field (a global popularity rank Scryfall
+computes and publishes itself), never by querying edhrec.com directly, and
+ranks them deterministically: whether a candidate completes a combo
+`find-deck-combos` already found the deck one card away from, whether it
+fills an undersupplied curve slot, then popularity only as a tiebreaker —
+never the primary factor, specifically because a commander-specific EDHREC
+inclusion rate can be skewed by precon inclusion or a card just being cheap
+and accessible. This is a *proposal* skill: nothing gets applied until you
+confirm, then it delegates the actual apply-and-diff step to
+`update-commander-deck` rather than reimplementing it.
+
+**Depends on `review-commander-deck`'s output**, uses `find-weakest-cards`
+for cut candidates and `find-deck-combos` for the combo-completion bonus
+(and to enforce the same "never cut a combo piece" rule), and hands
+confirmed swaps to `update-commander-deck` to apply.
+
+### [`upgrade-commander-lands`](skills/upgrade-commander-lands/SKILL.md)
+
+Same idea, scoped to the mana base only. The old, informal version of this
+workflow cited a specific turn-by-turn Frank Karsten source-count table;
+when building this skill, those exact numbers weren't verifiable against
+primary sources, so instead of repeating a table that couldn't be checked,
+`mana_base_analysis.py` computes the actual hypergeometric probability
+directly from the deck's real current source counts (stdlib `math.comb`,
+no scipy) — sanity-checked against the externally-corroborated "~22
+sources for single-pip, ~29 for double-pip" figures and it lines up. Caught
+a real, easy-to-miss shortfall in the example deck in this repo on first
+run: `Grand Abolisher` costs `{W}{W}`, and the deck's actual white source
+count gives only a 65% chance of having it online by turn 2.
+
+**Depends on `review-commander-deck`'s output**, same delegation to
+`update-commander-deck` for applying confirmed swaps.
+
 ## Installing
 
 Works with Claude Code (CLI) or the Claude.ai / desktop apps. Personal-scope
@@ -99,6 +136,8 @@ ln -s "$(pwd)/mtg-commander-deck-claude-skills/skills/review-commander-deck" ~/.
 ln -s "$(pwd)/mtg-commander-deck-claude-skills/skills/find-weakest-cards" ~/.claude/skills/find-weakest-cards
 ln -s "$(pwd)/mtg-commander-deck-claude-skills/skills/find-deck-combos" ~/.claude/skills/find-deck-combos
 ln -s "$(pwd)/mtg-commander-deck-claude-skills/skills/update-commander-deck" ~/.claude/skills/update-commander-deck
+ln -s "$(pwd)/mtg-commander-deck-claude-skills/skills/upgrade-commander-deck" ~/.claude/skills/upgrade-commander-deck
+ln -s "$(pwd)/mtg-commander-deck-claude-skills/skills/upgrade-commander-lands" ~/.claude/skills/upgrade-commander-lands
 ```
 
 Start (or restart) a Claude Code session and they'll show up in the
@@ -116,6 +155,8 @@ zip -r review-commander-deck.zip review-commander-deck
 zip -r find-weakest-cards.zip find-weakest-cards
 zip -r find-deck-combos.zip find-deck-combos
 zip -r update-commander-deck.zip update-commander-deck
+zip -r upgrade-commander-deck.zip upgrade-commander-deck
+zip -r upgrade-commander-lands.zip upgrade-commander-lands
 ```
 
 Then in the app: **Settings → Capabilities → Skills → Upload skill**, and
@@ -165,15 +206,21 @@ skills/
     SKILL.md          # applies changes, doesn't suggest them - re-runs the
                           #   other skills' scripts, adds the diff step
     scripts/           # snapshot_before.py + diff_after.py
+  upgrade-commander-deck/
+    SKILL.md          # proposes nonland swaps, delegates apply to
+                          #   update-commander-deck once confirmed
+    scripts/           # scryfall_search_client.py (edhrec_rank-sorted
+                          #   Scryfall search) + find_upgrade_candidates.py
+  upgrade-commander-lands/
+    SKILL.md          # proposes land swaps, same delegation pattern
+    scripts/           # hypergeometric.py (stdlib probability model) +
+                          #   mana_base_analysis.py + find_land_candidates.py
 ```
 
 ## Roadmap
 
 Ideas for later, not yet built:
 
-- `optimize-commander-deck` — *suggest* swaps toward a target bracket
-  (distinct from `update-commander-deck`, which applies swaps you already
-  decided on)
 - `suggest-commander` — recommend commanders for a given strategy/budget
 
 ## License

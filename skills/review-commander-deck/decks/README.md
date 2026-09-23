@@ -3,8 +3,9 @@
 Each subdirectory here is one reviewed deck. This folder is the shared home
 for a deck's data across skills, even though each skill's *code* lives in
 its own directory (`review-commander-deck`, `find-weakest-cards`,
-`find-deck-combos`, `update-commander-deck`) — see each skill's SKILL.md for
-what depends on what.
+`find-deck-combos`, `update-commander-deck`, `upgrade-commander-deck`,
+`upgrade-commander-lands`) — see each skill's SKILL.md for what depends on
+what.
 
 - `decklist.txt` — the raw pasted decklist (input) — from `review-commander-deck`
 - `context.json` — decklist quantities merged with Scryfall card data — from `review-commander-deck`
@@ -16,6 +17,13 @@ what depends on what.
   — from `update-commander-deck` (overwritten each time it runs; a
   transient `.update-tmp/` working directory appears and disappears during
   that process and is gitignored)
+- `upgrade_candidates_<category>.json` — ranked nonland swap candidates for
+  one category — from `upgrade-commander-deck` (one file per category
+  checked, not overwritten across categories)
+- `mana_base_analysis.json` — computed per-color hypergeometric shortfall
+  analysis — from `upgrade-commander-lands`
+- `land_candidates_<color>.json` — ranked land swap candidates for one
+  shortfall color — from `upgrade-commander-lands`
 
 Nothing in here is hand-written; it's all produced by running each skill's
 scripts against a decklist.
