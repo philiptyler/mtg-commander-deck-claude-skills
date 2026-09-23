@@ -113,6 +113,21 @@ and accessible. This is a *proposal* skill: nothing gets applied until you
 confirm, then it delegates the actual apply-and-diff step to
 `update-commander-deck` rather than reimplementing it.
 
+Two more things earned their way in through real mistakes, not upfront
+design. A card completing a combo isn't automatically a good pick —
+`preview_swap.py` computes a proposed swap's actual curve/category impact
+(via a real `analyze_deck.py` run against a scratch copy of the deck, not
+an estimate) *before* it's ever presented, so a card that lands in the new
+`fragile_trigger` category (a "whenever this creature is dealt damage"
+payoff on a body too fragile to survive that damage) gets caught up front —
+this exact tool would have caught `Raptor Hatchling` being recommended as
+a clean combo piece when it wasn't one. And combo data now surfaces
+Commander Spellbook's `notable`/`easy_prerequisites` explicitly, because
+"every listed card is in the deck" and "this combo actually loops" turned
+out to be two different questions — `Raptor Hatchling` + `Warstorm Surge`
+needed a third, unlisted requirement (a way to grant indestructible) that
+only showed up by reading the prerequisites, not the card list.
+
 **Depends on `review-commander-deck`'s output**, uses `find-weakest-cards`
 for cut candidates and `find-deck-combos` for the combo-completion bonus
 (and to enforce the same "never cut a combo piece" rule), and hands

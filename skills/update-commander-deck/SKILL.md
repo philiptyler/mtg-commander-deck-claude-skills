@@ -27,6 +27,15 @@ not reviewing a new one.
    if there's any ambiguity (e.g. "swap the raptor" when the deck has three
    raptor cards) — don't guess which card they mean.
 
+   This includes confirming *that a change should happen at all*, not just
+   which cards. If this skill is being invoked to apply a swap
+   `upgrade-commander-deck` proposed earlier, make sure the user actually
+   said to apply it — "that's a better suggestion" or "I like this
+   direction" is approval of the *analysis*, not authorization to execute.
+   This confusion has already caused a real mistake in this project: a
+   swap got applied from exactly that kind of warm-but-not-explicit
+   response, and had to be reverted. If it's not unambiguous, ask.
+
 2. **Snapshot the current state** (from this skill's root):
    ```
    python3 scripts/snapshot_before.py --deck-dir ../review-commander-deck/decks/<slug>

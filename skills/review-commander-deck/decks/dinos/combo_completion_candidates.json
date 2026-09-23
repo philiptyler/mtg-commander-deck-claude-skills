@@ -13,6 +13,14 @@
       "usd": "9.01",
       "game_changer": false,
       "combo_count": 2,
+      "free_combo_count": 1,
+      "prerequisites": [
+        {
+          "url": "https://commanderspellbook.com/combo/2488-7167-7391/",
+          "notable": null,
+          "easy": "You control another creature with power 4 or greater."
+        }
+      ],
       "produces": [
         "Destroy all creatures opponents control",
         "Near-infinite damage"
@@ -35,6 +43,19 @@
       "usd": "0.22",
       "game_changer": false,
       "combo_count": 2,
+      "free_combo_count": 0,
+      "prerequisites": [
+        {
+          "url": "https://commanderspellbook.com/combo/2773-3046/",
+          "notable": "You have a way to give Overgrown Armasaur indestructible.\nYou have a way to deal damage to Overgrown Armasaur.",
+          "easy": null
+        },
+        {
+          "url": "https://commanderspellbook.com/combo/1110-3046/",
+          "notable": "You have a way to give Overgrown Armasaur indestructible.\nYou have a way to deal damage to Overgrown Armasaur.",
+          "easy": null
+        }
+      ],
       "produces": [
         "Infinite creature ETB",
         "Infinite creature tokens"
@@ -57,6 +78,14 @@
       "usd": "0.28",
       "game_changer": false,
       "combo_count": 1,
+      "free_combo_count": 0,
+      "prerequisites": [
+        {
+          "url": "https://commanderspellbook.com/combo/2773-5191/",
+          "notable": "You have a way to give Raptor Hatchling indestructible.\nYou have a way to cause a creature to enter the battlefield or to deal damage to Raptor Hatchling.",
+          "easy": null
+        }
+      ],
       "produces": [
         "Infinite creature ETB",
         "Infinite creature tokens"
@@ -67,293 +96,163 @@
       "tribal_match": true
     },
     {
-      "name": "Vrondiss, Rage of Ancients",
-      "mana_cost": "{3}{R}{G}",
-      "cmc": 5.0,
-      "type_line": "Legendary Creature \u2014 Dragon Barbarian",
-      "oracle_text": "Enrage \u2014 Whenever Vrondiss is dealt damage, you may create a 5/4 red and green Dragon Spirit creature token with \"When this token deals damage, sacrifice it.\"\nWhenever you roll one or more dice, you may have Vrondiss deal 1 damage to itself.",
-      "color_identity": [
-        "G",
-        "R"
-      ],
-      "usd": null,
-      "game_changer": false,
-      "combo_count": 2,
-      "produces": [
-        "Infinite creature ETB",
-        "Infinite creature LTB",
-        "Infinite creature sacrifice triggers",
-        "Infinite creature tokens",
-        "Infinite death triggers"
-      ],
-      "combo_urls": [
-        "https://commanderspellbook.com/combo/2773-4245/",
-        "https://commanderspellbook.com/combo/1110-4245/"
-      ],
-      "tribal_match": false
-    },
-    {
-      "name": "Hornet Nest",
-      "mana_cost": "{2}{G}",
-      "cmc": 3.0,
-      "type_line": "Creature \u2014 Insect",
-      "oracle_text": "Defender (This creature can't attack.)\nWhenever this creature is dealt damage, create that many 1/1 green Insect creature tokens with flying and deathtouch. (Any amount of damage a creature with deathtouch deals to a creature is enough to destroy it.)",
-      "color_identity": [
-        "G"
-      ],
-      "usd": "0.37",
-      "game_changer": false,
-      "combo_count": 2,
-      "produces": [
-        "Infinite creature ETB",
-        "Infinite creature tokens"
-      ],
-      "combo_urls": [
-        "https://commanderspellbook.com/combo/2773-3748/",
-        "https://commanderspellbook.com/combo/1110-3748/"
-      ],
-      "tribal_match": false
-    },
-    {
-      "name": "Broodhatch Nantuko",
-      "mana_cost": "{1}{G}",
-      "cmc": 2.0,
-      "type_line": "Creature \u2014 Insect Druid",
-      "oracle_text": "Whenever this creature is dealt damage, you may create that many 1/1 green Insect creature tokens.\nMorph {2}{G} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)",
-      "color_identity": [
-        "G"
-      ],
-      "usd": "0.34",
-      "game_changer": false,
-      "combo_count": 2,
-      "produces": [
-        "Infinite creature ETB",
-        "Infinite creature tokens"
-      ],
-      "combo_urls": [
-        "https://commanderspellbook.com/combo/2773-3760/",
-        "https://commanderspellbook.com/combo/1110-3760/"
-      ],
-      "tribal_match": false
-    },
-    {
-      "name": "Sporeweb Weaver",
-      "mana_cost": "{2}{G}",
-      "cmc": 3.0,
-      "type_line": "Creature \u2014 Spider",
-      "oracle_text": "Reach, hexproof from blue\nWhenever this creature is dealt damage, you gain 1 life and create a 1/1 green Saproling creature token.",
-      "color_identity": [
-        "G"
-      ],
-      "usd": "0.50",
-      "game_changer": false,
-      "combo_count": 2,
-      "produces": [
-        "Infinite creature ETB",
-        "Infinite creature tokens",
-        "Infinite lifegain",
-        "Infinite lifegain triggers"
-      ],
-      "combo_urls": [
-        "https://commanderspellbook.com/combo/487-2773/",
-        "https://commanderspellbook.com/combo/487-1110/"
-      ],
-      "tribal_match": false
-    },
-    {
-      "name": "Saber Ants",
-      "mana_cost": "{3}{G}",
+      "name": "Orthion, Hero of Lavabrink",
+      "mana_cost": "{3}{R}",
       "cmc": 4.0,
-      "type_line": "Creature \u2014 Insect",
-      "oracle_text": "Whenever this creature is dealt damage, you may create that many 1/1 green Insect creature tokens.",
-      "color_identity": [
-        "G"
-      ],
-      "usd": "0.36",
-      "game_changer": false,
-      "combo_count": 2,
-      "produces": [
-        "Infinite creature ETB",
-        "Infinite creature tokens"
-      ],
-      "combo_urls": [
-        "https://commanderspellbook.com/combo/2773-5199/",
-        "https://commanderspellbook.com/combo/1110-5199/"
-      ],
-      "tribal_match": false
-    },
-    {
-      "name": "Breath of Fury",
-      "mana_cost": "{2}{R}{R}",
-      "cmc": 4.0,
-      "type_line": "Enchantment \u2014 Aura",
-      "oracle_text": "Enchant creature you control\nWhen enchanted creature deals combat damage to a player, sacrifice it and attach this Aura to a creature you control. If you do, untap all creatures you control and after this phase, there is an additional combat phase.",
+      "type_line": "Legendary Creature \u2014 Human Soldier",
+      "oracle_text": "{1}{R}, {T}: Create a token that's a copy of another target creature you control. It gains haste. Sacrifice it at the beginning of the next end step. Activate only as a sorcery.\n{6}{R}{R}{R}, {T}: Create five tokens that are copies of another target creature you control. They gain haste. Sacrifice them at the beginning of the next end step. Activate only as a sorcery.",
       "color_identity": [
         "R"
       ],
-      "usd": "13.73",
-      "game_changer": false,
-      "combo_count": 2,
-      "produces": [
-        "Infinite combat damage",
-        "Infinite combat phases",
-        "Infinite creature ETB",
-        "Infinite creature LTB",
-        "Infinite creature sacrifice triggers",
-        "Infinite creature tokens with haste",
-        "Infinite death triggers",
-        "Infinite mana creatures you control can produce",
-        "Infinite untap of creatures you control"
-      ],
-      "combo_urls": [
-        "https://commanderspellbook.com/combo/2214-3259-4373/",
-        "https://commanderspellbook.com/combo/3259-4373-6791/"
-      ],
-      "tribal_match": false
-    },
-    {
-      "name": "The Reaver Cleaver",
-      "mana_cost": "{2}{R}",
-      "cmc": 3.0,
-      "type_line": "Legendary Artifact \u2014 Equipment",
-      "oracle_text": "Equipped creature gets +1/+1 and has trample and \"Whenever this creature deals combat damage to a player or planeswalker, create that many Treasure tokens.\"\nEquip {3}",
-      "color_identity": [
-        "R"
-      ],
-      "usd": "38.48",
+      "usd": "5.19",
       "game_changer": false,
       "combo_count": 1,
+      "free_combo_count": 1,
+      "prerequisites": [],
       "produces": [
-        "Infinite Treasure tokens",
-        "Infinite artifact ETB",
-        "Infinite artifact LTB",
-        "Infinite artifact sacrifice triggers",
-        "Infinite artifact tokens",
-        "Infinite colored mana",
-        "Infinite combat damage",
-        "Infinite combat phases",
-        "Infinite mana creatures you control can produce",
-        "Infinite untap of creatures you control"
+        "Near-infinite damage"
       ],
       "combo_urls": [
-        "https://commanderspellbook.com/combo/3750-5039/"
+        "https://commanderspellbook.com/combo/1110-2136/"
       ],
       "tribal_match": false
     },
     {
-      "name": "Reiterate",
-      "mana_cost": "{1}{R}{R}",
-      "cmc": 3.0,
-      "type_line": "Instant",
-      "oracle_text": "Buyback {3} (You may pay an additional {3} as you cast this spell. If you do, put this card into your hand as it resolves.)\nCopy target instant or sorcery spell. You may choose new targets for the copy.",
-      "color_identity": [
-        "R"
-      ],
-      "usd": "19.67",
-      "game_changer": false,
-      "combo_count": 1,
-      "produces": [
-        "Exile your library with the ability to play the exiled cards until end of turn",
-        "Infinite magecraft triggers",
-        "Infinite red mana",
-        "Infinite storm count"
-      ],
-      "combo_urls": [
-        "https://commanderspellbook.com/combo/1878-3368/"
-      ],
-      "tribal_match": false
-    },
-    {
-      "name": "Sword of Feast and Famine",
-      "mana_cost": "{3}",
-      "cmc": 3.0,
-      "type_line": "Artifact \u2014 Equipment",
-      "oracle_text": "Equipped creature gets +2/+2 and has protection from black and from green.\nWhenever equipped creature deals combat damage to a player, that player discards a card and you untap all lands you control.\nEquip {2}",
-      "color_identity": [],
-      "usd": "41.81",
-      "game_changer": false,
-      "combo_count": 1,
-      "produces": [
-        "Infinite combat phases"
-      ],
-      "combo_urls": [
-        "https://commanderspellbook.com/combo/900-3750/"
-      ],
-      "tribal_match": false
-    },
-    {
-      "name": "Ancient Copper Dragon",
-      "mana_cost": "{4}{R}{R}",
-      "cmc": 6.0,
-      "type_line": "Creature \u2014 Elder Dragon",
-      "oracle_text": "Flying\nWhenever this creature deals combat damage to a player, roll a d20. You create a number of Treasure tokens equal to the result.",
-      "color_identity": [
-        "R"
-      ],
-      "usd": "135.42",
-      "game_changer": false,
-      "combo_count": 1,
-      "produces": [
-        "Near-infinite Treasure tokens",
-        "Near-infinite colored mana",
-        "Near-infinite combat damage",
-        "Near-infinite combat phases",
-        "Near-infinite mana creatures you control can produce",
-        "Near-infinite untap of creatures you control"
-      ],
-      "combo_urls": [
-        "https://commanderspellbook.com/combo/778-3750/"
-      ],
-      "tribal_match": false
-    },
-    {
-      "name": "Old Gnawbone",
-      "mana_cost": "{5}{G}{G}",
-      "cmc": 7.0,
-      "type_line": "Legendary Creature \u2014 Dragon",
-      "oracle_text": "Flying\nWhenever a creature you control deals combat damage to a player, create that many Treasure tokens.",
-      "color_identity": [
-        "G"
-      ],
-      "usd": "50.86",
-      "game_changer": false,
-      "combo_count": 1,
-      "produces": [
-        "Infinite Treasure tokens",
-        "Infinite artifact ETB",
-        "Infinite artifact LTB",
-        "Infinite artifact sacrifice triggers",
-        "Infinite artifact tokens",
-        "Infinite colored mana",
-        "Infinite combat phases",
-        "Infinite mana creatures you control can produce",
-        "Infinite untap of creatures you control"
-      ],
-      "combo_urls": [
-        "https://commanderspellbook.com/combo/1800-3750/"
-      ],
-      "tribal_match": false
-    },
-    {
-      "name": "Neheb, the Eternal",
+      "name": "Rionya, Fire Dancer",
       "mana_cost": "{3}{R}{R}",
       "cmc": 5.0,
-      "type_line": "Legendary Creature \u2014 Zombie Minotaur Warrior",
-      "oracle_text": "Afflict 3 (Whenever this creature becomes blocked, defending player loses 3 life.)\nAt the beginning of each of your postcombat main phases, add {R} for each 1 life your opponents have lost this turn.",
+      "type_line": "Legendary Creature \u2014 Human Wizard",
+      "oracle_text": "At the beginning of combat on your turn, create X tokens that are copies of another target creature you control, where X is one plus the number of instant and sorcery spells you've cast this turn. They gain haste. Exile them at the beginning of the next end step.",
       "color_identity": [
         "R"
       ],
-      "usd": "8.16",
+      "usd": "0.41",
       "game_changer": false,
       "combo_count": 1,
+      "free_combo_count": 1,
+      "prerequisites": [],
       "produces": [
-        "Infinite combat phases",
-        "Infinite mana creatures you control can produce",
-        "Infinite red mana",
-        "Infinite untap of creatures you control"
+        "Near-infinite damage"
       ],
       "combo_urls": [
-        "https://commanderspellbook.com/combo/3750-4945/"
+        "https://commanderspellbook.com/combo/1110-1908/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Devastating Onslaught",
+      "mana_cost": "{X}{X}{R}",
+      "cmc": 1.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Create X tokens that are copies of target artifact or creature you control. Those tokens gain haste until end of turn. Sacrifice them at the beginning of the next end step.",
+      "color_identity": [
+        "R"
+      ],
+      "usd": "2.84",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 1,
+      "prerequisites": [],
+      "produces": [
+        "Near-infinite damage"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/1110-6785/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Obliterate",
+      "mana_cost": "{6}{R}{R}",
+      "cmc": 8.0,
+      "type_line": "Sorcery",
+      "oracle_text": "This spell can't be countered.\nDestroy all artifacts, creatures, and lands. They can't be regenerated.",
+      "color_identity": [
+        "R"
+      ],
+      "usd": "3.70",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 1,
+      "prerequisites": [],
+      "produces": [
+        "Destroy all lands, creatures, and artifacts your opponents control",
+        "Mass Land Denial"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/2548-5141/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Worldfire",
+      "mana_cost": "{6}{R}{R}{R}",
+      "cmc": 9.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Exile all permanents. Exile all cards from all hands and graveyards. Each player's life total becomes 1.",
+      "color_identity": [
+        "R"
+      ],
+      "usd": "36.01",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 1,
+      "prerequisites": [],
+      "produces": [
+        "Each opponent's life total becomes 1",
+        "Exile all cards in hands and graveyards",
+        "Exile all permanents opponents control",
+        "Mass Land Denial"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/3765-5141/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Balancing Act",
+      "mana_cost": "{2}{W}{W}",
+      "cmc": 4.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Each player chooses a number of permanents they control equal to the number of permanents controlled by the player who controls the fewest, then sacrifices the rest. Each player discards cards the same way.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "1.73",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 1,
+      "prerequisites": [],
+      "produces": [
+        "Each opponent sacrifices all permanents they control",
+        "Mass Land Denial"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/70-5141/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Apocalypse",
+      "mana_cost": "{2}{R}{R}{R}",
+      "cmc": 5.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Exile all permanents. You discard your hand.",
+      "color_identity": [
+        "R"
+      ],
+      "usd": "7.79",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 1,
+      "prerequisites": [],
+      "produces": [
+        "Discard your hand",
+        "Exile all permanents opponents control",
+        "Mass Land Denial"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/4274-5141/"
       ],
       "tribal_match": false
     }

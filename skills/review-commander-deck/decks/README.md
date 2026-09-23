@@ -18,8 +18,16 @@ what.
   transient `.update-tmp/` working directory appears and disappears during
   that process and is gitignored)
 - `upgrade_candidates_<category>.json` — ranked nonland swap candidates for
-  one category — from `upgrade-commander-deck` (one file per category
-  checked, not overwritten across categories)
+  one category — from `upgrade-commander-deck` (one file per
+  category/CMC-bound/budget combination checked, not overwritten across
+  different searches)
+- `combo_completion_candidates.json` — cards that complete a combo one card
+  deep in the deck, ranked by tribal match then how many prerequisite-free
+  combos they complete — from `upgrade-commander-deck`
+- `swap_preview.json` — curve/category impact of one proposed cut+add pair,
+  computed without touching the decklist — from `upgrade-commander-deck`
+  (overwritten each time it runs; a transient `.preview-tmp/` working
+  directory appears and disappears during that process and is gitignored)
 - `mana_base_analysis.json` — computed per-color hypergeometric shortfall
   analysis — from `upgrade-commander-lands`
 - `land_candidates_<color>.json` — ranked land swap candidates for one

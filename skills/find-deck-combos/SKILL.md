@@ -56,6 +56,28 @@ distinction is why this integration exists and the EDHREC one doesn't.
      something else converts it). Don't call something a win condition
      without checking whether its `produces` list is actually favorable.
 
+   **This is not optional, and skipping it has already caused a real
+   mistake in this project.** A combo's `cards` list is "every card this
+   needs to be in the 99" - it is *not* "everything that needs to be true
+   for this to actually loop." `Raptor Hatchling` + `Warstorm Surge` was
+   presented as a clean combo completion by only checking that both cards
+   existed; the variant's actual `notablePrerequisites` read "You have a
+   way to give Raptor Hatchling indestructible" - without that (a fourth
+   thing, not itself a listed card), a 1-toughness creature dies to the
+   first instance of the very damage that triggers it, and the "loop" is
+   one activation. The general pattern: a creature with a "whenever this
+   creature is dealt damage" trigger needs toughness that can survive
+   whatever's dealing that damage, repeatedly, or it needs external
+   protection - check the creature's own `toughness` in `context.json`
+   against what's actually going to hit it, every time, not just when a
+   prerequisite happens to be listed. `review-commander-deck`'s
+   `fragile_trigger` category (toughness ≤2 with this exact trigger
+   shape) catches the narrow, clearly-fragile case automatically; it
+   won't catch every version of this (e.g. `Forerunner of the Empire` is
+   a 1/3 that dies to *accumulated* damage over several loop iterations,
+   not the first hit) - read the actual numbers, don't assume the
+   automated flag caught everything.
+
 3. **The database models loops, not every community-known finishing touch.**
    A combo that loops forever but only "draws the game" per Commander
    Spellbook's data might still be a real win in practice if the deck has
@@ -80,6 +102,15 @@ piece looks like from the outside.
 
 - Only checks the card pool, not deck order/mana - a combo being "included"
   doesn't mean it's easy to assemble in a real game, just that every card
-  it needs is somewhere in the 99.
+  it needs is somewhere in the 99. It also doesn't mean the loop actually
+  sustains itself once assembled - see step 2 above.
 - `almost_included` can be large and noisy; use judgment on what's worth
   surfacing rather than reporting everything the API returns.
+- `find_combo_completions.py` (in `upgrade-commander-deck`) now surfaces
+  `free_combo_count` alongside raw `combo_count` for exactly this reason -
+  a completion with no listed prerequisites is a more reliable signal than
+  one that technically completes more combos but needs extra setup for
+  all of them. Still read the actual `prerequisites` field before
+  recommending anything; the count alone doesn't tell you whether the
+  prerequisite is trivial (a creature with power 4+, easy in most decks)
+  or a real ask (a whole extra card slot dedicated to protection).

@@ -35,6 +35,10 @@ ALL_CATEGORY_KEYS = [
     "ramp", "targeted_removal", "board_wipe", "counterspell", "card_draw",
     "land_tutor", "nonland_tutor", "extra_turn", "mass_land_denial", "game_changer",
     "cost_reduction", "resilience",
+    # Deliberately NOT "fragile_trigger" - that's a negative/caveat signal
+    # (this card's own payoff can kill it), not a functional role. Counting
+    # it here would pull a fragile card OUT of roleless/high-CMC weak
+    # flagging - exactly backwards from what it should do.
 ]
 
 # Heuristic only - a land can have real upside phrased in ways this misses.
@@ -137,6 +141,23 @@ def land_signals(context: dict, deck_colors: set) -> list:
     return out
 
 
+def fragile_trigger_cards(context: dict, analysis: dict) -> list:
+    """Cards whose payoff is gated behind being dealt damage, at a
+    toughness where that damage is likely to kill them too - the opposite
+    of a role, a caveat. Found directly: Raptor Hatchling (1 toughness)
+    was recommended as a repeatable combo piece without ever checking
+    whether it could survive its own trigger condition; it can't, without
+    a separate way to grant it indestructible."""
+    flagged = set(analysis["categories"].get("fragile_trigger", []))
+    if not flagged:
+        return []
+    by_name = {c["name"]: c for c in context["cards"]}
+    return [
+        {"name": name, "toughness": by_name[name].get("toughness"), "cmc": by_name[name].get("cmc")}
+        for name in flagged if name in by_name
+    ]
+
+
 def analyze(context: dict, analysis: dict) -> dict:
     bracket = parse_bracket(analysis)
     category_index = build_category_index(analysis)
@@ -147,6 +168,7 @@ def analyze(context: dict, analysis: dict) -> dict:
         "category_saturation": category_saturation(analysis, bracket),
         "roleless_nonland_cards": roleless_nonland_cards(context, category_index),
         "high_cmc_low_role_cards": high_cmc_low_role_cards(context, category_index),
+        "fragile_trigger_cards": fragile_trigger_cards(context, analysis),
         "land_signals": land_signals(context, deck_colors),
     }
 

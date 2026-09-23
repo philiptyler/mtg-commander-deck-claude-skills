@@ -42,7 +42,21 @@ def main():
     existing_names = {c["name"] for c in context["cards"]}
     tribal_type = dominant_creature_type(context)
 
-    groups = defaultdict(lambda: {"combo_count": 0, "produces": set(), "combo_urls": []})
+    # combo_count alone isn't enough to rank on - a combo can require every
+    # listed card and STILL not actually loop without something else
+    # entirely (an indestructible source, extra mana, a specific board
+    # state) that Commander Spellbook tracks separately as
+    # notable/easy prerequisites, not as a "card" in the combo. Missing
+    # this was a direct, concrete mistake: Raptor Hatchling + Warstorm
+    # Surge was presented as a clean combo completion, but the actual
+    # variant's notablePrerequisites read "You have a way to give Raptor
+    # Hatchling indestructible" - without that (a fourth thing, not itself
+    # a listed card), a 1-toughness creature dies on the first damage
+    # instance and the "loop" is a single activation. free_combo_count
+    # (no notable/easy prerequisites at all) is tracked separately and
+    # ranked above raw combo_count for exactly this reason.
+    groups = defaultdict(lambda: {"combo_count": 0, "free_combo_count": 0, "produces": set(),
+                                   "combo_urls": [], "prerequisites": []})
     for combo in combos.get("almost_included", []):
         if len(combo["missing_cards"]) != 1:
             continue
@@ -53,6 +67,12 @@ def main():
         g["combo_count"] += 1
         g["produces"] |= set(combo["produces"])
         g["combo_urls"].append(combo["url"])
+        notable = combo.get("notable_prerequisites")
+        easy = combo.get("easy_prerequisites")
+        if notable or easy:
+            g["prerequisites"].append({"url": combo["url"], "notable": notable, "easy": easy})
+        else:
+            g["free_combo_count"] += 1
 
     # Look up every grouped name (not just a top-N-by-combo-count slice)
     # before ranking, not after - otherwise an on-tribe card with a lower
@@ -82,15 +102,19 @@ def main():
             "usd": usd,
             "game_changer": card.get("game_changer", False),
             "combo_count": g["combo_count"],
+            "free_combo_count": g["free_combo_count"],
+            "prerequisites": g["prerequisites"],
             "produces": sorted(g["produces"]),
             "combo_urls": g["combo_urls"],
             "tribal_match": is_tribal_match(card, tribal_type),
         })
 
     # On-tribe first (see docstring on why, and find_upgrade_candidates.py's
-    # identical reasoning), then by how many separately-cataloged combos it
-    # completes.
-    results.sort(key=lambda r: (not r["tribal_match"], -r["combo_count"]))
+    # identical reasoning), then by free_combo_count (a completion with NO
+    # extra prerequisites - see the docstring above on why that's a
+    # meaningfully different, more reliable thing than combo_count alone),
+    # then by raw combo_count as the last tiebreaker.
+    results.sort(key=lambda r: (not r["tribal_match"], -r["free_combo_count"], -r["combo_count"]))
     results = results[: args.count]
 
     out_path = args.deck_dir / "combo_completion_candidates.json"
@@ -98,7 +122,11 @@ def main():
     print(f"Wrote {out_path} ({len(results)} candidates)")
     for r in results[:5]:
         tribe_note = " [on-tribe]" if r["tribal_match"] else ""
-        print(f"  {r['name']}{tribe_note} - completes {r['combo_count']} combo(s): {r['produces']}")
+        free_note = "" if r["free_combo_count"] == r["combo_count"] else (
+            f" ({r['free_combo_count']}/{r['combo_count']} free of extra prerequisites - "
+            f"see 'prerequisites' for the rest)"
+        )
+        print(f"  {r['name']}{tribe_note} - completes {r['combo_count']} combo(s){free_note}: {r['produces']}")
 
 
 if __name__ == "__main__":

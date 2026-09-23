@@ -151,6 +151,34 @@ RESILIENCE_PATTERNS = [
     r"whenever (one or more|a) (nontoken )?creatures? you control (dies|is put into a graveyard)",
 ]
 
+# The inverse of resilience: a card whose payoff is gated behind "this
+# creature is dealt damage" is only a repeatable engine if it can actually
+# survive that damage - a 1-toughness creature with this text dies to the
+# very first (indeed, to ANY) instance of damage that triggers it, which
+# limits it to one real activation unless something else keeps it alive.
+# Found directly: Raptor Hatchling (1/1, "Enrage - whenever this creature
+# is dealt damage, create a 3/3...") was recommended as if its combo with
+# Warstorm Surge were a clean, repeatable loop. Checking Commander
+# Spellbook's own notablePrerequisites for that exact combo (not assumed -
+# looked up) showed it explicitly requires "a way to give Raptor Hatchling
+# indestructible" - without that, the creature dies on the first
+# iteration and the "loop" is a single activation. Toughness <=2 is a
+# reasonable line for "dies to nearly anything," not a precise cutoff.
+_SELF_DAMAGE_TRIGGER_RE = re.compile(r"whenever this creature is dealt damage")
+FRAGILE_TRIGGER_TOUGHNESS_MAX = 2
+
+
+def is_fragile_damage_trigger(card: dict) -> bool:
+    text = (card.get("oracle_text") or "").lower()
+    if not _SELF_DAMAGE_TRIGGER_RE.search(text):
+        return False
+    try:
+        toughness = int(card.get("toughness"))
+    except (TypeError, ValueError):
+        return False
+    return toughness <= FRAGILE_TRIGGER_TOUGHNESS_MAX
+
+
 # --- effective CMC -------------------------------------------------------
 # Printed CMC is what curve_bucket() above uses, and what every "high CMC"
 # signal downstream (find-weakest-cards, find_upgrade_candidates.py) reads.
@@ -311,6 +339,8 @@ def classify_card(card: dict) -> dict:
         tags.add("cost_reduction")
     if _matches_any(text, RESILIENCE_PATTERNS):
         tags.add("resilience")
+    if is_fragile_damage_trigger(card):
+        tags.add("fragile_trigger")
 
     for sentence in re.split(r"(?<=[.;])\s+", text):
         if "search your library for" in sentence:
@@ -350,7 +380,7 @@ def analyze(context: dict) -> dict:
         "ramp": [], "targeted_removal": [], "board_wipe": [], "counterspell": [],
         "card_draw": [], "land_tutor": [], "nonland_tutor": [],
         "extra_turn": [], "mass_land_denial": [], "game_changer": [],
-        "cost_reduction": [], "resilience": [],
+        "cost_reduction": [], "resilience": [], "fragile_trigger": [],
     }
 
     for card in cards:

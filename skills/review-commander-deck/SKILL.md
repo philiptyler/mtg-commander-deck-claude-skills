@@ -53,12 +53,26 @@ does well or poorly.
    trigger it, which matters for not over-reading "high CMC" as "weak" —
    and resilience (e.g. "whenever one or more creatures you control die,
    create a token..." — recovery from a board wipe doesn't need dedicated
-   sacrifice synergy to matter, the wipe itself provides the trigger).
-   Both were added after a real case where dismissing a card that had
-   both as "roleless, high-CMC" led to recommending it as a cut when it
-   was actually one of the stronger cards in the deck), and a bracket
-   estimate. Read `references/bracket_rubric.md` for what those categories
-   mean and the bracket criteria they're checked against.
+   sacrifice synergy to matter, the wipe itself provides the trigger)),
+   and a bracket estimate. Cost reduction and resilience were both added
+   after a real case where dismissing a card that had both as
+   "roleless, high-CMC" led to recommending it as a cut when it was
+   actually one of the stronger cards in the deck. Read
+   `references/bracket_rubric.md` for what those categories mean and the
+   bracket criteria they're checked against.
+
+   There's also `fragile_trigger` — the *inverse* of a role, a caveat
+   category: a creature with "whenever this creature is dealt damage" text
+   at toughness ≤2, where the very damage that triggers it is likely to
+   kill it too, limiting it to one real activation rather than the
+   repeatable engine it looks like. Added after recommending `Raptor
+   Hatchling` (1 toughness) as a clean combo piece without checking
+   whether it could survive its own trigger — it couldn't, and Commander
+   Spellbook's own prerequisite data for that exact combo said so directly
+   (see `find-deck-combos`'s SKILL.md). Deliberately excluded from
+   `find-weakest-cards`'s role-counting — it's a negative signal, not a
+   function, and counting it would pull a fragile card *out* of weak-card
+   flagging instead of into it.
 
    `analysis.json` also has `mana_curve` (printed CMC, as before),
    `typical_mana_curve` (effective-CMC-adjusted for cards with real cost

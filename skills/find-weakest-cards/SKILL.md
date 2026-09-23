@@ -63,6 +63,18 @@ don't re-implement decklist parsing or Scryfall fetching here.
      a creature into play instead of gaining life/scrying won't show
      upside here even though it has one) and `off_color` (produces a color
      outside the deck's color identity).
+   - `fragile_trigger_cards` — the inverse of a signal, a caveat: creatures
+     whose payoff needs "this creature is dealt damage," at toughness ≤2,
+     where that same damage is likely to kill them too. Weigh this heavily
+     if the card's whole appeal (e.g. a combo pitch from
+     `find_combo_completions.py`) rests on repeated activations — a card
+     that can only trigger once isn't the engine piece it looks like on
+     paper. This only catches the narrow "dies to the first hit" case by
+     toughness alone; a card that dies to *accumulated* damage over several
+     iterations (higher toughness, but the trigger deals damage to itself
+     too) won't show up here — read the actual numbers by hand for
+     anything with a self-referential damage trigger, don't assume this
+     list is exhaustive.
 
 4. **Before naming a card as weak, read its actual `oracle_text` in
    `context.json`.** The signals are heuristic flags, not conclusions — a

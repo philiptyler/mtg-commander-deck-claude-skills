@@ -888,25 +888,27 @@
       "is_commander": false
     },
     {
-      "name": "Raptor Hatchling",
-      "mana_cost": "{1}{R}",
-      "cmc": 2.0,
+      "name": "Hulking Raptor",
+      "mana_cost": "{2}{G}{G}",
+      "cmc": 4.0,
       "type_line": "Creature \u2014 Dinosaur",
-      "oracle_text": "Enrage \u2014 Whenever this creature is dealt damage, create a 3/3 green Dinosaur creature token with trample.",
+      "oracle_text": "Ward {2}\nAt the beginning of your first main phase, add {G}{G}.",
       "color_identity": [
-        "R"
+        "G"
       ],
       "colors": [
-        "R"
+        "G"
       ],
       "game_changer": false,
-      "power": "1",
-      "toughness": "1",
+      "power": "5",
+      "toughness": "3",
       "loyalty": null,
       "keywords": [
-        "Enrage"
+        "Ward"
       ],
-      "produced_mana": null,
+      "produced_mana": [
+        "G"
+      ],
       "commander_legal": "legal",
       "quantity": 1,
       "is_commander": false

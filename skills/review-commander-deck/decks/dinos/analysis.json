@@ -12,27 +12,27 @@
   },
   "mana_curve": {
     "1": 7,
-    "2": 13,
+    "2": 12,
     "3": 11,
-    "4": 9,
+    "4": 10,
     "5": 7,
     "6": 6,
     "7+": 11
   },
   "typical_mana_curve": {
     "1": 7,
-    "2": 13,
+    "2": 12,
     "3": 11,
-    "4": 10,
+    "4": 11,
     "5": 8,
     "6": 6,
     "7+": 9
   },
   "curve_summary": {
-    "average_cmc": 4.06,
-    "typical_average_cmc": 3.95,
-    "pct_cmc_le_3": 48.4,
-    "typical_pct_cmc_le_3": 48.4,
+    "average_cmc": 4.09,
+    "typical_average_cmc": 3.97,
+    "pct_cmc_le_3": 46.9,
+    "typical_pct_cmc_le_3": 46.9,
     "baseline_reference": {
       "average_cmc_range": [
         2.5,
@@ -44,21 +44,21 @@
   "cost_reduction_details": {
     "The Great Henge": {
       "nominal_cmc": 9.0,
-      "typical_cmc": 5.5,
+      "typical_cmc": 5.0,
       "best_case_cmc": 0.0,
-      "note": "Scaling self cost reduction tied to creature power. Estimated using this deck's own creatures: median power 3.5 (typical_cmc), max power 12 (best_case_cmc, a ceiling not a promise - depends on board state)."
+      "note": "Scaling self cost reduction tied to creature power. Estimated using this deck's own creatures: median power 4 (typical_cmc), max power 12 (best_case_cmc, a ceiling not a promise - depends on board state)."
     },
     "The Skullspore Nexus": {
       "nominal_cmc": 8.0,
-      "typical_cmc": 4.5,
+      "typical_cmc": 4.0,
       "best_case_cmc": 0.0,
-      "note": "Scaling self cost reduction tied to creature power. Estimated using this deck's own creatures: median power 3.5 (typical_cmc), max power 12 (best_case_cmc, a ceiling not a promise - depends on board state)."
+      "note": "Scaling self cost reduction tied to creature power. Estimated using this deck's own creatures: median power 4 (typical_cmc), max power 12 (best_case_cmc, a ceiling not a promise - depends on board state)."
     }
   },
   "color_identity_pip_counts": {
-    "R": 34,
+    "R": 33,
     "W": 30,
-    "G": 53
+    "G": 54
   },
   "categories": {
     "ramp": [
@@ -68,6 +68,7 @@
       "Mirari's Wake",
       "Gwenna, Eyes of Gaea",
       "Herd Heirloom",
+      "Hulking Raptor",
       "Intrepid Paleontologist",
       "Jeska's Will",
       "Regal Behemoth",
@@ -136,7 +137,8 @@
     ],
     "resilience": [
       "The Skullspore Nexus"
-    ]
+    ],
+    "fragile_trigger": []
   },
   "bracket_estimate": {
     "suggested": "3 (Upgraded)",

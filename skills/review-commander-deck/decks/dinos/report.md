@@ -13,34 +13,8 @@ its own ability). `Mirari's Wake` and `Sword of Hearth and Home` pushed
 but not obviously a problem for a deck this top-heavy on curve; both new
 cards are doing real work (`Mirari's Wake` doubles all land mana, `Sword of
 Hearth and Home` is a second way to blink Pantlaza while also fetching a
-land off combat damage). Then `Hulking Raptor` out for `Raptor Hatchling`
-in — `Hulking Raptor`'s ramp only fires "at the beginning of your first
-main phase," meaning it never even ramps the turn it's cast; `Raptor
-Hatchling` is a real Dinosaur (its own ETB triggers Pantlaza) whose Enrage
-makes 3/3 trample **Dinosaur** tokens, and it immediately completed a third
-cataloged combo — `Raptor Hatchling` + `Warstorm Surge` — for infinite
-creature tokens, verified via `find-deck-combos` the same way the other two
-were. This swap also came with real curve-impact numbers for the first
-time (`analyze_deck.py`'s new effective-CMC/curve tooling, see
-`references/effective_cmc.md`): typical average CMC 3.97 → 3.95, cards at
-CMC ≤3 up 1.5 points — a small, real improvement, not just "CMC 4 is
-smaller than CMC 2 so it must be better." Numbers throughout this report
-reflect all four swaps; `last_update_diff.json` has the latest raw
-before/after.
-
-**A note on `The Skullspore Nexus`, since an earlier version of this
-session's analysis got it wrong:** it was briefly proposed as a cut
-(CMC 8, apparently no detected role). Both premises were wrong, and
-direct pushback caught it before anything was applied — its cost
-reduction is scaling ("costs {X} less, where X is the greatest power among
-creatures you control" — typically 4 mana in this deck, sometimes free),
-its death trigger recovers from a board wipe without needing dedicated
-sacrifice synergy (the wipe itself provides the trigger, and the token it
-makes is itself a Dinosaur), and its power-doubling activated ability is
-usable at instant speed, mid-combat, for real blowout potential. It
-stays in the deck. `analyze_deck.py` now has `cost_reduction` (scaling, not
-just fixed) and `resilience` categories so this doesn't happen again — see
-`references/effective_cmc.md` and the categories list below.
+land off combat damage). Numbers throughout this report reflect all three
+swaps; `last_update_diff.json` has the latest raw before/after.
 
 **Bracket estimate: 3 (Upgraded).** Matches your stated target. The deck carries
 exactly 3 Game Changers (`Jeska's Will`, `Teferi's Protection`, `Worldly Tutor`)
@@ -170,29 +144,26 @@ piece looks like from the outside.
   you control enters; a Polyraptor copy entering triggers that damage,
   which triggers Polyraptor's own copy-on-damage ability, whose new copy
   entering triggers Forerunner again. This one doesn't need Wrathful
-  Raptors — it independently produces infinite damage to *every* creature
-  on the battlefield (yours and opponents'), which is effectively an
-  infinite board wipe. Given the earlier finding that this deck's real
-  removal is almost entirely sorcery-speed, this combo is a meaningfully
-  bigger answer to a wide opposing board than the removal count alone
-  suggested.
+  Raptors, but it does need something the first pass of this note skipped
+  checking: **Commander Spellbook's own listed prerequisite for this combo
+  is "a way to give `Forerunner of the Empire` indestructible."**
+  Forerunner is a 1/3 — its own 1-damage ping hits itself along with
+  everything else each iteration, and damage accumulates over the turn (it
+  doesn't reset mid-turn), so by the third loop it's taken 3 damage and
+  dies on its own unless something's protecting it. `Akroma's Will`'s
+  second mode or `Heroic Intervention` both grant indestructible and are
+  already in this deck, so the combo is genuinely available, not
+  theoretical — but it takes deploying one of those two cards at the right
+  moment, not just having Polyraptor and Forerunner both in play. Treat it
+  as "a real combo this deck can assemble," not "an always-on board wipe."
 
-- **`Raptor Hatchling` + `Warstorm Surge`** — a third combo, added
-  deliberately this time rather than found after the fact: `Raptor
-  Hatchling`'s Enrage makes a 3/3 trample **Dinosaur** token whenever it's
-  dealt damage; `Warstorm Surge` deals damage equal to a creature's power
-  to any target whenever it enters. Point that damage at Raptor Hatchling
-  and each token it makes re-triggers Warstorm Surge (now for 3, since the
-  new token has power 3) — infinite tokens, and since they're Dinosaurs,
-  each one is also a fresh chance to trigger Pantlaza's discover if it
-  hasn't fired yet that turn. `Terror of the Peaks` does the same job if
-  Warstorm Surge isn't out.
-
-Three of four combos require `Polyraptor` or `Raptor Hatchling` plus one
-setup piece already in the deck, and all of them rely on repeatedly
-triggering ETBs — exactly what the discover/blink package is already
-doing. None of this is bolted on; it's the deck's existing engine doing
-what it was already going to do, taken to its logical conclusion.
+Both combos require `Polyraptor` plus one setup piece already in the deck
+and rely on repeatedly triggering ETBs, which is exactly what the
+discover/blink package is already doing — this isn't a bolted-on combo, it
+fits the deck's existing engine. (A third card was briefly added and then
+reverted after further discussion — see `Known limitations` in
+`find-deck-combos`'s SKILL.md for why "the cards are all present" isn't
+the same question as "does this actually loop.")
 
 ## The numbers
 
@@ -203,38 +174,25 @@ what it was already going to do, taken to its logical conclusion.
 | Creatures | 35 |
 | Instants / Sorceries | 7 / 7 |
 | Artifacts / Enchantments | 7 / 9 |
-| Color identity (pips) | G 53, R 34, W 30 |
+| Color identity (pips) | G 54, R 33, W 30 |
 
 **Mana curve** (nonland, 64 cards):
 
 | CMC | 1 | 2 | 3 | 4 | 5 | 6 | 7+ |
 |---|---|---|---|---|---|---|---|
-| Count | 7 | 13 | 11 | 9 | 7 | 6 | **11** |
-
-Typical average CMC (effective-cost-adjusted — see
-`references/effective_cmc.md`): **3.95**, nominal 4.06. Both above the
-commonly-cited 2.5-3.5 band for a "typical" deck — not a red flag by
-itself given this deck runs above-typical ramp (13 sources) and now two
-scaling-cost-reduction cards (`The Great Henge`, `The Skullspore Nexus`),
-both of which routinely cost far less than their printed CMC suggests, but
-worth knowing as context for any future swap: this deck's curve has less
-room to go higher before it becomes a real risk, not more.
+| Count | 7 | 12 | 11 | 10 | 7 | 6 | **11** |
 
 11 cards at CMC 7+ is a lot for a 100-card deck — about 17% of your nonland
 slots. That's a deliberate top-heavy build (matches the "big Dinosaurs" plan),
-and you've got 13 ramp sources plus discover to compensate, but it does
+and you've now got 14 ramp sources plus discover to compensate, but it does
 mean a hand without early ramp or discover fuel can feel clunky. Worth watching,
 not necessarily worth fixing.
 
-**Ramp (13, over Bracket 3's typical 10-12 target):** `Arcane Signet`,
+**Ramp (14, over Bracket 3's typical 10-12 target):** `Arcane Signet`,
 `Atzocan Seer`, `Birds of Paradise`, `Gwenna, Eyes of Gaea`, `Herd
-Heirloom`, `Intrepid Paleontologist`, `Jeska's Will`,
+Heirloom`, `Hulking Raptor`, `Intrepid Paleontologist`, `Jeska's Will`,
 `Mirari's Wake`, `Regal Behemoth`, `Sol Ring`, `Sword of Hearth and Home`,
-`The Great Henge`, `Three Visits`. (`Hulking Raptor` left with this update
-— read in full rather than trusted on a flag: 4 mana for a Dinosaur whose
-ramp only fires "at the beginning of your first main phase," meaning it
-never even ramps the turn it's cast, weakest of the 14 ramp sources this
-deck had at the time.) `Mirari's Wake` and `Sword of Hearth and
+`The Great Henge`, `Three Visits`. `Mirari's Wake` and `Sword of Hearth and
 Home` are the two new additions — a real mana doubler and a land-fetching
 equipment respectively, both genuinely pulling weight, not padding. Being
 over target isn't automatically a problem for a deck this top-heavy on
@@ -307,11 +265,10 @@ control/extra-turn tools those restrictions are about.
 
 - `analyze_deck.py`'s regex-based analysis still can't see combos itself —
   that's what `find-deck-combos` (checking against Commander Spellbook's
-  database) is for, and it's what caught all three combos above (one of
-  them, `Raptor Hatchling` + `Warstorm Surge`, added deliberately rather
-  than found after the fact). Its `almost_included` list also has ~86
-  near-miss combos for this deck (missing one or more cards); most are
-  noise, but worth a look if you want to hunt for more.
+  database) is for, and it's what caught the two combos above. Its
+  `almost_included` list also has ~78 near-miss combos for this deck
+  (missing one or more cards); most are noise, but worth a look if you want
+  to hunt for more.
 - The Bracket 1/2 vs. 4/5 splits depend on table intent, not card choices —
   not relevant here since you're squarely in Bracket 3 territory either way.
   (Also worth noting: having a real infinite combo is itself relevant to

@@ -137,12 +137,42 @@ ask repeatedly.
    `game_changer: true` candidate going to push the deck past its
    current Bracket 3 cap of 3 — worth flagging explicitly if so.
 
-6. **Present the proposal and wait for confirmation** — this is the one
-   step this skill does differently from `update-commander-deck`. Show
-   each swap (cut → add) with the reasoning from steps 2-5. Don't apply
-   anything yet.
+6. **Preview curve/category impact for each finalized cut → add pair
+   before presenting anything — this is not optional:**
+   ```
+   python3 scripts/preview_swap.py --deck-dir ../review-commander-deck/decks/<slug> --cut "Card Out" --add "Card In"
+   ```
+   Writes `swap_preview.json` with `typical_average_cmc_before/after/delta`,
+   `bracket_before/after`, and `category_changes` — computed by actually
+   running `analyze_deck.py` against a scratch copy of the deck with the
+   swap applied, not estimated. This is what "curve should be part of the
+   conversation" means concretely: cite the real delta in the proposal
+   (e.g. "typical average CMC 3.97 → 3.95"), not "this is cheaper so it's
+   probably better." **Read `category_changes` for anything appearing in
+   `fragile_trigger`** — if the card being added shows up there, its
+   payoff needs to survive being dealt damage at toughness ≤2, and that
+   alone should change whether you present it as a strong pick. This
+   exact tool would have caught a real mistake before it happened:
+   `Raptor Hatchling` was proposed as a clean combo piece, and
+   `preview_swap.py` run against that exact swap shows
+   `fragile_trigger: {"added": ["Raptor Hatchling"]}` immediately — the
+   signal was always there, it just wasn't being checked at proposal time.
 
-7. **On confirmation, apply via `update-commander-deck`:**
+7. **Present the proposal and wait for confirmation** — this is the one
+   step this skill does differently from `update-commander-deck`. Show
+   each swap (cut → add) with the reasoning from steps 2-6, including the
+   curve delta from step 6. Don't apply anything yet.
+
+   **"That's a better suggestion" or "I like this direction" is feedback
+   on the analysis, not authorization to apply it.** A real instance of
+   this exact confusion happened in this project: approval of *reasoning
+   quality* got treated as approval to *execute*, and a swap got applied
+   without ever having been explicitly confirmed. Wait for something
+   unambiguous — "apply it," "yes, do that," "go ahead" — before touching
+   `decklist.txt`. If a response is warm but doesn't clearly say "apply
+   this," ask directly rather than guess.
+
+8. **On confirmation, apply via `update-commander-deck`:**
    ```
    python3 ../update-commander-deck/scripts/snapshot_before.py --deck-dir ../review-commander-deck/decks/<slug>
    ```
@@ -156,7 +186,7 @@ ask repeatedly.
    Report the diff the same way `update-commander-deck` does (combo
    changes first, then bracket, then counts). Update `report.md`.
 
-8. **Offer the manual EDHREC option once, at the end** — not before: "if
+9. **Offer the manual EDHREC option once, at the end** — not before: "if
    you want me to factor in EDHREC's commander-specific synergy data for
    any of these, check `edhrec.com/commanders/<slug>` yourself and paste
    what you see."
