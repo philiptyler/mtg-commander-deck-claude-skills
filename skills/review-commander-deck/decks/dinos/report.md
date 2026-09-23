@@ -8,24 +8,34 @@ because the deck got meaningfully stronger, just because you'd be over the
 line WotC draws. No mass land denial, no extra-turn chaining detected. See the
 caveats below on what this estimate can't see.
 
-## What the deck is actually doing (and one correction to how you described it)
+## What the deck is actually doing
 
-**The discover engine.** `Pantlaza, Sun-Favored`'s own discover trigger reads
-*"whenever Pantlaza or another Dinosaur you control enters... do this only
-once each turn."* That "once each turn" cap is on Pantlaza's ability itself —
-blinking Pantlaza or another Dinosaur doesn't get you a second Pantlaza
-discover in the same turn, no matter how many ETBs you generate. The card
-that actually doubles it is `Curator of Sun's Creation`: *"whenever you
-discover, discover again for the same value... once each turn."* Curator is
-the reason you get two discovers a turn, not the blink package. That's a
-meaningful distinction for sequencing: without Curator in play, your blink
-spells are doing something else.
+**The discover engine — blink genuinely doubles it. (Correction from the
+first version of this review.)** I originally said blinking Pantlaza
+couldn't get around her "do this only once each turn" cap — that was wrong,
+and you were right to push back on it. Per CR 400.7 ("an object that moves
+from one zone to another becomes a new object with no memory of, or
+relation to, its previous existence"), when `Ephemerate`, `Daydream`, or
+`Teleportation Circle` exile Pantlaza and return her, she comes back as a
+**new permanent** carrying a **new, independent instance** of her triggered
+ability — the "already discovered once this turn" restriction belonged to
+the old Pantlaza-object and doesn't carry over to the new one. So blinking
+Pantlaza really does let her ability trigger, and let you discover, a second
+time in the same turn (more, with repeat blinks). This is a well-documented
+interaction in the Pantlaza community for exactly this reason (see the
+"Blink and You Lose Your Pants" primer on Moxfield). I should have checked
+the ruling instead of asserting from a general impression — thanks for
+catching it.
 
-And that something else is real value — `Daydream`, `Ephemerate`, and
-`Teleportation Circle` are best thought of as **re-triggering your other
-ETBs**, not as a Pantlaza-doubler. Blinking `Regisaur Alpha` for another 3/3,
-or a discovered creature for its enter-the-battlefield text, is where they
-earn their keep.
+`Curator of Sun's Creation` stacks on top of this rather than being the only
+way to get a second discover: *"whenever you discover, discover again for
+the same value... once each turn."* Blink resets Pantlaza's own cap;
+Curator adds a further discover on top of whichever trigger fires. With
+both in play, a single blinked Dinosaur ETB can chain three-plus discovers
+in one turn — a stronger, more central engine than my original read gave it
+credit for. `Daydream`, `Ephemerate`, and `Teleportation Circle` are direct
+engine pieces here, not just incidental re-trigger value on your other ETBs
+(though that's real too — see `Regisaur Alpha` below).
 
 **The burn plan is well-supported, not bolted on.** `Terror of the Peaks` and
 `Warstorm Surge` both trigger off creatures entering, and this deck generates
