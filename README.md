@@ -4,6 +4,12 @@ Claude Skills for building and reviewing Magic: The Gathering Commander
 (EDH) decks. Each skill is a self-contained directory under `skills/` — see
 [Installing](#installing) below to use one.
 
+If you're working *in* this repo (extending a skill, fixing a script) rather
+than just using one, read [`CLAUDE.md`](CLAUDE.md) first — this repo is
+meant to be self-learning: deck artifacts are committed on purpose as a
+growing quality bar, and a tooling gap found while reviewing a deck should
+get fixed in the tooling, not just worked around in that one report.
+
 ## Skills
 
 ### [`review-commander-deck`](skills/review-commander-deck/SKILL.md)
