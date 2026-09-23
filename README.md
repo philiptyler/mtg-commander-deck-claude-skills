@@ -64,6 +64,23 @@ recommending any cut.
 — and `review-commander-deck` in turn calls into this skill when it's
 present (see above). Install all three together.
 
+### [`update-commander-deck`](skills/update-commander-deck/SKILL.md)
+
+For a deck that's already been reviewed: apply a card swap/add/cut, refresh
+every downstream artifact, and — the actual point of this skill — report
+what the change actually did. Snapshots the current analysis/combos before
+editing `decklist.txt`, re-runs the pipeline (the Scryfall cache means only
+genuinely new cards get fetched), then diffs before vs. after: category
+count shifts, a bracket estimate change and why, and — the finding that
+would otherwise be easy to miss — whether the swap broke a combo. Tested by
+deliberately swapping out a combo piece from the example deck in this repo:
+it correctly flagged the break and, separately, correctly left the *other*,
+unrelated combo in that deck untouched.
+
+**Depends on `review-commander-deck`'s output**, and re-runs
+`find-deck-combos`/`find-weakest-cards` if either was already in use for
+the deck being changed.
+
 ## Installing
 
 Works with Claude Code (CLI) or the Claude.ai / desktop apps. Personal-scope
@@ -81,6 +98,7 @@ mkdir -p ~/.claude/skills
 ln -s "$(pwd)/mtg-commander-deck-claude-skills/skills/review-commander-deck" ~/.claude/skills/review-commander-deck
 ln -s "$(pwd)/mtg-commander-deck-claude-skills/skills/find-weakest-cards" ~/.claude/skills/find-weakest-cards
 ln -s "$(pwd)/mtg-commander-deck-claude-skills/skills/find-deck-combos" ~/.claude/skills/find-deck-combos
+ln -s "$(pwd)/mtg-commander-deck-claude-skills/skills/update-commander-deck" ~/.claude/skills/update-commander-deck
 ```
 
 Start (or restart) a Claude Code session and they'll show up in the
@@ -97,6 +115,7 @@ cd mtg-commander-deck-claude-skills/skills
 zip -r review-commander-deck.zip review-commander-deck
 zip -r find-weakest-cards.zip find-weakest-cards
 zip -r find-deck-combos.zip find-deck-combos
+zip -r update-commander-deck.zip update-commander-deck
 ```
 
 Then in the app: **Settings → Capabilities → Skills → Upload skill**, and
@@ -142,13 +161,19 @@ skills/
   find-deck-combos/
     SKILL.md          # depends on review-commander-deck's decks/<slug>/ output
     scripts/           # spellbook_client.py + find_combos.py
+  update-commander-deck/
+    SKILL.md          # applies changes, doesn't suggest them - re-runs the
+                          #   other skills' scripts, adds the diff step
+    scripts/           # snapshot_before.py + diff_after.py
 ```
 
 ## Roadmap
 
 Ideas for later, not yet built:
 
-- `optimize-commander-deck` — suggest concrete swaps toward a target bracket
+- `optimize-commander-deck` — *suggest* swaps toward a target bracket
+  (distinct from `update-commander-deck`, which applies swaps you already
+  decided on)
 - `suggest-commander` — recommend commanders for a given strategy/budget
 
 ## License
