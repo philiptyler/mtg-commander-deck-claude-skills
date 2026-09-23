@@ -1,0 +1,1882 @@
+{
+  "included": [
+    {
+      "id": "2062-3356",
+      "url": "https://commanderspellbook.com/combo/2062-3356/",
+      "cards": [
+        "Polyraptor",
+        "Marauding Raptor"
+      ],
+      "missing_cards": [],
+      "produces": [
+        "Draw the game",
+        "Infinite creature tokens",
+        "Infinite creature ETB",
+        "Infinitely powerful creature until end of turn"
+      ],
+      "notes": "This combo will result in a mandatory infinite loop. Left unchecked, this will cause the game to end in a draw.",
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "P",
+      "popularity": 24698,
+      "color_identity": "RG"
+    },
+    {
+      "id": "2259-3356",
+      "url": "https://commanderspellbook.com/combo/2259-3356/",
+      "cards": [
+        "Polyraptor",
+        "Forerunner of the Empire"
+      ],
+      "missing_cards": [],
+      "produces": [
+        "Infinite creature tokens",
+        "Infinite damage to all creatures",
+        "Infinite death triggers",
+        "Infinite creature ETB",
+        "Infinite creature LTB"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have a way to give Forerunner of the Empire indestructible.\n{6}{G}{G}available.",
+      "bracket_tag": "S",
+      "popularity": 13466,
+      "color_identity": "RG"
+    }
+  ],
+  "almost_included": [
+    {
+      "id": "3750-5039",
+      "url": "https://commanderspellbook.com/combo/3750-5039/",
+      "cards": [
+        "The Reaver Cleaver",
+        "Aggravated Assault"
+      ],
+      "missing_cards": [
+        "The Reaver Cleaver"
+      ],
+      "produces": [
+        "Infinite artifact ETB",
+        "Infinite artifact LTB",
+        "Infinite artifact sacrifice triggers",
+        "Infinite artifact tokens",
+        "Infinite colored mana",
+        "Infinite combat damage",
+        "Infinite combat phases",
+        "Infinite mana creatures you control can produce",
+        "Infinite Treasure tokens",
+        "Infinite untap of creatures you control"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "The Reaver Cleaver attached to a creature with power five or greater that can attack this turn.\nAn opponent is unable to block the creature with The Reaver Cleaver attached.",
+      "bracket_tag": "S",
+      "popularity": 45907,
+      "color_identity": "R"
+    },
+    {
+      "id": "1878-3368",
+      "url": "https://commanderspellbook.com/combo/1878-3368/",
+      "cards": [
+        "Reiterate",
+        "Jeska's Will"
+      ],
+      "missing_cards": [
+        "Reiterate"
+      ],
+      "produces": [
+        "Infinite magecraft triggers",
+        "Infinite red mana",
+        "Infinite storm count",
+        "Exile your library with the ability to play the exiled cards until end of turn"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "An opponent has six or more cards in their hand.",
+      "bracket_tag": "P",
+      "popularity": 36818,
+      "color_identity": "R"
+    },
+    {
+      "id": "900-3750",
+      "url": "https://commanderspellbook.com/combo/900-3750/",
+      "cards": [
+        "Sword of Feast and Famine",
+        "Aggravated Assault"
+      ],
+      "missing_cards": [
+        "Sword of Feast and Famine"
+      ],
+      "produces": [
+        "Infinite combat phases"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Sword of Feast and Famine attached to a creature that can attack this turn.\nAn opponent is unable to block and kill the creature with Sword of Feast and Famine attached.\nLands you control can tap to produce at least {3}{R}{R}.",
+      "bracket_tag": "S",
+      "popularity": 36291,
+      "color_identity": "R"
+    },
+    {
+      "id": "778-3750",
+      "url": "https://commanderspellbook.com/combo/778-3750/",
+      "cards": [
+        "Ancient Copper Dragon",
+        "Aggravated Assault"
+      ],
+      "missing_cards": [
+        "Ancient Copper Dragon"
+      ],
+      "produces": [
+        "Near-infinite colored mana",
+        "Near-infinite combat damage",
+        "Near-infinite Treasure tokens",
+        "Near-infinite combat phases",
+        "Near-infinite untap of creatures you control",
+        "Near-infinite mana creatures you control can produce"
+      ],
+      "notes": "This combo can fail if you roll less than a 5 and do not control enough Treasures to make up the difference. You can control creatures that tap for mana and/or have additional mana to start the combo and reduce the chance of failure. You can also carry over Treasures from prior iterations to cover the difference.",
+      "easy_prerequisites": "Ancient Copper Dragon cannot be blocked by an opponent.",
+      "notable_prerequisites": null,
+      "bracket_tag": "R",
+      "popularity": 29891,
+      "color_identity": "R"
+    },
+    {
+      "id": "2488-6778-7167",
+      "url": "https://commanderspellbook.com/combo/2488-6778-7167/",
+      "cards": [
+        "Apex Altisaur",
+        "Wrathful Raptors",
+        "Akroma's Will"
+      ],
+      "missing_cards": [
+        "Apex Altisaur"
+      ],
+      "produces": [
+        "Destroy all creatures opponents control",
+        "Near-infinite damage"
+      ],
+      "notes": "You can restart the loop if opponents control creatures by dealing damage to Apex Altisaur. It may not have indestructible by this point however unless you use another source to provide it.",
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "E",
+      "popularity": 25565,
+      "color_identity": "RGW"
+    },
+    {
+      "id": "1800-3750",
+      "url": "https://commanderspellbook.com/combo/1800-3750/",
+      "cards": [
+        "Aggravated Assault",
+        "Old Gnawbone"
+      ],
+      "missing_cards": [
+        "Old Gnawbone"
+      ],
+      "produces": [
+        "Infinite artifact ETB",
+        "Infinite artifact LTB",
+        "Infinite artifact sacrifice triggers",
+        "Infinite artifact tokens",
+        "Infinite colored mana",
+        "Infinite combat phases",
+        "Infinite Treasure tokens",
+        "Infinite untap of creatures you control",
+        "Infinite mana creatures you control can produce"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control creatures that can deal at least six combat damage that cannot be blocked by an opponent.",
+      "bracket_tag": "S",
+      "popularity": 23114,
+      "color_identity": "RG"
+    },
+    {
+      "id": "3750-4945",
+      "url": "https://commanderspellbook.com/combo/3750-4945/",
+      "cards": [
+        "Neheb, the Eternal",
+        "Aggravated Assault"
+      ],
+      "missing_cards": [
+        "Neheb, the Eternal"
+      ],
+      "produces": [
+        "Infinite combat phases",
+        "Infinite red mana",
+        "Infinite mana creatures you control can produce",
+        "Infinite untap of creatures you control"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Your opponents have lost at least five life this turn.",
+      "bracket_tag": "S",
+      "popularity": 23099,
+      "color_identity": "R"
+    },
+    {
+      "id": "62-3750",
+      "url": "https://commanderspellbook.com/combo/62-3750/",
+      "cards": [
+        "Savage Ventmaw",
+        "Aggravated Assault"
+      ],
+      "missing_cards": [
+        "Savage Ventmaw"
+      ],
+      "produces": [
+        "Infinite combat damage",
+        "Infinite combat phases",
+        "Infinite green mana",
+        "Infinite mana creatures you control can produce",
+        "Infinite red mana",
+        "Infinite untap of creatures you control"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Savage Ventmaw does not have summoning sickness.\nAn opponent is unable to block and kill Savage Ventmaw.",
+      "bracket_tag": "S",
+      "popularity": 18789,
+      "color_identity": "RG"
+    },
+    {
+      "id": "527-3750",
+      "url": "https://commanderspellbook.com/combo/527-3750/",
+      "cards": [
+        "Aggravated Assault",
+        "Selvala, Heart of the Wilds"
+      ],
+      "missing_cards": [
+        "Selvala, Heart of the Wilds"
+      ],
+      "produces": [
+        "Infinite colored mana",
+        "Infinite combat phases",
+        "Infinite untap of creatures you control",
+        "Infinite mana creatures you control can produce"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Selvala does not have summoning sickness.\nYou control a creature with power seven or greater.",
+      "bracket_tag": "S",
+      "popularity": 17859,
+      "color_identity": "RG"
+    },
+    {
+      "id": "3750-4228",
+      "url": "https://commanderspellbook.com/combo/3750-4228/",
+      "cards": [
+        "Aggravated Assault",
+        "Bear Umbra"
+      ],
+      "missing_cards": [
+        "Bear Umbra"
+      ],
+      "produces": [
+        "Infinite combat phases"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control an additional creature.\nAn additional creature does not have summoning sickness.\nBear Umbra attached to that additional creature you control.\nYou control lands that can tap to produce at least {3}{R}{R}.\nAn opponent is unable to block and kill creatures you control.",
+      "bracket_tag": "S",
+      "popularity": 16781,
+      "color_identity": "RG"
+    },
+    {
+      "id": "2488-7167-7391",
+      "url": "https://commanderspellbook.com/combo/2488-7167-7391/",
+      "cards": [
+        "Apex Altisaur",
+        "Wrathful Raptors",
+        "Savage Order"
+      ],
+      "missing_cards": [
+        "Apex Altisaur"
+      ],
+      "produces": [
+        "Destroy all creatures opponents control",
+        "Near-infinite damage"
+      ],
+      "notes": "You can restart the loop if opponents control creatures by dealing damage to Apex Altisaur. It may not have indestructible by this point however unless you use another source to provide it.",
+      "easy_prerequisites": "You control another creature with power 4 or greater.",
+      "notable_prerequisites": null,
+      "bracket_tag": "R",
+      "popularity": 15322,
+      "color_identity": "RG"
+    },
+    {
+      "id": "1110-2136",
+      "url": "https://commanderspellbook.com/combo/1110-2136/",
+      "cards": [
+        "Orthion, Hero of Lavabrink",
+        "Terror of the Peaks"
+      ],
+      "missing_cards": [
+        "Orthion, Hero of Lavabrink"
+      ],
+      "produces": [
+        "Near-infinite damage"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "C",
+      "popularity": 15246,
+      "color_identity": "R"
+    },
+    {
+      "id": "3750-5988",
+      "url": "https://commanderspellbook.com/combo/3750-5988/",
+      "cards": [
+        "Cavern-Hoard Dragon",
+        "Aggravated Assault"
+      ],
+      "missing_cards": [
+        "Cavern-Hoard Dragon"
+      ],
+      "produces": [
+        "Target opponent loses the game",
+        "Infinite combat damage to one opponent"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "An opponent controls five or more artifacts.",
+      "bracket_tag": "S",
+      "popularity": 12463,
+      "color_identity": "R"
+    },
+    {
+      "id": "3732-3750",
+      "url": "https://commanderspellbook.com/combo/3732-3750/",
+      "cards": [
+        "Aggravated Assault",
+        "Nature's Will"
+      ],
+      "missing_cards": [
+        "Nature's Will"
+      ],
+      "produces": [
+        "Infinite combat damage",
+        "Infinite combat phases",
+        "Infinite mana creatures you control can produce",
+        "Infinite untap of creatures you control",
+        "Infinite mana lands you control can produce",
+        "Infinite untap of lands you control"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Lands you control can tap to produce at least {3}{R}{R}.\nYou control a creature that can attack this turn, and that cannot be blocked by an opponent.",
+      "bracket_tag": "S",
+      "popularity": 12461,
+      "color_identity": "RG"
+    },
+    {
+      "id": "3779-6323",
+      "url": "https://commanderspellbook.com/combo/3779-6323/",
+      "cards": [
+        "Swords to Plowshares",
+        "Jumbo Cactuar"
+      ],
+      "missing_cards": [
+        "Jumbo Cactuar"
+      ],
+      "produces": [
+        "Near-infinite lifegain"
+      ],
+      "notes": null,
+      "easy_prerequisites": "Jumbo Cactuar does not have summoning sickness.",
+      "notable_prerequisites": null,
+      "bracket_tag": "R",
+      "popularity": 11143,
+      "color_identity": "GW"
+    },
+    {
+      "id": "1486-3750",
+      "url": "https://commanderspellbook.com/combo/1486-3750/",
+      "cards": [
+        "Magda, Brazen Outlaw",
+        "Aggravated Assault"
+      ],
+      "missing_cards": [
+        "Magda, Brazen Outlaw"
+      ],
+      "produces": [
+        "Infinite combat phases"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control at least 5 Dwarfs who do not have summoning sickness.\nOpponents can not block.",
+      "bracket_tag": "S",
+      "popularity": 10168,
+      "color_identity": "R"
+    },
+    {
+      "id": "1110-1908",
+      "url": "https://commanderspellbook.com/combo/1110-1908/",
+      "cards": [
+        "Rionya, Fire Dancer",
+        "Terror of the Peaks"
+      ],
+      "missing_cards": [
+        "Rionya, Fire Dancer"
+      ],
+      "produces": [
+        "Near-infinite damage"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "R",
+      "popularity": 8124,
+      "color_identity": "R"
+    },
+    {
+      "id": "147-5144",
+      "url": "https://commanderspellbook.com/combo/147-5144/",
+      "cards": [
+        "Dualcaster Mage",
+        "Ephemerate"
+      ],
+      "missing_cards": [
+        "Dualcaster Mage"
+      ],
+      "produces": [
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite magecraft triggers"
+      ],
+      "notes": null,
+      "easy_prerequisites": "There are legal target(s) for Ephemerate.",
+      "notable_prerequisites": null,
+      "bracket_tag": "E",
+      "popularity": 7217,
+      "color_identity": "RW"
+    },
+    {
+      "id": "1110-6785",
+      "url": "https://commanderspellbook.com/combo/1110-6785/",
+      "cards": [
+        "Devastating Onslaught",
+        "Terror of the Peaks"
+      ],
+      "missing_cards": [
+        "Devastating Onslaught"
+      ],
+      "produces": [
+        "Near-infinite damage"
+      ],
+      "notes": "Paying {10} while casting Devastating Onslaught is a recommendation. You can pay more or less depending on what mana you have available and how much damage you wish to deal. {10} allows three opponents to be dealt at least 40 damage.",
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "C",
+      "popularity": 6666,
+      "color_identity": "R"
+    },
+    {
+      "id": "1059-3750",
+      "url": "https://commanderspellbook.com/combo/1059-3750/",
+      "cards": [
+        "Grand Warlord Radha",
+        "Aggravated Assault"
+      ],
+      "missing_cards": [
+        "Grand Warlord Radha"
+      ],
+      "produces": [
+        "Infinite combat phases",
+        "Infinite green mana",
+        "Infinite red mana",
+        "Infinite untap of creatures you control",
+        "Infinite mana creatures you control can produce"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control at least five other creatures that can attack.\nAn opponent is unable to block and kill creatures you control.",
+      "bracket_tag": "S",
+      "popularity": 6509,
+      "color_identity": "RG"
+    },
+    {
+      "id": "1355-3750",
+      "url": "https://commanderspellbook.com/combo/1355-3750/",
+      "cards": [
+        "Sanctum Weaver",
+        "Aggravated Assault"
+      ],
+      "missing_cards": [
+        "Sanctum Weaver"
+      ],
+      "produces": [
+        "Infinite colored mana",
+        "Infinite combat phases",
+        "Infinite untap of creatures you control",
+        "Infinite mana creatures you control can produce"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control at least five enchantments.\nSanctum Weaver does not have summoning sickness.",
+      "bracket_tag": "S",
+      "popularity": 6064,
+      "color_identity": "RG"
+    },
+    {
+      "id": "1697-3750",
+      "url": "https://commanderspellbook.com/combo/1697-3750/",
+      "cards": [
+        "Neheb, Dreadhorde Champion",
+        "Aggravated Assault"
+      ],
+      "missing_cards": [
+        "Neheb, Dreadhorde Champion"
+      ],
+      "produces": [
+        "Infinite draw triggers",
+        "Infinite rummaging",
+        "Infinite self-discard triggers",
+        "Near-infinite combat damage",
+        "Near-infinite combat phases",
+        "Near-infinite untap of creatures you control",
+        "Near-infinite mana creatures you control can produce"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have at least five cards in hand.\nAn opponent cannot block Neheb.\nNeheb does not have summoning sickness.",
+      "bracket_tag": "S",
+      "popularity": 5740,
+      "color_identity": "R"
+    },
+    {
+      "id": "3750-6006",
+      "url": "https://commanderspellbook.com/combo/3750-6006/",
+      "cards": [
+        "Aggravated Assault",
+        "Enduring Vitality"
+      ],
+      "missing_cards": [
+        "Enduring Vitality"
+      ],
+      "produces": [
+        "Infinite colored mana",
+        "Infinite combat phases",
+        "Infinite untap of creatures you control",
+        "Infinite mana creatures you control can produce"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control at least five creatures that do not have summoning sickness.",
+      "bracket_tag": "S",
+      "popularity": 4749,
+      "color_identity": "RG"
+    },
+    {
+      "id": "292-2259-3356",
+      "url": "https://commanderspellbook.com/combo/292-2259-3356/",
+      "cards": [
+        "Polyraptor",
+        "Forerunner of the Empire",
+        "Rite of Passage"
+      ],
+      "missing_cards": [
+        "Rite of Passage"
+      ],
+      "produces": [
+        "Infinite creature tokens",
+        "Infinite damage to all creatures",
+        "Infinite damage to creatures",
+        "Infinite death triggers",
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite +1/+1 counters on creatures you control"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have a way to deal damage to Polyraptor.",
+      "bracket_tag": "E",
+      "popularity": 4550,
+      "color_identity": "RG"
+    },
+    {
+      "id": "3750-5794",
+      "url": "https://commanderspellbook.com/combo/3750-5794/",
+      "cards": [
+        "Baylen, the Haymaker",
+        "Aggravated Assault"
+      ],
+      "missing_cards": [
+        "Baylen, the Haymaker"
+      ],
+      "produces": [
+        "Infinite colored mana",
+        "Infinite combat phases",
+        "Infinite card draw",
+        "Infinite untap of creatures you control",
+        "Infinite draw triggers",
+        "Infinite mana creatures you control can produce",
+        "Infinite +1/+1 counters on a creature"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control ten or more creature tokens.",
+      "bracket_tag": "S",
+      "popularity": 3575,
+      "color_identity": "RGW"
+    },
+    {
+      "id": "3750-6410",
+      "url": "https://commanderspellbook.com/combo/3750-6410/",
+      "cards": [
+        "Howlsquad Heavy",
+        "Aggravated Assault"
+      ],
+      "missing_cards": [
+        "Howlsquad Heavy"
+      ],
+      "produces": [
+        "Infinite creature ETB",
+        "Infinite combat phases",
+        "Infinite red mana",
+        "Infinite creature tokens with haste",
+        "Infinite untap of creatures you control",
+        "Infinite mana creatures you control can produce"
+      ],
+      "notes": "Howlsquad Heavy creates a 1/1 Goblin creature token that will have haste during each combat phase, leading to infinite creature tokens with haste and ETB.",
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have max speed.\nYou control five or more Goblins.",
+      "bracket_tag": "S",
+      "popularity": 3502,
+      "color_identity": "R"
+    },
+    {
+      "id": "3356-5147",
+      "url": "https://commanderspellbook.com/combo/3356-5147/",
+      "cards": [
+        "Polyraptor",
+        "Goblin Bombardment"
+      ],
+      "missing_cards": [
+        "Goblin Bombardment"
+      ],
+      "produces": [
+        "Infinite death triggers",
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite creature sacrifice triggers"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have a way to deal damage to Polyraptor.",
+      "bracket_tag": "E",
+      "popularity": 3500,
+      "color_identity": "RG"
+    },
+    {
+      "id": "215-2226",
+      "url": "https://commanderspellbook.com/combo/215-2226/",
+      "cards": [
+        "Zacama, Primal Calamity",
+        "Temur Sabertooth"
+      ],
+      "missing_cards": [
+        "Temur Sabertooth"
+      ],
+      "produces": [
+        "Infinite damage to creatures",
+        "Infinite enchantment destruction",
+        "Infinite creature ETB",
+        "Infinite lifegain",
+        "Infinite lifegain triggers",
+        "Infinite creature LTB",
+        "Infinite mana lands you control can produce",
+        "Infinite storm count"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Lands you control can tap to produce at least {8}{R}{G}{G}{W}.",
+      "bracket_tag": "S",
+      "popularity": 3048,
+      "color_identity": "RGW"
+    },
+    {
+      "id": "767-3750",
+      "url": "https://commanderspellbook.com/combo/767-3750/",
+      "cards": [
+        "Druids' Repository",
+        "Aggravated Assault"
+      ],
+      "missing_cards": [
+        "Druids' Repository"
+      ],
+      "produces": [
+        "Infinite combat phases",
+        "Infinite mana creatures you control can produce",
+        "Infinite untap of creatures you control"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control at least five creatures that can attack this turn.\nAn opponent is unable to block and kill your creatures.",
+      "bracket_tag": "S",
+      "popularity": 2940,
+      "color_identity": "RG"
+    },
+    {
+      "id": "2773-4245",
+      "url": "https://commanderspellbook.com/combo/2773-4245/",
+      "cards": [
+        "Vrondiss, Rage of Ancients",
+        "Warstorm Surge"
+      ],
+      "missing_cards": [
+        "Vrondiss, Rage of Ancients"
+      ],
+      "produces": [
+        "Infinite death triggers",
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite creature sacrifice triggers"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have a way to give Vrondiss indestructible.\nYou have a way to deal damage to Vrondiss.",
+      "bracket_tag": "E",
+      "popularity": 2528,
+      "color_identity": "RG"
+    },
+    {
+      "id": "2723-3356",
+      "url": "https://commanderspellbook.com/combo/2723-3356/",
+      "cards": [
+        "Blazing Sunsteel",
+        "Polyraptor"
+      ],
+      "missing_cards": [
+        "Blazing Sunsteel"
+      ],
+      "produces": [
+        "Infinite damage",
+        "Infinite creature ETB",
+        "Infinite creature tokens"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Polyraptor is indestructible.",
+      "bracket_tag": "S",
+      "popularity": 2316,
+      "color_identity": "RG"
+    },
+    {
+      "id": "2548-5141",
+      "url": "https://commanderspellbook.com/combo/2548-5141/",
+      "cards": [
+        "Teferi's Protection",
+        "Obliterate"
+      ],
+      "missing_cards": [
+        "Obliterate"
+      ],
+      "produces": [
+        "Mass Land Denial",
+        "Destroy all lands, creatures, and artifacts your opponents control"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "R",
+      "popularity": 2271,
+      "color_identity": "RW"
+    },
+    {
+      "id": "451-3750",
+      "url": "https://commanderspellbook.com/combo/451-3750/",
+      "cards": [
+        "Hoard Hauler",
+        "Aggravated Assault"
+      ],
+      "missing_cards": [
+        "Hoard Hauler"
+      ],
+      "produces": [
+        "Infinite artifact ETB",
+        "Infinite artifact LTB",
+        "Infinite artifact sacrifice triggers",
+        "Infinite artifact tokens",
+        "Infinite colored mana",
+        "Infinite combat damage",
+        "Infinite combat phases",
+        "Infinite mana creatures you control can produce",
+        "Infinite Treasure tokens",
+        "Infinite untap of creatures you control"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Hoard Hauler is a creature and does not have summoning sickness.\nAn opponent cannot block Hoard Hauler and controls at least five artifacts.",
+      "bracket_tag": "S",
+      "popularity": 2132,
+      "color_identity": "R"
+    },
+    {
+      "id": "3765-5141",
+      "url": "https://commanderspellbook.com/combo/3765-5141/",
+      "cards": [
+        "Teferi's Protection",
+        "Worldfire"
+      ],
+      "missing_cards": [
+        "Worldfire"
+      ],
+      "produces": [
+        "Each opponent's life total becomes 1",
+        "Exile all cards in hands and graveyards",
+        "Exile all permanents opponents control",
+        "Mass Land Denial"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "R",
+      "popularity": 2018,
+      "color_identity": "RW"
+    },
+    {
+      "id": "1110-4245",
+      "url": "https://commanderspellbook.com/combo/1110-4245/",
+      "cards": [
+        "Vrondiss, Rage of Ancients",
+        "Terror of the Peaks"
+      ],
+      "missing_cards": [
+        "Vrondiss, Rage of Ancients"
+      ],
+      "produces": [
+        "Infinite creature tokens",
+        "Infinite creature ETB"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have a way to give Vrondiss indestructible.\nYou have a way to deal damage to Vrondiss.",
+      "bracket_tag": "S",
+      "popularity": 1936,
+      "color_identity": "RG"
+    },
+    {
+      "id": "3750-6266",
+      "url": "https://commanderspellbook.com/combo/3750-6266/",
+      "cards": [
+        "Redshift, Rocketeer Chief",
+        "Aggravated Assault"
+      ],
+      "missing_cards": [
+        "Redshift, Rocketeer Chief"
+      ],
+      "produces": [
+        "Infinite combat phases",
+        "Infinite untap of creatures you control",
+        "Infinite mana creatures you control can produce",
+        "Infinite colored mana that can only be spent to activate abilities"
+      ],
+      "notes": null,
+      "easy_prerequisites": "Redshift, Rocketeer Chief does not have summoning sickness.",
+      "notable_prerequisites": "Redshift, Rocketeer Chief has power 5 or greater.",
+      "bracket_tag": "S",
+      "popularity": 1917,
+      "color_identity": "RG"
+    },
+    {
+      "id": "544-2226",
+      "url": "https://commanderspellbook.com/combo/544-2226/",
+      "cards": [
+        "Zacama, Primal Calamity",
+        "Sanctum of Eternity"
+      ],
+      "missing_cards": [
+        "Sanctum of Eternity"
+      ],
+      "produces": [
+        "Infinite damage to creatures",
+        "Infinite enchantment destruction",
+        "Infinite creature ETB",
+        "Infinite lifegain",
+        "Infinite lifegain triggers",
+        "Infinite creature LTB",
+        "Infinite mana lands you control can produce",
+        "Infinite storm count"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Lands you control other than Sanctum of Eternity can tap to produce at least {9}{R}{G}{W}.",
+      "bracket_tag": "S",
+      "popularity": 1534,
+      "color_identity": "RGW"
+    },
+    {
+      "id": "3750-4747",
+      "url": "https://commanderspellbook.com/combo/3750-4747/",
+      "cards": [
+        "Alena, Kessig Trapper",
+        "Aggravated Assault"
+      ],
+      "missing_cards": [
+        "Alena, Kessig Trapper"
+      ],
+      "produces": [
+        "Infinite combat phases",
+        "Infinite red mana",
+        "Infinite mana creatures you control can produce",
+        "Infinite untap of creatures you control"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control a creature with power 5 or greater that entered the battlefield this turn.\nAlena does not have summoning sickness.",
+      "bracket_tag": "S",
+      "popularity": 1523,
+      "color_identity": "R"
+    },
+    {
+      "id": "1328-5141",
+      "url": "https://commanderspellbook.com/combo/1328-5141/",
+      "cards": [
+        "Teferi's Protection",
+        "Spellbinder"
+      ],
+      "missing_cards": [
+        "Spellbinder"
+      ],
+      "produces": [
+        "Permanents you control phase out during your opponents' turns",
+        "You have protection from everything during your opponents' turns",
+        "Your life total can't change during your opponents' turns",
+        "Lock"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Spellbinder attached to a creature that can attack this turn and that cannot be blocked and killed by an opponent.",
+      "bracket_tag": "S",
+      "popularity": 1351,
+      "color_identity": "W"
+    },
+    {
+      "id": "3750-6894",
+      "url": "https://commanderspellbook.com/combo/3750-6894/",
+      "cards": [
+        "J. Jonah Jameson",
+        "Aggravated Assault"
+      ],
+      "missing_cards": [
+        "J. Jonah Jameson"
+      ],
+      "produces": [
+        "Infinite artifact ETB",
+        "Infinite artifact LTB",
+        "Infinite artifact sacrifice triggers",
+        "Infinite artifact tokens",
+        "Infinite colored mana",
+        "Infinite combat phases",
+        "Infinite untap of creatures you control",
+        "Infinite mana creatures you control can produce",
+        "Infinite Treasure tokens"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control at least five creatures that have menace and that do not have summoning sickness.",
+      "bracket_tag": "S",
+      "popularity": 1221,
+      "color_identity": "R"
+    },
+    {
+      "id": "6758-7167",
+      "url": "https://commanderspellbook.com/combo/6758-7167/",
+      "cards": [
+        "Dawnsire, Sunstar Dreadnought",
+        "Wrathful Raptors"
+      ],
+      "missing_cards": [
+        "Dawnsire, Sunstar Dreadnought"
+      ],
+      "produces": [
+        "Near-infinite damage to one opponent",
+        "Near-infinite damage to any target"
+      ],
+      "notes": null,
+      "easy_prerequisites": "You control a creature that can attack this turn.",
+      "notable_prerequisites": "Dawnsire has ten or more charge counters on it.",
+      "bracket_tag": "S",
+      "popularity": 1103,
+      "color_identity": "R"
+    },
+    {
+      "id": "3690-3750",
+      "url": "https://commanderspellbook.com/combo/3690-3750/",
+      "cards": [
+        "Aggravated Assault",
+        "Sylvan Awakening"
+      ],
+      "missing_cards": [
+        "Sylvan Awakening"
+      ],
+      "produces": [
+        "Infinite combat phases",
+        "Infinite mana creatures you control can produce",
+        "Infinite mana lands you control can produce",
+        "Infinite untap of creatures you control",
+        "Infinite untap of lands you control"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Lands and creatures you control can tap to produce at least {3}{R}{R}.",
+      "bracket_tag": "S",
+      "popularity": 1085,
+      "color_identity": "RG"
+    },
+    {
+      "id": "413-3356",
+      "url": "https://commanderspellbook.com/combo/413-3356/",
+      "cards": [
+        "Polyraptor",
+        "Blasting Station"
+      ],
+      "missing_cards": [
+        "Blasting Station"
+      ],
+      "produces": [
+        "Infinite death triggers",
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite creature sacrifice triggers"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control at least one additional creature.",
+      "bracket_tag": "E",
+      "popularity": 1051,
+      "color_identity": "G"
+    },
+    {
+      "id": "3750-5453",
+      "url": "https://commanderspellbook.com/combo/3750-5453/",
+      "cards": [
+        "Preston Garvey, Minuteman",
+        "Aggravated Assault"
+      ],
+      "missing_cards": [
+        "Preston Garvey, Minuteman"
+      ],
+      "produces": [
+        "Infinite combat phases",
+        "Infinite mana creatures you control can produce",
+        "Infinite untap of creatures you control",
+        "Infinite untap of enchanted permanents you control"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Enchanted permanents you control can tap to produce at least {3}{R}.\nYou control at least one land that does not have a Settlement token attached to it, or enchanted permanents you control can tap to produce at least {3}{R}{R}.\nAn opponent cannot block and kill Preston.",
+      "bracket_tag": "S",
+      "popularity": 980,
+      "color_identity": "RGW"
+    },
+    {
+      "id": "2773-3748",
+      "url": "https://commanderspellbook.com/combo/2773-3748/",
+      "cards": [
+        "Hornet Nest",
+        "Warstorm Surge"
+      ],
+      "missing_cards": [
+        "Hornet Nest"
+      ],
+      "produces": [
+        "Infinite creature tokens",
+        "Infinite creature ETB"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have a way to give Hornet Nest indestructible.\nYou have a way to deal damage to Hornet Nest.",
+      "bracket_tag": "S",
+      "popularity": 858,
+      "color_identity": "RG"
+    },
+    {
+      "id": "5166-7167--86",
+      "url": "https://commanderspellbook.com/combo/5166-7167--86/",
+      "cards": [
+        "Guilty Conscience",
+        "Wrathful Raptors"
+      ],
+      "missing_cards": [
+        "Guilty Conscience"
+      ],
+      "produces": [
+        "Infinite damage"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have a way to cause Wrathful Raptors to take damage.",
+      "bracket_tag": "E",
+      "popularity": 856,
+      "color_identity": "RW"
+    },
+    {
+      "id": "3750-7903",
+      "url": "https://commanderspellbook.com/combo/3750-7903/",
+      "cards": [
+        "Thorin, Company's Leader",
+        "Aggravated Assault"
+      ],
+      "missing_cards": [
+        "Thorin, Company's Leader"
+      ],
+      "produces": [
+        "Infinite Treasure tokens",
+        "Infinite colored mana",
+        "Infinite combat damage",
+        "Infinite combat phases",
+        "Infinite mana creatures you control can produce",
+        "Infinite untap of creatures you control",
+        "Infinite artifact ETB",
+        "Infinite artifact LTB",
+        "Infinite artifact sacrifice triggers",
+        "Infinite artifact tokens"
+      ],
+      "notes": "If an opponent controls a battle, you can deal damage to that battle instead if desired.",
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control at least three Dwarves that don't have summoning sickness and that cannot be blocked by an opponent.",
+      "bracket_tag": "S",
+      "popularity": 822,
+      "color_identity": "R"
+    },
+    {
+      "id": "2226-7070",
+      "url": "https://commanderspellbook.com/combo/2226-7070/",
+      "cards": [
+        "Monk Gyatso",
+        "Zacama, Primal Calamity"
+      ],
+      "missing_cards": [
+        "Monk Gyatso"
+      ],
+      "produces": [
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite blinking",
+        "Infinite lifegain",
+        "Infinite lifegain triggers",
+        "Infinite mana lands you control can produce",
+        "Infinite storm count",
+        "Infinite untap of lands you control"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Lands you control can tap to produce at least {4}{R}.",
+      "bracket_tag": "S",
+      "popularity": 790,
+      "color_identity": "RGW"
+    },
+    {
+      "id": "2376-3575",
+      "url": "https://commanderspellbook.com/combo/2376-3575/",
+      "cards": [
+        "Aerie Ouphes",
+        "Rhythm of the Wild"
+      ],
+      "missing_cards": [
+        "Aerie Ouphes"
+      ],
+      "produces": [
+        "Infinite death triggers",
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite creature sacrifice triggers"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Aerie Ouphes does not have a -1/-1 counter on it.\nThere is a creature with flying on the battlefield.",
+      "bracket_tag": "E",
+      "popularity": 742,
+      "color_identity": "RG"
+    },
+    {
+      "id": "3750-5340",
+      "url": "https://commanderspellbook.com/combo/3750-5340/",
+      "cards": [
+        "Poetic Ingenuity",
+        "Aggravated Assault"
+      ],
+      "missing_cards": [
+        "Poetic Ingenuity"
+      ],
+      "produces": [
+        "Infinite artifact ETB",
+        "Infinite artifact LTB",
+        "Infinite artifact sacrifice triggers",
+        "Infinite artifact tokens",
+        "Infinite colored mana",
+        "Infinite combat phases",
+        "Infinite mana creatures you control can produce",
+        "Infinite Treasure tokens",
+        "Infinite untap of creatures you control"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control at least five Dinosaurs that do not have summoning sickness.\nAn opponent cannot block and kill creatures you control.",
+      "bracket_tag": "S",
+      "popularity": 724,
+      "color_identity": "R"
+    },
+    {
+      "id": "70-5141",
+      "url": "https://commanderspellbook.com/combo/70-5141/",
+      "cards": [
+        "Balancing Act",
+        "Teferi's Protection"
+      ],
+      "missing_cards": [
+        "Balancing Act"
+      ],
+      "produces": [
+        "Each opponent sacrifices all permanents they control",
+        "Mass Land Denial"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "R",
+      "popularity": 707,
+      "color_identity": "W"
+    },
+    {
+      "id": "3750-5956",
+      "url": "https://commanderspellbook.com/combo/3750-5956/",
+      "cards": [
+        "Aggravated Assault",
+        "Shriekwood Devourer"
+      ],
+      "missing_cards": [
+        "Shriekwood Devourer"
+      ],
+      "produces": [
+        "Infinite creature ETB",
+        "Infinite combat phases",
+        "Infinite mana lands you control can produce",
+        "Infinite mana creatures you control can produce",
+        "Infinite untap of creatures you control",
+        "Infinite untap of lands you control"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control up to five lands that can tap to produce at least {3}{R}{R}.\nYou control a creature with power 5 or greater that does not have summoning sickness, and that cannot be blocked and killed by an opponent.",
+      "bracket_tag": "S",
+      "popularity": 703,
+      "color_identity": "RG"
+    },
+    {
+      "id": "3750-6179",
+      "url": "https://commanderspellbook.com/combo/3750-6179/",
+      "cards": [
+        "Aggravated Assault",
+        "Primal Adversary"
+      ],
+      "missing_cards": [
+        "Primal Adversary"
+      ],
+      "produces": [
+        "Infinite combat phases",
+        "Infinite untap of creatures you control",
+        "Infinite mana creatures you control can produce"
+      ],
+      "notes": "The amount of additional mana varies depending on what lands you target, as well as if you control mana-producing creatures.",
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control up to five lands that can tap to produce at least {3}{R}{R}.",
+      "bracket_tag": "S",
+      "popularity": 641,
+      "color_identity": "RG"
+    },
+    {
+      "id": "3750-6307",
+      "url": "https://commanderspellbook.com/combo/3750-6307/",
+      "cards": [
+        "Aggravated Assault",
+        "Luxurious Locomotive"
+      ],
+      "missing_cards": [
+        "Luxurious Locomotive"
+      ],
+      "produces": [
+        "Infinite artifact ETB",
+        "Infinite artifact LTB",
+        "Infinite artifact sacrifice triggers",
+        "Infinite artifact tokens",
+        "Infinite colored mana",
+        "Infinite combat phases",
+        "Infinite untap of creatures you control",
+        "Infinite mana creatures you control can produce",
+        "Infinite Treasure tokens"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control at least five creatures with total power 1 or greater.\nAn opponent cannot block and kill Luxurious Locomotive.\nLuxurious Locomotive does not have summoning sickness.",
+      "bracket_tag": "S",
+      "popularity": 640,
+      "color_identity": "R"
+    },
+    {
+      "id": "1902-3750",
+      "url": "https://commanderspellbook.com/combo/1902-3750/",
+      "cards": [
+        "Aggravated Assault",
+        "Wirewood Channeler"
+      ],
+      "missing_cards": [
+        "Wirewood Channeler"
+      ],
+      "produces": [
+        "Infinite colored mana",
+        "Infinite combat phases",
+        "Infinite untap of creatures you control",
+        "Infinite mana creatures you control can produce"
+      ],
+      "notes": "The infinite mana result requires you to control at least six total Elves.",
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control at least four other Elves.\nWirewood Channeler does not have summoning sickness.",
+      "bracket_tag": "S",
+      "popularity": 607,
+      "color_identity": "RG"
+    },
+    {
+      "id": "2773-5191",
+      "url": "https://commanderspellbook.com/combo/2773-5191/",
+      "cards": [
+        "Raptor Hatchling",
+        "Warstorm Surge"
+      ],
+      "missing_cards": [
+        "Raptor Hatchling"
+      ],
+      "produces": [
+        "Infinite creature tokens",
+        "Infinite creature ETB"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have a way to give Raptor Hatchling indestructible.\nYou have a way to cause a creature to enter the battlefield or to deal damage to Raptor Hatchling.",
+      "bracket_tag": "S",
+      "popularity": 601,
+      "color_identity": "R"
+    },
+    {
+      "id": "4274-5141",
+      "url": "https://commanderspellbook.com/combo/4274-5141/",
+      "cards": [
+        "Teferi's Protection",
+        "Apocalypse"
+      ],
+      "missing_cards": [
+        "Apocalypse"
+      ],
+      "produces": [
+        "Discard your hand",
+        "Exile all permanents opponents control",
+        "Mass Land Denial"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "R",
+      "popularity": 586,
+      "color_identity": "RW"
+    },
+    {
+      "id": "2067-2773",
+      "url": "https://commanderspellbook.com/combo/2067-2773/",
+      "cards": [
+        "Storm Herd",
+        "Warstorm Surge"
+      ],
+      "missing_cards": [
+        "Storm Herd"
+      ],
+      "produces": [
+        "Near-infinite creature ETB",
+        "Near-infinite creature tokens",
+        "Near-infinite damage"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "E",
+      "popularity": 373,
+      "color_identity": "RW"
+    },
+    {
+      "id": "1110-3748",
+      "url": "https://commanderspellbook.com/combo/1110-3748/",
+      "cards": [
+        "Hornet Nest",
+        "Terror of the Peaks"
+      ],
+      "missing_cards": [
+        "Hornet Nest"
+      ],
+      "produces": [
+        "Infinite creature tokens",
+        "Infinite creature ETB"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have a way to give Hornet Nest indestructible.\nYou have a way to deal damage to Hornet Nest.",
+      "bracket_tag": "S",
+      "popularity": 371,
+      "color_identity": "RG"
+    },
+    {
+      "id": "3356-3896",
+      "url": "https://commanderspellbook.com/combo/3356-3896/",
+      "cards": [
+        "Polyraptor",
+        "Where Ancients Tread"
+      ],
+      "missing_cards": [
+        "Where Ancients Tread"
+      ],
+      "produces": [
+        "Infinite death triggers",
+        "Infinite creature ETB",
+        "Infinite creature LTB"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "E",
+      "popularity": 300,
+      "color_identity": "RG"
+    },
+    {
+      "id": "2062-4776",
+      "url": "https://commanderspellbook.com/combo/2062-4776/",
+      "cards": [
+        "Sprouting Phytohydra",
+        "Marauding Raptor"
+      ],
+      "missing_cards": [
+        "Sprouting Phytohydra"
+      ],
+      "produces": [
+        "Infinite creature ETB",
+        "Infinite creature LTB"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "E",
+      "popularity": 285,
+      "color_identity": "RG"
+    },
+    {
+      "id": "2773-3046",
+      "url": "https://commanderspellbook.com/combo/2773-3046/",
+      "cards": [
+        "Overgrown Armasaur",
+        "Warstorm Surge"
+      ],
+      "missing_cards": [
+        "Overgrown Armasaur"
+      ],
+      "produces": [
+        "Infinite creature tokens",
+        "Infinite creature ETB"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have a way to give Overgrown Armasaur indestructible.\nYou have a way to deal damage to Overgrown Armasaur.",
+      "bracket_tag": "S",
+      "popularity": 210,
+      "color_identity": "RG"
+    },
+    {
+      "id": "3778-7299",
+      "url": "https://commanderspellbook.com/combo/3778-7299/",
+      "cards": [
+        "Biorhythm",
+        "Austere Command"
+      ],
+      "missing_cards": [
+        "Biorhythm"
+      ],
+      "produces": [
+        "Draw the game",
+        "Each opponent loses the game"
+      ],
+      "notes": "You will also lose the game if you control no creatures as Biorhythm resolves, causing the game to end in a draw. You can avoid this by putting a creature onto the battlefield after step 1, or by having an indestructible creature. Similarly, any opponent who controls an indestructible creature will not have 0 life or lose the game.",
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "P",
+      "popularity": 208,
+      "color_identity": "GW"
+    },
+    {
+      "id": "2773-3760",
+      "url": "https://commanderspellbook.com/combo/2773-3760/",
+      "cards": [
+        "Broodhatch Nantuko",
+        "Warstorm Surge"
+      ],
+      "missing_cards": [
+        "Broodhatch Nantuko"
+      ],
+      "produces": [
+        "Infinite creature tokens",
+        "Infinite creature ETB"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have a way to give Broodhatch Nantuko indestructible.\nYou have a way to deal damage to Broodhatch Nantuko.",
+      "bracket_tag": "S",
+      "popularity": 207,
+      "color_identity": "RG"
+    },
+    {
+      "id": "487-2773",
+      "url": "https://commanderspellbook.com/combo/487-2773/",
+      "cards": [
+        "Sporeweb Weaver",
+        "Warstorm Surge"
+      ],
+      "missing_cards": [
+        "Sporeweb Weaver"
+      ],
+      "produces": [
+        "Infinite creature tokens",
+        "Infinite creature ETB",
+        "Infinite lifegain",
+        "Infinite lifegain triggers"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have a way to give Sporeweb Weaver indestructible.\nYou have a way to cause a creature to enter the battlefield under your control.",
+      "bracket_tag": "S",
+      "popularity": 171,
+      "color_identity": "RG"
+    },
+    {
+      "id": "1724-2773",
+      "url": "https://commanderspellbook.com/combo/1724-2773/",
+      "cards": [
+        "Sekki, Seasons' Guide",
+        "Warstorm Surge"
+      ],
+      "missing_cards": [
+        "Sekki, Seasons' Guide"
+      ],
+      "produces": [
+        "Infinite damage",
+        "Infinite death triggers",
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite creature sacrifice triggers"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "P",
+      "popularity": 143,
+      "color_identity": "RG"
+    },
+    {
+      "id": "2226-3399",
+      "url": "https://commanderspellbook.com/combo/2226-3399/",
+      "cards": [
+        "Zacama, Primal Calamity",
+        "Stormfront Riders"
+      ],
+      "missing_cards": [
+        "Stormfront Riders"
+      ],
+      "produces": [
+        "Infinite creature tokens",
+        "Infinite creature ETB",
+        "Infinite lifegain",
+        "Infinite lifegain triggers",
+        "Infinite creature LTB",
+        "Infinite mana lands you control can produce",
+        "Infinite storm count"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Lands you control can tap to produce at least {10}{R}{G}{W}{W}.\nYou have enough mana to pay for commander tax, if applicable.",
+      "bracket_tag": "S",
+      "popularity": 137,
+      "color_identity": "RGW"
+    },
+    {
+      "id": "2259-2744-3356",
+      "url": "https://commanderspellbook.com/combo/2259-2744-3356/",
+      "cards": [
+        "Polyraptor",
+        "Forerunner of the Empire",
+        "Cathars' Crusade"
+      ],
+      "missing_cards": [
+        "Cathars' Crusade"
+      ],
+      "produces": [
+        "Infinite creature tokens",
+        "Infinite damage to all creatures",
+        "Infinite damage to creatures",
+        "Infinite death triggers",
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite +1/+1 counters on creatures you control"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have a way to deal damage to Polyraptor.",
+      "bracket_tag": "E",
+      "popularity": 119,
+      "color_identity": "RGW"
+    },
+    {
+      "id": "2773-5199",
+      "url": "https://commanderspellbook.com/combo/2773-5199/",
+      "cards": [
+        "Saber Ants",
+        "Warstorm Surge"
+      ],
+      "missing_cards": [
+        "Saber Ants"
+      ],
+      "produces": [
+        "Infinite creature tokens",
+        "Infinite creature ETB"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have a way to give Saber Ants indestructible.\nYou have a way to deal damage to Saber Ants.",
+      "bracket_tag": "S",
+      "popularity": 114,
+      "color_identity": "RG"
+    },
+    {
+      "id": "2214-3259-4373",
+      "url": "https://commanderspellbook.com/combo/2214-3259-4373/",
+      "cards": [
+        "Ghalta and Mavren",
+        "Breath of Fury",
+        "Regisaur Alpha"
+      ],
+      "missing_cards": [
+        "Breath of Fury"
+      ],
+      "produces": [
+        "Infinite combat damage",
+        "Infinite combat phases",
+        "Infinite death triggers",
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite mana creatures you control can produce",
+        "Infinite creature sacrifice triggers",
+        "Infinite untap of creatures you control"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Breath of Fury attached to another creature you control that does not have summoning sickness and that has a power of one or greater.\nAn opponent cannot block and kill creatures you control.",
+      "bracket_tag": "E",
+      "popularity": 87,
+      "color_identity": "RGW"
+    },
+    {
+      "id": "487-1110",
+      "url": "https://commanderspellbook.com/combo/487-1110/",
+      "cards": [
+        "Sporeweb Weaver",
+        "Terror of the Peaks"
+      ],
+      "missing_cards": [
+        "Sporeweb Weaver"
+      ],
+      "produces": [
+        "Infinite creature tokens",
+        "Infinite creature ETB",
+        "Infinite lifegain",
+        "Infinite lifegain triggers"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have a way to give Sporeweb Weaver indestructible.\nYou have a way to cause a creature to enter the battlefield under your control.",
+      "bracket_tag": "S",
+      "popularity": 84,
+      "color_identity": "RG"
+    },
+    {
+      "id": "1110-3760",
+      "url": "https://commanderspellbook.com/combo/1110-3760/",
+      "cards": [
+        "Broodhatch Nantuko",
+        "Terror of the Peaks"
+      ],
+      "missing_cards": [
+        "Broodhatch Nantuko"
+      ],
+      "produces": [
+        "Infinite creature tokens",
+        "Infinite creature ETB"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have a way to give Broodhatch Nantuko indestructible.\nYou have a way to deal damage to Broodhatch Nantuko.",
+      "bracket_tag": "S",
+      "popularity": 81,
+      "color_identity": "RG"
+    },
+    {
+      "id": "1110-3046",
+      "url": "https://commanderspellbook.com/combo/1110-3046/",
+      "cards": [
+        "Overgrown Armasaur",
+        "Terror of the Peaks"
+      ],
+      "missing_cards": [
+        "Overgrown Armasaur"
+      ],
+      "produces": [
+        "Infinite creature tokens",
+        "Infinite creature ETB"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have a way to give Overgrown Armasaur indestructible.\nYou have a way to deal damage to Overgrown Armasaur.",
+      "bracket_tag": "S",
+      "popularity": 42,
+      "color_identity": "RG"
+    },
+    {
+      "id": "1110-5199",
+      "url": "https://commanderspellbook.com/combo/1110-5199/",
+      "cards": [
+        "Saber Ants",
+        "Terror of the Peaks"
+      ],
+      "missing_cards": [
+        "Saber Ants"
+      ],
+      "produces": [
+        "Infinite creature tokens",
+        "Infinite creature ETB"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have a way to give Saber Ants indestructible.\nYou have a way to deal damage to Saber Ants.",
+      "bracket_tag": "S",
+      "popularity": 40,
+      "color_identity": "RG"
+    },
+    {
+      "id": "3750-4050-4373",
+      "url": "https://commanderspellbook.com/combo/3750-4050-4373/",
+      "cards": [
+        "Ghalta and Mavren",
+        "Aggravated Assault",
+        "Phyrexian Altar"
+      ],
+      "missing_cards": [
+        "Phyrexian Altar"
+      ],
+      "produces": [
+        "Infinite colored mana",
+        "Infinite combat phases",
+        "Infinite creature tokens",
+        "Infinite death triggers",
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite mana creatures you control can produce",
+        "Infinite creature sacrifice triggers",
+        "Infinite untap of creatures you control"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control at least six creatures that can attack this turn.\nAn opponent cannot block and kill creatures you control.",
+      "bracket_tag": "E",
+      "popularity": 39,
+      "color_identity": "RGW"
+    },
+    {
+      "id": "3750-4373-5231",
+      "url": "https://commanderspellbook.com/combo/3750-4373-5231/",
+      "cards": [
+        "Ghalta and Mavren",
+        "Aggravated Assault",
+        "Thermopod"
+      ],
+      "missing_cards": [
+        "Thermopod"
+      ],
+      "produces": [
+        "Infinite colored mana",
+        "Infinite combat phases",
+        "Infinite creature tokens",
+        "Infinite death triggers",
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite mana creatures you control can produce",
+        "Infinite creature sacrifice triggers",
+        "Infinite untap of creatures you control"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control at least six creatures that can attack this turn.\nAn opponent cannot block and kill creatures you control.",
+      "bracket_tag": "E",
+      "popularity": 5,
+      "color_identity": "RGW"
+    },
+    {
+      "id": "3259-4373-6791",
+      "url": "https://commanderspellbook.com/combo/3259-4373-6791/",
+      "cards": [
+        "Breath of Fury",
+        "Ghalta and Mavren",
+        "Tannuk, Steadfast Second"
+      ],
+      "missing_cards": [
+        "Breath of Fury"
+      ],
+      "produces": [
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite combat damage",
+        "Infinite combat phases",
+        "Infinite death triggers",
+        "Infinite mana creatures you control can produce",
+        "Infinite creature sacrifice triggers",
+        "Infinite untap of creatures you control",
+        "Infinite creature tokens with haste"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "An opponent cannot block creatures you control.",
+      "bracket_tag": "E",
+      "popularity": 2,
+      "color_identity": "RGW"
+    },
+    {
+      "id": "2226-3727",
+      "url": "https://commanderspellbook.com/combo/2226-3727/",
+      "cards": [
+        "Karakas",
+        "Zacama, Primal Calamity"
+      ],
+      "missing_cards": [
+        "Karakas"
+      ],
+      "produces": [
+        "Infinite colored mana",
+        "Infinite colorless mana",
+        "Infinite damage to creatures",
+        "Infinite lifegain",
+        "Infinite lifegain triggers"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "B",
+      "popularity": 0,
+      "color_identity": "RGW"
+    }
+  ]
+}

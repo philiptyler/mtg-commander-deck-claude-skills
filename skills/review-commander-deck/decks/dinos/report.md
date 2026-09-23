@@ -57,11 +57,58 @@ Curator.
 **Combat/outvalue plan:** `Ghalta, Stampede Tyrant`, `Gishath, Sun's Avatar`,
 `Zacama, Primal Calamity`, both Etali — a real top end, and `Green Sun's
 Zenith`/`Worldly Tutor` can go find Pantlaza itself (or another key creature)
-since both tutor specifically for creatures. `Aggravated Assault` is a
-genuine power piece here — untap-and-extra-combat with a board of hasty,
-discovered Dinosaurs is a lot of damage even without a true combo; I didn't
-find a mana-doubler or cost-reducer in the list that would make it go
-infinite, so it reads as a strong finisher rather than a hidden combo.
+since both tutor specifically for creatures. `Aggravated Assault` doesn't
+combo with anything else in the list — it's a genuine power piece
+(untap-and-extra-combat with a board of hasty, discovered Dinosaurs is a lot
+of damage) but not an infinite loop.
+
+## Combos found (correction — the deck is not combo-free)
+
+**This section didn't exist in the first version of this review**, which
+said flatly that no combo was found. That was wrong, and it's a direct
+result of only checking one card (`Aggravated Assault`) by hand instead of
+checking the whole card pool against an actual combo database. Once
+`find-deck-combos` existed and was run against this decklist, two real
+combos turned up — one of them explains a card ( `Wrathful Raptors`) that a
+later pass of `find-weakest-cards` had specifically called one of the two
+weakest removal spells in the deck. That call was wrong too, for the same
+underlying reason: a narrow, reactive-looking card is exactly what a combo
+piece looks like from the outside.
+
+- **`Polyraptor` + `Marauding Raptor`** — Marauding Raptor deals 2 damage to
+  every creature you control as it enters (including itself and Polyraptor
+  copies); Polyraptor makes a token copy of itself whenever it's dealt
+  damage; each new copy entering triggers Marauding Raptor again. This loops
+  forever. Commander Spellbook's own data on this exact pair notes it "will
+  result in a mandatory infinite loop... cause the game to end in a draw" —
+  by itself, this is bad for you, not a win.
+  **`Wrathful Raptors`** is what turns it into a win: whenever a Dinosaur
+  you control is dealt damage, it redirects that damage to any target that
+  isn't a Dinosaur. With Wrathful Raptors out, every one of Marauding
+  Raptor's pings on an entering Polyraptor copy becomes redirectable
+  damage to an opponent — infinite damage, not just infinite tokens. This
+  specific 3-card framing isn't its own cataloged entry in Commander
+  Spellbook's database (it only lists the 2-card loop), but it's
+  well-documented in the wider Commander community for exactly this
+  interaction, and it matches what `Wrathful Raptors`'s actual rules text
+  does once you trace it through.
+- **`Polyraptor` + `Forerunner of the Empire`** — a second, independent combo
+  neither version of this review had caught before running the combo
+  database. Forerunner deals 1 damage to each creature whenever a Dinosaur
+  you control enters; a Polyraptor copy entering triggers that damage,
+  which triggers Polyraptor's own copy-on-damage ability, whose new copy
+  entering triggers Forerunner again. This one doesn't need Wrathful
+  Raptors — it independently produces infinite damage to *every* creature
+  on the battlefield (yours and opponents'), which is effectively an
+  infinite board wipe. Given the earlier finding that this deck's real
+  removal is almost entirely sorcery-speed, this combo is a meaningfully
+  bigger answer to a wide opposing board than the removal count alone
+  suggested.
+
+Both require `Polyraptor` plus one setup piece already in the deck and rely
+on repeatedly triggering ETBs, which is exactly what the discover/blink
+package is already doing — this isn't a bolted-on combo, it fits the
+deck's existing engine.
 
 ## The numbers
 
@@ -108,7 +155,10 @@ turn. If an opponent tries to close out a game on their turn (a combo, an
 alpha strike, a must-answer bomb), you have one card that can do anything
 about it before your next turn. That's the single biggest structural gap I'd
 flag from the numbers, independent of what you already know the deck
-struggles with.
+struggles with. (`Wrathful Raptors` is on this list because it does
+function as removal — but see **Combos found** above: it's really the
+finishing piece of an infinite-damage combo, not just a conditional damage
+redirector.)
 
 **Card draw (10):** `Garruk's Uprising`, `Guardian Project`, `Herd Heirloom`,
 `Jetmir's Garden` (cycling), `Kogla and Yidaro`, `Last March of the Ents`,
@@ -132,20 +182,29 @@ protection suite for a deck that wants to hold a board state, which matters
 given how ETB-dependent the value engine is.
 
 **No counterspells, no extra-turn cards, no mass land denial.** Consistent
-with a Bracket 3 creature-value shell rather than a control or combo deck.
+with a Bracket 3 creature-value shell — though see **Combos found** above,
+this is not actually a combo-free deck, it just doesn't lean on the
+control/extra-turn tools those restrictions are about.
 
-## Caveats (from the analysis script, worth repeating)
+## Caveats
 
-- Two-card infinite combo potential isn't something the script can check —
-  I looked at the tutor/Game Changer/combo-shaped cards by hand above
-  (`Aggravated Assault` specifically) and didn't find one, but that's a
-  read, not a guarantee.
+- `analyze_deck.py`'s regex-based analysis still can't see combos itself —
+  that's what `find-deck-combos` (checking against Commander Spellbook's
+  database) is for, and it's what caught the two combos above. Its
+  `almost_included` list also has ~78 near-miss combos for this deck
+  (missing one or more cards); most are noise, but worth a look if you want
+  to hunt for more.
 - The Bracket 1/2 vs. 4/5 splits depend on table intent, not card choices —
   not relevant here since you're squarely in Bracket 3 territory either way.
+  (Also worth noting: having a real infinite combo is itself relevant to
+  the Bracket 3 vs. 4 line — WotC's criteria for Bracket 3 is "no
+  intentional *early-game* two-card combos," not "no combos at all," so
+  this alone doesn't push the deck out of Bracket 3, but it's worth keeping
+  in mind if the deck's power creeps up further.)
 
-## Next step you mentioned
+## Next steps
 
-You mentioned wanting a follow-on skill to find the weakest non-land and
-weakest land cards — this deck is a good test case for that once it exists:
-the top end is crowded (11 cards at 7+ CMC) and the instant-speed gap above
-both point at where trims/additions would matter most.
+`find-weakest-cards` and `find-deck-combos` both exist now. The instant-speed
+removal gap and the crowded 7+ CMC top end (11 cards) are still the two
+places I'd look first for trims; anything flagged as weak should be
+cross-checked against `combos.json` first, per the miss above.

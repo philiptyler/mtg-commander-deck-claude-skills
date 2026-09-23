@@ -38,6 +38,26 @@ of Service explicitly prohibit automated queries against it, so this skill
 doesn't hit it. If EDHREC context matters for a specific card, check it
 yourself in your browser and paste the number in.
 
+### [`find-deck-combos`](skills/find-deck-combos/SKILL.md)
+
+Checks a deck already reviewed by `review-commander-deck` against
+[Commander Spellbook](https://commanderspellbook.com)'s combo database —
+what combos are already fully in the deck, and what combos are one or two
+cards away. Unlike EDHREC, Commander Spellbook's API is open source and
+built for exactly this kind of programmatic use, so this one does hit a
+live API.
+
+This isn't just a nice-to-have: `find-weakest-cards` called `Wrathful
+Raptors` one of a test deck's weakest removal spells before this skill
+existed — it's actually the finishing piece of an infinite-damage combo
+with two other cards already in that same deck, and this skill also
+surfaced a second, completely independent combo in it that nobody had
+noticed. `find-weakest-cards` now checks this skill's output before
+recommending any cut.
+
+**Also depends on `review-commander-deck`'s output**, same as
+`find-weakest-cards` — install all three together.
+
 ## Installing
 
 Works with Claude Code (CLI) or the Claude.ai / desktop apps. Personal-scope
@@ -54,6 +74,7 @@ git clone git@github.com:philiptyler/mtg-commander-deck-claude-skills.git
 mkdir -p ~/.claude/skills
 ln -s "$(pwd)/mtg-commander-deck-claude-skills/skills/review-commander-deck" ~/.claude/skills/review-commander-deck
 ln -s "$(pwd)/mtg-commander-deck-claude-skills/skills/find-weakest-cards" ~/.claude/skills/find-weakest-cards
+ln -s "$(pwd)/mtg-commander-deck-claude-skills/skills/find-deck-combos" ~/.claude/skills/find-deck-combos
 ```
 
 Start (or restart) a Claude Code session and they'll show up in the
@@ -69,6 +90,7 @@ Zip each skill folder and upload it as a Skill capability:
 cd mtg-commander-deck-claude-skills/skills
 zip -r review-commander-deck.zip review-commander-deck
 zip -r find-weakest-cards.zip find-weakest-cards
+zip -r find-deck-combos.zip find-deck-combos
 ```
 
 Then in the app: **Settings → Capabilities → Skills → Upload skill**, and
@@ -104,12 +126,16 @@ skills/
     scripts/           # parse decklist -> fetch Scryfall -> build context -> analyze
     references/         # editable rubrics (e.g. bracket criteria)
     cache/scryfall/      # cached Scryfall responses, reused across decks
-    decks/               # one folder per deck you've reviewed (context.json,
-                          #   analysis.json, report.md, weak_card_signals.json)
+    decks/               # one folder per deck you've reviewed - shared by all
+                          #   three skills (context.json, analysis.json,
+                          #   report.md, weak_card_signals.json, combos.json)
   find-weakest-cards/
     SKILL.md          # depends on review-commander-deck's decks/<slug>/ output
     scripts/           # find_weak_cards.py - computes signals, doesn't rank
     references/         # category_targets.md - bracket-scaled saturation targets
+  find-deck-combos/
+    SKILL.md          # depends on review-commander-deck's decks/<slug>/ output
+    scripts/           # spellbook_client.py + find_combos.py
 ```
 
 ## Roadmap

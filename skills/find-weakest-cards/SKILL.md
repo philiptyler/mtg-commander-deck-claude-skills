@@ -72,7 +72,22 @@ don't re-implement decklist parsing or Scryfall fetching here.
    isn't "scry" or "gain life" or "unless," it's something else entirely).
    Don't repeat a flag as your reasoning without checking the card behind it.
 
-5. **Answer the specific question**, ranked, with reasoning tied to *this
+5. **Check `find-deck-combos` before finalizing any candidate.** Run
+   `../find-deck-combos/scripts/find_combos.py --deck-dir
+   ../review-commander-deck/decks/<slug>` (or read the existing
+   `combos.json` if it's already there) and check whether any candidate
+   card appears in its `included` list. **Do not call a combo piece
+   "weak"** — a narrow, conditional-looking card is exactly what a combo
+   piece looks like from the outside. This is not a hypothetical: an
+   earlier pass of this skill called `Wrathful Raptors` one of a deck's two
+   weakest removal spells because it only triggers reactively; it's
+   actually the payoff for an infinite-damage combo with `Polyraptor` and
+   `Marauding Raptor` already in the same deck, and the deck separately has
+   a second, unrelated infinite combo (`Polyraptor` + `Forerunner of the
+   Empire`) that hadn't been noticed at all. Both were only caught by
+   actually checking the combo database, not by reading card text harder.
+
+6. **Answer the specific question**, ranked, with reasoning tied to *this
    deck's plan* — reference what the deck is trying to do (from the
    original review's synthesis, if you have it) rather than generic power
    level. Say why each pick is weaker than what else the deck is doing at
@@ -90,10 +105,6 @@ browsing, not automation — and factor it in when they do.
 
 ## Known limitations
 
-- No combo-awareness: a card that looks weak/narrow in isolation might be
-  load-bearing for a combo. Cross-check against `analysis.json`'s
-  `bracket_estimate.caveats` and anything already flagged as a combo piece
-  in a prior review before recommending a cut.
 - Category targets in `references/category_targets.md` are sourced from
   general Commander deckbuilding convention (mostly one source, the
   "Command Zone Template," for Bracket 3) extrapolated by hand for other
