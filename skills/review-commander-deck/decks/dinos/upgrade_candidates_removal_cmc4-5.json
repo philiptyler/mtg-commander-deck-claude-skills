@@ -1,5 +1,14 @@
 {
   "category": "removal",
+  "category_saturation": {
+    "category": "targeted_removal",
+    "count": 11,
+    "target_range": [
+      10,
+      14
+    ],
+    "status": "within"
+  },
   "query": "id<=GRW f:commander -is:funny -t:land (o:\"destroy target creature\" or o:\"exile target creature\" or o:\"destroy target permanent\" or o:\"exile target permanent\" or o:\"deals damage to target creature\" or o:\"deals damage to any target\") cmc>=4 cmc<=5",
   "commander_color_identity": [
     "G",
@@ -27,7 +36,8 @@
       "is_instant": true,
       "completes_combo": false,
       "combo_details": [],
-      "fills_curve_gap": true
+      "fills_curve_gap": true,
+      "conditional_discount": true
     },
     {
       "name": "Seized from Slumber",
@@ -44,7 +54,8 @@
       "is_instant": true,
       "completes_combo": false,
       "combo_details": [],
-      "fills_curve_gap": true
+      "fills_curve_gap": true,
+      "conditional_discount": true
     },
     {
       "name": "Struggle // Survive",
@@ -62,7 +73,8 @@
       "is_instant": true,
       "completes_combo": false,
       "combo_details": [],
-      "fills_curve_gap": true
+      "fills_curve_gap": true,
+      "conditional_discount": false
     },
     {
       "name": "Ride's End",
@@ -79,7 +91,8 @@
       "is_instant": true,
       "completes_combo": false,
       "combo_details": [],
-      "fills_curve_gap": true
+      "fills_curve_gap": true,
+      "conditional_discount": true
     },
     {
       "name": "Ettercap // Web Shot",
@@ -96,7 +109,8 @@
       "is_instant": true,
       "completes_combo": false,
       "combo_details": [],
-      "fills_curve_gap": true
+      "fills_curve_gap": true,
+      "conditional_discount": false
     },
     {
       "name": "Ajani's Response",
@@ -113,7 +127,8 @@
       "is_instant": true,
       "completes_combo": false,
       "combo_details": [],
-      "fills_curve_gap": true
+      "fills_curve_gap": true,
+      "conditional_discount": true
     },
     {
       "name": "Elspeth, Storm Slayer",
@@ -130,7 +145,8 @@
       "is_instant": false,
       "completes_combo": false,
       "combo_details": [],
-      "fills_curve_gap": true
+      "fills_curve_gap": true,
+      "conditional_discount": false
     },
     {
       "name": "Elspeth Conquers Death",
@@ -147,7 +163,8 @@
       "is_instant": false,
       "completes_combo": false,
       "combo_details": [],
-      "fills_curve_gap": true
+      "fills_curve_gap": true,
+      "conditional_discount": false
     },
     {
       "name": "Combustion Man",
@@ -164,7 +181,8 @@
       "is_instant": false,
       "completes_combo": false,
       "combo_details": [],
-      "fills_curve_gap": true
+      "fills_curve_gap": true,
+      "conditional_discount": false
     },
     {
       "name": "Trapjaw Tyrant",
@@ -181,7 +199,8 @@
       "is_instant": false,
       "completes_combo": false,
       "combo_details": [],
-      "fills_curve_gap": true
+      "fills_curve_gap": true,
+      "conditional_discount": false
     }
   ]
 }

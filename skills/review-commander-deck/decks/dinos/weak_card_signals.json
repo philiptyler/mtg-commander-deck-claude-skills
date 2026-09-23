@@ -133,19 +133,9 @@
       "type_line": "Instant"
     },
     {
-      "name": "Hunting Velociraptor",
-      "cmc": 3.0,
-      "type_line": "Creature \u2014 Dinosaur"
-    },
-    {
       "name": "Invasion of Ikoria // Zilortha, Apex of Ikoria",
       "cmc": 2.0,
       "type_line": "Battle \u2014 Siege // Legendary Creature \u2014 Dinosaur"
-    },
-    {
-      "name": "Marauding Raptor",
-      "cmc": 2.0,
-      "type_line": "Creature \u2014 Dinosaur"
     },
     {
       "name": "Polyraptor",
@@ -171,11 +161,6 @@
       "name": "Roaming Throne",
       "cmc": 4.0,
       "type_line": "Artifact Creature \u2014 Golem"
-    },
-    {
-      "name": "Tannuk, Steadfast Second",
-      "cmc": 4.0,
-      "type_line": "Legendary Creature \u2014 Kavu Pilot"
     },
     {
       "name": "Teleportation Circle",

@@ -93,6 +93,23 @@ MASS_LAND_DENIAL_PATTERNS = [
     r"players can't (search their libraries|play lands)",
 ]
 
+# Not mana ramp (doesn't increase available mana), but a real functional
+# role that was previously invisible to this script: getting a creature
+# onto the battlefield for less than its full cost, which in an ETB-trigger
+# -heavy deck (this repo's example deck included) means more triggers per
+# turn than raw mana would otherwise allow. Added after direct user
+# feedback: Hunting Velociraptor (prowl) and Tannuk, Steadfast Second
+# (warp) were both dismissed as "roleless" by this script and undervalued
+# in a review as a result, when their actual job - cheaper access to a big
+# Dinosaur, meaning another ETB trigger sooner - was real and worth seeing.
+COST_REDUCTION_PATTERNS = [
+    r"have prowl",
+    r"have warp",
+    r"spells you cast cost \{\d+\} less",
+    r"creature spells you cast cost \{\d+\} less",
+    r"costs? \{\d+\} less to cast",
+]
+
 TYPE_CATEGORIES = ["Creature", "Instant", "Sorcery", "Artifact", "Enchantment", "Planeswalker", "Battle", "Land"]
 TYPE_COUNT_KEYS = {
     "Creature": "creatures", "Instant": "instants", "Sorcery": "sorceries",
@@ -137,6 +154,8 @@ def classify_card(card: dict) -> dict:
         tags.add("extra_turn")
     if _matches_any(text, MASS_LAND_DENIAL_PATTERNS):
         tags.add("mass_land_denial")
+    if _matches_any(text, COST_REDUCTION_PATTERNS):
+        tags.add("cost_reduction")
 
     for sentence in re.split(r"(?<=[.;])\s+", text):
         if "search your library for" in sentence:
@@ -171,6 +190,7 @@ def analyze(context: dict) -> dict:
         "ramp": [], "targeted_removal": [], "board_wipe": [], "counterspell": [],
         "card_draw": [], "land_tutor": [], "nonland_tutor": [],
         "extra_turn": [], "mass_land_denial": [], "game_changer": [],
+        "cost_reduction": [],
     }
 
     for card in cards:

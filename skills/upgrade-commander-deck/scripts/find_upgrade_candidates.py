@@ -106,6 +106,57 @@ _OWN_PERMANENT_RE = re.compile(r"(destroy|exile) (?:up to \w+ )?target [\w\s]+ y
 _ANY_DESTROY_EXILE_RE = re.compile(r"(destroy|exile) (?:up to \w+ )?target")
 
 
+# A card whose only "efficiency" is a conditional cost reduction (e.g.
+# "costs {3} less to cast if it targets a tapped creature") isn't reliably
+# that cheap - the board state has to cooperate. Scryfall's own `cmc` field
+# is always the nominal, undiscounted cost, so that part is already honest;
+# what's missing is a flag so a candidate like this doesn't get silently
+# read as "efficient" when the discount won't always be live. Found via
+# real feedback: this is exactly what was wrong with recommending Ride's
+# End, whose only real distinguishing feature over its many near-duplicates
+# ("destroy/exile target creature, costs 3 less if targeting something
+# tapped") was that it hit Vehicles too - a narrow bonus for this deck.
+_CONDITIONAL_COST_RE = re.compile(r"costs? \{\d+\}.{0,20}less to cast if")
+
+
+def has_conditional_discount(oracle_text: str) -> bool:
+    return bool(_CONDITIONAL_COST_RE.search((oracle_text or "").lower()))
+
+
+# Maps this script's --category values to weak_card_signals.json's
+# category_saturation keys (find-weakest-cards), so sourcing can check
+# whether the category actually has room to grow before recommending a net
+# add to it. "protection" and "any" have no saturation tracking - skipped.
+CATEGORY_TO_SATURATION_KEY = {
+    "ramp": "ramp",
+    "removal": "targeted_removal",
+    "board_wipe": "board_wipe",
+    "card_draw": "card_draw",
+    "tutors": "tutors",
+}
+
+
+def saturation_status(deck_dir: Path, category: str):
+    """Returns the category's current saturation status dict from
+    weak_card_signals.json, or None if not tracked/not available. Checking
+    this before sourcing is the fix for a real mistake: recommending a net
+    new removal spell for the dinos deck when weak_card_signals.json
+    already showed targeted_removal at 11/[10,14] - "within", not "under"
+    - meaning what the deck actually needed there (if anything) was a
+    straight quality swap of an existing weak member, not one more card on
+    top of an already-sufficient count."""
+    key = CATEGORY_TO_SATURATION_KEY.get(category)
+    if key is None:
+        return None
+    signals = load(deck_dir / "weak_card_signals.json")
+    if signals is None:
+        return None
+    for row in signals.get("category_saturation", []):
+        if row["category"] == key:
+            return row
+    return None
+
+
 def is_removal_false_positive(category: str, oracle_text: str) -> bool:
     if category not in ("removal", "board_wipe") or not oracle_text:
         return False
@@ -161,12 +212,15 @@ def score_and_filter(raw_cards, existing_names, gap_buckets, combos, category) -
             "completes_combo": bool(completions),
             "combo_details": completions,
             "fills_curve_gap": fills_gap,
+            "conditional_discount": has_conditional_discount(card.get("oracle_text")),
         })
 
     # Deterministic sort: combo completion first (strongest, checkable
     # signal), then curve-gap fit, then instant speed (flexibility), then
     # edhrec_rank as a tiebreaker only - never the primary driver, per this
-    # deck's stated EDHREC policy.
+    # deck's stated EDHREC policy. A conditional-discount card is sorted as
+    # if it costs its full nominal CMC (no bonus for the maybe-discount),
+    # which naturally drops it behind a same-CMC card with no such caveat.
     scored.sort(key=lambda c: (
         not c["completes_combo"],
         not c["fills_curve_gap"],
@@ -193,6 +247,7 @@ def main():
     color_identity = commander_color_identity(context)
     existing_names = {c["name"] for c in context["cards"]}
     gap_buckets = undersupplied_curve_buckets(analysis)
+    saturation = saturation_status(args.deck_dir, args.category)
 
     query = build_query(args.category, color_identity, args.cmc_min, args.cmc_max, args.budget)
     raw_cards = scryfall_search_client.search(query, max_results=50)
@@ -200,6 +255,7 @@ def main():
 
     result = {
         "category": args.category,
+        "category_saturation": saturation,
         "query": query,
         "commander_color_identity": color_identity,
         "undersupplied_curve_buckets": sorted(gap_buckets),
@@ -221,6 +277,17 @@ def main():
     print(f"Wrote {out_path} ({len(ranked)} candidates)")
     if any(c["completes_combo"] for c in ranked):
         print("Note: at least one candidate completes a combo already one card deep in this deck.")
+    if saturation and saturation["status"] != "under":
+        print(
+            f"WARNING: {args.category} is already '{saturation['status']}' "
+            f"({saturation['count']} vs. target {saturation['target_range']}) - "
+            f"a net add here should be a clear quality upgrade over an existing "
+            f"member of this category, not just 'good in isolation.' Consider "
+            f"pairing this candidate with cutting the category's weakest current "
+            f"member instead of an unrelated cut."
+        )
+    if any(c["conditional_discount"] for c in ranked):
+        print("Note: some candidates have a conditional cost discount - see conditional_discount per candidate; don't treat their nominal cmc as reliably cheap.")
 
 
 if __name__ == "__main__":

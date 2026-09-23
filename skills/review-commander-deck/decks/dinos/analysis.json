@@ -89,6 +89,11 @@
       "Jeska's Will",
       "Teferi's Protection",
       "Worldly Tutor"
+    ],
+    "cost_reduction": [
+      "Hunting Velociraptor",
+      "Marauding Raptor",
+      "Tannuk, Steadfast Second"
     ]
   },
   "bracket_estimate": {
