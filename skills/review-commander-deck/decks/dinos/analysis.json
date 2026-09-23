@@ -1,0 +1,103 @@
+{
+  "counts": {
+    "total_cards": 100,
+    "lands": 36,
+    "creatures": 37,
+    "instants": 6,
+    "sorceries": 7,
+    "artifacts": 6,
+    "enchantments": 9,
+    "planeswalkers": 0,
+    "battles": 1
+  },
+  "mana_curve": {
+    "1": 7,
+    "2": 11,
+    "3": 10,
+    "4": 11,
+    "5": 8,
+    "6": 6,
+    "7+": 11
+  },
+  "color_identity_pip_counts": {
+    "R": 36,
+    "W": 30,
+    "G": 54
+  },
+  "categories": {
+    "ramp": [
+      "Arcane Signet",
+      "Atzocan Seer",
+      "Birds of Paradise",
+      "Gwenna, Eyes of Gaea",
+      "Herd Heirloom",
+      "Hulking Raptor",
+      "Intrepid Paleontologist",
+      "Jeska's Will",
+      "Regal Behemoth",
+      "Sol Ring",
+      "The Great Henge",
+      "Three Visits"
+    ],
+    "targeted_removal": [
+      "Annie Joins Up",
+      "Bronzebeak Foragers",
+      "Itzquinth, Firstborn of Gishath",
+      "Kogla and Yidaro",
+      "Swooping Pteranodon",
+      "Swords to Plowshares",
+      "Terror of the Peaks",
+      "Tranquil Frillback",
+      "Trumpeting Carnosaur",
+      "Warstorm Surge",
+      "Wrathful Raptors",
+      "Zacama, Primal Calamity"
+    ],
+    "board_wipe": [
+      "Austere Command",
+      "Wakening Sun's Avatar"
+    ],
+    "counterspell": [],
+    "card_draw": [
+      "Garruk's Uprising",
+      "Guardian Project",
+      "Herd Heirloom",
+      "Jetmir's Garden",
+      "Kogla and Yidaro",
+      "Last March of the Ents",
+      "Runic Armasaur",
+      "Sylvan Library",
+      "The Great Henge",
+      "Vaultborn Tyrant"
+    ],
+    "land_tutor": [
+      "Arid Mesa",
+      "Fabled Passage",
+      "Prismatic Vista",
+      "Windswept Heath",
+      "Wooded Foothills"
+    ],
+    "nonland_tutor": [
+      "Forerunner of the Empire",
+      "Green Sun's Zenith",
+      "Savage Order",
+      "Three Visits",
+      "Worldly Tutor"
+    ],
+    "extra_turn": [],
+    "mass_land_denial": [],
+    "game_changer": [
+      "Jeska's Will",
+      "Teferi's Protection",
+      "Worldly Tutor"
+    ]
+  },
+  "bracket_estimate": {
+    "suggested": "3 (Upgraded)",
+    "reasoning": "Contains 3 Game Changer(s), within Bracket 3's limit of 3.",
+    "caveats": [
+      "Two-card infinite combo potential can't be detected from card text alone \u2014 review the tutor/combo-piece cards in categories.nonland_tutor and categories.game_changer by hand.",
+      "Bracket 1 vs. 2 and Bracket 4 vs. 5 hinge on player/table intent (casual theme vs. optimized, tournament meta vs. not), not just card choices \u2014 this script can't infer that."
+    ]
+  }
+}

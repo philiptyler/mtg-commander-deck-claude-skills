@@ -29,6 +29,20 @@ FIELDS = [
 
 def card_summary(card: dict) -> dict:
     summary = {field: card.get(field) for field in FIELDS}
+
+    # Double-faced cards (transform, modal DFC, ...) leave oracle_text/mana_cost
+    # null at the top level - the real per-face data lives in card_faces.
+    # cmc and type_line are unaffected (Scryfall already combines those).
+    faces = card.get("card_faces") or []
+    if not summary.get("oracle_text") and faces:
+        summary["oracle_text"] = "\n".join(
+            f.get("oracle_text", "") for f in faces if f.get("oracle_text")
+        )
+    if not summary.get("mana_cost") and faces:
+        summary["mana_cost"] = " // ".join(
+            f.get("mana_cost", "") for f in faces if f.get("mana_cost")
+        )
+
     summary["commander_legal"] = card.get("legalities", {}).get("commander")
     return summary
 

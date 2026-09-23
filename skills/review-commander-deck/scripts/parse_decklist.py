@@ -6,6 +6,13 @@ Handles lines like:
     1x Sol Ring
     1 Sol Ring (C21) 263
     1 Krenko, Mob Boss *CMDR*
+    1x Ephemerate (h1r) 1 *F* [Blink]
+    1x Pantlaza, Sun-Favored (lcc) 4 [Commander{top}]
+Trailing set/collector-number info, foil markers (*F*), and bracketed
+category tags ([Finisher], [Commander{top}], ...) are all stripped from the
+name. A card is treated as the commander if it carries a *CMDR*/*commander*
+marker or a bracketed tag containing "commander" (case-insensitive).
+
 Skips blank lines, comment lines (// ...), and section headers that don't
 start with a quantity (e.g. "Commander", "Deck", "Sideboard").
 """
@@ -15,17 +22,11 @@ import json
 import re
 from pathlib import Path
 
-LINE_RE = re.compile(
-    r"""^\s*
-    (?P<qty>\d+)\s*x?\s+           # quantity, optional trailing 'x'
-    (?P<name>.+?)                   # card name (non-greedy)
-    (?:\s*\([A-Za-z0-9]{2,6}\)\s*[A-Za-z0-9\-★]*)?  # optional trailing (SET) collector#
-    \s*$
-    """,
-    re.VERBOSE,
-)
-
-COMMANDER_MARKERS = ("*cmdr*", "*commander*")
+HEAD_RE = re.compile(r"^\s*(?P<qty>\d+)\s*x?\s+(?P<rest>.+?)\s*$")
+TRAILING_TAG_RE = re.compile(r"\[([^\]]*)\]\s*$")
+COMMANDER_MARKER_RE = re.compile(r"\*cmdr\*|\*commander\*", re.IGNORECASE)
+TRAILING_STAR_MARKER_RE = re.compile(r"\*[A-Za-z]+\*\s*$")
+TRAILING_SET_COLLECTOR_RE = re.compile(r"\s*\([A-Za-z0-9]{2,6}\)\s*[A-Za-z0-9\-★]*\s*$")
 
 
 def parse_line(line: str):
@@ -33,20 +34,34 @@ def parse_line(line: str):
     if not line or line.startswith("//") or line.startswith("#"):
         return None
 
-    is_commander = False
-    for marker in COMMANDER_MARKERS:
-        if marker in line.lower():
-            is_commander = True
-            line = re.sub(re.escape(marker), "", line, flags=re.IGNORECASE).strip()
-
-    match = LINE_RE.match(line)
-    if not match:
+    head = HEAD_RE.match(line)
+    if not head:
         return None
 
-    name = match.group("name").strip()
+    rest = head.group("rest")
+    is_commander = False
+
+    # Bracketed category tag, e.g. "[Finisher]" or "[Commander{top}]".
+    tag_match = TRAILING_TAG_RE.search(rest)
+    if tag_match:
+        if "commander" in tag_match.group(1).lower():
+            is_commander = True
+        rest = rest[: tag_match.start()].strip()
+
+    # *CMDR*/*commander* marker, anywhere in what's left.
+    if COMMANDER_MARKER_RE.search(rest):
+        is_commander = True
+        rest = COMMANDER_MARKER_RE.sub("", rest).strip()
+
+    # Any other trailing *X* marker (e.g. *F* for foil).
+    rest = TRAILING_STAR_MARKER_RE.sub("", rest).strip()
+
+    # Trailing (SET) collector# info.
+    rest = TRAILING_SET_COLLECTOR_RE.sub("", rest).strip()
+
     return {
-        "quantity": int(match.group("qty")),
-        "name": name,
+        "quantity": int(head.group("qty")),
+        "name": rest,
         "is_commander": is_commander,
     }
 

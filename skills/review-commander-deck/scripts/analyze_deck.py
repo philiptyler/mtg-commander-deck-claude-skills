@@ -23,28 +23,50 @@ from pathlib import Path
 RAMP_PATTERNS = [
     r"search your library for a basic land card",
     r"search your library for a land card",
+    r"search your library for an? (forest|island|swamp|mountain|plains) card",
     r"add \{[cwubrg]\}",
-    r"add (one|two|three) mana of any (one )?color",
+    r"add (?:an additional )?(one|two|three) mana (of any (one )?color|in any combination of colors)",
     r"add \{[cwubrg]\}\{[cwubrg]\}",
     r"lands? you control.*(?:untap|additional)",
     r"you may play an additional land",
 ]
 
+_UP_TO = r"(?:up to \w+ )?"
+_QUALIFIER = r"(?:[\w-]+ )?"  # e.g. "nonland", "non-Dinosaur", "red" before the noun
+# destroy/exile-target removal needs a per-sentence check, not a plain regex:
+# "exile up to one target artifact or creature you control" has "you control"
+# apply to both nouns, past where a lookahead right after the first noun
+# would see it — so this is checked separately in _has_opponent_removal().
+_DESTROY_EXILE_TARGET_RE = re.compile(
+    rf"(?:destroy|exile) {_UP_TO}target {_QUALIFIER}(creature|permanent|artifact|enchantment|planeswalker)"
+)
+
+_TARGET_VICTIM = r"(?:another )?target (creature|player|planeswalker)|any target"
 TARGETED_REMOVAL_PATTERNS = [
-    r"destroy target (creature|permanent|artifact|enchantment|planeswalker)",
-    r"exile target (creature|permanent|artifact|enchantment|planeswalker)",
-    r"deals? \d+ damage to (target (creature|player|planeswalker)|any target)",
+    rf"deals? \d+ damage to ({_TARGET_VICTIM})",
+    rf"deals? damage equal to .{{0,40}}? to ({_TARGET_VICTIM})",
+    rf"that much damage to ({_TARGET_VICTIM})",
     r"target creature gets -\d+/-\d+",
     r"return target (creature|permanent|nonland permanent) to its owner's hand",
+    r"gain control of target creature",
 ]
 
+
+def _has_opponent_removal(text: str) -> bool:
+    for sentence in re.split(r"(?<=[.;])\s+", text):
+        if _DESTROY_EXILE_TARGET_RE.search(sentence) and "you control" not in sentence:
+            return True
+    return False
+
 BOARD_WIPE_PATTERNS = [
-    r"destroy all (creatures|permanents)",
-    r"exile all (creatures|permanents)",
+    rf"destroy all {_QUALIFIER}(creatures|permanents)",
+    rf"exile all {_QUALIFIER}(creatures|permanents)",
     r"each (creature|player)'s? .*(-\d+/-\d+|sacrifices?)",
     r"all creatures get -\d+/-\d+",
-    r"deals? \d+ damage to each creature",
 ]
+# Handled separately (needs a magnitude check, not just presence):
+BOARD_WIPE_DAMAGE_RE = re.compile(r"deals? (\d+) damage to each creature")
+BOARD_WIPE_DAMAGE_MIN = 2  # below this it's incidental chip damage, not a sweeper
 
 COUNTERSPELL_PATTERNS = [
     r"counter target spell",
@@ -53,7 +75,9 @@ COUNTERSPELL_PATTERNS = [
 _NUMBER_WORDS = r"a|an|one|two|three|four|five|six|seven|eight|nine|ten|\d+|that many|x"
 CARD_DRAW_PATTERNS = [
     rf"draws? ({_NUMBER_WORDS}) cards?",
+    rf"draws? ({_NUMBER_WORDS}) additional cards?",
     r"draws? a card for each",
+    r"draws? cards? equal to",
 ]
 
 EXTRA_TURN_PATTERNS = [
@@ -99,9 +123,11 @@ def classify_card(card: dict) -> dict:
     # dorks, rituals, land-fetch spells).
     if not is_land and _matches_any(text, RAMP_PATTERNS):
         tags.add("ramp")
-    if _matches_any(text, TARGETED_REMOVAL_PATTERNS):
+    if _has_opponent_removal(text) or _matches_any(text, TARGETED_REMOVAL_PATTERNS):
         tags.add("targeted_removal")
-    if _matches_any(text, BOARD_WIPE_PATTERNS):
+    damage_match = BOARD_WIPE_DAMAGE_RE.search(text)
+    is_damage_wipe = damage_match and int(damage_match.group(1)) >= BOARD_WIPE_DAMAGE_MIN
+    if _matches_any(text, BOARD_WIPE_PATTERNS) or is_damage_wipe:
         tags.add("board_wipe")
     if _matches_any(text, COUNTERSPELL_PATTERNS):
         tags.add("counterspell")

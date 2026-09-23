@@ -35,6 +35,13 @@ def _cache_path(cache_dir: Path, name: str) -> Path:
     return cache_dir / f"{_slugify(name)}.json"
 
 
+def _query_identifier(name: str) -> str:
+    # Scryfall's /cards/collection only matches double-faced/split/pathway
+    # cards by their front-face name, even though decklist exports (and
+    # Scryfall's own /cards/named) use the combined "Front // Back" form.
+    return name.split(" // ", 1)[0].strip()
+
+
 def _load_cached(cache_dir: Path, names):
     found, missing = {}, []
     for name in names:
@@ -81,12 +88,14 @@ def get_cards(names, cache_dir):
 
     for i in range(0, len(missing), BATCH_SIZE):
         batch = missing[i : i + BATCH_SIZE]
-        data = _fetch_batch(batch)
+        query_map = {_query_identifier(n): n for n in batch}
+        data = _fetch_batch(list(query_map.keys()))
         for card in data.get("data", []):
             result[card["name"]] = card
             _cache_path(cache_dir, card["name"]).write_text(json.dumps(card, indent=2))
         for nf in data.get("not_found", []):
-            not_found.append(nf.get("name", "<unknown>"))
+            queried = nf.get("name", "<unknown>")
+            not_found.append(query_map.get(queried, queried))
         if i + BATCH_SIZE < len(missing):
             time.sleep(REQUEST_DELAY_SECONDS)
 

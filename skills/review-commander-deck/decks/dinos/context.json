@@ -1,0 +1,2262 @@
+{
+  "deck_dir": "dinos",
+  "card_count": 100,
+  "unique_card_count": 95,
+  "not_found": [],
+  "cards": [
+    {
+      "name": "Aggravated Assault",
+      "mana_cost": "{2}{R}",
+      "cmc": 3.0,
+      "type_line": "Enchantment",
+      "oracle_text": "{3}{R}{R}: Untap all creatures you control. After this main phase, there is an additional combat phase followed by an additional main phase. Activate only as a sorcery.",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Akroma's Will",
+      "mana_cost": "{3}{W}",
+      "cmc": 4.0,
+      "type_line": "Instant",
+      "oracle_text": "Choose one. If you control a commander as you cast this spell, you may choose both instead.\n\u2022 Creatures you control gain flying, vigilance, and double strike until end of turn.\n\u2022 Creatures you control gain lifelink, indestructible, and protection from each color until end of turn.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Annie Joins Up",
+      "mana_cost": "{1}{R}{G}{W}",
+      "cmc": 4.0,
+      "type_line": "Legendary Enchantment",
+      "oracle_text": "When Annie Joins Up enters, it deals 5 damage to target creature or planeswalker an opponent controls.\nIf a triggered ability of a legendary creature you control triggers, that ability triggers an additional time.",
+      "color_identity": [
+        "G",
+        "R",
+        "W"
+      ],
+      "colors": [
+        "G",
+        "R",
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Arcane Signet",
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Arid Mesa",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Mountain or Plains card, put it onto the battlefield, then shuffle.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Atzocan Seer",
+      "mana_cost": "{1}{G}{W}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Human Druid",
+      "oracle_text": "{T}: Add one mana of any color.\nSacrifice this creature: Return target Dinosaur card from your graveyard to your hand.",
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "colors": [
+        "G",
+        "W"
+      ],
+      "game_changer": false,
+      "power": "2",
+      "toughness": "3",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Austere Command",
+      "mana_cost": "{4}{W}{W}",
+      "cmc": 6.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Choose two \u2014\n\u2022 Destroy all artifacts.\n\u2022 Destroy all enchantments.\n\u2022 Destroy all creatures with mana value 3 or less.\n\u2022 Destroy all creatures with mana value 4 or greater.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Birds of Paradise",
+      "mana_cost": "{G}",
+      "cmc": 1.0,
+      "type_line": "Creature \u2014 Bird",
+      "oracle_text": "Flying\n{T}: Add one mana of any color.",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "game_changer": false,
+      "power": "0",
+      "toughness": "1",
+      "loyalty": null,
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Bonehoard Dracosaur",
+      "mana_cost": "{3}{R}{R}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Dinosaur Dragon",
+      "oracle_text": "Flying, first strike\nAt the beginning of your upkeep, exile the top two cards of your library. You may play them this turn. If you exiled a land card this way, create a 3/1 red Dinosaur creature token. If you exiled a nonland card this way, create a Treasure token.",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": "5",
+      "toughness": "5",
+      "loyalty": null,
+      "keywords": [
+        "Flying",
+        "First strike",
+        "Treasure"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Bountiful Promenade",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {G} or {W}.",
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Branchloft Pathway // Boulderloft Pathway",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land // Land",
+      "oracle_text": "{T}: Add {G}.\n{T}: Add {W}.",
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "colors": null,
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Bronzebeak Foragers",
+      "mana_cost": "{3}{W}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Dinosaur",
+      "oracle_text": "When this creature enters, for each opponent, exile up to one target nonland permanent that player controls until this creature leaves the battlefield.\n{X}{W}: Put target card with mana value X exiled with this creature into its owner's graveyard. You gain X life.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": "3",
+      "toughness": "4",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Cavern of Souls",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "As this land enters, choose a creature type.\n{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast a creature spell of the chosen type, and that spell can't be countered.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "City of Brass",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "Whenever this land becomes tapped, it deals 1 damage to you.\n{T}: Add one mana of any color.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Command Tower",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Cragcrown Pathway // Timbercrown Pathway",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land // Land",
+      "oracle_text": "{T}: Add {R}.\n{T}: Add {G}.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "colors": null,
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Cream of the Crop",
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Enchantment",
+      "oracle_text": "Whenever a creature you control enters, you may look at the top X cards of your library, where X is that creature's power. If you do, put one of those cards on top of your library and the rest on the bottom of your library in any order.",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Curator of Sun's Creation",
+      "mana_cost": "{3}{R}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Human Artificer",
+      "oracle_text": "Whenever you discover, discover again for the same value. This ability triggers only once each turn.",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": "3",
+      "toughness": "3",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Daydream",
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Exile target creature you control, then return that card to the battlefield under its owner's control with a +1/+1 counter on it.\nFlashback {2}{W} (You may cast this card from your graveyard for its flashback cost. Then exile it.)",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Flashback"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Ephemerate",
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Exile target creature you control, then return it to the battlefield under its owner's control.\nRebound (If you cast this spell from your hand, exile it as it resolves. At the beginning of your next upkeep, you may cast this card from exile without paying its mana cost.)",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Rebound"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Etali, Primal Conqueror // Etali, Primal Sickness",
+      "mana_cost": "{5}{R}{R}",
+      "cmc": 7.0,
+      "type_line": "Legendary Creature \u2014 Elder Dinosaur // Legendary Creature \u2014 Phyrexian Elder Dinosaur",
+      "oracle_text": "Trample\nWhen Etali enters, each player exiles cards from the top of their library until they exile a nonland card. You may cast any number of spells from among the nonland cards exiled this way without paying their mana costs.\n{9}{G/P}: Transform Etali. Activate only as a sorcery.\nTrample, indestructible\nWhenever Etali deals combat damage to a player, they get that many poison counters. (A player with ten or more poison counters loses the game.)",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "colors": null,
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Indestructible",
+        "Transform",
+        "Trample"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Etali, Primal Storm",
+      "mana_cost": "{4}{R}{R}",
+      "cmc": 6.0,
+      "type_line": "Legendary Creature \u2014 Elder Dinosaur",
+      "oracle_text": "Whenever Etali attacks, exile the top card of each player's library, then you may cast any number of spells from among those cards without paying their mana costs.",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": "6",
+      "toughness": "6",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Exotic Orchard",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Fabled Passage",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Sacrifice this land: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle. Then if you control four or more lands, untap that land.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Fire-Lit Thicket",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{R/G}, {T}: Add {R}{R}, {R}{G}, or {G}{G}.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "C",
+        "G",
+        "R"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Forerunner of the Empire",
+      "mana_cost": "{3}{R}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Human Soldier",
+      "oracle_text": "When this creature enters, you may search your library for a Dinosaur card, reveal it, then shuffle and put that card on top.\nWhenever a Dinosaur you control enters, you may have this creature deal 1 damage to each creature.",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": "1",
+      "toughness": "3",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Forest",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Forest",
+      "oracle_text": "({T}: Add {G}.)",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "G"
+      ],
+      "commander_legal": "legal",
+      "quantity": 4,
+      "is_commander": false
+    },
+    {
+      "name": "Garruk's Uprising",
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Enchantment",
+      "oracle_text": "When this enchantment enters, if you control a creature with power 4 or greater, draw a card.\nCreatures you control have trample. (Each of those creatures can deal excess combat damage to the player or planeswalker it's attacking.)\nWhenever a creature you control with power 4 or greater enters, draw a card.",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Ghalta and Mavren",
+      "mana_cost": "{3}{G}{G}{W}{W}",
+      "cmc": 7.0,
+      "type_line": "Legendary Creature \u2014 Dinosaur Vampire",
+      "oracle_text": "Trample\nWhenever you attack, choose one \u2014\n\u2022 Create a tapped and attacking X/X green Dinosaur creature token with trample, where X is the greatest power among other attacking creatures.\n\u2022 Create X 1/1 white Vampire creature tokens with lifelink, where X is the number of other attacking creatures.",
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "colors": [
+        "G",
+        "W"
+      ],
+      "game_changer": false,
+      "power": "12",
+      "toughness": "12",
+      "loyalty": null,
+      "keywords": [
+        "Trample"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Ghalta, Stampede Tyrant",
+      "mana_cost": "{5}{G}{G}{G}",
+      "cmc": 8.0,
+      "type_line": "Legendary Creature \u2014 Elder Dinosaur",
+      "oracle_text": "Trample\nWhen Ghalta enters, put any number of creature cards from your hand onto the battlefield.",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "game_changer": false,
+      "power": "12",
+      "toughness": "12",
+      "loyalty": null,
+      "keywords": [
+        "Trample"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Gishath, Sun's Avatar",
+      "mana_cost": "{5}{R}{G}{W}",
+      "cmc": 8.0,
+      "type_line": "Legendary Creature \u2014 Dinosaur Avatar",
+      "oracle_text": "Vigilance, trample, haste\nWhenever Gishath deals combat damage to a player, reveal that many cards from the top of your library. Put any number of Dinosaur creature cards from among them onto the battlefield and the rest on the bottom of your library in a random order.",
+      "color_identity": [
+        "G",
+        "R",
+        "W"
+      ],
+      "colors": [
+        "G",
+        "R",
+        "W"
+      ],
+      "game_changer": false,
+      "power": "7",
+      "toughness": "6",
+      "loyalty": null,
+      "keywords": [
+        "Vigilance",
+        "Haste",
+        "Trample"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Grand Abolisher",
+      "mana_cost": "{W}{W}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Human Cleric",
+      "oracle_text": "During your turn, your opponents can't cast spells or activate abilities of artifacts, creatures, or enchantments.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": "2",
+      "toughness": "2",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Green Sun's Zenith",
+      "mana_cost": "{X}{G}",
+      "cmc": 1.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Search your library for a green creature card with mana value X or less, put it onto the battlefield, then shuffle. Shuffle Green Sun's Zenith into its owner's library.",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Guardian Project",
+      "mana_cost": "{3}{G}",
+      "cmc": 4.0,
+      "type_line": "Enchantment",
+      "oracle_text": "Whenever a nontoken creature you control enters, if it doesn't have the same name as another creature you control or a creature card in your graveyard, draw a card.",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Gwenna, Eyes of Gaea",
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Legendary Creature \u2014 Elf Druid Scout",
+      "oracle_text": "{T}: Add two mana in any combination of colors. Spend this mana only to cast creature spells or activate abilities of creature sources.\nWhenever you cast a creature spell with power 5 or greater, put a +1/+1 counter on Gwenna and untap it.",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "game_changer": false,
+      "power": "2",
+      "toughness": "3",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Herd Heirloom",
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add one mana of any color. Spend this mana only to cast a creature spell.\n{T}: Until end of turn, target creature you control with power 4 or greater gains trample and \"Whenever this creature deals combat damage to a player, draw a card.\"",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Heroic Intervention",
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "oracle_text": "Permanents you control gain hexproof and indestructible until end of turn.",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Hulking Raptor",
+      "mana_cost": "{2}{G}{G}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Dinosaur",
+      "oracle_text": "Ward {2}\nAt the beginning of your first main phase, add {G}{G}.",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "game_changer": false,
+      "power": "5",
+      "toughness": "3",
+      "loyalty": null,
+      "keywords": [
+        "Ward"
+      ],
+      "produced_mana": [
+        "G"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Hunting Velociraptor",
+      "mana_cost": "{2}{R}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Dinosaur",
+      "oracle_text": "First strike\nDinosaur spells you cast have prowl {2}{R}. (You may cast a spell for its prowl cost if you dealt combat damage to a player this turn with a creature with any of its creature types.)",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": "3",
+      "toughness": "2",
+      "loyalty": null,
+      "keywords": [
+        "First strike"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Hushwood Verge",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {G}.\n{T}: Add {W}. Activate only if you control a Forest or a Plains.",
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Intrepid Paleontologist",
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Human Druid",
+      "oracle_text": "{T}: Add one mana of any color.\n{2}: Exile target card from a graveyard.\nYou may cast Dinosaur creature spells from among cards you own exiled with this creature. If you cast a spell this way, that creature enters with a finality counter on it. (If a creature with a finality counter on it would die, exile it instead.)",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "game_changer": false,
+      "power": "2",
+      "toughness": "2",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Invasion of Ikoria // Zilortha, Apex of Ikoria",
+      "mana_cost": "{X}{G}{G}",
+      "cmc": 2.0,
+      "type_line": "Battle \u2014 Siege // Legendary Creature \u2014 Dinosaur",
+      "oracle_text": "(As a Siege enters, choose an opponent to protect it. You and others can attack it. When it's defeated, exile it, then cast it transformed.)\nWhen this Siege enters, search your library and/or graveyard for a non-Human creature card with mana value X or less and put it onto the battlefield. If you search your library this way, shuffle.\nReach\nFor each non-Human creature you control, you may have that creature assign its combat damage as though it weren't blocked.",
+      "color_identity": [
+        "G"
+      ],
+      "colors": null,
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Reach",
+        "Transform"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Itzquinth, Firstborn of Gishath",
+      "mana_cost": "{R}{G}",
+      "cmc": 2.0,
+      "type_line": "Legendary Creature \u2014 Dinosaur",
+      "oracle_text": "Haste\nWhen Itzquinth enters, you may pay {2}. When you do, target Dinosaur you control deals damage equal to its power to another target creature.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "colors": [
+        "G",
+        "R"
+      ],
+      "game_changer": false,
+      "power": "2",
+      "toughness": "3",
+      "loyalty": null,
+      "keywords": [
+        "Haste"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Jeska's Will",
+      "mana_cost": "{2}{R}",
+      "cmc": 3.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Choose one. If you control a commander as you cast this spell, you may choose both instead.\n\u2022 Add {R} for each card in target opponent's hand.\n\u2022 Exile the top three cards of your library. You may play them this turn.",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": true,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "R"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Jetmir's Garden",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Mountain Forest Plains",
+      "oracle_text": "({T}: Add {R}, {G}, or {W}.)\nThis land enters tapped.\nCycling {3} ({3}, Discard this card: Draw a card.)",
+      "color_identity": [
+        "G",
+        "R",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "G",
+        "R",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Karplusan Forest",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {R} or {G}. This land deals 1 damage to you.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "C",
+        "G",
+        "R"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Kogla and Yidaro",
+      "mana_cost": "{2}{R}{R}{G}{G}",
+      "cmc": 6.0,
+      "type_line": "Legendary Creature \u2014 Ape Dinosaur Turtle",
+      "oracle_text": "When Kogla and Yidaro enters, choose one \u2014\n\u2022 It gains trample and haste until end of turn.\n\u2022 It fights target creature you don't control.\n{2}{R}{G}, Discard this card: Destroy up to one target artifact or enchantment. Shuffle this card into your library from your graveyard, then draw a card.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "colors": [
+        "G",
+        "R"
+      ],
+      "game_changer": false,
+      "power": "7",
+      "toughness": "7",
+      "loyalty": null,
+      "keywords": [
+        "Fight"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Last March of the Ents",
+      "mana_cost": "{6}{G}{G}",
+      "cmc": 8.0,
+      "type_line": "Sorcery",
+      "oracle_text": "This spell can't be countered.\nDraw cards equal to the greatest toughness among creatures you control, then put any number of creature cards from your hand onto the battlefield.",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Mana Confluence",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life: Add one mana of any color.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Marauding Raptor",
+      "mana_cost": "{1}{R}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Dinosaur",
+      "oracle_text": "Creature spells you cast cost {1} less to cast.\nWhenever another creature you control enters, this creature deals 2 damage to it. If a Dinosaur is dealt damage this way, this creature gets +2/+0 until end of turn.",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": "2",
+      "toughness": "3",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Mosswort Bridge",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "Hideaway 4 (When this land enters, look at the top four cards of your library, exile one face down, then put the rest on the bottom in a random order.)\nThis land enters tapped.\n{T}: Add {G}.\n{G}, {T}: You may play the exiled card without paying its mana cost if creatures you control have total power 10 or greater.",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Hideaway"
+      ],
+      "produced_mana": [
+        "G"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Mountain",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Mountain",
+      "oracle_text": "({T}: Add {R}.)",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "R"
+      ],
+      "commander_legal": "legal",
+      "quantity": 2,
+      "is_commander": false
+    },
+    {
+      "name": "Needleverge Pathway // Pillarverge Pathway",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land // Land",
+      "oracle_text": "{T}: Add {R}.\n{T}: Add {W}.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "colors": null,
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Overgrown Farmland",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you control two or more other lands.\n{T}: Add {G} or {W}.",
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Pantlaza, Sun-Favored",
+      "mana_cost": "{2}{R}{G}{W}",
+      "cmc": 5.0,
+      "type_line": "Legendary Creature \u2014 Dinosaur",
+      "oracle_text": "Whenever Pantlaza or another Dinosaur you control enters, you may discover X, where X is that creature's toughness. Do this only once each turn. (Exile cards from the top of your library until you exile a nonland card with that mana value or less. Cast it without paying its mana cost or put it into your hand. Put the rest on the bottom in a random order.)",
+      "color_identity": [
+        "G",
+        "R",
+        "W"
+      ],
+      "colors": [
+        "G",
+        "R",
+        "W"
+      ],
+      "game_changer": false,
+      "power": "4",
+      "toughness": "4",
+      "loyalty": null,
+      "keywords": [
+        "Discover"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": true
+    },
+    {
+      "name": "Plains",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Plains",
+      "oracle_text": "({T}: Add {W}.)",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 2,
+      "is_commander": false
+    },
+    {
+      "name": "Polyraptor",
+      "mana_cost": "{6}{G}{G}",
+      "cmc": 8.0,
+      "type_line": "Creature \u2014 Dinosaur",
+      "oracle_text": "Enrage \u2014 Whenever this creature is dealt damage, create a token that's a copy of this creature.",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "game_changer": false,
+      "power": "5",
+      "toughness": "5",
+      "loyalty": null,
+      "keywords": [
+        "Enrage"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Prismatic Vista",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a basic land card, put it onto the battlefield, then shuffle.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Quartzwood Crasher",
+      "mana_cost": "{2}{R}{R}{G}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Dinosaur Beast",
+      "oracle_text": "Trample\nWhenever one or more creatures you control with trample deal combat damage to a player, create an X/X green Dinosaur Beast creature token with trample, where X is the amount of damage those creatures dealt to that player.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "colors": [
+        "G",
+        "R"
+      ],
+      "game_changer": false,
+      "power": "6",
+      "toughness": "6",
+      "loyalty": null,
+      "keywords": [
+        "Trample"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Regal Behemoth",
+      "mana_cost": "{4}{G}{G}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Dinosaur",
+      "oracle_text": "Trample\nWhen this creature enters, you become the monarch.\nWhenever you tap a land for mana while you're the monarch, add an additional one mana of any color.",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "game_changer": false,
+      "power": "5",
+      "toughness": "5",
+      "loyalty": null,
+      "keywords": [
+        "Trample"
+      ],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Regisaur Alpha",
+      "mana_cost": "{3}{R}{G}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Dinosaur",
+      "oracle_text": "Other Dinosaurs you control have haste.\nWhen this creature enters, create a 3/3 green Dinosaur creature token with trample.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "colors": [
+        "G",
+        "R"
+      ],
+      "game_changer": false,
+      "power": "4",
+      "toughness": "4",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Rhythm of the Wild",
+      "mana_cost": "{1}{R}{G}",
+      "cmc": 3.0,
+      "type_line": "Enchantment",
+      "oracle_text": "Creature spells you control can't be countered.\nNontoken creatures you control have riot. (They enter with your choice of a +1/+1 counter or haste.)",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "colors": [
+        "G",
+        "R"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Roaming Throne",
+      "mana_cost": "{4}",
+      "cmc": 4.0,
+      "type_line": "Artifact Creature \u2014 Golem",
+      "oracle_text": "Ward {2}\nAs this creature enters, choose a creature type.\nThis creature is the chosen type in addition to its other types.\nIf a triggered ability of another creature you control of the chosen type triggers, it triggers an additional time.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": "4",
+      "toughness": "4",
+      "loyalty": null,
+      "keywords": [
+        "Ward"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Rockfall Vale",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you control two or more other lands.\n{T}: Add {R} or {G}.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Rugged Prairie",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{R/W}, {T}: Add {R}{R}, {R}{W}, or {W}{W}.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "C",
+        "R",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Runic Armasaur",
+      "mana_cost": "{1}{G}{G}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Dinosaur",
+      "oracle_text": "Whenever an opponent activates an ability of a creature or land that isn't a mana ability, you may draw a card.",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "game_changer": false,
+      "power": "2",
+      "toughness": "5",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Sacred Foundry",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Mountain Plains",
+      "oracle_text": "({T}: Add {R} or {W}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Savage Order",
+      "mana_cost": "{2}{G}{G}",
+      "cmc": 4.0,
+      "type_line": "Sorcery",
+      "oracle_text": "As an additional cost to cast this spell, sacrifice a creature with power 4 or greater.\nSearch your library for a Dinosaur creature card, put it onto the battlefield, then shuffle. It gains indestructible until your next turn.",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Sol Ring",
+      "mana_cost": "{1}",
+      "cmc": 1.0,
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add {C}{C}.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Spire Garden",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {R} or {G}.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Stomping Ground",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Mountain Forest",
+      "oracle_text": "({T}: Add {R} or {G}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Swooping Pteranodon",
+      "mana_cost": "{3}{R}{W}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Dinosaur",
+      "oracle_text": "Flying, haste\nWhenever this creature or another Dinosaur you control with flying enters, gain control of target creature an opponent controls until end of turn. Untap that creature. It gains flying and haste until end of turn. At the beginning of the next end step, target land deals 3 damage to that creature.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "colors": [
+        "R",
+        "W"
+      ],
+      "game_changer": false,
+      "power": "3",
+      "toughness": "3",
+      "loyalty": null,
+      "keywords": [
+        "Flying",
+        "Haste"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Swords to Plowshares",
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Exile target creature. Its controller gains life equal to its power.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Sylvan Library",
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Enchantment",
+      "oracle_text": "At the beginning of your draw step, you may draw two additional cards. If you do, choose two cards in your hand drawn this turn. For each of those cards, pay 4 life or put the card on top of your library.",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Tannuk, Steadfast Second",
+      "mana_cost": "{2}{R}{R}",
+      "cmc": 4.0,
+      "type_line": "Legendary Creature \u2014 Kavu Pilot",
+      "oracle_text": "Other creatures you control have haste.\nArtifact cards and red creature cards in your hand have warp {2}{R}. (You may cast a card from your hand for its warp cost. Exile that permanent at the beginning of the next end step, then you may cast it from exile on a later turn.)",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": "3",
+      "toughness": "5",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Teferi's Protection",
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "oracle_text": "Until your next turn, your life total can't change and you gain protection from everything. All permanents you control phase out. (While they're phased out, they're treated as though they don't exist. They phase in before you untap during your untap step.)\nExile Teferi's Protection.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": true,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Teleportation Circle",
+      "mana_cost": "{3}{W}",
+      "cmc": 4.0,
+      "type_line": "Enchantment",
+      "oracle_text": "At the beginning of your end step, exile up to one target artifact or creature you control, then return that card to the battlefield under its owner's control.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Temple Altisaur",
+      "mana_cost": "{4}{W}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Dinosaur",
+      "oracle_text": "If a source would deal damage to another Dinosaur you control, prevent all but 1 of that damage.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": "3",
+      "toughness": "4",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Temple Garden",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Forest Plains",
+      "oracle_text": "({T}: Add {G} or {W}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Terror of the Peaks",
+      "mana_cost": "{3}{R}{R}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Dragon",
+      "oracle_text": "Flying\nSpells your opponents cast that target this creature cost an additional 3 life to cast.\nWhenever another creature you control enters, this creature deals damage equal to that creature's power to any target.",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": "5",
+      "toughness": "4",
+      "loyalty": null,
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "The Great Henge",
+      "mana_cost": "{7}{G}{G}",
+      "cmc": 9.0,
+      "type_line": "Legendary Artifact",
+      "oracle_text": "This spell costs {X} less to cast, where X is the greatest power among creatures you control.\n{T}: Add {G}{G}. You gain 2 life.\nWhenever a nontoken creature you control enters, put a +1/+1 counter on it and draw a card.",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "G"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "The Skullspore Nexus",
+      "mana_cost": "{6}{G}{G}",
+      "cmc": 8.0,
+      "type_line": "Legendary Artifact",
+      "oracle_text": "This spell costs {X} less to cast, where X is the greatest power among creatures you control.\nWhenever one or more nontoken creatures you control die, create a green Fungus Dinosaur creature token with base power and toughness each equal to the total power of those creatures.\n{2}, {T}: Double target creature's power until end of turn.",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Double"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Three Visits",
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Search your library for a Forest card, put it onto the battlefield, then shuffle.",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Tranquil Frillback",
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Dinosaur",
+      "oracle_text": "When this creature enters, you may pay {G} up to three times. When you pay this cost one or more times, choose up to that many \u2014\n\u2022 Destroy target artifact or enchantment.\n\u2022 Exile target player's graveyard.\n\u2022 You gain 4 life.",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "game_changer": false,
+      "power": "3",
+      "toughness": "3",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Trumpeting Carnosaur",
+      "mana_cost": "{4}{R}{R}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Dinosaur",
+      "oracle_text": "Trample\nWhen this creature enters, discover 5.\n{2}{R}, Discard this card: It deals 3 damage to target creature or planeswalker.",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": "7",
+      "toughness": "6",
+      "loyalty": null,
+      "keywords": [
+        "Discover",
+        "Trample"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Unclaimed Territory",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "As this land enters, choose a creature type.\n{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast a creature spell of the chosen type.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Vaultborn Tyrant",
+      "mana_cost": "{5}{G}{G}",
+      "cmc": 7.0,
+      "type_line": "Creature \u2014 Dinosaur",
+      "oracle_text": "Trample\nWhenever this creature or another creature you control with power 4 or greater enters, you gain 3 life and draw a card.\nWhen this creature dies, if it's not a token, create a token that's a copy of it, except it's an artifact in addition to its other types.",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "game_changer": false,
+      "power": "6",
+      "toughness": "6",
+      "loyalty": null,
+      "keywords": [
+        "Trample"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Wakening Sun's Avatar",
+      "mana_cost": "{5}{W}{W}{W}",
+      "cmc": 8.0,
+      "type_line": "Creature \u2014 Dinosaur Avatar",
+      "oracle_text": "When this creature enters, if you cast it from your hand, destroy all non-Dinosaur creatures.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": "7",
+      "toughness": "7",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Warstorm Surge",
+      "mana_cost": "{5}{R}",
+      "cmc": 6.0,
+      "type_line": "Enchantment",
+      "oracle_text": "Whenever a creature you control enters, it deals damage equal to its power to any target.",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Windswept Heath",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Forest or Plains card, put it onto the battlefield, then shuffle.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Wooded Bastion",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{G/W}, {T}: Add {G}{G}, {G}{W}, or {W}{W}.",
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "C",
+        "G",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Wooded Foothills",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Mountain or Forest card, put it onto the battlefield, then shuffle.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Worldly Tutor",
+      "mana_cost": "{G}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Search your library for a creature card, reveal it, then shuffle and put the card on top.",
+      "color_identity": [
+        "G"
+      ],
+      "colors": [
+        "G"
+      ],
+      "game_changer": true,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Wrathful Raptors",
+      "mana_cost": "{4}{R}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Dinosaur",
+      "oracle_text": "Trample\nWhenever a Dinosaur you control is dealt damage, it deals that much damage to any target that isn't a Dinosaur.",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": "5",
+      "toughness": "5",
+      "loyalty": null,
+      "keywords": [
+        "Trample"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Zacama, Primal Calamity",
+      "mana_cost": "{6}{R}{G}{W}",
+      "cmc": 9.0,
+      "type_line": "Legendary Creature \u2014 Elder Dinosaur",
+      "oracle_text": "Reach, vigilance, trample\nWhen Zacama enters, if you cast it, untap all lands you control.\n{2}{R}: Zacama deals 3 damage to target creature.\n{2}{G}: Destroy target artifact or enchantment.\n{2}{W}: You gain 3 life.",
+      "color_identity": [
+        "G",
+        "R",
+        "W"
+      ],
+      "colors": [
+        "G",
+        "R",
+        "W"
+      ],
+      "game_changer": false,
+      "power": "9",
+      "toughness": "9",
+      "loyalty": null,
+      "keywords": [
+        "Reach",
+        "Vigilance",
+        "Trample"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    }
+  ]
+}
