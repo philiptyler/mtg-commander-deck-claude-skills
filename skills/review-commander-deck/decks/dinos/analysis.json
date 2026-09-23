@@ -95,7 +95,12 @@
     "cost_reduction": [
       "Hunting Velociraptor",
       "Marauding Raptor",
-      "Tannuk, Steadfast Second"
+      "Tannuk, Steadfast Second",
+      "The Great Henge",
+      "The Skullspore Nexus"
+    ],
+    "resilience": [
+      "The Skullspore Nexus"
     ]
   },
   "bracket_estimate": {

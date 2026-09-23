@@ -1,0 +1,209 @@
+{
+  "color": "W",
+  "query": "id<=GRW t:land -is:funny",
+  "candidates": [
+    {
+      "name": "Path of Ancestry",
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped.\n{T}: Add one mana of any color in your commander's color identity. When that mana is spent to cast a creature spell that shares a creature type with your commander, scry 1. (Look at the top card of your library. You may put that card on the bottom.)",
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "usd": null,
+      "edhrec_rank": 14,
+      "enters_tapped_no_upside": false
+    },
+    {
+      "name": "Clifftop Retreat",
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you control a Mountain or a Plains.\n{T}: Add {R} or {W}.",
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "usd": null,
+      "edhrec_rank": 80,
+      "enters_tapped_no_upside": false
+    },
+    {
+      "name": "Canopy Vista",
+      "type_line": "Land \u2014 Forest Plains",
+      "oracle_text": "({T}: Add {G} or {W}.)\nThis land enters tapped unless you control two or more basic lands.",
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "usd": "0.32",
+      "edhrec_rank": 106,
+      "enters_tapped_no_upside": false
+    },
+    {
+      "name": "Battlefield Forge",
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {R} or {W}. This land deals 1 damage to you.",
+      "produced_mana": [
+        "C",
+        "R",
+        "W"
+      ],
+      "usd": null,
+      "edhrec_rank": 121,
+      "enters_tapped_no_upside": false
+    },
+    {
+      "name": "Sunpetal Grove",
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you control a Forest or a Plains.\n{T}: Add {G} or {W}.",
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "usd": "0.39",
+      "edhrec_rank": 132,
+      "enters_tapped_no_upside": false
+    },
+    {
+      "name": "Nykthos, Shrine to Nyx",
+      "type_line": "Legendary Land",
+      "oracle_text": "{T}: Add {C}.\n{2}, {T}: Choose a color. Add an amount of mana of that color equal to your devotion to that color. (Your devotion to a color is the number of mana symbols of that color in the mana costs of permanents you control.)",
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "usd": "53.35",
+      "edhrec_rank": 163,
+      "enters_tapped_no_upside": false
+    },
+    {
+      "name": "Spectator Seating",
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {R} or {W}.",
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "usd": "5.70",
+      "edhrec_rank": 167,
+      "enters_tapped_no_upside": false
+    },
+    {
+      "name": "Reflecting Pool",
+      "type_line": "Land",
+      "oracle_text": "{T}: Add one mana of any type that a land you control could produce.",
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "usd": null,
+      "edhrec_rank": 169,
+      "enters_tapped_no_upside": false
+    },
+    {
+      "name": "Three Tree City",
+      "type_line": "Legendary Land",
+      "oracle_text": "As Three Tree City enters, choose a creature type.\n{T}: Add {C}.\n{2}, {T}: Choose a color. Add an amount of mana of that color equal to the number of creatures you control of the chosen type.",
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "usd": "32.27",
+      "edhrec_rank": 177,
+      "enters_tapped_no_upside": false
+    },
+    {
+      "name": "Gemstone Caverns",
+      "type_line": "Legendary Land",
+      "oracle_text": "If this card is in your opening hand and you're not the starting player, you may begin the game with Gemstone Caverns on the battlefield with a luck counter on it. If you do, exile a card from your hand.\n{T}: Add {C}. If Gemstone Caverns has a luck counter on it, instead add one mana of any color.",
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "usd": "62.24",
+      "edhrec_rank": 179,
+      "enters_tapped_no_upside": false
+    },
+    {
+      "name": "Secluded Courtyard",
+      "type_line": "Land",
+      "oracle_text": "As this land enters, choose a creature type.\n{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast a creature spell of the chosen type or activate an ability of a creature source of the chosen type.",
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "usd": "0.31",
+      "edhrec_rank": 219,
+      "enters_tapped_no_upside": false
+    },
+    {
+      "name": "Brushland",
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {G} or {W}. This land deals 1 damage to you.",
+      "produced_mana": [
+        "C",
+        "G",
+        "W"
+      ],
+      "usd": "1.54",
+      "edhrec_rank": 231,
+      "enters_tapped_no_upside": false
+    },
+    {
+      "name": "Sundown Pass",
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you control two or more other lands.\n{T}: Add {R} or {W}.",
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "usd": "2.56",
+      "edhrec_rank": 263,
+      "enters_tapped_no_upside": false
+    },
+    {
+      "name": "Witch Enchanter // Witch-Blessed Meadow",
+      "type_line": "Creature \u2014 Human Warlock // Land",
+      "oracle_text": "When this creature enters, destroy target artifact or enchantment an opponent controls.\nAs this land enters, you may pay 3 life. If you don't, it enters tapped.\n{T}: Add {W}.",
+      "produced_mana": [
+        "W"
+      ],
+      "usd": "5.23",
+      "edhrec_rank": 294,
+      "enters_tapped_no_upside": false
+    },
+    {
+      "name": "Temple of Triumph",
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped.\nWhen this land enters, scry 1. (Look at the top card of your library. You may put that card on the bottom.)\n{T}: Add {R} or {W}.",
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "usd": "0.28",
+      "edhrec_rank": 314,
+      "enters_tapped_no_upside": false
+    }
+  ]
+}

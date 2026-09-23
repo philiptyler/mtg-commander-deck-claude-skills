@@ -52,6 +52,54 @@ def commander_color_identity(context: dict) -> list:
     return sorted(colors)
 
 
+# Words that leak into the subtype tally from split/DFC type_lines (e.g.
+# "Legendary Creature — Elder Dinosaur // Legendary Creature — Phyrexian
+# Elder Dinosaur" has a second " — " past the first split point) or from
+# the type_line's own supertype/type words, not real creature subtypes.
+_TYPE_LINE_NOISE = {"legendary", "creature", "//", "—", "snow", "basic", "token"}
+
+
+def dominant_creature_type(context: dict):
+    """The deck's tribal focus, if it has a real one: the most common
+    creature subtype among its own creatures, when that subtype clearly
+    dominates (>=30% of creatures). Returns None for decks with no strong
+    tribal theme, rather than forcing a weak signal.
+
+    Built after direct feedback: Hornet Nest (an Insect) was recommended
+    for a deck whose commander cares specifically about Dinosaurs entering
+    - a generically good card that doesn't feed the deck's actual primary
+    engine. "Does it complete a combo" and "is it on-tribe" are different
+    questions, and this script was only asking the first one.
+    """
+    counts = {}
+    creature_count = 0
+    for card in context["cards"]:
+        if card.get("not_found") or card.get("is_commander"):
+            continue
+        type_line = card.get("type_line") or ""
+        if "Creature" not in type_line or "Land" in type_line:
+            continue
+        qty = card.get("quantity", 1)
+        creature_count += qty
+        if "—" in type_line:
+            for subtype in type_line.split("—", 1)[1].split():
+                key = subtype.strip().lower()
+                if key in _TYPE_LINE_NOISE:
+                    continue
+                counts[subtype] = counts.get(subtype, 0) + qty
+
+    if not counts or creature_count == 0:
+        return None
+    top_type, top_count = max(counts.items(), key=lambda kv: kv[1])
+    return top_type if top_count / creature_count >= 0.3 else None
+
+
+def is_tribal_match(card: dict, tribal_type) -> bool:
+    if not tribal_type:
+        return False
+    return tribal_type.lower() in (card.get("type_line") or "").lower()
+
+
 def build_query(category: str, color_identity: list, cmc_min, cmc_max, budget) -> str:
     parts = [
         f"id<={''.join(color_identity) or 'c'}",
@@ -193,7 +241,7 @@ def normalize_card(card: dict) -> dict:
     return card
 
 
-def score_and_filter(raw_cards, existing_names, gap_buckets, combos, category) -> list:
+def score_and_filter(raw_cards, existing_names, gap_buckets, combos, category, tribal_type=None) -> list:
     scored = []
     for card in raw_cards:
         card = normalize_card(card)
@@ -218,15 +266,24 @@ def score_and_filter(raw_cards, existing_names, gap_buckets, combos, category) -
             "combo_details": completions,
             "fills_curve_gap": fills_gap,
             "conditional_discount": has_conditional_discount(card.get("oracle_text")),
+            "tribal_match": is_tribal_match(card, tribal_type),
         })
 
-    # Deterministic sort: combo completion first (strongest, checkable
-    # signal), then curve-gap fit, then instant speed (flexibility), then
-    # edhrec_rank as a tiebreaker only - never the primary driver, per this
-    # deck's stated EDHREC policy. A conditional-discount card is sorted as
-    # if it costs its full nominal CMC (no bonus for the maybe-discount),
-    # which naturally drops it behind a same-CMC card with no such caveat.
+    # Deterministic sort: on-tribe first (a tribal deck's payoffs, tutors,
+    # and its commander itself usually only care about creatures of that
+    # type - a generically good off-tribe card doesn't feed that engine no
+    # matter how good it is in a vacuum; found via direct feedback that
+    # Hornet Nest, an Insect, was recommended to a Dinosaur tribal deck
+    # ahead of any Dinosaur alternative), then combo completion, then
+    # curve-gap fit, then instant speed, then edhrec_rank as a tiebreaker
+    # only - never the primary driver, per this deck's stated EDHREC
+    # policy. When tribal_type is None (no real tribal theme detected),
+    # tribal_match is False for everything and this criterion is a no-op.
+    # A conditional-discount card is sorted as if it costs its full nominal
+    # CMC (no bonus for the maybe-discount), which naturally drops it
+    # behind a same-CMC card with no such caveat.
     scored.sort(key=lambda c: (
+        not c["tribal_match"],
         not c["completes_combo"],
         not c["fills_curve_gap"],
         not c["is_instant"],
@@ -253,14 +310,16 @@ def main():
     existing_names = {c["name"] for c in context["cards"]}
     gap_buckets = undersupplied_curve_buckets(analysis)
     saturation = saturation_status(args.deck_dir, args.category)
+    tribal_type = dominant_creature_type(context)
 
     query = build_query(args.category, color_identity, args.cmc_min, args.cmc_max, args.budget)
     raw_cards = scryfall_search_client.search(query, max_results=50)
-    ranked = score_and_filter(raw_cards, existing_names, gap_buckets, combos, args.category)[: args.count]
+    ranked = score_and_filter(raw_cards, existing_names, gap_buckets, combos, args.category, tribal_type)[: args.count]
 
     result = {
         "category": args.category,
         "category_saturation": saturation,
+        "tribal_type": tribal_type,
         "query": query,
         "commander_color_identity": color_identity,
         "undersupplied_curve_buckets": sorted(gap_buckets),

@@ -22,7 +22,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 import scryfall_search_client
-from find_upgrade_candidates import normalize_card
+from find_upgrade_candidates import dominant_creature_type, is_tribal_match, normalize_card
 
 
 def main():
@@ -40,6 +40,7 @@ def main():
     combos = json.loads(combos_path.read_text())
     context = json.loads((args.deck_dir / "context.json").read_text())
     existing_names = {c["name"] for c in context["cards"]}
+    tribal_type = dominant_creature_type(context)
 
     groups = defaultdict(lambda: {"combo_count": 0, "produces": set(), "combo_urls": []})
     for combo in combos.get("almost_included", []):
@@ -53,11 +54,17 @@ def main():
         g["produces"] |= set(combo["produces"])
         g["combo_urls"].append(combo["url"])
 
-    ranked_names = sorted(groups, key=lambda n: -groups[n]["combo_count"])
-    lookup = scryfall_search_client.lookup_by_names(ranked_names[: max(args.count * 3, 30)])
+    # Look up every grouped name (not just a top-N-by-combo-count slice)
+    # before ranking, not after - otherwise an on-tribe card with a lower
+    # combo_count could get cut before it ever has a chance to out-rank an
+    # off-tribe card once tribal_match is factored in below. Found via
+    # direct feedback: Hornet Nest (an Insect) got recommended to a
+    # Dinosaur tribal deck ahead of any on-tribe alternative, in part
+    # because ranking only ever considered combo_count.
+    lookup = scryfall_search_client.lookup_by_names(list(groups))
 
     results = []
-    for name in ranked_names:
+    for name, g in groups.items():
         card = lookup.get(name)
         if card is None:
             continue  # couldn't resolve the exact name (rare)
@@ -65,7 +72,6 @@ def main():
         usd = (card.get("prices") or {}).get("usd")
         if args.budget is not None and usd is not None and float(usd) > args.budget:
             continue
-        g = groups[name]
         results.append({
             "name": name,
             "mana_cost": card.get("mana_cost"),
@@ -78,15 +84,21 @@ def main():
             "combo_count": g["combo_count"],
             "produces": sorted(g["produces"]),
             "combo_urls": g["combo_urls"],
+            "tribal_match": is_tribal_match(card, tribal_type),
         })
-        if len(results) >= args.count:
-            break
+
+    # On-tribe first (see docstring on why, and find_upgrade_candidates.py's
+    # identical reasoning), then by how many separately-cataloged combos it
+    # completes.
+    results.sort(key=lambda r: (not r["tribal_match"], -r["combo_count"]))
+    results = results[: args.count]
 
     out_path = args.deck_dir / "combo_completion_candidates.json"
-    out_path.write_text(json.dumps({"candidates": results}, indent=2))
+    out_path.write_text(json.dumps({"tribal_type": tribal_type, "candidates": results}, indent=2))
     print(f"Wrote {out_path} ({len(results)} candidates)")
     for r in results[:5]:
-        print(f"  {r['name']} - completes {r['combo_count']} combo(s): {r['produces']}")
+        tribe_note = " [on-tribe]" if r["tribal_match"] else ""
+        print(f"  {r['name']}{tribe_note} - completes {r['combo_count']} combo(s): {r['produces']}")
 
 
 if __name__ == "__main__":

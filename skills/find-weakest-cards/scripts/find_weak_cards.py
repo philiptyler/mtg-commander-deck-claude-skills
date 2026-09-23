@@ -34,7 +34,7 @@ TARGET_RANGES = {
 ALL_CATEGORY_KEYS = [
     "ramp", "targeted_removal", "board_wipe", "counterspell", "card_draw",
     "land_tutor", "nonland_tutor", "extra_turn", "mass_land_denial", "game_changer",
-    "cost_reduction",
+    "cost_reduction", "resilience",
 ]
 
 # Heuristic only - a land can have real upside phrased in ways this misses.

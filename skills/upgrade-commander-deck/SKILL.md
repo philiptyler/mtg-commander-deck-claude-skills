@@ -92,6 +92,21 @@ ask repeatedly.
    cut made specifically to fix a crowded curve bucket. When that tension
    exists, surface it to the user explicitly rather than picking silently.
 
+   **Both this script and `find_upgrade_candidates.py` also compute
+   `tribal_type`** (the deck's dominant creature subtype, when one clearly
+   exists — e.g. this deck's commander cares specifically about Dinosaurs
+   entering) **and sort on-tribe candidates first, ahead of combo
+   completion.** This isn't a minor tiebreaker: `Hornet Nest`, an Insect,
+   was recommended to this Dinosaur tribal deck ahead of `Raptor Hatchling`
+   and `Overgrown Armasaur` — both Dinosaurs completing the *same class* of
+   combo, cheaper, with the added benefit that their own ETB (and their
+   token output, for `Raptor Hatchling` specifically) retriggers the
+   commander. "Completes a combo" and "feeds the deck's actual primary
+   engine" are different questions; check both, not just the first one a
+   script happens to answer loudly. When `tribal_type` is `null` (no real
+   tribal theme), this naturally has no effect — don't force a tribal
+   read onto a deck that isn't built around one.
+
 4. **For each remaining cut, source candidates for its gap:**
    ```
    python3 scripts/find_upgrade_candidates.py --deck-dir ../review-commander-deck/decks/<slug> \

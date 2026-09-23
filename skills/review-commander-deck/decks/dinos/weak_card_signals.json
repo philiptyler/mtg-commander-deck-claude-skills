@@ -166,11 +166,6 @@
       "name": "Temple Altisaur",
       "cmc": 5.0,
       "type_line": "Creature \u2014 Dinosaur"
-    },
-    {
-      "name": "The Skullspore Nexus",
-      "cmc": 8.0,
-      "type_line": "Legendary Artifact"
     }
   ],
   "high_cmc_low_role_cards": [
@@ -224,11 +219,6 @@
       "roles": [
         "ramp"
       ]
-    },
-    {
-      "name": "The Skullspore Nexus",
-      "cmc": 8.0,
-      "roles": []
     },
     {
       "name": "Trumpeting Carnosaur",

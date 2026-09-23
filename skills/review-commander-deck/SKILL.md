@@ -44,13 +44,20 @@ does well or poorly.
    This writes `decks/<slug>/analysis.json` — counts, mana curve, categorized
    card lists (ramp, targeted removal, board wipes, counterspells, card draw,
    tutors, extra turns, mass land denial, Game Changers, cost reduction —
-   this last one isn't mana ramp, it's things like prowl/warp/"spells cost
-   {N} less," which get a card onto the battlefield for less mana and so
-   are a real functional role in any ETB-trigger-heavy deck even though
-   they don't increase available mana; added after a real case where
-   dismissing these as "roleless" led to bad reasoning about a cut), and a
-   bracket estimate. Read `references/bracket_rubric.md` for what those
-   categories
+   this one isn't mana ramp, it's things like prowl/warp/"spells cost {N}
+   less" (fixed) or "costs {X} less, where X is..." (scaling), which get a
+   card onto the battlefield for less mana and so are a real functional
+   role in any ETB-trigger-heavy deck even though they don't increase
+   available mana; a scaling discount also means a card's real, typical
+   cast cost can be nowhere near its printed CMC in a deck built to
+   trigger it, which matters for not over-reading "high CMC" as "weak" —
+   and resilience (e.g. "whenever one or more creatures you control die,
+   create a token..." — recovery from a board wipe doesn't need dedicated
+   sacrifice synergy to matter, the wipe itself provides the trigger).
+   Both were added after a real case where dismissing a card that had
+   both as "roleless, high-CMC" led to recommending it as a cut when it
+   was actually one of the stronger cards in the deck), and a bracket
+   estimate. Read `references/bracket_rubric.md` for what those categories
    mean and the bracket criteria they're checked against.
 
 6. **Check for combos.** Look for `../find-deck-combos/scripts/find_combos.py`

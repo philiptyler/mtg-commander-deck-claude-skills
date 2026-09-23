@@ -1,0 +1,218 @@
+{
+  "commander_color_identity": [
+    "G",
+    "R",
+    "W"
+  ],
+  "target_probability": 0.9,
+  "current_sources": {
+    "G": 34,
+    "R": 27,
+    "W": 26
+  },
+  "tier_results": [
+    {
+      "tier": "1-2",
+      "target_turn": 2,
+      "on_the_play_cards_seen": 8,
+      "color": "G",
+      "pips_needed": 2,
+      "current_sources": 34,
+      "probability": 0.832,
+      "status": "SHORTFALL",
+      "at_risk_cards": [
+        {
+          "name": "Invasion of Ikoria // Zilortha, Apex of Ikoria",
+          "pips": 2
+        }
+      ]
+    },
+    {
+      "tier": "1-2",
+      "target_turn": 2,
+      "on_the_play_cards_seen": 8,
+      "color": "R",
+      "pips_needed": 1,
+      "current_sources": 27,
+      "probability": 0.93,
+      "status": "OK",
+      "at_risk_cards": []
+    },
+    {
+      "tier": "1-2",
+      "target_turn": 2,
+      "on_the_play_cards_seen": 8,
+      "color": "W",
+      "pips_needed": 2,
+      "current_sources": 26,
+      "probability": 0.674,
+      "status": "SHORTFALL",
+      "at_risk_cards": [
+        {
+          "name": "Grand Abolisher",
+          "pips": 2
+        }
+      ]
+    },
+    {
+      "tier": "3-4",
+      "target_turn": 4,
+      "on_the_play_cards_seen": 10,
+      "color": "G",
+      "pips_needed": 2,
+      "current_sources": 34,
+      "probability": 0.919,
+      "status": "OK",
+      "at_risk_cards": [
+        {
+          "name": "Hulking Raptor",
+          "pips": 2
+        },
+        {
+          "name": "Runic Armasaur",
+          "pips": 2
+        },
+        {
+          "name": "Savage Order",
+          "pips": 2
+        }
+      ]
+    },
+    {
+      "tier": "3-4",
+      "target_turn": 4,
+      "on_the_play_cards_seen": 10,
+      "color": "R",
+      "pips_needed": 2,
+      "current_sources": 27,
+      "probability": 0.818,
+      "status": "SHORTFALL",
+      "at_risk_cards": [
+        {
+          "name": "Tannuk, Steadfast Second",
+          "pips": 2
+        }
+      ]
+    },
+    {
+      "tier": "3-4",
+      "target_turn": 4,
+      "on_the_play_cards_seen": 10,
+      "color": "W",
+      "pips_needed": 1,
+      "current_sources": 26,
+      "probability": 0.96,
+      "status": "OK",
+      "at_risk_cards": []
+    },
+    {
+      "tier": "5+",
+      "target_turn": 5,
+      "on_the_play_cards_seen": 11,
+      "color": "G",
+      "pips_needed": 3,
+      "current_sources": 34,
+      "probability": 0.802,
+      "status": "SHORTFALL",
+      "at_risk_cards": [
+        {
+          "name": "Ghalta and Mavren",
+          "pips": 2
+        },
+        {
+          "name": "Ghalta, Stampede Tyrant",
+          "pips": 3
+        },
+        {
+          "name": "Kogla and Yidaro",
+          "pips": 2
+        },
+        {
+          "name": "Last March of the Ents",
+          "pips": 2
+        },
+        {
+          "name": "Polyraptor",
+          "pips": 2
+        },
+        {
+          "name": "Regal Behemoth",
+          "pips": 2
+        },
+        {
+          "name": "The Great Henge",
+          "pips": 2
+        },
+        {
+          "name": "The Skullspore Nexus",
+          "pips": 2
+        },
+        {
+          "name": "Vaultborn Tyrant",
+          "pips": 2
+        }
+      ]
+    },
+    {
+      "tier": "5+",
+      "target_turn": 5,
+      "on_the_play_cards_seen": 11,
+      "color": "R",
+      "pips_needed": 2,
+      "current_sources": 27,
+      "probability": 0.861,
+      "status": "SHORTFALL",
+      "at_risk_cards": [
+        {
+          "name": "Etali, Primal Conqueror // Etali, Primal Sickness",
+          "pips": 2
+        },
+        {
+          "name": "Etali, Primal Storm",
+          "pips": 2
+        },
+        {
+          "name": "Kogla and Yidaro",
+          "pips": 2
+        },
+        {
+          "name": "Quartzwood Crasher",
+          "pips": 2
+        },
+        {
+          "name": "Terror of the Peaks",
+          "pips": 2
+        },
+        {
+          "name": "Trumpeting Carnosaur",
+          "pips": 2
+        }
+      ]
+    },
+    {
+      "tier": "5+",
+      "target_turn": 5,
+      "on_the_play_cards_seen": 11,
+      "color": "W",
+      "pips_needed": 3,
+      "current_sources": 26,
+      "probability": 0.593,
+      "status": "SHORTFALL",
+      "at_risk_cards": [
+        {
+          "name": "Austere Command",
+          "pips": 2
+        },
+        {
+          "name": "Ghalta and Mavren",
+          "pips": 2
+        },
+        {
+          "name": "Wakening Sun's Avatar",
+          "pips": 3
+        }
+      ]
+    }
+  ],
+  "mono_or_colorless": false
+}

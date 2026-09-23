@@ -119,12 +119,36 @@ MASS_LAND_DENIAL_PATTERNS = [
 # (warp) were both dismissed as "roleless" by this script and undervalued
 # in a review as a result, when their actual job - cheaper access to a big
 # Dinosaur, meaning another ETB trigger sooner - was real and worth seeing.
+#
+# The last pattern deliberately matches "{X}" as well as a literal digit -
+# "This spell costs {X} less to cast, where X is the greatest power among
+# creatures you control" (The Skullspore Nexus) is a *scaling* discount,
+# not a fixed one, and in a deck full of big creatures its real, typical
+# cast cost is nowhere near its printed CMC. Missing this was a direct,
+# concrete cause of a bad recommendation: this script's own high-CMC signal
+# (curve_bucket/find_weak_cards.py's high_cmc_low_role check both use the
+# raw `cmc` field) treated an 8-CMC card that's routinely cast for 2-4 as
+# if it were genuinely that expensive, which fed straight into recommending
+# it as a cut.
 COST_REDUCTION_PATTERNS = [
     r"have prowl",
     r"have warp",
     r"spells you cast cost \{\d+\} less",
     r"creature spells you cast cost \{\d+\} less",
-    r"costs? \{\d+\} less to cast",
+    r"costs? \{[\dx]+\} less to cast",
+]
+
+# A death trigger that converts creatures dying into a token/value doesn't
+# need dedicated sacrifice synergy to matter - a board wipe already
+# provides "one or more creatures you control die" for free. This is
+# resilience/recovery, not removal or ramp, and was invisible before:
+# The Skullspore Nexus's "whenever one or more nontoken creatures you
+# control die, create a token with power/toughness equal to their total
+# power" was flagged as a zero-role, high-CMC card as a direct result -
+# once wrongly discounted for scaling cost (above) and again for this.
+RESILIENCE_PATTERNS = [
+    r"whenever (one or more|a) (nontoken )?creatures? you control die",
+    r"whenever (one or more|a) (nontoken )?creatures? you control (dies|is put into a graveyard)",
 ]
 
 TYPE_CATEGORIES = ["Creature", "Instant", "Sorcery", "Artifact", "Enchantment", "Planeswalker", "Battle", "Land"]
@@ -173,6 +197,8 @@ def classify_card(card: dict) -> dict:
         tags.add("mass_land_denial")
     if _matches_any(text, COST_REDUCTION_PATTERNS):
         tags.add("cost_reduction")
+    if _matches_any(text, RESILIENCE_PATTERNS):
+        tags.add("resilience")
 
     for sentence in re.split(r"(?<=[.;])\s+", text):
         if "search your library for" in sentence:
@@ -207,7 +233,7 @@ def analyze(context: dict) -> dict:
         "ramp": [], "targeted_removal": [], "board_wipe": [], "counterspell": [],
         "card_draw": [], "land_tutor": [], "nonland_tutor": [],
         "extra_turn": [], "mass_land_denial": [], "game_changer": [],
-        "cost_reduction": [],
+        "cost_reduction": [], "resilience": [],
     }
 
     for card in cards:

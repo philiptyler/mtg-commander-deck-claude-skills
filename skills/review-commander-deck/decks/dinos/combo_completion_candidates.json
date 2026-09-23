@@ -1,4 +1,5 @@
 {
+  "tribal_type": "Dinosaur",
   "candidates": [
     {
       "name": "Apex Altisaur",
@@ -19,7 +20,51 @@
       "combo_urls": [
         "https://commanderspellbook.com/combo/2488-6778-7167/",
         "https://commanderspellbook.com/combo/2488-7167-7391/"
-      ]
+      ],
+      "tribal_match": true
+    },
+    {
+      "name": "Overgrown Armasaur",
+      "mana_cost": "{3}{G}{G}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Dinosaur",
+      "oracle_text": "Enrage \u2014 Whenever this creature is dealt damage, create a 1/1 green Saproling creature token.",
+      "color_identity": [
+        "G"
+      ],
+      "usd": "0.22",
+      "game_changer": false,
+      "combo_count": 2,
+      "produces": [
+        "Infinite creature ETB",
+        "Infinite creature tokens"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/2773-3046/",
+        "https://commanderspellbook.com/combo/1110-3046/"
+      ],
+      "tribal_match": true
+    },
+    {
+      "name": "Raptor Hatchling",
+      "mana_cost": "{1}{R}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Dinosaur",
+      "oracle_text": "Enrage \u2014 Whenever this creature is dealt damage, create a 3/3 green Dinosaur creature token with trample.",
+      "color_identity": [
+        "R"
+      ],
+      "usd": "0.28",
+      "game_changer": false,
+      "combo_count": 1,
+      "produces": [
+        "Infinite creature ETB",
+        "Infinite creature tokens"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/2773-5191/"
+      ],
+      "tribal_match": true
     },
     {
       "name": "Vrondiss, Rage of Ancients",
@@ -44,7 +89,8 @@
       "combo_urls": [
         "https://commanderspellbook.com/combo/2773-4245/",
         "https://commanderspellbook.com/combo/1110-4245/"
-      ]
+      ],
+      "tribal_match": false
     },
     {
       "name": "Hornet Nest",
@@ -65,28 +111,8 @@
       "combo_urls": [
         "https://commanderspellbook.com/combo/2773-3748/",
         "https://commanderspellbook.com/combo/1110-3748/"
-      ]
-    },
-    {
-      "name": "Overgrown Armasaur",
-      "mana_cost": "{3}{G}{G}",
-      "cmc": 5.0,
-      "type_line": "Creature \u2014 Dinosaur",
-      "oracle_text": "Enrage \u2014 Whenever this creature is dealt damage, create a 1/1 green Saproling creature token.",
-      "color_identity": [
-        "G"
       ],
-      "usd": "0.22",
-      "game_changer": false,
-      "combo_count": 2,
-      "produces": [
-        "Infinite creature ETB",
-        "Infinite creature tokens"
-      ],
-      "combo_urls": [
-        "https://commanderspellbook.com/combo/2773-3046/",
-        "https://commanderspellbook.com/combo/1110-3046/"
-      ]
+      "tribal_match": false
     },
     {
       "name": "Broodhatch Nantuko",
@@ -107,7 +133,8 @@
       "combo_urls": [
         "https://commanderspellbook.com/combo/2773-3760/",
         "https://commanderspellbook.com/combo/1110-3760/"
-      ]
+      ],
+      "tribal_match": false
     },
     {
       "name": "Sporeweb Weaver",
@@ -130,7 +157,8 @@
       "combo_urls": [
         "https://commanderspellbook.com/combo/487-2773/",
         "https://commanderspellbook.com/combo/487-1110/"
-      ]
+      ],
+      "tribal_match": false
     },
     {
       "name": "Saber Ants",
@@ -151,7 +179,8 @@
       "combo_urls": [
         "https://commanderspellbook.com/combo/2773-5199/",
         "https://commanderspellbook.com/combo/1110-5199/"
-      ]
+      ],
+      "tribal_match": false
     },
     {
       "name": "Breath of Fury",
@@ -179,7 +208,8 @@
       "combo_urls": [
         "https://commanderspellbook.com/combo/2214-3259-4373/",
         "https://commanderspellbook.com/combo/3259-4373-6791/"
-      ]
+      ],
+      "tribal_match": false
     },
     {
       "name": "The Reaver Cleaver",
@@ -207,7 +237,8 @@
       ],
       "combo_urls": [
         "https://commanderspellbook.com/combo/3750-5039/"
-      ]
+      ],
+      "tribal_match": false
     },
     {
       "name": "Reiterate",
@@ -229,7 +260,102 @@
       ],
       "combo_urls": [
         "https://commanderspellbook.com/combo/1878-3368/"
-      ]
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Sword of Feast and Famine",
+      "mana_cost": "{3}",
+      "cmc": 3.0,
+      "type_line": "Artifact \u2014 Equipment",
+      "oracle_text": "Equipped creature gets +2/+2 and has protection from black and from green.\nWhenever equipped creature deals combat damage to a player, that player discards a card and you untap all lands you control.\nEquip {2}",
+      "color_identity": [],
+      "usd": "41.81",
+      "game_changer": false,
+      "combo_count": 1,
+      "produces": [
+        "Infinite combat phases"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/900-3750/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Ancient Copper Dragon",
+      "mana_cost": "{4}{R}{R}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Elder Dragon",
+      "oracle_text": "Flying\nWhenever this creature deals combat damage to a player, roll a d20. You create a number of Treasure tokens equal to the result.",
+      "color_identity": [
+        "R"
+      ],
+      "usd": "135.42",
+      "game_changer": false,
+      "combo_count": 1,
+      "produces": [
+        "Near-infinite Treasure tokens",
+        "Near-infinite colored mana",
+        "Near-infinite combat damage",
+        "Near-infinite combat phases",
+        "Near-infinite mana creatures you control can produce",
+        "Near-infinite untap of creatures you control"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/778-3750/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Old Gnawbone",
+      "mana_cost": "{5}{G}{G}",
+      "cmc": 7.0,
+      "type_line": "Legendary Creature \u2014 Dragon",
+      "oracle_text": "Flying\nWhenever a creature you control deals combat damage to a player, create that many Treasure tokens.",
+      "color_identity": [
+        "G"
+      ],
+      "usd": "50.86",
+      "game_changer": false,
+      "combo_count": 1,
+      "produces": [
+        "Infinite Treasure tokens",
+        "Infinite artifact ETB",
+        "Infinite artifact LTB",
+        "Infinite artifact sacrifice triggers",
+        "Infinite artifact tokens",
+        "Infinite colored mana",
+        "Infinite combat phases",
+        "Infinite mana creatures you control can produce",
+        "Infinite untap of creatures you control"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/1800-3750/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Neheb, the Eternal",
+      "mana_cost": "{3}{R}{R}",
+      "cmc": 5.0,
+      "type_line": "Legendary Creature \u2014 Zombie Minotaur Warrior",
+      "oracle_text": "Afflict 3 (Whenever this creature becomes blocked, defending player loses 3 life.)\nAt the beginning of each of your postcombat main phases, add {R} for each 1 life your opponents have lost this turn.",
+      "color_identity": [
+        "R"
+      ],
+      "usd": "8.16",
+      "game_changer": false,
+      "combo_count": 1,
+      "produces": [
+        "Infinite combat phases",
+        "Infinite mana creatures you control can produce",
+        "Infinite red mana",
+        "Infinite untap of creatures you control"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/3750-4945/"
+      ],
+      "tribal_match": false
     }
   ]
 }
