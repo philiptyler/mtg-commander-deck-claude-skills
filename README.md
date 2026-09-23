@@ -18,6 +18,11 @@ to do.
 No third-party Python dependencies — the Scryfall client uses the standard
 library only, so there's no install step to use the skill.
 
+If `find-deck-combos` is installed alongside it, this skill runs it as part
+of the review and includes a dedicated combos section — checking for combos
+during the review itself, not only when someone later asks about a specific
+card, is what caught the miss described under `find-deck-combos` below.
+
 ### [`find-weakest-cards`](skills/find-weakest-cards/SKILL.md)
 
 Finds the weakest N cards in a deck already reviewed by
@@ -55,8 +60,9 @@ surfaced a second, completely independent combo in it that nobody had
 noticed. `find-weakest-cards` now checks this skill's output before
 recommending any cut.
 
-**Also depends on `review-commander-deck`'s output**, same as
-`find-weakest-cards` — install all three together.
+**Depends on `review-commander-deck`'s output**, same as `find-weakest-cards`
+— and `review-commander-deck` in turn calls into this skill when it's
+present (see above). Install all three together.
 
 ## Installing
 

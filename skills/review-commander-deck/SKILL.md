@@ -47,16 +47,39 @@ does well or poorly.
    estimate. Read `references/bracket_rubric.md` for what those categories
    mean and the bracket criteria they're checked against.
 
-6. **Write the actual review**, synthesizing — don't just restate the JSON:
+6. **Check for combos.** Look for `../find-deck-combos/scripts/find_combos.py`
+   (a sibling skill). If it exists:
+   ```
+   python3 ../find-deck-combos/scripts/find_combos.py --deck-dir decks/<slug>
+   ```
+   This writes `decks/<slug>/combos.json` and is not optional busywork — do
+   this *before* writing conclusions about any card, not after. A card that
+   looks narrow, conditional, or purely reactive when you read it in
+   isolation is exactly what a combo piece looks like from the outside, and
+   guessing from card text alone will miss it (see
+   `find-deck-combos/SKILL.md` for how to read `included` vs.
+   `almost_included`, and for the "the database models the loop, not every
+   community-known finishing touch" nuance). If `find-deck-combos` isn't
+   installed, skip this step, don't claim to have checked for combos, and
+   mention in the report that installing it would add combo detection.
+
+7. **Write the actual review**, synthesizing — don't just restate the JSON:
    - Compare the user's self-assessment against the numbers. If they said
      "I struggle against go-wide boards" and `categories.board_wipe` has one
      card in it, that's the finding — say so plainly.
    - Speak to their stated win condition(s): are there enough ways to find
      the answers to a stalled/wide board, other stated win con.
+   - If `combos.json` has anything in `included`, give it its own section —
+     don't bury it in the removal/ramp/draw breakdown. Cross-check every
+     other conclusion in the review (especially anything you were about to
+     call weak or narrow) against the cards involved in an included combo.
    - Give the bracket estimate with its reasoning and caveats from
-     `analysis.json` — note explicitly that combo potential and Bracket 1-2
-     / 4-5 splits need the user's own read on intent, since the script can't
-     see that.
+     `analysis.json` — note explicitly that the Bracket 1-2 / 4-5 splits
+     need the user's own read on intent, since the script can't see that.
+     (Having a real combo doesn't by itself push a deck out of Bracket 3 —
+     WotC's Bracket 3 criteria bars intentional *early-game* two-card
+     combos, not combos generally — but call it out if the combo looks
+     fast/early.)
    - Be concrete: name actual cards, actual counts, not vague advice.
    - Save the finished review as `decks/<slug>/report.md`.
 
@@ -66,8 +89,13 @@ does well or poorly.
   it will miss cards with unusual phrasing, split/adventure/modal cards, and
   anything whose effect isn't stated in plain rules text (e.g. a card that's
   removal only in combination with something else).
-- No two-card infinite combo detection — that needs actual card-interaction
-  reasoning, which is a job for you (Claude) reading the decklist, not for
-  the regex script.
+- Combo detection depends on `find-deck-combos` being installed alongside
+  this skill — without it, this skill has no way to see combos and
+  shouldn't claim to. Even with it, the database catalogs specific known
+  card combinations; it can still miss a combo that isn't in its data yet,
+  and its `notes`/`produces` fields need to be read carefully (a "mandatory
+  loop" that only "draws the game" per the database isn't a win until you
+  verify by hand whether some other card in the deck redirects it
+  favorably).
 - Bracket estimates are a starting point per WotC's stated criteria, not a
   verdict — see `references/bracket_rubric.md`.

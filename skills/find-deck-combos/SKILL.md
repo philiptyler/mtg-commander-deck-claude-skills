@@ -15,6 +15,11 @@ find near-miss combos the deck could complete with one or two more cards.
 
 Reads `context.json` from `../review-commander-deck/decks/<slug>/`. Run
 that skill's pipeline first if it doesn't exist yet for this deck.
+`review-commander-deck` now runs this skill itself as part of its own
+workflow when it's installed alongside it, so `combos.json` may already
+exist and be current — check before re-running. Re-run it if the decklist
+has changed since `combos.json`'s timestamp, or if it's missing entirely
+(e.g. `review-commander-deck` was run without this skill installed).
 
 ## Why Commander Spellbook and not EDHREC
 
