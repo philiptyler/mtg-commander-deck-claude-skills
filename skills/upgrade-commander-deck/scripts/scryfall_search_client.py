@@ -44,3 +44,26 @@ def search(query: str, max_results: int = 50) -> list:
         raise ScryfallSearchError(f"Scryfall returned {e.code} {e.reason}: {e.read().decode('utf-8', 'replace')}") from e
 
     return data.get("data", [])[:max_results]
+
+
+def lookup_by_names(names: list) -> dict:
+    """Batch-fetch exact cards by name via /cards/collection - used to get
+    price/legality/oracle text for a short, already-decided list (e.g. combo
+    completions from find_combo_completions.py), as opposed to search()'s
+    broad query-based sourcing. Returns {name: card_dict} for names Scryfall
+    could match; silently omits names it can't find."""
+    if not names:
+        return {}
+    body = json.dumps({"identifiers": [{"name": n} for n in names]}).encode("utf-8")
+    req = urllib.request.Request(
+        "https://api.scryfall.com/cards/collection",
+        data=body,
+        method="POST",
+        headers={"Content-Type": "application/json", "Accept": "application/json", "User-Agent": USER_AGENT},
+    )
+    try:
+        with urllib.request.urlopen(req) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        raise ScryfallSearchError(f"Scryfall returned {e.code} {e.reason}: {e.read().decode('utf-8', 'replace')}") from e
+    return {card["name"]: card for card in data.get("data", [])}

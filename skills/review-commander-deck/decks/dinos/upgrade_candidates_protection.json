@@ -1,0 +1,192 @@
+{
+  "category": "protection",
+  "query": "id<=GRW f:commander -is:funny -t:land (o:hexproof or o:indestructible or o:\"protection from\")",
+  "commander_color_identity": [
+    "G",
+    "R",
+    "W"
+  ],
+  "undersupplied_curve_buckets": [
+    "1",
+    "5",
+    "6"
+  ],
+  "candidates": [
+    {
+      "name": "Sword of Feast and Famine",
+      "mana_cost": "{3}",
+      "cmc": 3.0,
+      "type_line": "Artifact \u2014 Equipment",
+      "oracle_text": "Equipped creature gets +2/+2 and has protection from black and from green.\nWhenever equipped creature deals combat damage to a player, that player discards a card and you untap all lands you control.\nEquip {2}",
+      "color_identity": [],
+      "usd": "41.81",
+      "edhrec_rank": 543,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": true,
+      "combo_details": [
+        {
+          "id": "900-3750",
+          "url": "https://commanderspellbook.com/combo/900-3750/",
+          "cards": [
+            "Sword of Feast and Famine",
+            "Aggravated Assault"
+          ],
+          "produces": [
+            "Infinite combat phases"
+          ]
+        }
+      ],
+      "fills_curve_gap": false
+    },
+    {
+      "name": "Snakeskin Veil",
+      "mana_cost": "{G}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Put a +1/+1 counter on target creature you control. It gains hexproof until end of turn. (It can't be the target of spells or abilities your opponents control.)",
+      "color_identity": [
+        "G"
+      ],
+      "usd": "0.23",
+      "edhrec_rank": 431,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Tamiyo's Safekeeping",
+      "mana_cost": "{G}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Target permanent you control gains hexproof and indestructible until end of turn. You gain 2 life. (A permanent with hexproof and indestructible can't be the target of spells or abilities your opponents control. Damage and effects that say \"destroy\" don't destroy it.)",
+      "color_identity": [
+        "G"
+      ],
+      "usd": "4.83",
+      "edhrec_rank": 471,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Veil of Summer",
+      "mana_cost": "{G}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Draw a card if an opponent has cast a blue or black spell this turn. Spells you control can't be countered this turn. You and permanents you control gain hexproof from blue and from black until end of turn. (You and they can't be the targets of blue or black spells or abilities your opponents control.)",
+      "color_identity": [
+        "G"
+      ],
+      "usd": "5.01",
+      "edhrec_rank": 525,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Tyvar's Stand",
+      "mana_cost": "{X}{G}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Target creature you control gets +X/+X and gains hexproof and indestructible until end of turn. (It can't be the target of spells or abilities your opponents control. Damage and effects that say \"destroy\" don't destroy it.)",
+      "color_identity": [
+        "G"
+      ],
+      "usd": "1.26",
+      "edhrec_rank": 726,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Restoration Magic",
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Tiered (Choose one additional cost.)\n\u2022 Cure \u2014 {0} \u2014 Target permanent gains hexproof and indestructible until end of turn.\n\u2022 Cura \u2014 {1} \u2014 Target permanent gains hexproof and indestructible until end of turn. You gain 3 life.\n\u2022 Curaga \u2014 {3}{W} \u2014 Permanents you control gain hexproof and indestructible until end of turn. You gain 6 life.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "1.63",
+      "edhrec_rank": 1106,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Shadowspear",
+      "mana_cost": "{1}",
+      "cmc": 1.0,
+      "type_line": "Legendary Artifact \u2014 Equipment",
+      "oracle_text": "Equipped creature gets +1/+1 and has trample and lifelink.\n{1}: Permanents your opponents control lose hexproof and indestructible until end of turn.\nEquip {2}",
+      "color_identity": [],
+      "usd": "33.37",
+      "edhrec_rank": 309,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Commander's Plate",
+      "mana_cost": "{1}",
+      "cmc": 1.0,
+      "type_line": "Artifact \u2014 Equipment",
+      "oracle_text": "Equipped creature gets +3/+3 and has protection from each color that's not in your commander's color identity.\nEquip commander {3}\nEquip {5}",
+      "color_identity": [],
+      "usd": "42.61",
+      "edhrec_rank": 477,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Mother of Runes",
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Creature \u2014 Human Cleric",
+      "oracle_text": "{T}: Target creature you control gains protection from the color of your choice until end of turn.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "14.12",
+      "edhrec_rank": 506,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Brash Taunter",
+      "mana_cost": "{4}{R}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Goblin",
+      "oracle_text": "Indestructible\nWhenever this creature is dealt damage, it deals that much damage to target opponent.\n{2}{R}, {T}: This creature fights another target creature.",
+      "color_identity": [
+        "R"
+      ],
+      "usd": "3.90",
+      "edhrec_rank": 793,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    }
+  ]
+}

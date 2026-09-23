@@ -1,0 +1,182 @@
+{
+  "category": "removal",
+  "query": "id<=GRW f:commander -is:funny -t:land (o:\"destroy target creature\" or o:\"exile target creature\" or o:\"destroy target permanent\" or o:\"exile target permanent\" or o:\"deals damage to target creature\" or o:\"deals damage to any target\") cmc<=3",
+  "commander_color_identity": [
+    "G",
+    "R",
+    "W"
+  ],
+  "undersupplied_curve_buckets": [
+    "1",
+    "5",
+    "6"
+  ],
+  "candidates": [
+    {
+      "name": "Path to Exile",
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Exile target creature. Its controller may search their library for a basic land card, put that card onto the battlefield tapped, then shuffle.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": null,
+      "edhrec_rank": 15,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Pyroblast",
+      "mana_cost": "{R}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Choose one \u2014\n\u2022 Counter target spell if it's blue.\n\u2022 Destroy target permanent if it's blue.",
+      "color_identity": [
+        "R"
+      ],
+      "usd": "10.63",
+      "edhrec_rank": 473,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Erode",
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Destroy target creature or planeswalker. Its controller may search their library for a basic land card, put it onto the battlefield tapped, then shuffle.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "7.21",
+      "edhrec_rank": 1969,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Unwanted Remake",
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Destroy target creature. Its controller manifests dread. (That player looks at the top two cards of their library, then puts one onto the battlefield face down as a 2/2 creature and the other into their graveyard. If it's a creature card, it can be turned face up any time for its mana cost.)",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "0.33",
+      "edhrec_rank": 4230,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Getaway Glamer",
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Spree (Choose one or more additional costs.)\n+ {1} \u2014 Exile target nontoken creature. Return it to the battlefield under its owner's control at the beginning of the next end step.\n+ {2} \u2014 Destroy target creature if no other creature has greater power.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "0.25",
+      "edhrec_rank": 6297,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Giant Killer // Chop Down",
+      "mana_cost": "{W} // {2}{W}",
+      "cmc": 1.0,
+      "type_line": "Creature \u2014 Human Peasant // Instant \u2014 Adventure",
+      "oracle_text": null,
+      "color_identity": [
+        "W"
+      ],
+      "usd": "0.31",
+      "edhrec_rank": 7285,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Dino DNA",
+      "mana_cost": "{1}",
+      "cmc": 1.0,
+      "type_line": "Artifact",
+      "oracle_text": "Imprint \u2014 {1}, {T}: Exile target creature card from a graveyard. Activate only as a sorcery.\n{6}: Create a token that's a copy of target creature card exiled with this artifact, except it's a 6/6 green Dinosaur creature with trample. Activate only as a sorcery.",
+      "color_identity": [],
+      "usd": "16.17",
+      "edhrec_rank": 6217,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Soul Snare",
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Enchantment",
+      "oracle_text": "{W}, Sacrifice this enchantment: Exile target creature that's attacking you or a planeswalker you control.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "0.26",
+      "edhrec_rank": 6599,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Voyager Staff",
+      "mana_cost": "{1}",
+      "cmc": 1.0,
+      "type_line": "Artifact",
+      "oracle_text": "{2}, Sacrifice this artifact: Exile target creature. Return the exiled card to the battlefield under its owner's control at the beginning of the next end step.",
+      "color_identity": [],
+      "usd": "0.32",
+      "edhrec_rank": 8558,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Beast Within",
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "oracle_text": "Destroy target permanent. Its controller creates a 3/3 green Beast creature token.",
+      "color_identity": [
+        "G"
+      ],
+      "usd": "0.63",
+      "edhrec_rank": 25,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false
+    }
+  ]
+}

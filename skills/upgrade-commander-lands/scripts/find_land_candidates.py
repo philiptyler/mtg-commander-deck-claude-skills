@@ -18,6 +18,20 @@ TAPPED_RE = re.compile(r"enters (the battlefield )?tapped")
 TAPPED_UPSIDE_HINTS = ["unless", "if you don't", "scry", "surveil", "gain 1 life", "gain life", "draw a card"]
 
 
+# Same fix as upgrade-commander-deck's find_upgrade_candidates.py: modal-DFC
+# lands (e.g. pathways) leave oracle_text null at the top level of a raw
+# Scryfall search result - the real text lives in card_faces. produced_mana
+# is unaffected (Scryfall computes that at the top level regardless), but
+# enters_tapped_no_upside and any manual read of the card's text would see
+# nothing without this.
+def normalize_card(card: dict) -> dict:
+    faces = card.get("card_faces") or []
+    if not card.get("oracle_text") and faces:
+        card = dict(card)
+        card["oracle_text"] = "\n".join(f.get("oracle_text", "") for f in faces if f.get("oracle_text"))
+    return card
+
+
 def commander_color_identity(context: dict) -> list:
     colors = set()
     for card in context["cards"]:
@@ -55,6 +69,7 @@ def main():
 
     candidates = []
     for card in raw_cards:
+        card = normalize_card(card)
         if card.get("name") in existing_names:
             continue
         produced = set(card.get("produced_mana") or [])

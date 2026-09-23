@@ -1,0 +1,235 @@
+{
+  "candidates": [
+    {
+      "name": "Apex Altisaur",
+      "mana_cost": "{7}{G}{G}",
+      "cmc": 9.0,
+      "type_line": "Creature \u2014 Dinosaur",
+      "oracle_text": "When this creature enters, it fights up to one target creature you don't control.\nEnrage \u2014 Whenever this creature is dealt damage, it fights up to one target creature you don't control.",
+      "color_identity": [
+        "G"
+      ],
+      "usd": "9.01",
+      "game_changer": false,
+      "combo_count": 2,
+      "produces": [
+        "Destroy all creatures opponents control",
+        "Near-infinite damage"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/2488-6778-7167/",
+        "https://commanderspellbook.com/combo/2488-7167-7391/"
+      ]
+    },
+    {
+      "name": "Vrondiss, Rage of Ancients",
+      "mana_cost": "{3}{R}{G}",
+      "cmc": 5.0,
+      "type_line": "Legendary Creature \u2014 Dragon Barbarian",
+      "oracle_text": "Enrage \u2014 Whenever Vrondiss is dealt damage, you may create a 5/4 red and green Dragon Spirit creature token with \"When this token deals damage, sacrifice it.\"\nWhenever you roll one or more dice, you may have Vrondiss deal 1 damage to itself.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "usd": null,
+      "game_changer": false,
+      "combo_count": 2,
+      "produces": [
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite creature sacrifice triggers",
+        "Infinite creature tokens",
+        "Infinite death triggers"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/2773-4245/",
+        "https://commanderspellbook.com/combo/1110-4245/"
+      ]
+    },
+    {
+      "name": "Hornet Nest",
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Insect",
+      "oracle_text": "Defender (This creature can't attack.)\nWhenever this creature is dealt damage, create that many 1/1 green Insect creature tokens with flying and deathtouch. (Any amount of damage a creature with deathtouch deals to a creature is enough to destroy it.)",
+      "color_identity": [
+        "G"
+      ],
+      "usd": "0.37",
+      "game_changer": false,
+      "combo_count": 2,
+      "produces": [
+        "Infinite creature ETB",
+        "Infinite creature tokens"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/2773-3748/",
+        "https://commanderspellbook.com/combo/1110-3748/"
+      ]
+    },
+    {
+      "name": "Overgrown Armasaur",
+      "mana_cost": "{3}{G}{G}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Dinosaur",
+      "oracle_text": "Enrage \u2014 Whenever this creature is dealt damage, create a 1/1 green Saproling creature token.",
+      "color_identity": [
+        "G"
+      ],
+      "usd": "0.22",
+      "game_changer": false,
+      "combo_count": 2,
+      "produces": [
+        "Infinite creature ETB",
+        "Infinite creature tokens"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/2773-3046/",
+        "https://commanderspellbook.com/combo/1110-3046/"
+      ]
+    },
+    {
+      "name": "Broodhatch Nantuko",
+      "mana_cost": "{1}{G}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Insect Druid",
+      "oracle_text": "Whenever this creature is dealt damage, you may create that many 1/1 green Insect creature tokens.\nMorph {2}{G} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)",
+      "color_identity": [
+        "G"
+      ],
+      "usd": "0.34",
+      "game_changer": false,
+      "combo_count": 2,
+      "produces": [
+        "Infinite creature ETB",
+        "Infinite creature tokens"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/2773-3760/",
+        "https://commanderspellbook.com/combo/1110-3760/"
+      ]
+    },
+    {
+      "name": "Sporeweb Weaver",
+      "mana_cost": "{2}{G}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Spider",
+      "oracle_text": "Reach, hexproof from blue\nWhenever this creature is dealt damage, you gain 1 life and create a 1/1 green Saproling creature token.",
+      "color_identity": [
+        "G"
+      ],
+      "usd": "0.50",
+      "game_changer": false,
+      "combo_count": 2,
+      "produces": [
+        "Infinite creature ETB",
+        "Infinite creature tokens",
+        "Infinite lifegain",
+        "Infinite lifegain triggers"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/487-2773/",
+        "https://commanderspellbook.com/combo/487-1110/"
+      ]
+    },
+    {
+      "name": "Saber Ants",
+      "mana_cost": "{3}{G}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Insect",
+      "oracle_text": "Whenever this creature is dealt damage, you may create that many 1/1 green Insect creature tokens.",
+      "color_identity": [
+        "G"
+      ],
+      "usd": "0.36",
+      "game_changer": false,
+      "combo_count": 2,
+      "produces": [
+        "Infinite creature ETB",
+        "Infinite creature tokens"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/2773-5199/",
+        "https://commanderspellbook.com/combo/1110-5199/"
+      ]
+    },
+    {
+      "name": "Breath of Fury",
+      "mana_cost": "{2}{R}{R}",
+      "cmc": 4.0,
+      "type_line": "Enchantment \u2014 Aura",
+      "oracle_text": "Enchant creature you control\nWhen enchanted creature deals combat damage to a player, sacrifice it and attach this Aura to a creature you control. If you do, untap all creatures you control and after this phase, there is an additional combat phase.",
+      "color_identity": [
+        "R"
+      ],
+      "usd": "13.73",
+      "game_changer": false,
+      "combo_count": 2,
+      "produces": [
+        "Infinite combat damage",
+        "Infinite combat phases",
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite creature sacrifice triggers",
+        "Infinite creature tokens with haste",
+        "Infinite death triggers",
+        "Infinite mana creatures you control can produce",
+        "Infinite untap of creatures you control"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/2214-3259-4373/",
+        "https://commanderspellbook.com/combo/3259-4373-6791/"
+      ]
+    },
+    {
+      "name": "The Reaver Cleaver",
+      "mana_cost": "{2}{R}",
+      "cmc": 3.0,
+      "type_line": "Legendary Artifact \u2014 Equipment",
+      "oracle_text": "Equipped creature gets +1/+1 and has trample and \"Whenever this creature deals combat damage to a player or planeswalker, create that many Treasure tokens.\"\nEquip {3}",
+      "color_identity": [
+        "R"
+      ],
+      "usd": "38.48",
+      "game_changer": false,
+      "combo_count": 1,
+      "produces": [
+        "Infinite Treasure tokens",
+        "Infinite artifact ETB",
+        "Infinite artifact LTB",
+        "Infinite artifact sacrifice triggers",
+        "Infinite artifact tokens",
+        "Infinite colored mana",
+        "Infinite combat damage",
+        "Infinite combat phases",
+        "Infinite mana creatures you control can produce",
+        "Infinite untap of creatures you control"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/3750-5039/"
+      ]
+    },
+    {
+      "name": "Reiterate",
+      "mana_cost": "{1}{R}{R}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "oracle_text": "Buyback {3} (You may pay an additional {3} as you cast this spell. If you do, put this card into your hand as it resolves.)\nCopy target instant or sorcery spell. You may choose new targets for the copy.",
+      "color_identity": [
+        "R"
+      ],
+      "usd": "19.67",
+      "game_changer": false,
+      "combo_count": 1,
+      "produces": [
+        "Exile your library with the ability to play the exiled cards until end of turn",
+        "Infinite magecraft triggers",
+        "Infinite red mana",
+        "Infinite storm count"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/1878-3368/"
+      ]
+    }
+  ]
+}

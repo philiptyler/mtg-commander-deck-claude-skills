@@ -116,9 +116,31 @@ def is_removal_false_positive(category: str, oracle_text: str) -> bool:
     return bool(_ANY_DESTROY_EXILE_RE.search(text))  # matched, but only ever "you control"
 
 
+# Split/transform/modal-DFC cards leave oracle_text (and mana_cost) null at
+# the top level of a raw Scryfall response - the real per-face text lives in
+# card_faces. review-commander-deck's build_context.py already backfills
+# this for cards fetched through the collection endpoint; raw /cards/search
+# results (what this script uses) need the same treatment, or a split card
+# like "Struggle // Survive" shows up with no text at all - found while
+# sourcing candidates for the dinos deck, where it silently defeated the
+# false-positive filter below (nothing to match against) and would have
+# been unreadable at the "read the candidate's actual oracle_text before
+# recommending it" step this skill's own SKILL.md requires.
+def normalize_card(card: dict) -> dict:
+    faces = card.get("card_faces") or []
+    if not card.get("oracle_text") and faces:
+        card = dict(card)
+        card["oracle_text"] = "\n".join(f.get("oracle_text", "") for f in faces if f.get("oracle_text"))
+    if not card.get("mana_cost") and faces:
+        card = dict(card)
+        card["mana_cost"] = " // ".join(f.get("mana_cost", "") for f in faces if f.get("mana_cost"))
+    return card
+
+
 def score_and_filter(raw_cards, existing_names, gap_buckets, combos, category) -> list:
     scored = []
     for card in raw_cards:
+        card = normalize_card(card)
         if card.get("name") in existing_names:
             continue
         if is_removal_false_positive(category, card.get("oracle_text")):
@@ -184,7 +206,17 @@ def main():
         "candidates": ranked,
     }
 
-    out_path = args.deck_dir / f"upgrade_candidates_{args.category}.json"
+    # Filename must reflect every filter that changes the result set, not
+    # just category - two runs of the same category with different CMC/
+    # budget bounds (a completely normal thing to do, e.g. sourcing a cheap
+    # vs. an expensive removal slot in the same session) would otherwise
+    # silently overwrite each other. Found by doing exactly that.
+    suffix_bits = [args.category]
+    if args.cmc_min is not None or args.cmc_max is not None:
+        suffix_bits.append(f"cmc{args.cmc_min if args.cmc_min is not None else ''}-{args.cmc_max if args.cmc_max is not None else ''}")
+    if args.budget is not None:
+        suffix_bits.append(f"budget{args.budget:g}")
+    out_path = args.deck_dir / f"upgrade_candidates_{'_'.join(suffix_bits)}.json"
     out_path.write_text(json.dumps(result, indent=2))
     print(f"Wrote {out_path} ({len(ranked)} candidates)")
     if any(c["completes_combo"] for c in ranked):

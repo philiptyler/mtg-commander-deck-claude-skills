@@ -1,0 +1,187 @@
+{
+  "category": "removal",
+  "query": "id<=GRW f:commander -is:funny -t:land (o:\"destroy target creature\" or o:\"exile target creature\" or o:\"destroy target permanent\" or o:\"exile target permanent\" or o:\"deals damage to target creature\" or o:\"deals damage to any target\") cmc>=4 cmc<=5",
+  "commander_color_identity": [
+    "G",
+    "R",
+    "W"
+  ],
+  "undersupplied_curve_buckets": [
+    "1",
+    "5",
+    "6"
+  ],
+  "candidates": [
+    {
+      "name": "Luminous Rebuke",
+      "mana_cost": "{4}{W}",
+      "cmc": 5.0,
+      "type_line": "Instant",
+      "oracle_text": "This spell costs {3} less to cast if it targets a tapped creature.\nDestroy target creature.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "0.15",
+      "edhrec_rank": 10920,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Seized from Slumber",
+      "mana_cost": "{4}{W}",
+      "cmc": 5.0,
+      "type_line": "Instant",
+      "oracle_text": "This spell costs {3} less to cast if it targets a tapped creature.\nDestroy target creature.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "0.13",
+      "edhrec_rank": 13140,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Struggle // Survive",
+      "mana_cost": "{2}{R} // {1}{G}",
+      "cmc": 5.0,
+      "type_line": "Instant // Sorcery",
+      "oracle_text": "Struggle deals damage to target creature equal to the number of lands you control.\nAftermath (Cast this spell only from your graveyard. Then exile it.)\nEach player shuffles their graveyard into their library.",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "usd": "0.22",
+      "edhrec_rank": 15609,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Ride's End",
+      "mana_cost": "{4}{W}",
+      "cmc": 5.0,
+      "type_line": "Instant",
+      "oracle_text": "This spell costs {3} less to cast if it targets a tapped permanent.\nExile target creature or Vehicle.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "0.20",
+      "edhrec_rank": 16481,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Ettercap // Web Shot",
+      "mana_cost": "{4}{G} // {2}{G}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Spider Beast // Instant \u2014 Adventure",
+      "oracle_text": "Reach\nDestroy target creature with flying. (Then exile this card. You may cast the creature later from exile.)",
+      "color_identity": [
+        "G"
+      ],
+      "usd": "0.28",
+      "edhrec_rank": 17249,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Ajani's Response",
+      "mana_cost": "{4}{W}",
+      "cmc": 5.0,
+      "type_line": "Instant",
+      "oracle_text": "This spell costs {3} less to cast if it targets a tapped creature.\nDestroy target creature.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "0.11",
+      "edhrec_rank": 17828,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Elspeth, Storm Slayer",
+      "mana_cost": "{3}{W}{W}",
+      "cmc": 5.0,
+      "type_line": "Legendary Planeswalker \u2014 Elspeth",
+      "oracle_text": "If one or more tokens would be created under your control, twice that many of those tokens are created instead.\n+1: Create a 1/1 white Soldier creature token.\n0: Put a +1/+1 counter on each creature you control. Those creatures gain flying until your next turn.\n\u22123: Destroy target creature an opponent controls with mana value 3 or greater.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "42.86",
+      "edhrec_rank": 706,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Elspeth Conquers Death",
+      "mana_cost": "{3}{W}{W}",
+      "cmc": 5.0,
+      "type_line": "Enchantment \u2014 Saga",
+      "oracle_text": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\nI \u2014 Exile target permanent an opponent controls with mana value 3 or greater.\nII \u2014 Noncreature spells your opponents cast cost {2} more to cast until your next turn.\nIII \u2014 Return target creature or planeswalker card from your graveyard to the battlefield. Put a +1/+1 counter or a loyalty counter on it.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "0.96",
+      "edhrec_rank": 3091,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Combustion Man",
+      "mana_cost": "{3}{R}{R}",
+      "cmc": 5.0,
+      "type_line": "Legendary Creature \u2014 Human Assassin",
+      "oracle_text": "Whenever Combustion Man attacks, destroy target permanent unless its controller has Combustion Man deal damage to them equal to his power.",
+      "color_identity": [
+        "R"
+      ],
+      "usd": "0.25",
+      "edhrec_rank": 6579,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    },
+    {
+      "name": "Trapjaw Tyrant",
+      "mana_cost": "{3}{W}{W}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Dinosaur",
+      "oracle_text": "Enrage \u2014 Whenever this creature is dealt damage, exile target creature an opponent controls until this creature leaves the battlefield.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "5.64",
+      "edhrec_rank": 9224,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true
+    }
+  ]
+}

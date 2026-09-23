@@ -71,23 +71,49 @@ ask repeatedly.
    given, weight cut selection toward cards *not* serving that focus (the
    freed-up slots should go toward it).
 
-3. **For each cut, source candidates for its gap:**
+3. **Before any category search, check for combo completions directly —
+   don't rely on a category query happening to surface one by luck:**
+   ```
+   python3 scripts/find_combo_completions.py --deck-dir ../review-commander-deck/decks/<slug> --count 10 [--budget <usd>]
+   ```
+   This reads `combos.json`'s `almost_included` list for every combo
+   exactly one card away, groups by the missing card, and ranks by how
+   many *separately cataloged* combos that one card completes — a card
+   completing 2+ combos independently is a real signal, not a coincidence.
+   Writes `combo_completion_candidates.json`. This exists because it
+   exists: sourcing "protection" candidates for the dinos deck happened to
+   surface `Sword of Feast and Famine` completing an infinite-combat-phases
+   combo with `Aggravated Assault`, already in that deck — found by luck,
+   not by design, which is exactly the kind of gap this project's CLAUDE.md
+   says to close rather than just note. A top result here is a strong
+   candidate for one of the N swaps almost regardless of category, **but
+   weigh its CMC against the deck's own curve concerns** — a combo
+   completion that costs more than what it's replacing can work against a
+   cut made specifically to fix a crowded curve bucket. When that tension
+   exists, surface it to the user explicitly rather than picking silently.
+
+4. **For each remaining cut, source candidates for its gap:**
    ```
    python3 scripts/find_upgrade_candidates.py --deck-dir ../review-commander-deck/decks/<slug> \
        --category <ramp|removal|board_wipe|card_draw|tutors|protection|any> \
        --count 10 [--budget <usd>] [--cmc-min N] [--cmc-max N]
    ```
-   Read the resulting `upgrade_candidates_<category>.json`. A candidate
-   with `completes_combo: true` is a strong pick almost by default — read
-   its `combo_details` and say plainly what it unlocks. Otherwise prefer,
-   in order: fills an undersupplied curve bucket (`fills_curve_gap`),
-   matches whatever specific weakness prompted this cut (read the
-   candidate's own `oracle_text`, don't just trust the category match —
-   the query is a substring search and can over- or under-match, same
-   caveat as `analyze_deck.py`), then use `edhrec_rank`/`is_instant` only
-   to break remaining ties.
+   Output filename includes the CMC/budget bounds used
+   (`upgrade_candidates_<category>_cmcX-Y.json` etc.) specifically so that
+   sourcing the same category twice with different bounds — a normal thing
+   to do — doesn't silently overwrite the first result.
 
-4. **Sanity-check each pick** against `analysis.json` before finalizing:
+   Read the resulting file. A candidate with `completes_combo: true` is a
+   strong pick almost by default — read its `combo_details` and say
+   plainly what it unlocks. Otherwise prefer, in order: fills an
+   undersupplied curve bucket (`fills_curve_gap`), matches whatever
+   specific weakness prompted this cut (read the candidate's own
+   `oracle_text`, don't just trust the category match — the query is a
+   substring search and can over- or under-match, same caveat as
+   `analyze_deck.py`), then use `edhrec_rank`/`is_instant` only to break
+   remaining ties.
+
+5. **Sanity-check each pick** against `analysis.json` before finalizing:
    does it actually solve the problem the cut's absence creates (don't
    remove the deck's only board wipe without replacing that function)?
    Does it avoid pushing an already-crowded curve bucket further over?
@@ -96,12 +122,12 @@ ask repeatedly.
    `game_changer: true` candidate going to push the deck past its
    current Bracket 3 cap of 3 — worth flagging explicitly if so.
 
-5. **Present the proposal and wait for confirmation** — this is the one
+6. **Present the proposal and wait for confirmation** — this is the one
    step this skill does differently from `update-commander-deck`. Show
-   each swap (cut → add) with the reasoning from steps 2-4. Don't apply
+   each swap (cut → add) with the reasoning from steps 2-5. Don't apply
    anything yet.
 
-6. **On confirmation, apply via `update-commander-deck`:**
+7. **On confirmation, apply via `update-commander-deck`:**
    ```
    python3 ../update-commander-deck/scripts/snapshot_before.py --deck-dir ../review-commander-deck/decks/<slug>
    ```
@@ -115,7 +141,7 @@ ask repeatedly.
    Report the diff the same way `update-commander-deck` does (combo
    changes first, then bracket, then counts). Update `report.md`.
 
-7. **Offer the manual EDHREC option once, at the end** — not before: "if
+8. **Offer the manual EDHREC option once, at the end** — not before: "if
    you want me to factor in EDHREC's commander-specific synergy data for
    any of these, check `edhrec.com/commanders/<slug>` yourself and paste
    what you see."
