@@ -12,7 +12,7 @@
     },
     {
       "category": "ramp",
-      "count": 14,
+      "count": 13,
       "target_range": [
         10,
         12
@@ -126,6 +126,11 @@
       "name": "Heroic Intervention",
       "cmc": 2.0,
       "type_line": "Instant"
+    },
+    {
+      "name": "Raptor Hatchling",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Dinosaur"
     },
     {
       "name": "Invasion of Ikoria // Zilortha, Apex of Ikoria",

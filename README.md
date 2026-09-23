@@ -21,6 +21,17 @@ tutors, and a [Commander Bracket](https://magic.wizards.com/en/news/announcement
 (1-5) estimate — checked against what you actually said the deck is trying
 to do.
 
+Also computes **effective CMC** for cards with real cost reduction (fixed
+or scaling — e.g. "costs {X} less, where X is the greatest power among
+creatures you control"), not just printed CMC — a card that's nominally
+CMC 8 but routinely cast for 3-4 in practice was getting badly
+mischaracterized as "expensive and weak" without this. See
+[`references/effective_cmc.md`](skills/review-commander-deck/references/effective_cmc.md)
+for what's genuinely computed here versus what stayed a cited community
+guideline rather than an invented formula — unlike the mana-base math in
+`upgrade-commander-lands`, "ideal curve shape" has no equivalent rigorous,
+agreed-upon model to build against.
+
 No third-party Python dependencies — the Scryfall client uses the standard
 library only, so there's no install step to use the skill.
 

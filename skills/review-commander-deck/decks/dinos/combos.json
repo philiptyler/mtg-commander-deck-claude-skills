@@ -42,6 +42,25 @@
       "bracket_tag": "S",
       "popularity": 13482,
       "color_identity": "RG"
+    },
+    {
+      "id": "2773-5191",
+      "url": "https://commanderspellbook.com/combo/2773-5191/",
+      "cards": [
+        "Raptor Hatchling",
+        "Warstorm Surge"
+      ],
+      "missing_cards": [],
+      "produces": [
+        "Infinite creature tokens",
+        "Infinite creature ETB"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have a way to give Raptor Hatchling indestructible.\nYou have a way to cause a creature to enter the battlefield or to deal damage to Raptor Hatchling.",
+      "bracket_tag": "S",
+      "popularity": 602,
+      "color_identity": "R"
     }
   ],
   "almost_included": [
@@ -931,6 +950,29 @@
       "color_identity": "RG"
     },
     {
+      "id": "292-2259-5191",
+      "url": "https://commanderspellbook.com/combo/292-2259-5191/",
+      "cards": [
+        "Rite of Passage",
+        "Forerunner of the Empire",
+        "Raptor Hatchling"
+      ],
+      "missing_cards": [
+        "Rite of Passage"
+      ],
+      "produces": [
+        "Infinite creature tokens",
+        "Infinite damage to creatures",
+        "Infinite creature ETB"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Raptor Hatchling has toughness 2 or greater.\nYou have a way to cause a Dinosaur to enter the battlefield under your control.",
+      "bracket_tag": "E",
+      "popularity": 1690,
+      "color_identity": "RG"
+    },
+    {
       "id": "544-2226",
       "url": "https://commanderspellbook.com/combo/544-2226/",
       "cards": [
@@ -1390,27 +1432,6 @@
       "color_identity": "RG"
     },
     {
-      "id": "2773-5191",
-      "url": "https://commanderspellbook.com/combo/2773-5191/",
-      "cards": [
-        "Raptor Hatchling",
-        "Warstorm Surge"
-      ],
-      "missing_cards": [
-        "Raptor Hatchling"
-      ],
-      "produces": [
-        "Infinite creature tokens",
-        "Infinite creature ETB"
-      ],
-      "notes": null,
-      "easy_prerequisites": null,
-      "notable_prerequisites": "You have a way to give Raptor Hatchling indestructible.\nYou have a way to cause a creature to enter the battlefield or to deal damage to Raptor Hatchling.",
-      "bracket_tag": "S",
-      "popularity": 602,
-      "color_identity": "R"
-    },
-    {
       "id": "4274-5141",
       "url": "https://commanderspellbook.com/combo/4274-5141/",
       "cards": [
@@ -1517,6 +1538,29 @@
       "bracket_tag": "E",
       "popularity": 285,
       "color_identity": "RG"
+    },
+    {
+      "id": "5147-5191",
+      "url": "https://commanderspellbook.com/combo/5147-5191/",
+      "cards": [
+        "Goblin Bombardment",
+        "Raptor Hatchling"
+      ],
+      "missing_cards": [
+        "Goblin Bombardment"
+      ],
+      "produces": [
+        "Infinite death triggers",
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite creature sacrifice triggers"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control at least one additional creature.\nYou have a way to give Raptor Hatchling indestructible.",
+      "bracket_tag": "E",
+      "popularity": 259,
+      "color_identity": "R"
     },
     {
       "id": "2773-3046",
@@ -1801,6 +1845,29 @@
       "color_identity": "RG"
     },
     {
+      "id": "413-5191",
+      "url": "https://commanderspellbook.com/combo/413-5191/",
+      "cards": [
+        "Blasting Station",
+        "Raptor Hatchling"
+      ],
+      "missing_cards": [
+        "Blasting Station"
+      ],
+      "produces": [
+        "Infinite death triggers",
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite creature sacrifice triggers"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control at least one additional creature.\nYou have a way to give Raptor Hatchling indestructible.",
+      "bracket_tag": "E",
+      "popularity": 76,
+      "color_identity": "R"
+    },
+    {
       "id": "1550-4251-6791",
       "url": "https://commanderspellbook.com/combo/1550-4251-6791/",
       "cards": [
@@ -1897,6 +1964,29 @@
       "bracket_tag": "E",
       "popularity": 39,
       "color_identity": "RGW"
+    },
+    {
+      "id": "5191-7352",
+      "url": "https://commanderspellbook.com/combo/5191-7352/",
+      "cards": [
+        "Electric Seaweed",
+        "Raptor Hatchling"
+      ],
+      "missing_cards": [
+        "Electric Seaweed"
+      ],
+      "produces": [
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite damage to most creatures",
+        "Infinite death triggers"
+      ],
+      "notes": "Alternatively, either of the creatures with specified toughness can be replaced by an additional instance of a creature dying. The creature that dies in step 5 must not be either of the creatures with specified toughness, or Electric Seaweed or Raptor Hatchling.",
+      "easy_prerequisites": "A player controls another non-Wall creature with toughness equal to 1.\nA player controls another non-Wall creature with toughness equal to 2.",
+      "notable_prerequisites": "You have a way to cause another creature to die.\nYou have a way to give Raptor Hatchling indestructible.",
+      "bracket_tag": "E",
+      "popularity": 21,
+      "color_identity": "R"
     },
     {
       "id": "3750-4373-5231",

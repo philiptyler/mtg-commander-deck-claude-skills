@@ -1,34 +1,45 @@
 {
   "has_baseline": true,
-  "counts_delta": {
-    "artifacts": 1,
-    "enchantments": 1,
-    "creatures": -2
-  },
+  "counts_delta": {},
   "category_changes": {
     "ramp": {
-      "added": [
-        "Mirari's Wake",
-        "Sword of Hearth and Home"
-      ],
-      "removed": []
-    },
-    "targeted_removal": {
       "added": [],
       "removed": [
-        "Swooping Pteranodon"
+        "Hulking Raptor"
       ]
+    }
+  },
+  "curve_delta": {
+    "mana_curve_bucket_delta": {
+      "2": 1,
+      "4": -1
     },
-    "land_tutor": {
-      "added": [
-        "Sword of Hearth and Home"
+    "typical_mana_curve_bucket_delta": {
+      "2": 1,
+      "4": -1
+    },
+    "average_cmc_delta": -0.03,
+    "typical_average_cmc_delta": -0.02,
+    "pct_cmc_le_3_delta": 1.5,
+    "typical_pct_cmc_le_3_delta": 1.5,
+    "average_cmc_after": 4.06,
+    "typical_average_cmc_after": 3.95,
+    "baseline_reference": {
+      "average_cmc_range": [
+        2.5,
+        3.5
       ],
-      "removed": []
+      "pct_cmc_le_3_min": 50.0
     }
   },
   "bracket_before": "3 (Upgraded)",
   "bracket_after": "3 (Upgraded)",
-  "combos_gained": [],
+  "combos_gained": [
+    [
+      "Raptor Hatchling",
+      "Warstorm Surge"
+    ]
+  ],
   "combos_lost": [],
   "card_count": 100,
   "card_count_warning": null,

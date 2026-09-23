@@ -83,6 +83,14 @@ not reviewing a new one.
      `analysis.json`'s `bracket_estimate.reasoning`).
    - `category_changes` / `counts_delta` — the ordinary "here's what shifted"
      summary.
+   - `curve_delta` — real computed curve movement, both nominal and
+     effective-CMC-adjusted (`typical_*` — see
+     `review-commander-deck/references/effective_cmc.md`), plus
+     `baseline_reference` (a cited community band, not a pass/fail rule —
+     see that same file for why). Use this instead of eyeballing "CMC 4 →
+     CMC 2 must be an improvement" — added after direct feedback that
+     swaps were being justified on curve with no actual tooling behind the
+     claim.
    - `combos_gained` — worth celebrating if the swap happened to create one.
 
 7. **Update `report.md`.** For a small change with a small diff, a short

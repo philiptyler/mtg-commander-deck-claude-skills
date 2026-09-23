@@ -60,6 +60,17 @@ does well or poorly.
    estimate. Read `references/bracket_rubric.md` for what those categories
    mean and the bracket criteria they're checked against.
 
+   `analysis.json` also has `mana_curve` (printed CMC, as before),
+   `typical_mana_curve` (effective-CMC-adjusted for cards with real cost
+   reduction), `curve_summary` (average CMC and % of nonland cards at CMC
+   ≤3, both nominal and typical, plus a cited community `baseline_reference`
+   band — 2.5-3.5 average, ≥50% at CMC≤3 — to weigh against, not a
+   pass/fail rule, see `references/effective_cmc.md` for why there isn't a
+   stricter one), and `cost_reduction_details` (per-card nominal/typical/
+   best-case CMC with a plain-language note for any card with detected
+   *self* cost reduction — not reduction it grants to other cards, see the
+   same reference file for that scope boundary).
+
 6. **Check for combos.** Look for `../find-deck-combos/scripts/find_combos.py`
    (a sibling skill). If it exists:
    ```

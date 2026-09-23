@@ -34,6 +34,41 @@ def category_changes(before: dict, after: dict) -> dict:
     return changes
 
 
+def curve_delta(before: dict, after: dict):
+    """Bucket-level and summary-stat curve movement, both nominal and
+    typical (effective-CMC-adjusted - see
+    review-commander-deck/references/effective_cmc.md). Added after direct
+    feedback that swap proposals were eyeballing "cheaper CMC = better"
+    with no actual computed curve-impact tooling behind that claim.
+    Tolerant of a `before` snapshot predating curve_summary/
+    typical_mana_curve (older analyze_deck.py output) via .get()."""
+    def bucket_delta(before_curve, after_curve):
+        keys = set(before_curve) | set(after_curve)
+        return {k: after_curve.get(k, 0) - before_curve.get(k, 0) for k in keys
+                if after_curve.get(k, 0) != before_curve.get(k, 0)}
+
+    before_summary = before.get("curve_summary") or {}
+    after_summary = after.get("curve_summary") or {}
+
+    def stat_delta(key):
+        b, a = before_summary.get(key), after_summary.get(key)
+        if b is None or a is None:
+            return None
+        return round(a - b, 2)
+
+    return {
+        "mana_curve_bucket_delta": bucket_delta(before.get("mana_curve", {}), after.get("mana_curve", {})),
+        "typical_mana_curve_bucket_delta": bucket_delta(before.get("typical_mana_curve", {}), after.get("typical_mana_curve", {})),
+        "average_cmc_delta": stat_delta("average_cmc"),
+        "typical_average_cmc_delta": stat_delta("typical_average_cmc"),
+        "pct_cmc_le_3_delta": stat_delta("pct_cmc_le_3"),
+        "typical_pct_cmc_le_3_delta": stat_delta("typical_pct_cmc_le_3"),
+        "average_cmc_after": after_summary.get("average_cmc"),
+        "typical_average_cmc_after": after_summary.get("typical_average_cmc"),
+        "baseline_reference": after_summary.get("baseline_reference"),
+    }
+
+
 def combo_changes(before_combos, after_combos):
     if before_combos is None or after_combos is None:
         return None, None
@@ -85,6 +120,7 @@ def main():
         "has_baseline": before_analysis is not None,
         "counts_delta": counts_delta(before_analysis["counts"], after_analysis["counts"]) if before_analysis else None,
         "category_changes": category_changes(before_analysis["categories"], after_analysis["categories"]) if before_analysis else None,
+        "curve_delta": curve_delta(before_analysis, after_analysis) if before_analysis else None,
         "bracket_before": before_analysis["bracket_estimate"]["suggested"] if before_analysis else None,
         "bracket_after": after_analysis["bracket_estimate"]["suggested"],
         "combos_gained": combos_gained,
@@ -114,6 +150,12 @@ def main():
         print(f"WARNING: {diff['card_count_warning']}")
     if diff.get("violations"):
         print(f"WARNING: {len(diff['violations'])} card(s) outside the commander's color identity")
+    cd = diff.get("curve_delta")
+    if cd and cd["typical_average_cmc_delta"] is not None:
+        print(
+            f"Typical average CMC: {cd['typical_average_cmc_after']} "
+            f"({cd['typical_average_cmc_delta']:+}), nominal delta {cd['average_cmc_delta']:+}"
+        )
 
 
 if __name__ == "__main__":

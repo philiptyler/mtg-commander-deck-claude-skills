@@ -35,7 +35,7 @@
 1x Gwenna, Eyes of Gaea (bro) 185 [Ramp]
 1x Herd Heirloom (tdm) 144 [Ramp]
 1x Heroic Intervention (pip) 202 [Protection]
-1x Hulking Raptor (lci) 191 [Ramp]
+1 Raptor Hatchling
 1x Hunting Velociraptor (rex) 4 [Ramp]
 1x Hushwood Verge (dsk) 261 [Land]
 1x Intrepid Paleontologist (lci) 193 [Ramp,Recursion]

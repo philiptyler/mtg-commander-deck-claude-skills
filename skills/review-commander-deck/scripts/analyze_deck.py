@@ -151,6 +151,118 @@ RESILIENCE_PATTERNS = [
     r"whenever (one or more|a) (nontoken )?creatures? you control (dies|is put into a graveyard)",
 ]
 
+# --- effective CMC -------------------------------------------------------
+# Printed CMC is what curve_bucket() above uses, and what every "high CMC"
+# signal downstream (find-weakest-cards, find_upgrade_candidates.py) reads.
+# For a card with real cost reduction, printed CMC can badly overstate what
+# it actually costs to cast in practice - this is exactly what went wrong
+# recommending The Skullspore Nexus as a cut: CMC 8 printed, "This spell
+# costs {X} less to cast, where X is the greatest power among creatures you
+# control" - in a deck of big Dinosaurs, routinely a 2-4 mana spell.
+#
+# Deliberately scoped to a card's OWN cost reduction only - "this
+# spell/creature costs..." - not reductions it grants to OTHER cards
+# ("creature spells you cast cost {1} less," as Marauding Raptor does).
+# That's a real, different effect (a deck-wide discount depending on what
+# else is in hand) and modeling it needs matching granted criteria against
+# every other card in the deck - out of scope for a per-card computation.
+# See references/effective_cmc.md for the reasoning and honest limitations.
+_SELF_FIXED_REDUCTION_RE = re.compile(r"this (?:spell|creature) costs \{(\d+)\} less to cast")
+_SELF_SCALING_REDUCTION_RE = re.compile(r"this (?:spell|creature) costs \{x\} less to cast")
+# Negative lookbehind for "have " excludes the granted form ("Dinosaur
+# spells you cast have prowl {2}{R}") - found because Hunting Velociraptor
+# and Tannuk, Steadfast Second (both grant prowl/warp to OTHER cards, not
+# themselves) were showing up with a meaningless "best_case_cmc" computed
+# from the granted cost, not anything about their own casting cost.
+_SELF_KEYWORD_ALT_COST_RE = re.compile(r"(?<!have )\b(?:warp|prowl) (\{[^}]+\}(?:\{[^}]+\})*)")
+
+
+def _mana_symbols_to_cmc(cost_string: str) -> float:
+    total = 0.0
+    for symbol in re.findall(r"\{([^}]+)\}", cost_string):
+        if "/" in symbol:
+            continue  # hybrid/Phyrexian - see mana_base's identical simplification
+        if symbol.isdigit():
+            total += int(symbol)
+        elif symbol.upper() in "WUBRGC":
+            total += 1
+    return total
+
+
+def creature_power_stats(context: dict):
+    """(median, max) power among the deck's own creatures, used as an
+    honest, labeled *estimate* for scaling cost reductions keyed to "power
+    among creatures you control" - not a guarantee, since board state
+    varies game to game. Excludes variable power ('*') and the commander
+    (whose own power isn't "a creature you control" from its own
+    perspective when it's the one doing the counting, and more practically
+    because a commander not yet cast shouldn't inflate the estimate)."""
+    powers = []
+    for card in context["cards"]:
+        if card.get("not_found") or card.get("is_commander"):
+            continue
+        if "Creature" not in (card.get("type_line") or ""):
+            continue
+        power = card.get("power")
+        try:
+            powers.append(float(power))
+        except (TypeError, ValueError):
+            continue
+    if not powers:
+        return (0.0, 0.0)
+    powers.sort()
+    mid = len(powers) // 2
+    median = powers[mid] if len(powers) % 2 else (powers[mid - 1] + powers[mid]) / 2
+    return (median, max(powers))
+
+
+def effective_cmc(card: dict, median_power: float, max_power: float):
+    """Returns None if there's no detected self cost reduction (nominal
+    CMC is already the honest answer). Otherwise a dict with nominal_cmc,
+    typical_cmc (using median creature power for scaling reductions - the
+    more honest "ordinary game" number), best_case_cmc (max power - a
+    ceiling, not a promise), and a human-readable note explaining why."""
+    text = (card.get("oracle_text") or "").lower()
+    nominal = card.get("cmc")
+    if nominal is None:
+        return None
+
+    m = _SELF_FIXED_REDUCTION_RE.search(text)
+    if m:
+        reduction = int(m.group(1))
+        value = max(0.0, nominal - reduction)
+        return {
+            "nominal_cmc": nominal, "typical_cmc": value, "best_case_cmc": value,
+            "note": f"Fixed self cost reduction of {{{reduction}}} - reliable, not conditional.",
+        }
+
+    if _SELF_SCALING_REDUCTION_RE.search(text):
+        typical = max(0.0, nominal - median_power)
+        best = max(0.0, nominal - max_power)
+        return {
+            "nominal_cmc": nominal, "typical_cmc": typical, "best_case_cmc": best,
+            "note": (
+                f"Scaling self cost reduction tied to creature power. Estimated using this "
+                f"deck's own creatures: median power {median_power:g} (typical_cmc), max power "
+                f"{max_power:g} (best_case_cmc, a ceiling not a promise - depends on board state)."
+            ),
+        }
+
+    m = _SELF_KEYWORD_ALT_COST_RE.search(text)
+    if m:
+        alt_cmc = _mana_symbols_to_cmc(m.group(1))
+        return {
+            "nominal_cmc": nominal, "typical_cmc": nominal, "best_case_cmc": alt_cmc,
+            "note": (
+                f"Has a warp/prowl alternate cost of {alt_cmc:g}, but it's conditional (needs "
+                f"combat damage first, or accepting warp's end-of-turn exile) - typical_cmc stays "
+                f"at nominal since the discount isn't guaranteed; best_case_cmc shows the ceiling."
+            ),
+        }
+
+    return None
+
+
 TYPE_CATEGORIES = ["Creature", "Instant", "Sorcery", "Artifact", "Enchantment", "Planeswalker", "Battle", "Land"]
 TYPE_COUNT_KEYS = {
     "Creature": "creatures", "Instant": "instants", "Sorcery": "sorceries",
@@ -222,13 +334,18 @@ def curve_bucket(cmc) -> str:
 
 def analyze(context: dict) -> dict:
     cards = context["cards"]
+    median_power, max_power = creature_power_stats(context)
 
     counts = {"total_cards": context["card_count"], "lands": 0}
     for key in TYPE_COUNT_KEYS.values():
         counts[key] = 0
 
     curve = {}
+    typical_curve = {}
+    cost_reduction_details = {}
     color_identity_counts = {}
+    nominal_cmc_total = typical_cmc_total = nonland_count = 0.0
+    nominal_le3 = typical_le3 = 0
     categories = {
         "ramp": [], "targeted_removal": [], "board_wipe": [], "counterspell": [],
         "card_draw": [], "land_tutor": [], "nonland_tutor": [],
@@ -251,6 +368,23 @@ def analyze(context: dict) -> dict:
             bucket = curve_bucket(card.get("cmc"))
             curve[bucket] = curve.get(bucket, 0) + qty
 
+            eff = effective_cmc(card, median_power, max_power)
+            typical_cmc = eff["typical_cmc"] if eff else card.get("cmc")
+            typical_bucket = curve_bucket(typical_cmc)
+            typical_curve[typical_bucket] = typical_curve.get(typical_bucket, 0) + qty
+
+            nominal_cmc = card.get("cmc")
+            if nominal_cmc is not None:
+                nonland_count += qty
+                nominal_cmc_total += nominal_cmc * qty
+                typical_cmc_total += (typical_cmc if typical_cmc is not None else nominal_cmc) * qty
+                if nominal_cmc <= 3:
+                    nominal_le3 += qty
+                if (typical_cmc if typical_cmc is not None else nominal_cmc) <= 3:
+                    typical_le3 += qty
+            if eff:
+                cost_reduction_details[card["name"]] = eff
+
         for color in card.get("color_identity") or []:
             color_identity_counts[color] = color_identity_counts.get(color, 0) + qty
 
@@ -266,9 +400,25 @@ def analyze(context: dict) -> dict:
 
     bracket = estimate_bracket(game_changer_count, has_mld, extra_turn_count)
 
+    curve_summary = {
+        "average_cmc": round(nominal_cmc_total / nonland_count, 2) if nonland_count else None,
+        "typical_average_cmc": round(typical_cmc_total / nonland_count, 2) if nonland_count else None,
+        "pct_cmc_le_3": round(100 * nominal_le3 / nonland_count, 1) if nonland_count else None,
+        "typical_pct_cmc_le_3": round(100 * typical_le3 / nonland_count, 1) if nonland_count else None,
+        # Cited community baseline for a "typical" deck - see
+        # references/effective_cmc.md for sourcing and why this is a band
+        # to weigh against, not a pass/fail target: a deck with above-
+        # average ramp/cost-reduction density (this one has both) can
+        # reasonably run above it without that being a real problem.
+        "baseline_reference": {"average_cmc_range": [2.5, 3.5], "pct_cmc_le_3_min": 50.0},
+    }
+
     return {
         "counts": counts,
         "mana_curve": dict(sorted(curve.items(), key=lambda kv: (kv[0] == "unknown", kv[0]))),
+        "typical_mana_curve": dict(sorted(typical_curve.items(), key=lambda kv: (kv[0] == "unknown", kv[0]))),
+        "curve_summary": curve_summary,
+        "cost_reduction_details": cost_reduction_details,
         "color_identity_pip_counts": color_identity_counts,
         "categories": categories,
         "bracket_estimate": bracket,
