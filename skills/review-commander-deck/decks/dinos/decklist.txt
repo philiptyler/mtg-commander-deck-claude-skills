@@ -1,6 +1,6 @@
 1x Aggravated Assault (ons) 185 [Finisher]
 1x Akroma's Will (m3c) 165 [Finisher,Protection]
-1x Annie Joins Up (otj) 191 [Copy,Removal]
+1 Personify
 1x Arcane Signet (drc) 51 [Ramp]
 1x Arid Mesa (mh2) 244 [Land]
 1x Atzocan Seer (lcc) 265 [Ramp,Recursion]

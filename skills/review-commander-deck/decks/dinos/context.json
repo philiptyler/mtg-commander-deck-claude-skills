@@ -49,19 +49,15 @@
       "is_commander": false
     },
     {
-      "name": "Annie Joins Up",
-      "mana_cost": "{1}{R}{G}{W}",
-      "cmc": 4.0,
-      "type_line": "Legendary Enchantment",
-      "oracle_text": "When Annie Joins Up enters, it deals 5 damage to target creature or planeswalker an opponent controls.\nIf a triggered ability of a legendary creature you control triggers, that ability triggers an additional time.",
+      "name": "Personify",
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "oracle_text": "Exile target creature you control, then return that card to the battlefield under its owner's control. Create a 1/1 colorless Shapeshifter creature token with changeling. (It's every creature type.)",
       "color_identity": [
-        "G",
-        "R",
         "W"
       ],
       "colors": [
-        "G",
-        "R",
         "W"
       ],
       "game_changer": false,

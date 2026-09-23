@@ -1,5 +1,10 @@
 # Dinos (Pantlaza, Sun-Favored) — Review
 
+**Updated:** swapped `Annie Joins Up` out for `Personify`. See **Personify's
+actual impact** below for the analysis you asked for on what else it
+triggers — it's more than you might have guessed. Numbers throughout this
+report reflect the swap; `last_update_diff.json` has the raw before/after.
+
 **Bracket estimate: 3 (Upgraded).** Matches your stated target. The deck carries
 exactly 3 Game Changers (`Jeska's Will`, `Teferi's Protection`, `Worldly Tutor`)
 — right at Bracket 3's cap of 3. That's worth knowing as a ceiling: any future
@@ -36,6 +41,36 @@ in one turn — a stronger, more central engine than my original read gave it
 credit for. `Daydream`, `Ephemerate`, and `Teleportation Circle` are direct
 engine pieces here, not just incidental re-trigger value on your other ETBs
 (though that's real too — see `Regisaur Alpha` below).
+
+**Personify's actual impact.** You added it as another blink spell (correct
+— `{1}{W}` instant, exile target creature you control and return it, same
+family as `Daydream`/`Ephemerate`), but the part you flagged not having
+analyzed is the bigger deal: it also creates a 1/1 colorless Shapeshifter
+token **with changeling** ("it's every creature type"), which means that
+token is genuinely a Dinosaur, not Dinosaur-flavored. In this deck
+specifically, that token entering the battlefield fires almost the entire
+ETB engine at once:
+- `Pantlaza` sees a Dinosaur enter and can discover (toughness 1, so
+  discover 1) — if her once-per-turn allowance hasn't already been used.
+- `Marauding Raptor` pings it for 2 as it enters, which **kills the token
+  outright** (1 toughness) — but that same ping is itself damage dealt to a
+  Dinosaur you control, which is exactly what `Wrathful Raptors` redirects:
+  2 damage to any target that isn't a Dinosaur. So with both of those out,
+  casting Personify on anything turns into 2 damage to an opponent, on top
+  of the blink.
+- `Forerunner of the Empire` deals 1 damage to each creature on any
+  Dinosaur ETB, so the token triggers that too (on top of eating Marauding
+  Raptor's 2, if that's in play).
+- `Warstorm Surge` and `Terror of the Peaks` both trigger off *any* creature
+  you control entering (not just Dinosaurs), so the token pings for 1
+  more from each of those, independent of its Dinosaur-ness.
+
+None of this needs the token to survive or do anything on its own — it's
+value from existing, once, for a moment, as a Dinosaur. That's a genuinely
+strong reason to like this card beyond "more blink," and it's a good
+illustration of why this deck's ETB density (the thing `Curator of Sun's
+Creation` and the burn plan both already lean on) keeps paying off in ways
+that aren't obvious from any one card's text in isolation.
 
 **The burn plan is well-supported, not bolted on.** `Terror of the Peaks` and
 `Warstorm Surge` both trigger off creatures entering, and this deck generates
@@ -117,8 +152,8 @@ deck's existing engine.
 | Total cards | 100 |
 | Lands | 36 |
 | Creatures | 37 |
-| Instants / Sorceries | 6 / 7 |
-| Artifacts / Enchantments | 6 / 9 |
+| Instants / Sorceries | 7 / 7 |
+| Artifacts / Enchantments | 6 / 8 |
 | Color identity (pips) | G 54, R 36, W 30 |
 
 **Mana curve** (nonland, 64 cards):
@@ -143,22 +178,30 @@ acceleration — they help you deploy threats cheaper or faster, but they
 don't get you ahead on lands/mana the way the 12 above do. Worth knowing the
 difference if you're ever counting on "ramp" to hit a specific land drop.
 
-**Removal (14 total: 12 targeted + 2 board wipes):** `Swords to Plowshares`,
-`Annie Joins Up`, `Bronzebeak Foragers`, `Itzquinth, Firstborn of Gishath`,
+**Removal (13 total: 11 targeted + 2 board wipes):** `Swords to Plowshares`,
+`Bronzebeak Foragers`, `Itzquinth, Firstborn of Gishath`,
 `Kogla and Yidaro`, `Swooping Pteranodon`, `Terror of the Peaks`, `Tranquil
 Frillback`, `Trumpeting Carnosaur`, `Warstorm Surge`, `Wrathful Raptors`,
 `Zacama, Primal Calamity` / board wipes: `Austere Command`, `Wakening Sun's
-Avatar`. That's a solid count for Bracket 3. **But look at the speed:**
-almost all of it is sorcery-speed or ETB-triggered — `Swords to Plowshares`
-is your only card that answers something at instant speed on someone else's
-turn. If an opponent tries to close out a game on their turn (a combo, an
-alpha strike, a must-answer bomb), you have one card that can do anything
-about it before your next turn. That's the single biggest structural gap I'd
-flag from the numbers, independent of what you already know the deck
-struggles with. (`Wrathful Raptors` is on this list because it does
-function as removal — but see **Combos found** above: it's really the
-finishing piece of an infinite-damage combo, not just a conditional damage
-redirector.)
+Avatar`. (`Annie Joins Up` dropped off this list when it left the deck —
+her static ability doubling legendary creatures' triggered abilities was
+mostly dead text here anyway: doubling `Pantlaza`'s own discover trigger
+does nothing, since a "do this only once each turn" restriction blocks a
+second resolution from the same permanent even when a doubling effect makes
+it trigger twice — "can't" beats "can." That's a different rule than the
+one that makes blink work, where the restriction resets because blinking
+creates a genuinely new permanent, not just a second trigger off the old
+one. Your read on cutting her was right.) Still a solid count for Bracket 3.
+**But look at the speed:** almost all of it is sorcery-speed or
+ETB-triggered — `Swords to Plowshares` is your only card that answers
+something at instant speed on someone else's turn. If an opponent tries to
+close out a game on their turn (a combo, an alpha strike, a must-answer
+bomb), you have one card that can do anything about it before your next
+turn. That's the single biggest structural gap I'd flag from the numbers,
+independent of what you already know the deck struggles with.
+(`Wrathful Raptors` is on this list because it does function as removal —
+but see **Combos found** above: it's really the finishing piece of an
+infinite-damage combo, not just a conditional damage redirector.)
 
 **Card draw (10):** `Garruk's Uprising`, `Guardian Project`, `Herd Heirloom`,
 `Jetmir's Garden` (cycling), `Kogla and Yidaro`, `Last March of the Ents`,

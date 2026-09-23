@@ -1,0 +1,27 @@
+{
+  "has_baseline": true,
+  "counts_delta": {
+    "instants": 1,
+    "enchantments": -1
+  },
+  "category_changes": {
+    "targeted_removal": {
+      "added": [],
+      "removed": [
+        "Annie Joins Up"
+      ]
+    }
+  },
+  "bracket_before": "3 (Upgraded)",
+  "bracket_after": "3 (Upgraded)",
+  "combos_gained": [],
+  "combos_lost": [],
+  "card_count": 100,
+  "card_count_warning": null,
+  "commander_color_identity": [
+    "G",
+    "R",
+    "W"
+  ],
+  "violations": []
+}

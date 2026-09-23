@@ -3,26 +3,26 @@
     "total_cards": 100,
     "lands": 36,
     "creatures": 37,
-    "instants": 6,
+    "instants": 7,
     "sorceries": 7,
     "artifacts": 6,
-    "enchantments": 9,
+    "enchantments": 8,
     "planeswalkers": 0,
     "battles": 1
   },
   "mana_curve": {
     "1": 7,
-    "2": 11,
+    "2": 12,
     "3": 10,
-    "4": 11,
+    "4": 10,
     "5": 8,
     "6": 6,
     "7+": 11
   },
   "color_identity_pip_counts": {
-    "R": 36,
+    "R": 35,
     "W": 30,
-    "G": 54
+    "G": 53
   },
   "categories": {
     "ramp": [
@@ -40,7 +40,6 @@
       "Three Visits"
     ],
     "targeted_removal": [
-      "Annie Joins Up",
       "Bronzebeak Foragers",
       "Itzquinth, Firstborn of Gishath",
       "Kogla and Yidaro",

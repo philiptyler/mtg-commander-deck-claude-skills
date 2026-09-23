@@ -30,7 +30,7 @@
     },
     {
       "category": "targeted_removal",
-      "count": 12,
+      "count": 11,
       "target_range": [
         10,
         14
@@ -65,6 +65,11 @@
     {
       "name": "Akroma's Will",
       "cmc": 4.0,
+      "type_line": "Instant"
+    },
+    {
+      "name": "Personify",
+      "cmc": 2.0,
       "type_line": "Instant"
     },
     {
