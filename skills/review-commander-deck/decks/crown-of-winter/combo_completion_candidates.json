@@ -1,0 +1,356 @@
+{
+  "tribal_type": null,
+  "candidates": [
+    {
+      "name": "Hullbreaker Horror",
+      "mana_cost": "{5}{U}{U}",
+      "cmc": 7.0,
+      "type_line": "Creature \u2014 Kraken Horror",
+      "oracle_text": "Flash\nThis spell can't be countered.\nWhenever you cast a spell, choose up to one \u2014\n\u2022 Return target spell you don't control to its owner's hand.\n\u2022 Return target nonland permanent to its owner's hand.",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "6.04",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 1,
+      "prerequisites": [],
+      "produces": [
+        "Infinite colorless mana",
+        "Infinite storm count"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/513-5034--46/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Stormtide Leviathan",
+      "mana_cost": "{5}{U}{U}{U}",
+      "cmc": 8.0,
+      "type_line": "Creature \u2014 Leviathan",
+      "oracle_text": "Islandwalk (This creature can't be blocked as long as defending player controls an Island.)\nAll lands are Islands in addition to their other types.\nCreatures without flying or islandwalk can't attack.",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "2.23",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 1,
+      "prerequisites": [],
+      "produces": [
+        "Lock",
+        "Opponents can't attack with most creatures"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/2702-4992/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Storm Herd",
+      "mana_cost": "{8}{W}{W}",
+      "cmc": 10.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Create X 1/1 white Pegasus creature tokens with flying, where X is your life total.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "1.03",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 1,
+      "prerequisites": [],
+      "produces": [
+        "Near-infinite +1/+1 counters",
+        "Near-infinite creature ETB",
+        "Near-infinite creature tokens"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/2067-2744/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Magus of the Moat",
+      "mana_cost": "{2}{W}{W}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Human Wizard",
+      "oracle_text": "Creatures without flying can't attack.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "7.96",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 1,
+      "prerequisites": [],
+      "produces": [
+        "Lock",
+        "Opponents can't attack"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/2027-2702/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Spawnsire of Ulamog",
+      "mana_cost": "{10}",
+      "cmc": 10.0,
+      "type_line": "Creature \u2014 Eldrazi",
+      "oracle_text": "Annihilator 1 (Whenever this creature attacks, defending player sacrifices a permanent of their choice.)\n{4}: Create two 0/1 colorless Eldrazi Spawn creature tokens. They have \"Sacrifice this token: Add {C}.\"\n{20}: Cast any number of Eldrazi spells from among cards you own outside the game without paying their mana costs.",
+      "color_identity": [],
+      "usd": "10.22",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 1,
+      "prerequisites": [],
+      "produces": [
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite creature sacrifice triggers",
+        "Infinite death triggers"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/2143-4365/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Azor, the Lawbringer",
+      "mana_cost": "{2}{W}{W}{U}{U}",
+      "cmc": 6.0,
+      "type_line": "Legendary Creature \u2014 Sphinx",
+      "oracle_text": "Flying\nWhen Azor enters, each opponent can't cast instant or sorcery spells during that player's next turn.\nWhenever Azor attacks, you may pay {X}{W}{U}{U}. If you do, you gain X life and draw X cards.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "usd": "2.18",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 1,
+      "prerequisites": [],
+      "produces": [
+        "Lock",
+        "Opponents can't cast instant spells during their turns",
+        "Opponents can't cast sorcery spells"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/205-4428/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Island Sanctuary",
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Enchantment",
+      "oracle_text": "If you would draw a card during your draw step, instead you may skip that draw. If you do, until your next turn, you can't be attacked except by creatures with flying and/or islandwalk.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": null,
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 1,
+      "prerequisites": [],
+      "produces": [
+        "Lock",
+        "Most creatures can't attack you",
+        "You do not draw cards during your draw steps"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/2702-3348/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Moat",
+      "mana_cost": "{2}{W}{W}",
+      "cmc": 4.0,
+      "type_line": "Enchantment",
+      "oracle_text": "Creatures without flying can't attack.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": null,
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 1,
+      "prerequisites": [],
+      "produces": [
+        "Lock",
+        "Opponents can't attack"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/992-2702/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Icewind Stalwart",
+      "mana_cost": "{3}{W}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Tiefling Warrior",
+      "oracle_text": "Protection Fighting Style \u2014 When this creature enters, exile up to one target non-Warrior creature you control, then return it to the battlefield under its owner's control.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "0.19",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 1,
+      "prerequisites": [],
+      "produces": [
+        "Infinite blinking of most creatures",
+        "Infinite creature ETB",
+        "Infinite creature LTB"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/1938-4200-4428/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Tidespout Tyrant",
+      "mana_cost": "{5}{U}{U}{U}",
+      "cmc": 8.0,
+      "type_line": "Creature \u2014 Djinn",
+      "oracle_text": "Flying\nWhenever you cast a spell, return target permanent to its owner's hand.",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "2.44",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 0,
+      "prerequisites": [
+        {
+          "url": "https://commanderspellbook.com/combo/542-5034/",
+          "notable": "You control a nontoken permanent that can be cast using {C}.",
+          "easy": null
+        }
+      ],
+      "produces": [
+        "Infinite colorless mana",
+        "Infinite storm count"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/542-5034/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Ashnod's Altar",
+      "mana_cost": "{3}",
+      "cmc": 3.0,
+      "type_line": "Artifact",
+      "oracle_text": "Sacrifice a creature: Add {C}{C}.",
+      "color_identity": [],
+      "usd": "17.33",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 0,
+      "prerequisites": [
+        {
+          "url": "https://commanderspellbook.com/combo/2034-3985-4343/",
+          "notable": "You control at least one additional untapped creature.",
+          "easy": null
+        }
+      ],
+      "produces": [
+        "Tap all creatures opponents control during each turn"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/2034-3985-4343/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "The Watcher in the Water",
+      "mana_cost": "{3}{U}{U}",
+      "cmc": 5.0,
+      "type_line": "Legendary Creature \u2014 Kraken",
+      "oracle_text": "The Watcher in the Water enters tapped with nine stun counters on it. (If a permanent with a stun counter would become untapped, remove one from it instead.)\nWhenever you draw a card during an opponent's turn, create a 1/1 blue Tentacle creature token.\nWhenever a Tentacle you control dies, untap up to one target Kraken and put a stun counter on up to one target nonland permanent.",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "2.43",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 0,
+      "prerequisites": [
+        {
+          "url": "https://commanderspellbook.com/combo/2351-3219-4463/",
+          "notable": "An opponent controls a creature without flying.",
+          "easy": null
+        }
+      ],
+      "produces": [
+        "Creatures opponents control do not untap",
+        "Lock",
+        "Tap all creatures opponents control"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/2351-3219-4463/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Mind Over Matter",
+      "mana_cost": "{2}{U}{U}{U}{U}",
+      "cmc": 6.0,
+      "type_line": "Enchantment",
+      "oracle_text": "Discard a card: You may tap or untap target artifact, creature, or land.",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "49.60",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 0,
+      "prerequisites": [
+        {
+          "url": "https://commanderspellbook.com/combo/3985-4067-4463/",
+          "notable": "You control at least one untapped creature.",
+          "easy": null
+        }
+      ],
+      "produces": [
+        "Tap all creatures opponents control during each turn"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/3985-4067-4463/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Phyrexian Altar",
+      "mana_cost": "{3}",
+      "cmc": 3.0,
+      "type_line": "Artifact",
+      "oracle_text": "Sacrifice a creature: Add one mana of any color.",
+      "color_identity": [],
+      "usd": "58.66",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 0,
+      "prerequisites": [
+        {
+          "url": "https://commanderspellbook.com/combo/3985-4050-4343/",
+          "notable": "You control at least one additional untapped creature.",
+          "easy": null
+        }
+      ],
+      "produces": [
+        "Tap all creatures opponents control during each turn"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/3985-4050-4343/"
+      ],
+      "tribal_match": false
+    }
+  ]
+}

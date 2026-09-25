@@ -1,0 +1,308 @@
+{
+  "included": [],
+  "almost_included": [
+    {
+      "id": "513-5034--46",
+      "url": "https://commanderspellbook.com/combo/513-5034--46/",
+      "cards": [
+        "Hullbreaker Horror",
+        "Sol Ring"
+      ],
+      "missing_cards": [
+        "Hullbreaker Horror"
+      ],
+      "produces": [
+        "Infinite colorless mana",
+        "Infinite storm count"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "E",
+      "popularity": 352663,
+      "color_identity": "U"
+    },
+    {
+      "id": "542-5034",
+      "url": "https://commanderspellbook.com/combo/542-5034/",
+      "cards": [
+        "Tidespout Tyrant",
+        "Sol Ring"
+      ],
+      "missing_cards": [
+        "Tidespout Tyrant"
+      ],
+      "produces": [
+        "Infinite colorless mana",
+        "Infinite storm count"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control a nontoken permanent that can be cast using {C}.",
+      "bracket_tag": "S",
+      "popularity": 37246,
+      "color_identity": "U"
+    },
+    {
+      "id": "2702-4992",
+      "url": "https://commanderspellbook.com/combo/2702-4992/",
+      "cards": [
+        "Archetype of Imagination",
+        "Stormtide Leviathan"
+      ],
+      "missing_cards": [
+        "Stormtide Leviathan"
+      ],
+      "produces": [
+        "Opponents can't attack with most creatures",
+        "Lock"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "S",
+      "popularity": 14053,
+      "color_identity": "U"
+    },
+    {
+      "id": "2067-2744",
+      "url": "https://commanderspellbook.com/combo/2067-2744/",
+      "cards": [
+        "Storm Herd",
+        "Cathars' Crusade"
+      ],
+      "missing_cards": [
+        "Storm Herd"
+      ],
+      "produces": [
+        "Near-infinite +1/+1 counters",
+        "Near-infinite creature ETB",
+        "Near-infinite creature tokens"
+      ],
+      "notes": "The combo causes each creature you control as well as each Pegasus tokens to get a number of +1/+1 counters on them equal to your life total as Storm Herd resolves.",
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "C",
+      "popularity": 5447,
+      "color_identity": "W"
+    },
+    {
+      "id": "2027-2702",
+      "url": "https://commanderspellbook.com/combo/2027-2702/",
+      "cards": [
+        "Archetype of Imagination",
+        "Magus of the Moat"
+      ],
+      "missing_cards": [
+        "Magus of the Moat"
+      ],
+      "produces": [
+        "Opponents can't attack",
+        "Lock"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "S",
+      "popularity": 2417,
+      "color_identity": "WU"
+    },
+    {
+      "id": "2034-3985-4343",
+      "url": "https://commanderspellbook.com/combo/2034-3985-4343/",
+      "cards": [
+        "Hylda of the Icy Crown",
+        "Opposition",
+        "Ashnod's Altar"
+      ],
+      "missing_cards": [
+        "Ashnod's Altar"
+      ],
+      "produces": [
+        "Tap all creatures opponents control during each turn"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control at least one additional untapped creature.",
+      "bracket_tag": "E",
+      "popularity": 1903,
+      "color_identity": "WU"
+    },
+    {
+      "id": "2351-3219-4463",
+      "url": "https://commanderspellbook.com/combo/2351-3219-4463/",
+      "cards": [
+        "The Watcher in the Water",
+        "Verity Circle",
+        "Junk Winder"
+      ],
+      "missing_cards": [
+        "The Watcher in the Water"
+      ],
+      "produces": [
+        "Creatures opponents control do not untap",
+        "Tap all creatures opponents control",
+        "Lock"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "An opponent controls a creature without flying.",
+      "bracket_tag": "S",
+      "popularity": 1031,
+      "color_identity": "U"
+    },
+    {
+      "id": "2143-4365",
+      "url": "https://commanderspellbook.com/combo/2143-4365/",
+      "cards": [
+        "Spawnsire of Ulamog",
+        "Mondrak, Glory Dominus"
+      ],
+      "missing_cards": [
+        "Spawnsire of Ulamog"
+      ],
+      "produces": [
+        "Infinite death triggers",
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite creature sacrifice triggers"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "E",
+      "popularity": 772,
+      "color_identity": "W"
+    },
+    {
+      "id": "205-4428",
+      "url": "https://commanderspellbook.com/combo/205-4428/",
+      "cards": [
+        "Azor, the Lawbringer",
+        "Thassa, Deep-Dwelling"
+      ],
+      "missing_cards": [
+        "Azor, the Lawbringer"
+      ],
+      "produces": [
+        "Opponents can't cast instant spells during their turns",
+        "Opponents can't cast sorcery spells",
+        "Lock"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "S",
+      "popularity": 708,
+      "color_identity": "WU"
+    },
+    {
+      "id": "2702-3348",
+      "url": "https://commanderspellbook.com/combo/2702-3348/",
+      "cards": [
+        "Island Sanctuary",
+        "Archetype of Imagination"
+      ],
+      "missing_cards": [
+        "Island Sanctuary"
+      ],
+      "produces": [
+        "Most creatures can't attack you",
+        "You do not draw cards during your draw steps",
+        "Lock"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "S",
+      "popularity": 381,
+      "color_identity": "WU"
+    },
+    {
+      "id": "992-2702",
+      "url": "https://commanderspellbook.com/combo/992-2702/",
+      "cards": [
+        "Archetype of Imagination",
+        "Moat"
+      ],
+      "missing_cards": [
+        "Moat"
+      ],
+      "produces": [
+        "Opponents can't attack",
+        "Lock"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "S",
+      "popularity": 371,
+      "color_identity": "WU"
+    },
+    {
+      "id": "3985-4067-4463",
+      "url": "https://commanderspellbook.com/combo/3985-4067-4463/",
+      "cards": [
+        "Opposition",
+        "Verity Circle",
+        "Mind Over Matter"
+      ],
+      "missing_cards": [
+        "Mind Over Matter"
+      ],
+      "produces": [
+        "Tap all creatures opponents control during each turn"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control at least one untapped creature.",
+      "bracket_tag": "E",
+      "popularity": 345,
+      "color_identity": "U"
+    },
+    {
+      "id": "3985-4050-4343",
+      "url": "https://commanderspellbook.com/combo/3985-4050-4343/",
+      "cards": [
+        "Hylda of the Icy Crown",
+        "Opposition",
+        "Phyrexian Altar"
+      ],
+      "missing_cards": [
+        "Phyrexian Altar"
+      ],
+      "produces": [
+        "Tap all creatures opponents control during each turn"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control at least one additional untapped creature.",
+      "bracket_tag": "E",
+      "popularity": 229,
+      "color_identity": "WU"
+    },
+    {
+      "id": "1938-4200-4428",
+      "url": "https://commanderspellbook.com/combo/1938-4200-4428/",
+      "cards": [
+        "Glorious Protector",
+        "Icewind Stalwart",
+        "Thassa, Deep-Dwelling"
+      ],
+      "missing_cards": [
+        "Icewind Stalwart"
+      ],
+      "produces": [
+        "Infinite blinking of most creatures",
+        "Infinite creature ETB",
+        "Infinite creature LTB"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "E",
+      "popularity": 118,
+      "color_identity": "WU"
+    }
+  ]
+}

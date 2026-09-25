@@ -1,0 +1,1817 @@
+{
+  "deck_dir": "crown-of-winter",
+  "card_count": 100,
+  "unique_card_count": 78,
+  "not_found": [],
+  "cards": [
+    {
+      "name": "Adarkar Wastes",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {W} or {U}. This land deals 1 damage to you.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "C",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Arcane Lighthouse",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{1}, {T}: Until end of turn, creatures your opponents control lose hexproof and shroud and can't have hexproof or shroud.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Arcane Signet",
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Archetype of Imagination",
+      "mana_cost": "{4}{U}{U}",
+      "cmc": 6.0,
+      "type_line": "Enchantment Creature \u2014 Human Wizard",
+      "oracle_text": "Creatures you control have flying.\nCreatures your opponents control lose flying and can't have or gain flying.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": "3",
+      "toughness": "2",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Azorius Chancery",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped.\nWhen this land enters, return a land you control to its owner's hand.\n{T}: Add {W}{U}.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Azorius Signet",
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "oracle_text": "{1}, {T}: Add {W}{U}.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Bard, King of Dale",
+      "mana_cost": "{4}{W}{U}",
+      "cmc": 6.0,
+      "type_line": "Legendary Creature \u2014 Human Noble Archer",
+      "oracle_text": "Reach, vigilance\nIf you would draw a card except the first one you draw in each of your draw steps, draw two cards instead.\nIf one or more tokens would be created under your control, twice that many of those tokens are created instead.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [
+        "U",
+        "W"
+      ],
+      "game_changer": false,
+      "power": "3",
+      "toughness": "5",
+      "loyalty": null,
+      "keywords": [
+        "Reach",
+        "Vigilance"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Blustersquall",
+      "mana_cost": "{U}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Tap target creature you don't control.\nOverload {3}{U} (You may cast this spell for its overload cost. If you do, change \"target\" in its text to \"each.\")",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Overload"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Cathars' Crusade",
+      "mana_cost": "{3}{W}{W}",
+      "cmc": 5.0,
+      "type_line": "Enchantment",
+      "oracle_text": "Whenever a creature you control enters, put a +1/+1 counter on each creature you control.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Citadel Siege",
+      "mana_cost": "{2}{W}{W}",
+      "cmc": 4.0,
+      "type_line": "Enchantment",
+      "oracle_text": "As this enchantment enters, choose Khans or Dragons.\n\u2022 Khans \u2014 At the beginning of combat on your turn, put two +1/+1 counters on target creature you control.\n\u2022 Dragons \u2014 At the beginning of combat on each opponent's turn, tap target creature that player controls.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Clever Concealment",
+      "mana_cost": "{2}{W}{W}",
+      "cmc": 4.0,
+      "type_line": "Instant",
+      "oracle_text": "Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)\nAny number of target nonland permanents you control phase out. (Treat them and anything attached to them as though they don't exist until your next turn.)",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Convoke"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Cloud's Limit Break",
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "oracle_text": "Tiered (Choose one additional cost.)\n\u2022 Cross-Slash \u2014 {0} \u2014 Destroy target tapped creature.\n\u2022 Blade Beam \u2014 {1} \u2014 Destroy any number of target tapped creatures with different controllers.\n\u2022 Omnislash \u2014 {3}{W} \u2014 Destroy all tapped creatures.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Omnislash",
+        "Blade Beam",
+        "Tiered",
+        "Cross-Slash"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Command Tower",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Court Street Denizen",
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Human Soldier",
+      "oracle_text": "Whenever another white creature you control enters, tap target creature an opponent controls.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": "2",
+      "toughness": "2",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Cryptic Command",
+      "mana_cost": "{1}{U}{U}{U}",
+      "cmc": 4.0,
+      "type_line": "Instant",
+      "oracle_text": "Choose two \u2014\n\u2022 Counter target spell.\n\u2022 Return target permanent to its owner's hand.\n\u2022 Tap all creatures your opponents control.\n\u2022 Draw a card.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Deserted Beach",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you control two or more other lands.\n{T}: Add {W} or {U}.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Dovin's Veto",
+      "mana_cost": "{W}{U}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "oracle_text": "This spell can't be countered.\nCounter target noncreature spell.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [
+        "U",
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Eerie Interlude",
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "oracle_text": "Exile any number of target creatures you control. Return those cards to the battlefield under their owner's control at the beginning of the next end step.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Elvish Mariner",
+      "mana_cost": "{2}{U}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Elf Pilot",
+      "oracle_text": "Whenever this creature attacks, scry 1.\nWhenever you scry, tap up to X target nonland permanents, where X is the number of cards looked at while scrying this way.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": "3",
+      "toughness": "2",
+      "loyalty": null,
+      "keywords": [
+        "Scry"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Erode",
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Destroy target creature or planeswalker. Its controller may search their library for a basic land card, put it onto the battlefield tapped, then shuffle.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Feeling of Dread",
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "oracle_text": "Tap up to two target creatures.\nFlashback {1}{U} (You may cast this card from your graveyard for its flashback cost. Then exile it.)",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Flashback"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Fellwar Stone",
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Flare of Denial",
+      "mana_cost": "{1}{U}{U}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "oracle_text": "You may sacrifice a nontoken blue creature rather than pay this spell's mana cost.\nCounter target spell.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Flooded Strand",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice this land: Search your library for a Plains or Island card, put it onto the battlefield, then shuffle.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Gadwick, the Wizened",
+      "mana_cost": "{X}{U}{U}{U}",
+      "cmc": 3.0,
+      "type_line": "Legendary Creature \u2014 Human Wizard",
+      "oracle_text": "When Gadwick enters, draw X cards.\nWhenever you cast a blue spell, tap target nonland permanent an opponent controls.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": "3",
+      "toughness": "3",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Githzerai Monk",
+      "mana_cost": "{4}{W}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Gith Monk",
+      "oracle_text": "Flash\nFlying\nPsychic Defense \u2014 When this creature enters, tap all creatures you don't control.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": "3",
+      "toughness": "2",
+      "loyalty": null,
+      "keywords": [
+        "Flying",
+        "Psychic Defense",
+        "Flash"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Glacial Fortress",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you control a Plains or an Island.\n{T}: Add {W} or {U}.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Gleaming Bastion",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {W} or {U}. Activate only if this land entered this turn or if you control a basic land.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "C",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Glorious Protector",
+      "mana_cost": "{2}{W}{W}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Angel Cleric",
+      "oracle_text": "Flash\nFlying\nWhen this creature enters, you may exile any number of non-Angel creatures you control until this creature leaves the battlefield.\nForetell {2}{W}",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": "3",
+      "toughness": "4",
+      "loyalty": null,
+      "keywords": [
+        "Flying",
+        "Flash",
+        "Foretell"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Hallowed Fountain",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Plains Island",
+      "oracle_text": "({T}: Add {W} or {U}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Hylda of the Icy Crown",
+      "mana_cost": "{2}{W}{U}",
+      "cmc": 4.0,
+      "type_line": "Legendary Creature \u2014 Human Warlock",
+      "oracle_text": "Whenever you tap an untapped creature an opponent controls, you may pay {1}. When you do, choose one \u2014\n\u2022 Create a 4/4 white and blue Elemental creature token.\n\u2022 Put a +1/+1 counter on each creature you control.\n\u2022 Scry 2, then draw a card.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [
+        "U",
+        "W"
+      ],
+      "game_changer": false,
+      "power": "3",
+      "toughness": "4",
+      "loyalty": null,
+      "keywords": [
+        "Scry"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": true
+    },
+    {
+      "name": "Hylda's Crown of Winter",
+      "mana_cost": "{3}",
+      "cmc": 3.0,
+      "type_line": "Legendary Artifact",
+      "oracle_text": "{1}, {T}: Tap target creature. This ability costs {1} less to activate during your turn.\n{3}, Sacrifice Hylda's Crown of Winter: Draw a card for each tapped creature your opponents control.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Icy Blast",
+      "mana_cost": "{X}{U}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Tap X target creatures.\nFerocious \u2014 If you control a creature with power 4 or greater, those creatures don't untap during their controllers' next untap steps.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Ferocious"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Intangible Virtue",
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Enchantment",
+      "oracle_text": "Creature tokens you control get +1/+1 and have vigilance.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Island",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Island",
+      "oracle_text": "({T}: Add {U}.)",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "U"
+      ],
+      "commander_legal": "legal",
+      "quantity": 12,
+      "is_commander": false
+    },
+    {
+      "name": "Junk Winder",
+      "mana_cost": "{5}{U}{U}",
+      "cmc": 7.0,
+      "type_line": "Creature \u2014 Serpent",
+      "oracle_text": "Affinity for tokens (This spell costs {1} less to cast for each token you control.)\nWhenever a token you control enters, tap target nonland permanent an opponent controls. It doesn't untap during its controller's next untap step.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": "5",
+      "toughness": "6",
+      "loyalty": null,
+      "keywords": [
+        "Affinity"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Kapsho Kitefins",
+      "mana_cost": "{4}{U}{U}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Fish",
+      "oracle_text": "Flying\nWhenever this creature or another creature you control enters, tap target creature an opponent controls.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": "3",
+      "toughness": "3",
+      "loyalty": null,
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "March of Otherworldly Light",
+      "mana_cost": "{X}{W}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "As an additional cost to cast this spell, you may exile any number of white cards from your hand. This spell costs {2} less to cast for each card exiled this way.\nExile target artifact, creature, or enchantment with mana value X or less.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Mind Stone",
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add {C}.\n{1}, {T}, Sacrifice this artifact: Draw a card.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Mondrak, Glory Dominus",
+      "mana_cost": "{2}{W}{W}",
+      "cmc": 4.0,
+      "type_line": "Legendary Creature \u2014 Phyrexian Horror",
+      "oracle_text": "If one or more tokens would be created under your control, twice that many of those tokens are created instead.\n{1}{W/P}{W/P}, Sacrifice two other artifacts and/or creatures: Put an indestructible counter on Mondrak. ({W/P} can be paid with either {W} or 2 life.)",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": "4",
+      "toughness": "4",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Moonshaker Cavalry",
+      "mana_cost": "{5}{W}{W}{W}",
+      "cmc": 8.0,
+      "type_line": "Creature \u2014 Spirit Knight",
+      "oracle_text": "Flying\nWhen this creature enters, creatures you control gain flying and get +X/+X until end of turn, where X is the number of creatures you control.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": "6",
+      "toughness": "6",
+      "loyalty": null,
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Negate",
+      "mana_cost": "{1}{U}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "oracle_text": "Counter target noncreature spell.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Niblis of Frost",
+      "mana_cost": "{2}{U}{U}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Spirit",
+      "oracle_text": "Flying\nProwess (Whenever you cast a noncreature spell, this creature gets +1/+1 until end of turn.)\nWhenever you cast an instant or sorcery spell, tap target creature an opponent controls. That creature doesn't untap during its controller's next untap step.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": "3",
+      "toughness": "3",
+      "loyalty": null,
+      "keywords": [
+        "Flying",
+        "Prowess"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Nulldrifter",
+      "mana_cost": "{7}",
+      "cmc": 7.0,
+      "type_line": "Creature \u2014 Eldrazi Elemental",
+      "oracle_text": "When you cast this spell, draw two cards.\nFlying\nAnnihilator 1 (Whenever this creature attacks, defending player sacrifices a permanent of their choice.)\nEvoke {2}{U} (You may cast this spell for its evoke cost. If you do, it's sacrificed when it enters.)",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": "4",
+      "toughness": "4",
+      "loyalty": null,
+      "keywords": [
+        "Flying",
+        "Annihilator",
+        "Evoke"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Opposition",
+      "mana_cost": "{2}{U}{U}",
+      "cmc": 4.0,
+      "type_line": "Enchantment",
+      "oracle_text": "Tap an untapped creature you control: Tap target artifact, creature, or land.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Ornithopter of Paradise",
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact Creature \u2014 Thopter",
+      "oracle_text": "Flying\n{T}: Add one mana of any color.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": "0",
+      "toughness": "2",
+      "loyalty": null,
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Path to Exile",
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Exile target creature. Its controller may search their library for a basic land card, put that card onto the battlefield tapped, then shuffle.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Plains",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Plains",
+      "oracle_text": "({T}: Add {W}.)",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 12,
+      "is_commander": false
+    },
+    {
+      "name": "Port Town",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "As this land enters, you may reveal a Plains or Island card from your hand. If you don't, this land enters tapped.\n{T}: Add {W} or {U}.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Prairie Stream",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Plains Island",
+      "oracle_text": "({T}: Add {W} or {U}.)\nThis land enters tapped unless you control two or more basic lands.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Quake, Agent of S.H.I.E.L.D.",
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Legendary Creature \u2014 Inhuman Spy Hero",
+      "oracle_text": "Seismic Takedown \u2014 Whenever you cast a noncreature spell, tap target creature or land.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": "3",
+      "toughness": "3",
+      "loyalty": null,
+      "keywords": [
+        "Seismic Takedown"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Requisition Raid",
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Spree (Choose one or more additional costs.)\n+ {1} \u2014 Destroy target artifact.\n+ {1} \u2014 Destroy target enchantment.\n+ {1} \u2014 Put a +1/+1 counter on each creature target player controls.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Spree"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Search for Azcanta // Azcanta, the Sunken Ruin",
+      "mana_cost": "{1}{U}",
+      "cmc": 2.0,
+      "type_line": "Legendary Enchantment // Legendary Land",
+      "oracle_text": "At the beginning of your upkeep, surveil 1. Then if you have seven or more cards in your graveyard, you may transform Search for Azcanta. (Look at the top card of your library. You may put that card into your graveyard.)\n(Transforms from Search for Azcanta.)\n{T}: Add {U}.\n{2}{U}, {T}: Look at the top four cards of your library. You may reveal a noncreature, nonland card from among them and put it into your hand. Put the rest on the bottom of your library in any order.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": null,
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Surveil",
+        "Transform"
+      ],
+      "produced_mana": [
+        "U"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Sharae of Numbing Depths",
+      "mana_cost": "{2}{W}{U}",
+      "cmc": 4.0,
+      "type_line": "Legendary Creature \u2014 Merfolk Wizard",
+      "oracle_text": "When Sharae enters, tap target creature an opponent controls and put a stun counter on it. (If a permanent with a stun counter would become untapped, remove one from it instead.)\nWhenever you tap one or more untapped creatures your opponents control, draw a card. This ability triggers only once each turn.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [
+        "U",
+        "W"
+      ],
+      "game_changer": false,
+      "power": "2",
+      "toughness": "3",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Sky Diamond",
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "oracle_text": "This artifact enters tapped.\n{T}: Add {U}.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "U"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Skycloud Expanse",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{1}, {T}: Add {W}{U}.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Sleep",
+      "mana_cost": "{2}{U}{U}",
+      "cmc": 4.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Tap all creatures target player controls. Those creatures don't untap during that player's next untap step.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Sol Ring",
+      "mana_cost": "{1}",
+      "cmc": 1.0,
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add {C}{C}.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Split Up",
+      "mana_cost": "{1}{W}{W}",
+      "cmc": 3.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Choose one \u2014\n\u2022 Destroy all tapped creatures.\n\u2022 Destroy all untapped creatures.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Stroke of Midnight",
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "oracle_text": "Destroy target nonland permanent. Its controller creates a 1/1 white Human creature token.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Sunblast Angel",
+      "mana_cost": "{4}{W}{W}",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Angel",
+      "oracle_text": "Flying\nWhen this creature enters, destroy all tapped creatures.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": "4",
+      "toughness": "5",
+      "loyalty": null,
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Supreme Verdict",
+      "mana_cost": "{1}{W}{W}{U}",
+      "cmc": 4.0,
+      "type_line": "Sorcery",
+      "oracle_text": "This spell can't be countered.\nDestroy all creatures.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [
+        "U",
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Swan Song",
+      "mana_cost": "{U}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Counter target enchantment, instant, or sorcery spell. Its controller creates a 2/2 blue Bird creature token with flying.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Swiftfoot Boots",
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact \u2014 Equipment",
+      "oracle_text": "Equipped creature has hexproof and haste. (It can't be the target of spells or abilities your opponents control. It can attack and {T} no matter when it came under your control.)\nEquip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Equip"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Swords to Plowshares",
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Exile target creature. Its controller gains life equal to its power.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Talisman of Progress",
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {W} or {U}. This artifact deals 1 damage to you.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "C",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Talrand, Sky Summoner",
+      "mana_cost": "{2}{U}{U}",
+      "cmc": 4.0,
+      "type_line": "Legendary Creature \u2014 Merfolk Wizard",
+      "oracle_text": "Whenever you cast an instant or sorcery spell, create a 2/2 blue Drake creature token with flying.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": "2",
+      "toughness": "2",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Tamiyo, the Moon Sage",
+      "mana_cost": "{3}{U}{U}",
+      "cmc": 5.0,
+      "type_line": "Legendary Planeswalker \u2014 Tamiyo",
+      "oracle_text": "+1: Tap target permanent. It doesn't untap during its controller's next untap step.\n\u22122: Draw a card for each tapped creature target player controls.\n\u22128: You get an emblem with \"You have no maximum hand size\" and \"Whenever a card is put into your graveyard from anywhere, you may return it to your hand.\"",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": "4",
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Tempest Caller",
+      "mana_cost": "{2}{U}{U}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Merfolk Wizard",
+      "oracle_text": "When this creature enters, tap all creatures target opponent controls.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": "2",
+      "toughness": "3",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Temple of Enlightenment",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped.\nWhen this land enters, scry 1. (Look at the top card of your library. You may put that card on the bottom.)\n{T}: Add {W} or {U}.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Scry"
+      ],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Thassa, Deep-Dwelling",
+      "mana_cost": "{3}{U}",
+      "cmc": 4.0,
+      "type_line": "Legendary Enchantment Creature \u2014 God",
+      "oracle_text": "Indestructible\nAs long as your devotion to blue is less than five, Thassa isn't a creature.\nAt the beginning of your end step, exile up to one other target creature you control, then return that card to the battlefield under your control.\n{3}{U}: Tap another target creature.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": "6",
+      "toughness": "5",
+      "loyalty": null,
+      "keywords": [
+        "Indestructible"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "The Wondrous Wasp",
+      "mana_cost": "{1}{U}",
+      "cmc": 2.0,
+      "type_line": "Legendary Creature \u2014 Human Hero",
+      "oracle_text": "Flash\nFlying\nWasp's Sting \u2014 When The Wondrous Wasp enters, tap up to one target creature. It loses all abilities for as long as The Wondrous Wasp remains on the battlefield.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": "2",
+      "toughness": "1",
+      "loyalty": null,
+      "keywords": [
+        "Flying",
+        "Wasp's Sting",
+        "Flash"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Toby, Beastie Befriender",
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Legendary Creature \u2014 Human Wizard",
+      "oracle_text": "When Toby enters, create a 4/4 white Beast creature token with \"This token can't attack or block alone.\"\nAs long as you control four or more creature tokens, creature tokens you control have flying.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": "1",
+      "toughness": "1",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Topplegeist",
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Creature \u2014 Spirit",
+      "oracle_text": "Flying\nWhen this creature enters, tap target creature an opponent controls.\nDelirium \u2014 At the beginning of each opponent's upkeep, if there are four or more card types among cards in your graveyard, tap target creature that player controls.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": "1",
+      "toughness": "1",
+      "loyalty": null,
+      "keywords": [
+        "Flying",
+        "Delirium"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Urza's Rebuff",
+      "mana_cost": "{1}{U}{U}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "oracle_text": "Choose one \u2014\n\u2022 Counter target spell.\n\u2022 Tap up to two target creatures.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Verity Circle",
+      "mana_cost": "{2}{U}",
+      "cmc": 3.0,
+      "type_line": "Enchantment",
+      "oracle_text": "Whenever a creature an opponent controls becomes tapped, if it isn't being declared as an attacker, you may draw a card.\n{4}{U}: Tap target creature without flying.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Winds of Abandon",
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Exile target creature you don't control. For each creature exiled this way, its controller searches their library for a basic land card. Those players put those cards onto the battlefield tapped, then shuffle.\nOverload {4}{W}{W} (You may cast this spell for its overload cost. If you do, change \"target\" in its text to \"each.\")",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Overload"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "You See a Guard Approach",
+      "mana_cost": "{U}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Choose one \u2014\n\u2022 Distract the Guard \u2014 Tap target creature.\n\u2022 Hide \u2014 Target creature you control gains hexproof until end of turn. (It can't be the target of spells or abilities your opponents control.)",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    }
+  ]
+}

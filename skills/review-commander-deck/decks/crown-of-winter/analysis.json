@@ -1,0 +1,151 @@
+{
+  "counts": {
+    "total_cards": 100,
+    "lands": 38,
+    "creatures": 24,
+    "instants": 18,
+    "sorceries": 5,
+    "artifacts": 10,
+    "enchantments": 7,
+    "planeswalkers": 1,
+    "battles": 0
+  },
+  "mana_curve": {
+    "1": 11,
+    "2": 15,
+    "3": 12,
+    "4": 14,
+    "5": 3,
+    "6": 4,
+    "7+": 3
+  },
+  "typical_mana_curve": {
+    "0": 1,
+    "1": 10,
+    "2": 15,
+    "3": 12,
+    "4": 14,
+    "5": 3,
+    "6": 5,
+    "7+": 2
+  },
+  "curve_summary": {
+    "average_cmc": 3.13,
+    "typical_average_cmc": 3.1,
+    "pct_cmc_le_3": 61.3,
+    "typical_pct_cmc_le_3": 61.3,
+    "baseline_reference": {
+      "average_cmc_range": [
+        2.5,
+        3.5
+      ],
+      "pct_cmc_le_3_min": 50.0
+    }
+  },
+  "cost_reduction_details": {
+    "Junk Winder": {
+      "nominal_cmc": 7.0,
+      "typical_cmc": 6.0,
+      "best_case_cmc": 6.0,
+      "note": "Fixed self cost reduction of {1} - reliable, not conditional."
+    },
+    "March of Otherworldly Light": {
+      "nominal_cmc": 1.0,
+      "typical_cmc": 0.0,
+      "best_case_cmc": 0.0,
+      "note": "Fixed self cost reduction of {2} - reliable, not conditional."
+    }
+  },
+  "color_identity_pip_counts": {
+    "U": 55,
+    "W": 53
+  },
+  "categories": {
+    "ramp": [
+      "Arcane Signet",
+      "Azorius Signet",
+      "Fellwar Stone",
+      "Mind Stone",
+      "Ornithopter of Paradise",
+      "Sky Diamond",
+      "Sol Ring",
+      "Talisman of Progress"
+    ],
+    "targeted_removal": [
+      "Cloud's Limit Break",
+      "Cryptic Command",
+      "Erode",
+      "March of Otherworldly Light",
+      "Path to Exile",
+      "Requisition Raid",
+      "Stroke of Midnight",
+      "Swords to Plowshares",
+      "Winds of Abandon"
+    ],
+    "board_wipe": [
+      "Cloud's Limit Break",
+      "Split Up",
+      "Sunblast Angel",
+      "Supreme Verdict"
+    ],
+    "counterspell": [
+      "Cryptic Command",
+      "Dovin's Veto",
+      "Flare of Denial",
+      "Negate",
+      "Swan Song",
+      "Urza's Rebuff"
+    ],
+    "card_draw": [
+      "Bard, King of Dale",
+      "Cryptic Command",
+      "Gadwick, the Wizened",
+      "Hylda of the Icy Crown",
+      "Hylda's Crown of Winter",
+      "Mind Stone",
+      "Nulldrifter",
+      "Sharae of Numbing Depths",
+      "Tamiyo, the Moon Sage",
+      "Verity Circle"
+    ],
+    "land_tutor": [
+      "Flooded Strand"
+    ],
+    "nonland_tutor": [],
+    "extra_turn": [],
+    "mass_land_denial": [],
+    "game_changer": [],
+    "cost_reduction": [
+      "Junk Winder",
+      "March of Otherworldly Light"
+    ],
+    "resilience": [],
+    "fragile_trigger": [],
+    "protection": [
+      "Clever Concealment",
+      "Eerie Interlude",
+      "Glorious Protector",
+      "Swiftfoot Boots",
+      "Thassa, Deep-Dwelling",
+      "You See a Guard Approach"
+    ],
+    "curse": [],
+    "magecraft": [
+      "Niblis of Frost",
+      "Talrand, Sky Summoner"
+    ],
+    "noncreature_spell_value": [
+      "Niblis of Frost",
+      "Quake, Agent of S.H.I.E.L.D."
+    ],
+    "copy_effects": []
+  },
+  "bracket_estimate": {
+    "suggested": "2 (Core) or 1 (Exhibition)",
+    "reasoning": "No Game Changers or mass land denial detected.",
+    "caveats": [
+      "Two-card infinite combo potential can't be detected from card text alone \u2014 review the tutor/combo-piece cards in categories.nonland_tutor and categories.game_changer by hand.",
+      "Bracket 1 vs. 2 and Bracket 4 vs. 5 hinge on player/table intent (casual theme vs. optimized, tournament meta vs. not), not just card choices \u2014 this script can't infer that."
+    ]
+  }
+}

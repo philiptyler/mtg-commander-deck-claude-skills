@@ -1,0 +1,125 @@
+{
+  "category": "tap_synergy",
+  "category_saturation": null,
+  "tribal_type": null,
+  "query": "id<=UW f:commander -is:funny -t:land (o:\"tap target creature\" or o:\"tap up to\" or o:\"tap all creatures\" or o:\"creature an opponent controls\" or o:\"you don't control\")",
+  "commander_color_identity": [
+    "U",
+    "W"
+  ],
+  "undersupplied_curve_buckets": [
+    "5",
+    "6",
+    "7+"
+  ],
+  "candidates": [
+    {
+      "name": "Fear of Sleep Paralysis",
+      "mana_cost": "{5}{U}",
+      "cmc": 6.0,
+      "type_line": "Enchantment Creature \u2014 Nightmare",
+      "oracle_text": "Flying\nEerie \u2014 Whenever this creature or another enchantment you control enters and whenever you fully unlock a Room, tap up to one target creature and put a stun counter on it.\nStun counters can't be removed from permanents your opponents control. (They won't untap if they have stun counters.)",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "0.39",
+      "edhrec_rank": 3435,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Dispatch",
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Tap target creature.\nMetalcraft \u2014 If you control three or more artifacts, exile that creature.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "0.31",
+      "edhrec_rank": 454,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Staff of Domination",
+      "mana_cost": "{3}",
+      "cmc": 3.0,
+      "type_line": "Artifact",
+      "oracle_text": "{1}: Untap this artifact.\n{2}, {T}: You gain 1 life.\n{3}, {T}: Untap target creature.\n{4}, {T}: Tap target creature.\n{5}, {T}: Draw a card.",
+      "color_identity": [],
+      "usd": "11.02",
+      "edhrec_rank": 1030,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Mj\u00f6lnir, Storm Hammer",
+      "mana_cost": "{4}",
+      "cmc": 4.0,
+      "type_line": "Legendary Artifact \u2014 Equipment",
+      "oracle_text": "When Mj\u00f6lnir enters, attach it to target legendary creature you control.\nWhenever equipped creature attacks, tap target creature defending player controls and put a stun counter on it. Then Mj\u00f6lnir deals damage to each opponent equal to the number of tapped creatures that opponent controls.\nEquip {4}",
+      "color_identity": [],
+      "usd": "3.39",
+      "edhrec_rank": 3190,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Lossarnach Captain",
+      "mana_cost": "{3}{W}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Human Soldier",
+      "oracle_text": "First strike\nWhenever this creature or another Human you control enters, tap target creature an opponent controls.\nAt the beginning of your upkeep, create a 1/1 white Human Soldier creature token.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "0.42",
+      "edhrec_rank": 3807,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Conformer Shuriken",
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Legendary Artifact \u2014 Equipment",
+      "oracle_text": "Equipped creature has \"Whenever this creature attacks, tap target creature defending player controls. If that creature has greater power than this creature, put a number of +1/+1 counters on this creature equal to the difference.\"\nEquip {2}",
+      "color_identity": [],
+      "usd": "0.32",
+      "edhrec_rank": 3952,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    }
+  ]
+}

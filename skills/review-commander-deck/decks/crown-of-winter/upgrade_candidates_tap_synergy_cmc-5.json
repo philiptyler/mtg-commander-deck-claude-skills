@@ -1,0 +1,303 @@
+{
+  "category": "tap_synergy",
+  "category_saturation": null,
+  "tribal_type": null,
+  "query": "id<=UW f:commander -is:funny -t:land (o:\"tap target creature\" or o:\"tap up to\" or o:\"tap all creatures\" or o:\"creature an opponent controls\" or o:\"you don't control\") cmc<=5",
+  "commander_color_identity": [
+    "U",
+    "W"
+  ],
+  "undersupplied_curve_buckets": [
+    "5",
+    "6",
+    "7+"
+  ],
+  "candidates": [
+    {
+      "name": "Elspeth, Storm Slayer",
+      "mana_cost": "{3}{W}{W}",
+      "cmc": 5.0,
+      "type_line": "Legendary Planeswalker \u2014 Elspeth",
+      "oracle_text": "If one or more tokens would be created under your control, twice that many of those tokens are created instead.\n+1: Create a 1/1 white Soldier creature token.\n0: Put a +1/+1 counter on each creature you control. Those creatures gain flying until your next turn.\n\u22123: Destroy target creature an opponent controls with mana value 3 or greater.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "42.86",
+      "edhrec_rank": 706,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Peregrine Drake",
+      "mana_cost": "{4}{U}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Drake",
+      "oracle_text": "Flying\nWhen this creature enters, untap up to five lands.",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "0.22",
+      "edhrec_rank": 931,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Tezzeret the Seeker",
+      "mana_cost": "{3}{U}{U}",
+      "cmc": 5.0,
+      "type_line": "Legendary Planeswalker \u2014 Tezzeret",
+      "oracle_text": "+1: Untap up to two target artifacts.\n\u2212X: Search your library for an artifact card with mana value X or less, put it onto the battlefield, then shuffle.\n\u22125: Artifacts you control become artifact creatures with base power and toughness 5/5 until end of turn.",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "25.64",
+      "edhrec_rank": 1736,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Teferi, Hero of Dominaria",
+      "mana_cost": "{3}{W}{U}",
+      "cmc": 5.0,
+      "type_line": "Legendary Planeswalker \u2014 Teferi",
+      "oracle_text": "+1: Draw a card. At the beginning of the next end step, untap up to two lands.\n\u22123: Put target nonland permanent into its owner's library third from the top.\n\u22128: You get an emblem with \"Whenever you draw a card, exile target permanent an opponent controls.\"",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "usd": "5.38",
+      "edhrec_rank": 4144,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Summon: Valefor",
+      "mana_cost": "{4}{U}",
+      "cmc": 5.0,
+      "type_line": "Enchantment Creature \u2014 Saga Drake",
+      "oracle_text": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)\nI \u2014 Sonic Wings \u2014 Each opponent chooses a creature with the greatest mana value among creatures they control. Return those creatures to their owners' hands.\nII, III, IV \u2014 Tap up to one target creature and put a stun counter on it.\nFlying",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "0.28",
+      "edhrec_rank": 4612,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Cyclonic Rift",
+      "mana_cost": "{1}{U}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "oracle_text": "Return target nonland permanent you don't control to its owner's hand.\nOverload {6}{U} (You may cast this spell for its overload cost. If you do, change \"target\" in its text to \"each.\")",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "39.15",
+      "edhrec_rank": 55,
+      "game_changer": true,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Frantic Search",
+      "mana_cost": "{2}{U}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "oracle_text": "Draw two cards, then discard two cards. Untap up to three lands.",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "2.03",
+      "edhrec_rank": 100,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Snap",
+      "mana_cost": "{1}{U}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "oracle_text": "Return target creature to its owner's hand. Untap up to two lands.",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "3.79",
+      "edhrec_rank": 273,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Dispatch",
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Tap target creature.\nMetalcraft \u2014 If you control three or more artifacts, exile that creature.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "0.31",
+      "edhrec_rank": 454,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Into the Flood Maw",
+      "mana_cost": "{U}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Gift a tapped Fish (You may promise an opponent a gift as you cast this spell. If you do, they create a tapped 1/1 blue Fish creature token before its other effects.)\nReturn target creature an opponent controls to its owner's hand. If the gift was promised, instead return target nonland permanent an opponent controls to its owner's hand.",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "2.65",
+      "edhrec_rank": 690,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Rewind",
+      "mana_cost": "{2}{U}{U}",
+      "cmc": 4.0,
+      "type_line": "Instant",
+      "oracle_text": "Counter target spell. Untap up to four lands.",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "0.43",
+      "edhrec_rank": 1013,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Unwind",
+      "mana_cost": "{2}{U}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "oracle_text": "Counter target noncreature spell. Untap up to three lands.",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "1.24",
+      "edhrec_rank": 1061,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Comeuppance",
+      "mana_cost": "{3}{W}",
+      "cmc": 4.0,
+      "type_line": "Instant",
+      "oracle_text": "Prevent all damage that would be dealt to you and planeswalkers you control this turn by sources you don't control. If damage from a creature source is prevented this way, Comeuppance deals that much damage to that creature. If damage from a noncreature source is prevented this way, Comeuppance deals that much damage to the source's controller.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "5.58",
+      "edhrec_rank": 3002,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Reins of Power",
+      "mana_cost": "{2}{U}{U}",
+      "cmc": 4.0,
+      "type_line": "Instant",
+      "oracle_text": "Untap all creatures you control and all creatures target opponent controls. You and that opponent each gain control of all creatures the other controls until end of turn. Those creatures gain haste until end of turn.",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "2.22",
+      "edhrec_rank": 3941,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Authority of the Consuls",
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Enchantment",
+      "oracle_text": "Creatures your opponents control enter tapped.\nWhenever a creature an opponent controls enters, you gain 1 life.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "4.73",
+      "edhrec_rank": 331,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    }
+  ]
+}

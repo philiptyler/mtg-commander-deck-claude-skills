@@ -1,0 +1,172 @@
+{
+  "commander_color_identity": [
+    "U",
+    "W"
+  ],
+  "target_probability": 0.9,
+  "current_sources": {
+    "U": 30,
+    "W": 28
+  },
+  "tier_results": [
+    {
+      "tier": "1-2",
+      "target_turn": 2,
+      "on_the_play_cards_seen": 8,
+      "color": "U",
+      "pips_needed": 1,
+      "current_sources": 30,
+      "probability": 0.951,
+      "status": "OK",
+      "at_risk_cards": []
+    },
+    {
+      "tier": "1-2",
+      "target_turn": 2,
+      "on_the_play_cards_seen": 8,
+      "color": "W",
+      "pips_needed": 1,
+      "current_sources": 28,
+      "probability": 0.938,
+      "status": "OK",
+      "at_risk_cards": []
+    },
+    {
+      "tier": "3-4",
+      "target_turn": 4,
+      "on_the_play_cards_seen": 10,
+      "color": "U",
+      "pips_needed": 3,
+      "current_sources": 30,
+      "probability": 0.636,
+      "status": "SHORTFALL",
+      "at_risk_cards": [
+        {
+          "name": "Cryptic Command",
+          "pips": 3
+        },
+        {
+          "name": "Flare of Denial",
+          "pips": 2
+        },
+        {
+          "name": "Gadwick, the Wizened",
+          "pips": 3
+        },
+        {
+          "name": "Niblis of Frost",
+          "pips": 2
+        },
+        {
+          "name": "Opposition",
+          "pips": 2
+        },
+        {
+          "name": "Sleep",
+          "pips": 2
+        },
+        {
+          "name": "Talrand, Sky Summoner",
+          "pips": 2
+        },
+        {
+          "name": "Tempest Caller",
+          "pips": 2
+        },
+        {
+          "name": "Urza's Rebuff",
+          "pips": 2
+        }
+      ]
+    },
+    {
+      "tier": "3-4",
+      "target_turn": 4,
+      "on_the_play_cards_seen": 10,
+      "color": "W",
+      "pips_needed": 2,
+      "current_sources": 28,
+      "probability": 0.837,
+      "status": "SHORTFALL",
+      "at_risk_cards": [
+        {
+          "name": "Citadel Siege",
+          "pips": 2
+        },
+        {
+          "name": "Clever Concealment",
+          "pips": 2
+        },
+        {
+          "name": "Glorious Protector",
+          "pips": 2
+        },
+        {
+          "name": "Mondrak, Glory Dominus",
+          "pips": 2
+        },
+        {
+          "name": "Split Up",
+          "pips": 2
+        },
+        {
+          "name": "Supreme Verdict",
+          "pips": 2
+        }
+      ]
+    },
+    {
+      "tier": "5+",
+      "target_turn": 5,
+      "on_the_play_cards_seen": 11,
+      "color": "U",
+      "pips_needed": 2,
+      "current_sources": 30,
+      "probability": 0.905,
+      "status": "OK",
+      "at_risk_cards": [
+        {
+          "name": "Archetype of Imagination",
+          "pips": 2
+        },
+        {
+          "name": "Junk Winder",
+          "pips": 2
+        },
+        {
+          "name": "Kapsho Kitefins",
+          "pips": 2
+        },
+        {
+          "name": "Tamiyo, the Moon Sage",
+          "pips": 2
+        }
+      ]
+    },
+    {
+      "tier": "5+",
+      "target_turn": 5,
+      "on_the_play_cards_seen": 11,
+      "color": "W",
+      "pips_needed": 3,
+      "current_sources": 28,
+      "probability": 0.654,
+      "status": "SHORTFALL",
+      "at_risk_cards": [
+        {
+          "name": "Cathars' Crusade",
+          "pips": 2
+        },
+        {
+          "name": "Moonshaker Cavalry",
+          "pips": 3
+        },
+        {
+          "name": "Sunblast Angel",
+          "pips": 2
+        }
+      ]
+    }
+  ],
+  "mono_or_colorless": false
+}

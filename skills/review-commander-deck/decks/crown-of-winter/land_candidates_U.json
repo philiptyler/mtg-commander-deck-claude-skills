@@ -1,0 +1,147 @@
+{
+  "color": "U",
+  "query": "id<=UW t:land -is:funny",
+  "candidates": [
+    {
+      "name": "Exotic Orchard",
+      "type_line": "Land",
+      "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "usd": null,
+      "edhrec_rank": 9,
+      "enters_tapped_no_upside": false
+    },
+    {
+      "name": "Path of Ancestry",
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped.\n{T}: Add one mana of any color in your commander's color identity. When that mana is spent to cast a creature spell that shares a creature type with your commander, scry 1. (Look at the top card of your library. You may put that card on the bottom.)",
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "usd": null,
+      "edhrec_rank": 14,
+      "enters_tapped_no_upside": false
+    },
+    {
+      "name": "Otawara, Soaring City",
+      "type_line": "Legendary Land",
+      "oracle_text": "{T}: Add {U}.\nChannel \u2014 {3}{U}, Discard this card: Return target artifact, creature, enchantment, or planeswalker to its owner's hand. This ability costs {1} less to activate for each legendary creature you control.",
+      "produced_mana": [
+        "U"
+      ],
+      "usd": "26.29",
+      "edhrec_rank": 88,
+      "enters_tapped_no_upside": false
+    },
+    {
+      "name": "City of Brass",
+      "type_line": "Land",
+      "oracle_text": "Whenever this land becomes tapped, it deals 1 damage to you.\n{T}: Add one mana of any color.",
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "usd": "11.43",
+      "edhrec_rank": 96,
+      "enters_tapped_no_upside": false
+    },
+    {
+      "name": "Cavern of Souls",
+      "type_line": "Land",
+      "oracle_text": "As this land enters, choose a creature type.\n{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast a creature spell of the chosen type, and that spell can't be countered.",
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "usd": "51.73",
+      "edhrec_rank": 111,
+      "enters_tapped_no_upside": false
+    },
+    {
+      "name": "Mana Confluence",
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life: Add one mana of any color.",
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "usd": "34.40",
+      "edhrec_rank": 116,
+      "enters_tapped_no_upside": false
+    },
+    {
+      "name": "Nykthos, Shrine to Nyx",
+      "type_line": "Legendary Land",
+      "oracle_text": "{T}: Add {C}.\n{2}, {T}: Choose a color. Add an amount of mana of that color equal to your devotion to that color. (Your devotion to a color is the number of mana symbols of that color in the mana costs of permanents you control.)",
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "usd": "53.18",
+      "edhrec_rank": 163,
+      "enters_tapped_no_upside": false
+    },
+    {
+      "name": "Sea of Clouds",
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {W} or {U}.",
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "usd": "20.07",
+      "edhrec_rank": 164,
+      "enters_tapped_no_upside": false
+    },
+    {
+      "name": "Sink into Stupor // Soporific Springs",
+      "type_line": "Instant // Land",
+      "oracle_text": "Return target spell or nonland permanent an opponent controls to its owner's hand.\nAs this land enters, you may pay 3 life. If you don't, it enters tapped.\n{T}: Add {U}.",
+      "produced_mana": [
+        "U"
+      ],
+      "usd": "7.54",
+      "edhrec_rank": 167,
+      "enters_tapped_no_upside": false
+    },
+    {
+      "name": "Reflecting Pool",
+      "type_line": "Land",
+      "oracle_text": "{T}: Add one mana of any type that a land you control could produce.",
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "usd": null,
+      "edhrec_rank": 168,
+      "enters_tapped_no_upside": false
+    }
+  ]
+}

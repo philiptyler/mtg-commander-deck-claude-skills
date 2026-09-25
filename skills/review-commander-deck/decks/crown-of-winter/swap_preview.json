@@ -1,0 +1,15 @@
+{
+  "cut": "Quake, Agent of S.H.I.E.L.D.",
+  "add": "Lossarnach Captain",
+  "average_cmc_before": 3.13,
+  "average_cmc_after": 3.15,
+  "average_cmc_delta": 0.02,
+  "typical_average_cmc_before": 3.1,
+  "typical_average_cmc_after": 3.11,
+  "typical_average_cmc_delta": 0.01,
+  "pct_cmc_le_3_delta": -1.6,
+  "typical_pct_cmc_le_3_delta": -1.6,
+  "bracket_before": "2 (Core) or 1 (Exhibition)",
+  "bracket_after": "2 (Core) or 1 (Exhibition)",
+  "category_changes": {}
+}

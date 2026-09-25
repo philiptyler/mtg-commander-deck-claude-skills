@@ -1,0 +1,393 @@
+{
+  "bracket_used_for_targets": 2,
+  "category_saturation": [
+    {
+      "category": "lands",
+      "count": 38,
+      "target_range": [
+        36,
+        38
+      ],
+      "status": "within"
+    },
+    {
+      "category": "ramp",
+      "count": 8,
+      "target_range": [
+        8,
+        10
+      ],
+      "status": "within"
+    },
+    {
+      "category": "card_draw",
+      "count": 10,
+      "target_range": [
+        8,
+        10
+      ],
+      "status": "within"
+    },
+    {
+      "category": "targeted_removal",
+      "count": 9,
+      "target_range": [
+        8,
+        10
+      ],
+      "status": "within"
+    },
+    {
+      "category": "board_wipe",
+      "count": 4,
+      "target_range": [
+        1,
+        3
+      ],
+      "status": "over"
+    },
+    {
+      "category": "tutors",
+      "count": 0,
+      "target_range": [
+        0,
+        3
+      ],
+      "status": "within"
+    }
+  ],
+  "roleless_nonland_cards": [
+    {
+      "name": "Archetype of Imagination",
+      "cmc": 6.0,
+      "type_line": "Enchantment Creature \u2014 Human Wizard"
+    },
+    {
+      "name": "Blustersquall",
+      "cmc": 1.0,
+      "type_line": "Instant"
+    },
+    {
+      "name": "Cathars' Crusade",
+      "cmc": 5.0,
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Citadel Siege",
+      "cmc": 4.0,
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Court Street Denizen",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Human Soldier"
+    },
+    {
+      "name": "Elvish Mariner",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Elf Pilot"
+    },
+    {
+      "name": "Feeling of Dread",
+      "cmc": 2.0,
+      "type_line": "Instant"
+    },
+    {
+      "name": "Githzerai Monk",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Gith Monk"
+    },
+    {
+      "name": "Icy Blast",
+      "cmc": 1.0,
+      "type_line": "Instant"
+    },
+    {
+      "name": "Intangible Virtue",
+      "cmc": 2.0,
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Kapsho Kitefins",
+      "cmc": 6.0,
+      "type_line": "Creature \u2014 Fish"
+    },
+    {
+      "name": "Mondrak, Glory Dominus",
+      "cmc": 4.0,
+      "type_line": "Legendary Creature \u2014 Phyrexian Horror"
+    },
+    {
+      "name": "Moonshaker Cavalry",
+      "cmc": 8.0,
+      "type_line": "Creature \u2014 Spirit Knight"
+    },
+    {
+      "name": "Niblis of Frost",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Spirit"
+    },
+    {
+      "name": "Opposition",
+      "cmc": 4.0,
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Quake, Agent of S.H.I.E.L.D.",
+      "cmc": 3.0,
+      "type_line": "Legendary Creature \u2014 Inhuman Spy Hero"
+    },
+    {
+      "name": "Sleep",
+      "cmc": 4.0,
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Talrand, Sky Summoner",
+      "cmc": 4.0,
+      "type_line": "Legendary Creature \u2014 Merfolk Wizard"
+    },
+    {
+      "name": "Tempest Caller",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Merfolk Wizard"
+    },
+    {
+      "name": "The Wondrous Wasp",
+      "cmc": 2.0,
+      "type_line": "Legendary Creature \u2014 Human Hero"
+    },
+    {
+      "name": "Toby, Beastie Befriender",
+      "cmc": 3.0,
+      "type_line": "Legendary Creature \u2014 Human Wizard"
+    },
+    {
+      "name": "Topplegeist",
+      "cmc": 1.0,
+      "type_line": "Creature \u2014 Spirit"
+    }
+  ],
+  "high_cmc_low_role_cards": [
+    {
+      "name": "Archetype of Imagination",
+      "cmc": 6.0,
+      "roles": []
+    },
+    {
+      "name": "Bard, King of Dale",
+      "cmc": 6.0,
+      "roles": [
+        "card_draw"
+      ]
+    },
+    {
+      "name": "Junk Winder",
+      "cmc": 7.0,
+      "roles": [
+        "cost_reduction"
+      ]
+    },
+    {
+      "name": "Kapsho Kitefins",
+      "cmc": 6.0,
+      "roles": []
+    },
+    {
+      "name": "Moonshaker Cavalry",
+      "cmc": 8.0,
+      "roles": []
+    },
+    {
+      "name": "Nulldrifter",
+      "cmc": 7.0,
+      "roles": [
+        "card_draw"
+      ]
+    },
+    {
+      "name": "Sunblast Angel",
+      "cmc": 6.0,
+      "roles": [
+        "board_wipe"
+      ]
+    }
+  ],
+  "fragile_trigger_cards": [],
+  "land_signals": [
+    {
+      "name": "Adarkar Wastes",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "C",
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Arcane Lighthouse",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "C"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Azorius Chancery",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": true,
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Command Tower",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Deserted Beach",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Flooded Strand",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [],
+      "off_color": false
+    },
+    {
+      "name": "Glacial Fortress",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Gleaming Bastion",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "C",
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Hallowed Fountain",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Island",
+      "is_basic": true,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "U"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Plains",
+      "is_basic": true,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Port Town",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Prairie Stream",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Search for Azcanta // Azcanta, the Sunken Ruin",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "U"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Skycloud Expanse",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Temple of Enlightenment",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "off_color": false
+    }
+  ]
+}
