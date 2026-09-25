@@ -32,6 +32,31 @@ guideline rather than an invented formula — unlike the mana-base math in
 `upgrade-commander-lands`, "ideal curve shape" has no equivalent rigorous,
 agreed-upon model to build against.
 
+Also detects **protection** (hexproof/indestructible granted to your own
+stuff, phasing, or a temporary exile that dodges removal/a wipe) — added
+after reviewing a tap-matters deck whose owner had hand-tagged 5 cards
+`[Protection]` in their own decklist and none of them showed up anywhere in
+the analysis, because the category didn't exist yet. That same pass fixed
+a real miss in `counterspell` detection: it only matched the literal phrase
+"counter target spell," so anything qualifying its target — "counter
+target *noncreature* spell," "counter target *enchantment, instant, or
+sorcery* spell" — was going undetected and showing up as a roleless card
+despite being exactly what it looks like.
+
+Also detects **curse** (a direct Scryfall type-line check, not a regex
+guess — Curses are structurally marked `Enchantment — Aura Curse`),
+**magecraft**/**noncreature_spell_value** (kept as two separate categories
+since they're genuinely different triggers — instant/sorcery only, versus
+any noncreature spell), and **copy_effects** — added reviewing a
+spellslinger/Curses commander where 7 of its 12 Curses and its actual
+payoff creatures were all showing up roleless for the same reason
+`protection` was missing above. That same review also turned up three more
+real misses in `targeted_removal`: no handling for X-cost damage ("deals X
+damage" next to a digit-only pattern), or for plural multi-target
+exile/bounce phrasing ("Exile X target creatures," "Return up to three
+target artifacts and/or creatures to their owners' hands") — fixing those
+moved that deck's removal count from a misleadingly-low 6 to its true 10.
+
 No third-party Python dependencies — the Scryfall client uses the standard
 library only, so there's no install step to use the skill.
 
@@ -127,6 +152,21 @@ Commander Spellbook's `notable`/`easy_prerequisites` explicitly, because
 out to be two different questions — `Raptor Hatchling` + `Warstorm Surge`
 needed a third, unlisted requirement (a way to grant indestructible) that
 only showed up by reading the prerequisites, not the card list.
+
+Candidate sourcing also has a `tap_synergy` category alongside the generic
+ramp/removal/board_wipe/card_draw/tutors/protection ones — not one of
+`analyze_deck.py`'s own categories, deliberately, since "taps an
+opponent's creature" is a deck-specific build-around rather than a
+generic health check every deck should be scored on, but a real, missing
+query when sourcing candidates for a commander built around exactly that
+(`Hylda of the Icy Crown`). Building it also caught a genuine bug: Scryfall
+search does plain substring matching, so a query term like `"tap up to"`
+also matched `"UNtap up to five lands"` — it was returning actual untap
+effects (`Peregrine Drake`, `Snap`, `Rewind`) as "tap synergy," the exact
+opposite of what was being searched for. Fixed with a positive-match regex
+gate in Python (a negative lookbehind for "un"), not just the Scryfall
+query text, after actually reading the first real results instead of
+trusting the query to mean what it said.
 
 **Depends on `review-commander-deck`'s output**, uses `find-weakest-cards`
 for cut candidates and `find-deck-combos` for the combo-completion bonus

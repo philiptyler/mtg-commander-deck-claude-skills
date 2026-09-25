@@ -36,6 +36,19 @@ CATEGORY_QUERIES = {
     "tutors": '(o:"search your library for a card" or o:"search your library for a creature card" '
               'or o:"search your library for an artifact card")',
     "protection": '(o:hexproof or o:indestructible or o:"protection from")',
+    # Not one of analyze_deck.py's own categories - deliberately so, per
+    # review-commander-deck's SKILL.md: "taps an opponent's creature" is a
+    # deck-specific build-around (a tap-matters/stax-adjacent commander),
+    # not a generic Commander-deck health check the way ramp/removal/draw
+    # are, so analyze_deck.py doesn't track it as deck-wide signal. But
+    # sourcing *candidates* for a deck that's already built around this is
+    # a completely different question from "should every deck be scored on
+    # this," and this query fragment is reusable for any future tap-matters
+    # commander (Hylda of the Icy Crown among them) - added while upgrading
+    # exactly such a deck, where every other category query in this file
+    # was blind to what the deck actually wanted more of.
+    "tap_synergy": '(o:"tap target creature" or o:"tap up to" or o:"tap all creatures" '
+                    'or o:"creature an opponent controls" or o:"you don\'t control")',
     "any": "",
 }
 
@@ -210,6 +223,37 @@ def saturation_status(deck_dir: Path, category: str):
     return None
 
 
+# The Scryfall query's OR terms are Scryfall's own *substring* search, not
+# word-boundary-aware regex - "tap up to" is a literal substring of "UNtap
+# up to five lands," so the query alone pulled in Peregrine Drake, Snap,
+# Rewind, Unwind, Frantic Search, and Teferi/Tezzeret's untap-lands modes:
+# the exact opposite of a tap effect. "creature an opponent controls" and
+# "you don't control" are even less selective on their own - they also
+# matched Cyclonic Rift (bounce) and Comeuppance (damage prevention),
+# neither a tap effect at all. Found by actually reading the query's first
+# real results rather than trusting the query terms to mean what they say.
+#
+# This is a hard requirement (a positive-match gate), not a soft
+# false-positive filter like is_removal_false_positive below: a candidate
+# for tap_synergy must match this regex to be kept at all, not merely
+# avoid one exclusion pattern. The `(?<!un)` lookbehind is what actually
+# fixes the untap collision; the rest mirrors analyze_deck.py's own read
+# of what this deck's real tap cards look like (unqualified "tap target
+# creature(s)" is accepted the same way Icy Blast/Feeling of Dread in this
+# deck are - in practice almost always used on an opponent's creature even
+# when the text itself doesn't say so).
+_TAP_SYNERGY_RE = re.compile(
+    r"(?<!un)tap (?:target|up to \w+ target) creatures?"
+    r"|(?<!un)tap all creatures"
+    r"|tap target creature (?:an opponent controls|you don't control)"
+    r"|(?<!un)tap target (?:artifact, creature,? or land|nonland permanent)"
+)
+
+
+def is_tap_synergy_match(oracle_text: str) -> bool:
+    return bool(_TAP_SYNERGY_RE.search((oracle_text or "").lower()))
+
+
 def is_removal_false_positive(category: str, oracle_text: str) -> bool:
     if category not in ("removal", "board_wipe") or not oracle_text:
         return False
@@ -248,6 +292,8 @@ def score_and_filter(raw_cards, existing_names, gap_buckets, combos, category, t
         if card.get("name") in existing_names:
             continue
         if is_removal_false_positive(category, card.get("oracle_text")):
+            continue
+        if category == "tap_synergy" and not is_tap_synergy_match(card.get("oracle_text")):
             continue
         completions = combo_completions(combos, card["name"])
         fills_gap = curve_bucket(card.get("cmc")) in gap_buckets

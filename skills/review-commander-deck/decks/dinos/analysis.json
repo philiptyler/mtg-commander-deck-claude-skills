@@ -138,7 +138,21 @@
     "resilience": [
       "The Skullspore Nexus"
     ],
-    "fragile_trigger": []
+    "fragile_trigger": [],
+    "protection": [
+      "Personify",
+      "Daydream",
+      "Ephemerate",
+      "Etali, Primal Conqueror // Etali, Primal Sickness",
+      "Teferi's Protection",
+      "Teleportation Circle"
+    ],
+    "curse": [],
+    "magecraft": [],
+    "noncreature_spell_value": [],
+    "copy_effects": [
+      "Roaming Throne"
+    ]
   },
   "bracket_estimate": {
     "suggested": "3 (Upgraded)",

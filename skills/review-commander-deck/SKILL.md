@@ -74,6 +74,61 @@ does well or poorly.
    function, and counting it would pull a fragile card *out* of weak-card
    flagging instead of into it.
 
+   There's also `protection` — keeping your own stuff from being removed,
+   wiped, or productively targeted in the first place, a different job from
+   resilience above (which recovers value *after* a loss already happened).
+   Detected two ways: a card's own Hexproof/Indestructible/Protection
+   keyword (read from Scryfall's structured `keywords` field, not regex),
+   or oracle text granting hexproof/indestructible to something you
+   control, phasing your permanents out, or temporarily exiling your own
+   creature so removal/a wipe has nothing to hit when it resolves. Added
+   after reviewing the Crown of Winter deck: the user had hand-tagged 5
+   cards `[Protection]` in their own decklist (`Clever Concealment`,
+   `Eerie Interlude`, `Glorious Protector`, `Swiftfoot Boots`, `You See a
+   Guard Approach`) and none of them showed up anywhere in `analysis.json`
+   — there was no `protection` category at all, so a deck's actual
+   resilience to opposing removal/wraths was invisible to this tool. A
+   bare `"hexproof"`/`"indestructible"` text search isn't safe on its own —
+   it also matched `Arcane Lighthouse` ("creatures your opponents control
+   *lose* hexproof"), a removal-enabler stripping the keyword from
+   opponents, the opposite of protection — caught by testing the patterns
+   against this exact deck before trusting them; every pattern now
+   requires "you control" or the equip-grant idiom explicitly.
+
+   Four more categories — `curse`, `magecraft`, `noncreature_spell_value`,
+   `copy_effects` — came from reviewing a spellslinger/Curses deck (Shiko
+   and Narset, Unified): `Veyran, Voice of Duality`, `Storm-Kiln Artist`,
+   `Monastery Mentor`, and 7 of that deck's 12 Curses were all showing up
+   as "roleless" for the same reason `protection` was missing above —
+   nothing was looking for what they do. `curse` is the cleanest of the
+   four: Scryfall's `type_line` already marks a Curse's subtype
+   structurally (`Enchantment — Aura Curse`), so it's a direct type check,
+   not a regex guess, with effectively zero false-positive risk. `magecraft`
+   (the official keyword, plus its pre-keyword equivalent "whenever you
+   cast an instant or sorcery spell") is kept **separate** from
+   `noncreature_spell_value` ("whenever you cast a noncreature spell" —
+   Monastery Mentor/Prowess-style, broader: also artifacts/enchantments/
+   planeswalkers) on purpose — they're genuinely different triggers, and
+   that exact deck's own hand-written card tags already drew the same line
+   (`Instant-Sorcery Value` vs. `Non-Creature Spell Value`). `copy_effects`
+   covers both spell-copy and permanent-clone text ("copy target...",
+   "a copy of target...") plus ability-doubling ("triggers an additional
+   time"), grouped together because that deck's own tags grouped them the
+   same way.
+
+   Reviewing that same deck also found three real misses in the existing
+   `targeted_removal` regex, unrelated to the new categories above: it
+   didn't handle **X-cost damage** (`deals? \d+ damage` missed "deals X
+   damage to any target" entirely — an X-spell isn't a fixed amount),
+   **plural multi-target exile** ("Exile X target creatures" — the count
+   word landed before "target," and the noun was plural, neither handled),
+   or **plural multi-target bounce** ("Return up to three target artifacts
+   and/or creatures to their owners' hands" — plural nouns joined by
+   "and/or," plural "owners'"). All three are generic misses, not specific
+   to that deck — fixed and re-verified against it and the two other decks
+   already in this repo, with no regressions; moved that deck's
+   `targeted_removal` count from a misleadingly-low 6 to its true 10.
+
    `analysis.json` also has `mana_curve` (printed CMC, as before),
    `typical_mana_curve` (effective-CMC-adjusted for cards with real cost
    reduction), `curve_summary` (average CMC and % of nonland cards at CMC

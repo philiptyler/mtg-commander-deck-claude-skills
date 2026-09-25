@@ -34,7 +34,8 @@ TARGET_RANGES = {
 ALL_CATEGORY_KEYS = [
     "ramp", "targeted_removal", "board_wipe", "counterspell", "card_draw",
     "land_tutor", "nonland_tutor", "extra_turn", "mass_land_denial", "game_changer",
-    "cost_reduction", "resilience",
+    "cost_reduction", "resilience", "protection",
+    "curse", "magecraft", "noncreature_spell_value", "copy_effects",
     # Deliberately NOT "fragile_trigger" - that's a negative/caveat signal
     # (this card's own payoff can kill it), not a functional role. Counting
     # it here would pull a fragile card OUT of roleless/high-CMC weak

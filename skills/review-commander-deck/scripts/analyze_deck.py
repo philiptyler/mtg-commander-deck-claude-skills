@@ -39,23 +39,41 @@ RAMP_PATTERNS = [
     r"whenever you tap a land for mana, add",
 ]
 
-_UP_TO = r"(?:up to \w+ )?"
+_UP_TO = r"(?:up to \w+ |x |\d+ )?"
 _QUALIFIER = r"(?:[\w-]+ )?"  # e.g. "nonland", "non-Dinosaur", "red" before the noun
 # destroy/exile-target removal needs a per-sentence check, not a plain regex:
 # "exile up to one target artifact or creature you control" has "you control"
 # apply to both nouns, past where a lookahead right after the first noun
 # would see it — so this is checked separately in _has_opponent_removal().
+#
+# `_UP_TO`'s extra "x "/"\d+ " alternatives and the trailing "s?" on the
+# noun group both came from the same miss: "Exile X target creatures. For
+# each creature exiled this way, its controller creates a 2/2 green Boar
+# creature token" (Curse of the Swine) has the count word (X) landing
+# before "target," not after "up to," and pluralizes the noun since it's a
+# multi-target X spell - neither was handled, so a real removal effect
+# (turn creatures into worse creatures, the Beast Within/Polymorph family)
+# was showing up as a roleless card on the Curse of Chaos deck.
 _DESTROY_EXILE_TARGET_RE = re.compile(
-    rf"(?:destroy|exile) {_UP_TO}target {_QUALIFIER}(creature|permanent|artifact|enchantment|planeswalker)"
+    rf"(?:destroy|exile) {_UP_TO}target {_QUALIFIER}(creatures?|permanents?|artifacts?|enchantments?|planeswalkers?)"
 )
 
 _TARGET_VICTIM = r"(?:another )?target (creature|player|planeswalker)|any target"
 TARGETED_REMOVAL_PATTERNS = [
-    rf"deals? \d+ damage to ({_TARGET_VICTIM})",
+    # `x` alongside `\d+`: "Electrodominance deals X damage to any target" is
+    # an X-spell, not a fixed amount - the digit-only version missed every
+    # X-cost damage spell (Fireball's whole family), same deck, same fix
+    # session as the plural/count miss above.
+    rf"deals? (?:\d+|x) damage to ({_TARGET_VICTIM})",
     rf"deals? damage equal to .{{0,40}}? to ({_TARGET_VICTIM})",
     rf"that much damage to ({_TARGET_VICTIM})",
     r"target creature gets -\d+/-\d+",
-    r"return target (creature|permanent|nonland permanent) to its owner's hand",
+    # Plural multi-target bounce ("Return up to three target artifacts
+    # and/or creatures to their owners' hands" - Baral's Expertise) needs
+    # the same up-to/count prefix as the destroy/exile pattern, a noun list
+    # joined by "and/or" before the actual permanent type, and plural
+    # "owners'"/"hands" - the singular-only version missed this entirely.
+    rf"return {_UP_TO}target [\w\s,/]*?(creatures?|permanents?|nonland permanents?|artifacts?) to (?:its owner's|their owners?'?) hands?",
     r"gain control of target creature",
 ]
 
@@ -85,8 +103,17 @@ BOARD_WIPE_PATTERNS = [
 BOARD_WIPE_DAMAGE_RE = re.compile(r"deals? (\d+) damage to each creature")
 BOARD_WIPE_DAMAGE_MIN = 2  # below this it's incidental chip damage, not a sweeper
 
+# "counter target spell" as a literal phrase missed every counterspell that
+# qualifies its target - "counter target noncreature spell" (Dovin's Veto,
+# Negate), "counter target enchantment, instant, or sorcery spell" (Swan
+# Song) - all three were showing up as roleless on the Crown of Winter
+# deck as a direct result, despite being exactly what they look like.
+# Allow qualifier words between "target" and "spell" instead of requiring
+# them adjacent; capped at 60 chars and excluding periods/semicolons so it
+# can't stretch across sentence boundaries into an unrelated "spell" later
+# in the same card's text.
 COUNTERSPELL_PATTERNS = [
-    r"counter target spell",
+    r"counter target [-\w', ]{0,60}?spell",
 ]
 
 _NUMBER_WORDS = r"a|an|one|two|three|four|five|six|seven|eight|nine|ten|\d+|that many|x"
@@ -177,6 +204,112 @@ def is_fragile_damage_trigger(card: dict) -> bool:
     except (TypeError, ValueError):
         return False
     return toughness <= FRAGILE_TRIGGER_TOUGHNESS_MAX
+
+
+# Keeps your own stuff from being removed, wiped, or productively targeted -
+# a genuinely different job from resilience (which recovers value *after*
+# a loss). Found missing on the Crown of Winter deck: 5 cards the user had
+# hand-tagged [Protection] in their own decklist (Clever Concealment,
+# Eerie Interlude, Glorious Protector, Swiftfoot Boots, You See a Guard
+# Approach) were completely invisible to this script - no category existed
+# for them at all, despite this repo's own CLAUDE.md calling for exactly
+# this kind of gap to get closed the moment it's found, not just noted.
+#
+# Two detection paths:
+#  - A card's OWN keyword list (Scryfall's `keywords` field, not regex) for
+#    self-granted Hexproof/Indestructible - e.g. Thassa, Deep-Dwelling's
+#    own "Indestructible" line. More reliable than text-matching for this
+#    case since Scryfall already parses it structurally.
+#  - Oracle-text patterns for protection granted to something you control:
+#    equip-granted hexproof, a temporary exile that returns the permanent
+#    (dodges removal/wipes by taking it off the battlefield when the
+#    removal would resolve), or phasing out your own permanents. Each
+#    pattern requires "you control" (or the equip-grant idiom) explicitly -
+#    a bare "hexproof"/"indestructible" search initially also matched
+#    Arcane Lighthouse ("creatures your opponents control lose hexproof and
+#    shroud and can't have hexproof or shroud"), which is a removal-enabler
+#    stripping keywords from OPPONENTS, the opposite of protection - caught
+#    by testing against this exact deck before trusting the patterns.
+_PROTECTION_KEYWORDS = {"Hexproof", "Indestructible", "Protection"}
+PROTECTION_PATTERNS = [
+    r"equipped creature has hexproof",
+    r"creatures? you control (?:have|gains?) hexproof",
+    r"target creature you control gains? hexproof",
+    r"creatures? you control (?:have|gains?) indestructible",
+    r"target creature you control gains? indestructible",
+    r"permanents? you control phase out",
+    r"exile .{0,60}you control.{0,100}return .{0,40}to the battlefield",
+    r"exile .{0,60}you control until .{0,30}leaves the battlefield",
+]
+
+
+def is_protection(card: dict) -> bool:
+    if _PROTECTION_KEYWORDS.intersection(card.get("keywords") or []):
+        return True
+    text = (card.get("oracle_text") or "").lower()
+    return _matches_any(text, PROTECTION_PATTERNS)
+
+
+# Four more categories added reviewing a spellslinger/Curses deck (Shiko and
+# Narset, Unified - "Curse of Chaos"), the same shape of gap as
+# `protection`/`fragile_trigger` on the previous deck this session: real,
+# reusable Commander archetypes with zero category to catch them, so their
+# actual payoff cards (Veyran, Voice of Duality; Storm-Kiln Artist; Monastery
+# Mentor; 7 of the deck's 12 Curses) were showing up as "roleless" - not
+# because they're weak, but because nothing was looking for what they do.
+#
+# `curse` is the cleanest of the four: Scryfall's `type_line` already marks
+# a Curse card's subtype structurally ("Enchantment — Aura Curse"), so this
+# is a direct type check, not a regex guess - effectively zero false-positive
+# risk, unlike everything else in this file.
+def is_curse(card: dict) -> bool:
+    return "Curse" in (card.get("type_line") or "")
+
+
+# `magecraft` (the official keyword, reminder text always contains the word)
+# plus its pre-keyword equivalent templating ("whenever you cast an instant
+# or sorcery spell") - kept separate from `noncreature_spell_value` below
+# because they're genuinely different triggers (instant/sorcery only, vs.
+# any noncreature spell including artifacts/enchantments/planeswalkers) and
+# this exact deck's own hand-written card tags already drew that same line
+# ("Instant-Sorcery Value" vs. "Non-Creature Spell Value") - worth
+# preserving as two signals, not collapsing into one and losing the
+# distinction the deck's own builder was tracking.
+MAGECRAFT_PATTERNS = [
+    r"magecraft",
+    r"whenever you cast (?:or copy )?an instant or sorcery spell",
+]
+
+# Monastery Mentor-style triggers, including Prowess's own reminder text
+# (Prowess literally is "Whenever you cast a noncreature spell...").
+NONCREATURE_SPELL_PATTERNS = [
+    r"whenever you cast a noncreature spell",
+]
+
+# Spell-copy and permanent-clone effects together, matching how this deck's
+# own tags already grouped them (both under [Copy]) rather than splitting
+# hairs between "copies a spell" and "copies a permanent" - "triggers an
+# additional time" (this deck's Mirror Room / Fractured Realm and Veyran)
+# is the ability-doubling variant of the same idea.
+COPY_PATTERNS = [
+    r"copy target",
+    r"copy that spell",
+    r"copy it\b",
+    r"a copy of target",
+    r"triggers an additional time",
+]
+
+
+def is_magecraft(card: dict) -> bool:
+    return _matches_any((card.get("oracle_text") or "").lower(), MAGECRAFT_PATTERNS)
+
+
+def is_noncreature_spell_value(card: dict) -> bool:
+    return _matches_any((card.get("oracle_text") or "").lower(), NONCREATURE_SPELL_PATTERNS)
+
+
+def is_copy_effect(card: dict) -> bool:
+    return _matches_any((card.get("oracle_text") or "").lower(), COPY_PATTERNS)
 
 
 # --- effective CMC -------------------------------------------------------
@@ -341,6 +474,16 @@ def classify_card(card: dict) -> dict:
         tags.add("resilience")
     if is_fragile_damage_trigger(card):
         tags.add("fragile_trigger")
+    if is_protection(card):
+        tags.add("protection")
+    if is_curse(card):
+        tags.add("curse")
+    if is_magecraft(card):
+        tags.add("magecraft")
+    if is_noncreature_spell_value(card):
+        tags.add("noncreature_spell_value")
+    if is_copy_effect(card):
+        tags.add("copy_effects")
 
     for sentence in re.split(r"(?<=[.;])\s+", text):
         if "search your library for" in sentence:
@@ -381,6 +524,8 @@ def analyze(context: dict) -> dict:
         "card_draw": [], "land_tutor": [], "nonland_tutor": [],
         "extra_turn": [], "mass_land_denial": [], "game_changer": [],
         "cost_reduction": [], "resilience": [], "fragile_trigger": [],
+        "protection": [], "curse": [], "magecraft": [],
+        "noncreature_spell_value": [], "copy_effects": [],
     }
 
     for card in cards:

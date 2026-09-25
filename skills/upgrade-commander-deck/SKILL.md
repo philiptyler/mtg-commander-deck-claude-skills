@@ -56,9 +56,19 @@ ask repeatedly.
 
 1. **Parse the request:** how many swaps (N — ask if not given), an
    optional focus category (`ramp`, `removal`, `board_wipe`, `card_draw`,
-   `tutors`, `protection`, or general), and an optional budget (max USD per
-   card). If the user names specific cards to cut, treat those as fixed —
-   don't second-guess them.
+   `tutors`, `protection`, `tap_synergy`, or general), and an optional
+   budget (max USD per card). If the user names specific cards to cut,
+   treat those as fixed — don't second-guess them.
+
+   `tap_synergy` (cards that tap an opponent's creature) exists because a
+   deck's build-around isn't always one of the generic categories
+   `analyze_deck.py` tracks — it was added sourcing candidates for a
+   tap-matters commander (`Hylda of the Icy Crown`) whose entire engine is
+   "tap an opponent's creature," a category no query in this file covered
+   at all. If a future deck's real engine is something else the existing
+   categories can't express, the same move applies: add a query fragment
+   to `find_upgrade_candidates.py`'s `CATEGORY_QUERIES`, don't force the
+   search into a category that doesn't actually match what the deck wants.
 
 2. **Identify N cut candidates**, reusing `find-weakest-cards` rather than
    re-deriving weakness from scratch:
@@ -110,7 +120,7 @@ ask repeatedly.
 4. **For each remaining cut, source candidates for its gap:**
    ```
    python3 scripts/find_upgrade_candidates.py --deck-dir ../review-commander-deck/decks/<slug> \
-       --category <ramp|removal|board_wipe|card_draw|tutors|protection|any> \
+       --category <ramp|removal|board_wipe|card_draw|tutors|protection|tap_synergy|any> \
        --count 10 [--budget <usd>] [--cmc-min N] [--cmc-max N]
    ```
    Output filename includes the CMC/budget bounds used
