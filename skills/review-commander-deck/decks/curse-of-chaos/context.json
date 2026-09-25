@@ -1,0 +1,2218 @@
+{
+  "deck_dir": "curse-of-chaos",
+  "card_count": 100,
+  "unique_card_count": 92,
+  "not_found": [],
+  "cards": [
+    {
+      "name": "Adarkar Wastes",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {W} or {U}. This land deals 1 damage to you.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "C",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Amphibian Downpour",
+      "mana_cost": "{2}{U}",
+      "cmc": 3.0,
+      "type_line": "Enchantment \u2014 Aura",
+      "oracle_text": "Flash\nStorm (When you cast this spell, copy it for each spell cast before it this turn. You may choose new targets for the copies. Copies become tokens.)\nEnchant creature\nEnchanted creature loses all abilities and is a blue Frog creature with base power and toughness 1/1.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Storm",
+        "Enchant",
+        "Flash"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "An Offer You Can't Refuse",
+      "mana_cost": "{U}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Counter target noncreature spell. Its controller creates two Treasure tokens. (They're artifacts with \"{T}, Sacrifice this token: Add one mana of any color.\")",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Treasure"
+      ],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Arcane Signet",
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Archmage Emeritus",
+      "mana_cost": "{2}{U}{U}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Human Wizard",
+      "oracle_text": "Magecraft \u2014 Whenever you cast or copy an instant or sorcery spell, draw a card.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": "2",
+      "toughness": "2",
+      "loyalty": null,
+      "keywords": [
+        "Magecraft"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Archmage's Charm",
+      "mana_cost": "{U}{U}{U}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "oracle_text": "Choose one \u2014\n\u2022 Counter target spell.\n\u2022 Target player draws two cards.\n\u2022 Gain control of target nonland permanent with mana value 1 or less.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Azorius Signet",
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "oracle_text": "{1}, {T}: Add {W}{U}.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Baral's Expertise",
+      "mana_cost": "{3}{U}{U}",
+      "cmc": 5.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Return up to three target artifacts and/or creatures to their owners' hands.\nYou may cast a spell with mana value 4 or less from your hand without paying its mana cost.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Battlefield Forge",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {R} or {W}. This land deals 1 damage to you.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "C",
+        "R",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Brainstorm",
+      "mana_cost": "{U}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Draw three cards, then put two cards from your hand on top of your library in any order.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Brainsurge",
+      "mana_cost": "{2}{U}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "oracle_text": "Draw four cards, then put two cards from your hand on top of your library in any order.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Cascade Bluffs",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{U/R}, {T}: Add {U}{U}, {U}{R}, or {R}{R}.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "C",
+        "R",
+        "U"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Command Tower",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Consider",
+      "mana_cost": "{U}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Surveil 1. (Look at the top card of your library. You may put it into your graveyard.)\nDraw a card.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Surveil"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Curse of Bloodletting",
+      "mana_cost": "{3}{R}{R}",
+      "cmc": 5.0,
+      "type_line": "Enchantment \u2014 Aura Curse",
+      "oracle_text": "Enchant player\nIf a source would deal damage to enchanted player, it deals double that damage to that player instead.",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Enchant",
+        "Double"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Curse of Exhaustion",
+      "mana_cost": "{2}{W}{W}",
+      "cmc": 4.0,
+      "type_line": "Enchantment \u2014 Aura Curse",
+      "oracle_text": "Enchant player\nEnchanted player can't cast more than one spell each turn.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Enchant"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Curse of Hospitality",
+      "mana_cost": "{2}{R}",
+      "cmc": 3.0,
+      "type_line": "Enchantment \u2014 Aura Curse",
+      "oracle_text": "Enchant player\nCreatures attacking enchanted player have trample.\nWhenever a creature deals combat damage to enchanted player, that player exiles the top card of their library. Until end of turn, that creature's controller may play that card and they may spend mana as though it were mana of any color to cast that spell.",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Enchant"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Curse of Obsession",
+      "mana_cost": "{4}{R}",
+      "cmc": 5.0,
+      "type_line": "Enchantment \u2014 Aura Curse",
+      "oracle_text": "Enchant player\nAt the beginning of enchanted player's draw step, that player draws two additional cards.\nAt the beginning of enchanted player's end step, that player discards their hand.",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Enchant"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Curse of Opulence",
+      "mana_cost": "{R}",
+      "cmc": 1.0,
+      "type_line": "Enchantment \u2014 Aura Curse",
+      "oracle_text": "Enchant player\nWhenever enchanted player is attacked, create a Gold token. Each opponent attacking that player does the same. (A Gold token is an artifact with \"Sacrifice this token: Add one mana of any color.\")",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Enchant"
+      ],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Curse of Shaken Faith",
+      "mana_cost": "{1}{R}",
+      "cmc": 2.0,
+      "type_line": "Enchantment \u2014 Aura Curse",
+      "oracle_text": "Enchant player\nWhenever enchanted player casts a spell other than the first spell they cast each turn or copies a spell, this Aura deals 2 damage to them.",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Enchant"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Curse of Silence",
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Enchantment \u2014 Aura Curse",
+      "oracle_text": "Enchant player\nAs this Aura enters, choose a card name.\nSpells with the chosen name enchanted player casts cost {2} more to cast.\nWhenever enchanted player casts a spell with the chosen name, you may sacrifice this Aura. If you do, draw a card.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Enchant"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Curse of Surveillance",
+      "mana_cost": "{4}{U}",
+      "cmc": 5.0,
+      "type_line": "Enchantment \u2014 Aura Curse",
+      "oracle_text": "Enchant player\nAt the beginning of enchanted player's upkeep, any number of target players other than that player each draw cards equal to the number of Curses attached to that player.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Enchant"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Curse of the Swine",
+      "mana_cost": "{X}{U}{U}",
+      "cmc": 2.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Exile X target creatures. For each creature exiled this way, its controller creates a 2/2 green Boar creature token.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Curse of Unbinding",
+      "mana_cost": "{6}{U}",
+      "cmc": 7.0,
+      "type_line": "Enchantment \u2014 Aura Curse",
+      "oracle_text": "Enchant player\nAt the beginning of enchanted player's upkeep, that player reveals cards from the top of their library until they reveal a creature card. Put that card onto the battlefield under your control. That player puts the rest of the revealed cards into their graveyard.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Enchant"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Curse of Verbosity",
+      "mana_cost": "{2}{U}",
+      "cmc": 3.0,
+      "type_line": "Enchantment \u2014 Aura Curse",
+      "oracle_text": "Enchant player\nWhenever enchanted player is attacked, you draw a card. Each opponent attacking that player does the same.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Enchant"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Electrodominance",
+      "mana_cost": "{X}{R}{R}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "oracle_text": "Electrodominance deals X damage to any target. You may cast a spell with mana value X or less from your hand without paying its mana cost.",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Emeritus of Ideation // Ancestral Recall",
+      "mana_cost": "{3}{U}{U} // {U}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Human Wizard // Instant",
+      "oracle_text": "Flying, ward {2}\nThis creature enters prepared.\nWhenever this creature attacks, you may exile eight cards from your graveyard. If you do, this creature becomes prepared.\nTarget player draws three cards.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": "5",
+      "toughness": "5",
+      "loyalty": null,
+      "keywords": [
+        "Flying",
+        "Prepared",
+        "Ward"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Exotic Orchard",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Expansion // Explosion",
+      "mana_cost": "{U/R}{U/R} // {X}{U}{U}{R}{R}",
+      "cmc": 6.0,
+      "type_line": "Instant // Instant",
+      "oracle_text": "Copy target instant or sorcery spell with mana value 4 or less. You may choose new targets for the copy.\nExplosion deals X damage to any target. Target player draws X cards.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "colors": [
+        "R",
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Expressive Iteration",
+      "mana_cost": "{U}{R}",
+      "cmc": 2.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Look at the top three cards of your library. Put one of them into your hand, put one of them on the bottom of your library, and exile one of them. You may play the exiled card this turn.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "colors": [
+        "R",
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Fabled Passage",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Sacrifice this land: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle. Then if you control four or more lands, untap that land.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Fellwar Stone",
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Ferrous Lake",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{1}, {T}: Add {U}{R}.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Fiery Inscription",
+      "mana_cost": "{2}{R}",
+      "cmc": 3.0,
+      "type_line": "Enchantment",
+      "oracle_text": "When this enchantment enters, the Ring tempts you.\nWhenever you cast an instant or sorcery spell, this enchantment deals 2 damage to each opponent.",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Frantic Search",
+      "mana_cost": "{2}{U}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "oracle_text": "Draw two cards, then discard two cards. Untap up to three lands.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Frostboil Snarl",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "As this land enters, you may reveal an Island or Mountain card from your hand. If you don't, this land enters tapped.\n{T}: Add {U} or {R}.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Ghostly Prison",
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Enchantment",
+      "oracle_text": "Creatures can't attack you unless their controller pays {2} for each creature they control that's attacking you.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Glacial Fortress",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you control a Plains or an Island.\n{T}: Add {W} or {U}.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Island",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Island",
+      "oracle_text": "({T}: Add {U}.)",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "U"
+      ],
+      "commander_legal": "legal",
+      "quantity": 5,
+      "is_commander": false
+    },
+    {
+      "name": "Izzet Signet",
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "oracle_text": "{1}, {T}: Add {U}{R}.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Lier, Disciple of the Drowned",
+      "mana_cost": "{3}{U}{U}",
+      "cmc": 5.0,
+      "type_line": "Legendary Creature \u2014 Human Wizard",
+      "oracle_text": "Spells can't be countered.\nEach instant and sorcery card in your graveyard has flashback. The flashback cost is equal to that card's mana cost.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": "3",
+      "toughness": "4",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Longshot, Rebel Bowman",
+      "mana_cost": "{3}{R}",
+      "cmc": 4.0,
+      "type_line": "Legendary Creature \u2014 Human Rebel Ally",
+      "oracle_text": "Reach (This creature can block creatures with flying.)\nNoncreature spells you cast cost {1} less to cast.\nWhenever you cast a noncreature spell, Longshot deals 2 damage to each opponent.",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": "3",
+      "toughness": "3",
+      "loyalty": null,
+      "keywords": [
+        "Reach"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Maddening Hex",
+      "mana_cost": "{1}{R}{R}",
+      "cmc": 3.0,
+      "type_line": "Enchantment \u2014 Aura Curse",
+      "oracle_text": "Enchant player\nWhenever enchanted player casts a noncreature spell, roll a d6. This Aura deals damage to that player equal to the result. Then attach this Aura to another one of your opponents chosen at random.",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Enchant"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Magma Opus",
+      "mana_cost": "{6}{U}{R}",
+      "cmc": 8.0,
+      "type_line": "Instant",
+      "oracle_text": "Magma Opus deals 4 damage divided as you choose among any number of targets. Tap two target permanents. Create a 4/4 blue and red Elemental creature token. Draw two cards.\n{U/R}{U/R}, Discard this card: Create a Treasure token.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "colors": [
+        "R",
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Treasure"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Mana Geyser",
+      "mana_cost": "{3}{R}{R}",
+      "cmc": 5.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Add {R} for each tapped land your opponents control.",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "R"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Manaform Hellkite",
+      "mana_cost": "{2}{R}{R}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Dragon",
+      "oracle_text": "Flying\nWhenever you cast a noncreature spell, create an X/X red Dragon Illusion creature token with flying and haste, where X is the amount of mana spent to cast that spell. Exile that token at the beginning of the next end step.",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": "4",
+      "toughness": "4",
+      "loyalty": null,
+      "keywords": [
+        "Flying"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Mirror Room // Fractured Realm",
+      "mana_cost": "{2}{U} // {5}{U}{U}",
+      "cmc": 10.0,
+      "type_line": "Enchantment \u2014 Room // Enchantment \u2014 Room",
+      "oracle_text": "When you unlock this door, create a token that's a copy of target creature you control, except it's a Reflection in addition to its other creature types.\n(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.)\nIf a triggered ability of a permanent you control triggers, that ability triggers an additional time.\n(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.)",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Mizzium Mortars",
+      "mana_cost": "{1}{R}",
+      "cmc": 2.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Mizzium Mortars deals 4 damage to target creature you don't control.\nOverload {3}{R}{R}{R} (You may cast this spell for its overload cost. If you do, change \"target\" in its text to \"each.\")",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Overload"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Monastery Mentor",
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Human Monk",
+      "oracle_text": "Prowess (Whenever you cast a noncreature spell, this creature gets +1/+1 until end of turn.)\nWhenever you cast a noncreature spell, create a 1/1 white Monk creature token with prowess.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": "2",
+      "toughness": "2",
+      "loyalty": null,
+      "keywords": [
+        "Prowess"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Mountain",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Mountain",
+      "oracle_text": "({T}: Add {R}.)",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "R"
+      ],
+      "commander_legal": "legal",
+      "quantity": 5,
+      "is_commander": false
+    },
+    {
+      "name": "Mystic Monastery",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped.\n{T}: Add {U}, {R}, or {W}.",
+      "color_identity": [
+        "R",
+        "U",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Opt",
+      "mana_cost": "{U}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Scry 1. (Look at the top card of your library. You may put that card on the bottom.)\nDraw a card.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Scry"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Overwhelming Splendor",
+      "mana_cost": "{6}{W}{W}",
+      "cmc": 8.0,
+      "type_line": "Enchantment \u2014 Aura Curse",
+      "oracle_text": "Enchant player\nCreatures enchanted player controls lose all abilities and have base power and toughness 1/1.\nEnchanted player can't activate abilities that aren't mana abilities or loyalty abilities.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Enchant"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Perilous Landscape",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}, Sacrifice this land: Search your library for a basic Island, Mountain, or Plains card, put it onto the battlefield tapped, then shuffle.\nCycling {U}{R}{W} ({U}{R}{W}, Discard this card: Draw a card.)",
+      "color_identity": [
+        "R",
+        "U",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "C"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Plains",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Basic Land \u2014 Plains",
+      "oracle_text": "({T}: Add {W}.)",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Ponder",
+      "mana_cost": "{U}",
+      "cmc": 1.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Look at the top three cards of your library, then put them back in any order. You may shuffle.\nDraw a card.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Prairie Stream",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Plains Island",
+      "oracle_text": "({T}: Add {W} or {U}.)\nThis land enters tapped unless you control two or more basic lands.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Preordain",
+      "mana_cost": "{U}",
+      "cmc": 1.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Scry 2, then draw a card. (To scry 2, look at the top two cards of your library, then put any number of them on the bottom and the rest on top in any order.)",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Scry"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Prismari Charm",
+      "mana_cost": "{U}{R}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "oracle_text": "Choose one \u2014\n\u2022 Surveil 2, then draw a card.\n\u2022 Prismari Charm deals 1 damage to each of one or two targets.\n\u2022 Return target nonland permanent to its owner's hand.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "colors": [
+        "R",
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Surveil"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Reliquary Tower",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "You have no maximum hand size.\n{T}: Add {C}.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Roaring Furnace // Steaming Sauna",
+      "mana_cost": "{1}{R} // {3}{U}{U}",
+      "cmc": 7.0,
+      "type_line": "Enchantment \u2014 Room // Enchantment \u2014 Room",
+      "oracle_text": "When you unlock this door, this Room deals damage equal to the number of cards in your hand to target creature an opponent controls.\n(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.)\nYou have no maximum hand size.\nAt the beginning of your end step, draw a card.\n(You may cast either half. That door unlocks on the battlefield. As a sorcery, you may pay the mana cost of a locked door to unlock it.)",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "colors": [
+        "R",
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Rugged Prairie",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{R/W}, {T}: Add {R}{R}, {R}{W}, or {W}{W}.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "C",
+        "R",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Shark Typhoon",
+      "mana_cost": "{5}{U}",
+      "cmc": 6.0,
+      "type_line": "Enchantment",
+      "oracle_text": "Whenever you cast a noncreature spell, create an X/X blue Shark creature token with flying, where X is that spell's mana value.\nCycling {X}{1}{U} ({X}{1}{U}, Discard this card: Draw a card.)\nWhen you cycle this card, create an X/X blue Shark creature token with flying.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Shiko and Narset, Unified",
+      "mana_cost": "{1}{U}{R}{W}",
+      "cmc": 4.0,
+      "type_line": "Legendary Creature \u2014 Human Spirit Dragon",
+      "oracle_text": "Flying, vigilance\nFlurry \u2014 Whenever you cast your second spell each turn, copy that spell if it targets a permanent or player, and you may choose new targets for the copy. If you don't copy a spell this way, draw a card.",
+      "color_identity": [
+        "R",
+        "U",
+        "W"
+      ],
+      "colors": [
+        "R",
+        "U",
+        "W"
+      ],
+      "game_changer": false,
+      "power": "4",
+      "toughness": "4",
+      "loyalty": null,
+      "keywords": [
+        "Flying",
+        "Flurry",
+        "Vigilance"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": true
+    },
+    {
+      "name": "Shivan Reef",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {U} or {R}. This land deals 1 damage to you.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "C",
+        "R",
+        "U"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Silundi Vision // Silundi Isle",
+      "mana_cost": "{2}{U}",
+      "cmc": 3.0,
+      "type_line": "Instant // Land",
+      "oracle_text": "Look at the top six cards of your library. You may reveal an instant or sorcery card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.\nThis land enters tapped.\n{T}: Add {U}.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": null,
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "U"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Skycloud Expanse",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "{1}, {T}: Add {W}{U}.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Sleight of Hand",
+      "mana_cost": "{U}",
+      "cmc": 1.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Look at the top two cards of your library. Put one of them into your hand and the other on the bottom of your library.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Sol Ring",
+      "mana_cost": "{1}",
+      "cmc": 1.0,
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add {C}{C}.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Spectator Seating",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you have two or more opponents.\n{T}: Add {R} or {W}.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Spirebluff Canal",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you control two or fewer other lands.\n{T}: Add {U} or {R}.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Steam Vents",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Island Mountain",
+      "oracle_text": "({T}: Add {U} or {R}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Storm-Kiln Artist",
+      "mana_cost": "{3}{R}",
+      "cmc": 4.0,
+      "type_line": "Creature \u2014 Dwarf Shaman",
+      "oracle_text": "This creature gets +1/+0 for each artifact you control.\nMagecraft \u2014 Whenever you cast or copy an instant or sorcery spell, create a Treasure token. (It's an artifact with \"{T}, Sacrifice this token: Add one mana of any color.\")",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": "2",
+      "toughness": "2",
+      "loyalty": null,
+      "keywords": [
+        "Treasure",
+        "Magecraft"
+      ],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Stormcarved Coast",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you control two or more other lands.\n{T}: Add {U} or {R}.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Sublime Epiphany",
+      "mana_cost": "{4}{U}{U}",
+      "cmc": 6.0,
+      "type_line": "Instant",
+      "oracle_text": "Choose one or more \u2014\n\u2022 Counter target spell.\n\u2022 Counter target activated or triggered ability.\n\u2022 Return target nonland permanent to its owner's hand.\n\u2022 Create a token that's a copy of target creature you control.\n\u2022 Target player draws a card.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Sulfur Falls",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you control an Island or a Mountain.\n{T}: Add {U} or {R}.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Summon: G.F. Cerberus",
+      "mana_cost": "{2}{R}{R}",
+      "cmc": 4.0,
+      "type_line": "Enchantment Creature \u2014 Saga Dog",
+      "oracle_text": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\nI \u2014 Surveil 1. (Look at the top card of your library. You may put it into your graveyard.)\nII \u2014 Double \u2014 When you next cast an instant or sorcery spell this turn, copy it. You may choose new targets for the copy.\nIII \u2014 Triple \u2014 When you next cast an instant or sorcery spell this turn, copy it twice. You may choose new targets for the copies.",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": "3",
+      "toughness": "3",
+      "loyalty": null,
+      "keywords": [
+        "Surveil",
+        "Double"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Sundown Pass",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you control two or more other lands.\n{T}: Add {R} or {W}.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Swords to Plowshares",
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Exile target creature. Its controller gains life equal to its power.",
+      "color_identity": [
+        "W"
+      ],
+      "colors": [
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Talisman of Progress",
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add {W} or {U}. This artifact deals 1 damage to you.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "C",
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Temple of Enlightenment",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped.\nWhen this land enters, scry 1. (Look at the top card of your library. You may put that card on the bottom.)\n{T}: Add {W} or {U}.",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Scry"
+      ],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Temple of Epiphany",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped.\nWhen this land enters, scry 1. (Look at the top card of your library. You may put that card on the bottom.)\n{T}: Add {U} or {R}.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Scry"
+      ],
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Temple of Triumph",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped.\nWhen this land enters, scry 1. (Look at the top card of your library. You may put that card on the bottom.)\n{T}: Add {R} or {W}.",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Scry"
+      ],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "The Emperor of Palamecia // The Lord Master of Hell",
+      "mana_cost": "{U}{R}",
+      "cmc": 2.0,
+      "type_line": "Legendary Creature \u2014 Human Noble Wizard // Legendary Creature \u2014 Demon Noble Wizard",
+      "oracle_text": "{T}: Add {U} or {R}. Spend this mana only to cast a noncreature spell.\nWhenever you cast a noncreature spell, if at least four mana was spent to cast it, put a +1/+1 counter on The Emperor of Palamecia. Then if it has three or more +1/+1 counters on it, transform it.\nStarfall \u2014 Whenever The Lord Master of Hell attacks, it deals X damage to each opponent, where X is the number of noncreature, nonland cards in your graveyard.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "colors": null,
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Starfall",
+        "Transform"
+      ],
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Third Path Iconoclast",
+      "mana_cost": "{U}{R}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Human Monk",
+      "oracle_text": "Whenever you cast a noncreature spell, create a 1/1 colorless Soldier artifact creature token.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "colors": [
+        "R",
+        "U"
+      ],
+      "game_changer": false,
+      "power": "2",
+      "toughness": "1",
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Thought Vessel",
+      "mana_cost": "{2}",
+      "cmc": 2.0,
+      "type_line": "Artifact",
+      "oracle_text": "You have no maximum hand size.\n{T}: Add {C}.",
+      "color_identity": [],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Three Steps Ahead",
+      "mana_cost": "{U}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Spree (Choose one or more additional costs.)\n+ {1}{U} \u2014 Counter target spell.\n+ {3} \u2014 Create a token that's a copy of target artifact or creature you control.\n+ {2} \u2014 Draw two cards, then discard a card.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Spree"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Turbulent Springs",
+      "mana_cost": "",
+      "cmc": 0.0,
+      "type_line": "Land \u2014 Island Mountain",
+      "oracle_text": "({T}: Add {U} or {R}.)\nThis land enters tapped unless your opponents control eight or more lands.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "colors": [],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Unexpected Assistance",
+      "mana_cost": "{3}{U}{U}",
+      "cmc": 5.0,
+      "type_line": "Instant",
+      "oracle_text": "Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)\nDraw three cards, then discard a card.",
+      "color_identity": [
+        "U"
+      ],
+      "colors": [
+        "U"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Convoke"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Vandalblast",
+      "mana_cost": "{R}",
+      "cmc": 1.0,
+      "type_line": "Sorcery",
+      "oracle_text": "Destroy target artifact you don't control.\nOverload {4}{R} (You may cast this spell for its overload cost. If you do, change \"target\" in its text to \"each.\")",
+      "color_identity": [
+        "R"
+      ],
+      "colors": [
+        "R"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [
+        "Overload"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Veyran, Voice of Duality",
+      "mana_cost": "{1}{U}{R}",
+      "cmc": 3.0,
+      "type_line": "Legendary Creature \u2014 Efreet Wizard",
+      "oracle_text": "Magecraft \u2014 Whenever you cast or copy an instant or sorcery spell, Veyran gets +1/+1 until end of turn.\nIf you casting or copying an instant or sorcery spell causes a triggered ability of a permanent you control to trigger, that ability triggers an additional time.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "colors": [
+        "R",
+        "U"
+      ],
+      "game_changer": false,
+      "power": "2",
+      "toughness": "2",
+      "loyalty": null,
+      "keywords": [
+        "Magecraft"
+      ],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    },
+    {
+      "name": "Whirlwind of Thought",
+      "mana_cost": "{1}{U}{R}{W}",
+      "cmc": 4.0,
+      "type_line": "Enchantment",
+      "oracle_text": "Whenever you cast a noncreature spell, draw a card.",
+      "color_identity": [
+        "R",
+        "U",
+        "W"
+      ],
+      "colors": [
+        "R",
+        "U",
+        "W"
+      ],
+      "game_changer": false,
+      "power": null,
+      "toughness": null,
+      "loyalty": null,
+      "keywords": [],
+      "produced_mana": null,
+      "commander_legal": "legal",
+      "quantity": 1,
+      "is_commander": false
+    }
+  ]
+}

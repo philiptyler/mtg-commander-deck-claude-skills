@@ -1,0 +1,447 @@
+{
+  "bracket_used_for_targets": 2,
+  "category_saturation": [
+    {
+      "category": "lands",
+      "count": 38,
+      "target_range": [
+        36,
+        38
+      ],
+      "status": "within"
+    },
+    {
+      "category": "ramp",
+      "count": 12,
+      "target_range": [
+        8,
+        10
+      ],
+      "status": "over"
+    },
+    {
+      "category": "card_draw",
+      "count": 25,
+      "target_range": [
+        8,
+        10
+      ],
+      "status": "over"
+    },
+    {
+      "category": "targeted_removal",
+      "count": 10,
+      "target_range": [
+        8,
+        10
+      ],
+      "status": "within"
+    },
+    {
+      "category": "board_wipe",
+      "count": 0,
+      "target_range": [
+        1,
+        3
+      ],
+      "status": "under"
+    },
+    {
+      "category": "tutors",
+      "count": 0,
+      "target_range": [
+        0,
+        3
+      ],
+      "status": "within"
+    }
+  ],
+  "roleless_nonland_cards": [
+    {
+      "name": "Expressive Iteration",
+      "cmc": 2.0,
+      "type_line": "Sorcery"
+    },
+    {
+      "name": "Ghostly Prison",
+      "cmc": 3.0,
+      "type_line": "Enchantment"
+    },
+    {
+      "name": "Lier, Disciple of the Drowned",
+      "cmc": 5.0,
+      "type_line": "Legendary Creature \u2014 Human Wizard"
+    },
+    {
+      "name": "Sleight of Hand",
+      "cmc": 1.0,
+      "type_line": "Sorcery"
+    }
+  ],
+  "high_cmc_low_role_cards": [
+    {
+      "name": "Curse of Unbinding",
+      "cmc": 7.0,
+      "roles": [
+        "curse"
+      ]
+    },
+    {
+      "name": "Magma Opus",
+      "cmc": 8.0,
+      "roles": [
+        "card_draw"
+      ]
+    },
+    {
+      "name": "Mirror Room // Fractured Realm",
+      "cmc": 10.0,
+      "roles": [
+        "copy_effects"
+      ]
+    },
+    {
+      "name": "Overwhelming Splendor",
+      "cmc": 8.0,
+      "roles": [
+        "curse"
+      ]
+    }
+  ],
+  "fragile_trigger_cards": [],
+  "land_signals": [
+    {
+      "name": "Adarkar Wastes",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "C",
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Battlefield Forge",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "C",
+        "R",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Cascade Bluffs",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "C",
+        "R",
+        "U"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Command Tower",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Exotic Orchard",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Fabled Passage",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [],
+      "off_color": false
+    },
+    {
+      "name": "Ferrous Lake",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Frostboil Snarl",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Glacial Fortress",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Island",
+      "is_basic": true,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "U"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Mountain",
+      "is_basic": true,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "R"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Mystic Monastery",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": true,
+      "produced_mana": [
+        "R",
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Perilous Landscape",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "C"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Plains",
+      "is_basic": true,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Prairie Stream",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Reliquary Tower",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "C"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Rugged Prairie",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "C",
+        "R",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Shivan Reef",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "C",
+        "R",
+        "U"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Silundi Vision // Silundi Isle",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "U"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Skycloud Expanse",
+      "is_basic": false,
+      "enters_tapped": false,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Spectator Seating",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Spirebluff Canal",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Steam Vents",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Stormcarved Coast",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Sulfur Falls",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Sundown Pass",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Temple of Enlightenment",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Temple of Epiphany",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Temple of Triumph",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "off_color": false
+    },
+    {
+      "name": "Turbulent Springs",
+      "is_basic": false,
+      "enters_tapped": true,
+      "enters_tapped_no_upside_hint": false,
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "off_color": false
+    }
+  ]
+}

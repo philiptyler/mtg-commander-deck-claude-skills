@@ -1,0 +1,173 @@
+{
+  "counts": {
+    "total_cards": 100,
+    "lands": 38,
+    "creatures": 12,
+    "instants": 16,
+    "sorceries": 9,
+    "artifacts": 7,
+    "enchantments": 20,
+    "planeswalkers": 0,
+    "battles": 0
+  },
+  "mana_curve": {
+    "1": 13,
+    "2": 14,
+    "3": 11,
+    "4": 8,
+    "5": 8,
+    "6": 3,
+    "7+": 5
+  },
+  "typical_mana_curve": {
+    "1": 13,
+    "2": 14,
+    "3": 11,
+    "4": 8,
+    "5": 8,
+    "6": 3,
+    "7+": 5
+  },
+  "curve_summary": {
+    "average_cmc": 3.29,
+    "typical_average_cmc": 3.29,
+    "pct_cmc_le_3": 61.3,
+    "typical_pct_cmc_le_3": 61.3,
+    "baseline_reference": {
+      "average_cmc_range": [
+        2.5,
+        3.5
+      ],
+      "pct_cmc_le_3_min": 50.0
+    }
+  },
+  "cost_reduction_details": {},
+  "color_identity_pip_counts": {
+    "U": 60,
+    "W": 23,
+    "R": 48
+  },
+  "categories": {
+    "ramp": [
+      "An Offer You Can't Refuse",
+      "Arcane Signet",
+      "Azorius Signet",
+      "Curse of Opulence",
+      "Fellwar Stone",
+      "Izzet Signet",
+      "Mana Geyser",
+      "Sol Ring",
+      "Storm-Kiln Artist",
+      "Talisman of Progress",
+      "The Emperor of Palamecia // The Lord Master of Hell",
+      "Thought Vessel"
+    ],
+    "targeted_removal": [
+      "Baral's Expertise",
+      "Curse of the Swine",
+      "Electrodominance",
+      "Expansion // Explosion",
+      "Mizzium Mortars",
+      "Prismari Charm",
+      "Roaring Furnace // Steaming Sauna",
+      "Sublime Epiphany",
+      "Swords to Plowshares",
+      "Vandalblast"
+    ],
+    "board_wipe": [],
+    "counterspell": [
+      "An Offer You Can't Refuse",
+      "Archmage's Charm",
+      "Sublime Epiphany",
+      "Three Steps Ahead"
+    ],
+    "card_draw": [
+      "Archmage Emeritus",
+      "Archmage's Charm",
+      "Brainstorm",
+      "Brainsurge",
+      "Consider",
+      "Curse of Obsession",
+      "Curse of Silence",
+      "Curse of Surveillance",
+      "Curse of Verbosity",
+      "Emeritus of Ideation // Ancestral Recall",
+      "Expansion // Explosion",
+      "Frantic Search",
+      "Magma Opus",
+      "Opt",
+      "Perilous Landscape",
+      "Ponder",
+      "Preordain",
+      "Prismari Charm",
+      "Roaring Furnace // Steaming Sauna",
+      "Shark Typhoon",
+      "Shiko and Narset, Unified",
+      "Sublime Epiphany",
+      "Three Steps Ahead",
+      "Unexpected Assistance",
+      "Whirlwind of Thought"
+    ],
+    "land_tutor": [
+      "Fabled Passage",
+      "Perilous Landscape"
+    ],
+    "nonland_tutor": [],
+    "extra_turn": [],
+    "mass_land_denial": [],
+    "game_changer": [],
+    "cost_reduction": [
+      "Longshot, Rebel Bowman"
+    ],
+    "resilience": [],
+    "fragile_trigger": [],
+    "protection": [],
+    "curse": [
+      "Curse of Bloodletting",
+      "Curse of Exhaustion",
+      "Curse of Hospitality",
+      "Curse of Obsession",
+      "Curse of Opulence",
+      "Curse of Shaken Faith",
+      "Curse of Silence",
+      "Curse of Surveillance",
+      "Curse of Unbinding",
+      "Curse of Verbosity",
+      "Maddening Hex",
+      "Overwhelming Splendor"
+    ],
+    "magecraft": [
+      "Archmage Emeritus",
+      "Fiery Inscription",
+      "Storm-Kiln Artist",
+      "Veyran, Voice of Duality"
+    ],
+    "noncreature_spell_value": [
+      "Longshot, Rebel Bowman",
+      "Manaform Hellkite",
+      "Monastery Mentor",
+      "Shark Typhoon",
+      "The Emperor of Palamecia // The Lord Master of Hell",
+      "Third Path Iconoclast",
+      "Whirlwind of Thought"
+    ],
+    "copy_effects": [
+      "Amphibian Downpour",
+      "Expansion // Explosion",
+      "Mirror Room // Fractured Realm",
+      "Shiko and Narset, Unified",
+      "Sublime Epiphany",
+      "Summon: G.F. Cerberus",
+      "Three Steps Ahead",
+      "Veyran, Voice of Duality"
+    ]
+  },
+  "bracket_estimate": {
+    "suggested": "2 (Core) or 1 (Exhibition)",
+    "reasoning": "No Game Changers or mass land denial detected.",
+    "caveats": [
+      "Two-card infinite combo potential can't be detected from card text alone \u2014 review the tutor/combo-piece cards in categories.nonland_tutor and categories.game_changer by hand.",
+      "Bracket 1 vs. 2 and Bracket 4 vs. 5 hinge on player/table intent (casual theme vs. optimized, tournament meta vs. not), not just card choices \u2014 this script can't infer that."
+    ]
+  }
+}

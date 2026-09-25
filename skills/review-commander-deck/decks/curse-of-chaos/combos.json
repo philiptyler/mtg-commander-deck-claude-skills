@@ -1,0 +1,555 @@
+{
+  "included": [],
+  "almost_included": [
+    {
+      "id": "513-5034--46",
+      "url": "https://commanderspellbook.com/combo/513-5034--46/",
+      "cards": [
+        "Hullbreaker Horror",
+        "Sol Ring"
+      ],
+      "missing_cards": [
+        "Hullbreaker Horror"
+      ],
+      "produces": [
+        "Infinite colorless mana",
+        "Infinite storm count"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "E",
+      "popularity": 353140,
+      "color_identity": "U"
+    },
+    {
+      "id": "542-5034",
+      "url": "https://commanderspellbook.com/combo/542-5034/",
+      "cards": [
+        "Tidespout Tyrant",
+        "Sol Ring"
+      ],
+      "missing_cards": [
+        "Tidespout Tyrant"
+      ],
+      "produces": [
+        "Infinite colorless mana",
+        "Infinite storm count"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control a nontoken permanent that can be cast using {C}.",
+      "bracket_tag": "S",
+      "popularity": 37240,
+      "color_identity": "U"
+    },
+    {
+      "id": "2091-3368",
+      "url": "https://commanderspellbook.com/combo/2091-3368/",
+      "cards": [
+        "Reiterate",
+        "Mana Geyser"
+      ],
+      "missing_cards": [
+        "Reiterate"
+      ],
+      "produces": [
+        "Infinite magecraft triggers",
+        "Infinite red mana",
+        "Infinite storm count"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Your opponents collectively control at least six tapped lands.",
+      "bracket_tag": "E",
+      "popularity": 30135,
+      "color_identity": "R"
+    },
+    {
+      "id": "3940-5195",
+      "url": "https://commanderspellbook.com/combo/3940-5195/",
+      "cards": [
+        "Storm-Kiln Artist",
+        "Haze of Rage"
+      ],
+      "missing_cards": [
+        "Haze of Rage"
+      ],
+      "produces": [
+        "Infinite artifact ETB",
+        "Infinite artifact LTB",
+        "Infinite artifact sacrifice triggers",
+        "Infinite artifact tokens",
+        "Infinite colored mana",
+        "Infinitely powerful creatures you control until end of turn",
+        "Infinite magecraft triggers",
+        "Infinite storm count",
+        "Infinite Treasure tokens"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have cast at least three spells this turn.",
+      "bracket_tag": "S",
+      "popularity": 27073,
+      "color_identity": "R"
+    },
+    {
+      "id": "2552-3263",
+      "url": "https://commanderspellbook.com/combo/2552-3263/",
+      "cards": [
+        "Mycosynth Lattice",
+        "Vandalblast"
+      ],
+      "missing_cards": [
+        "Mycosynth Lattice"
+      ],
+      "produces": [
+        "Destroy all permanents opponents control",
+        "Mass Land Denial"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "R",
+      "popularity": 21610,
+      "color_identity": "R"
+    },
+    {
+      "id": "11-60",
+      "url": "https://commanderspellbook.com/combo/11-60/",
+      "cards": [
+        "Narset's Reversal",
+        "Expansion // Explosion"
+      ],
+      "missing_cards": [
+        "Narset's Reversal"
+      ],
+      "produces": [
+        "Infinite magecraft triggers"
+      ],
+      "notes": null,
+      "easy_prerequisites": "You have an additional instant or sorcery card in hand with mana value 4 or less and valid targets as applicable.",
+      "notable_prerequisites": null,
+      "bracket_tag": "E",
+      "popularity": 14711,
+      "color_identity": "UR"
+    },
+    {
+      "id": "2655-5195",
+      "url": "https://commanderspellbook.com/combo/2655-5195/",
+      "cards": [
+        "Fury Storm",
+        "Storm-Kiln Artist"
+      ],
+      "missing_cards": [
+        "Fury Storm"
+      ],
+      "produces": [
+        "Infinite artifact ETB",
+        "Infinite artifact LTB",
+        "Infinite artifact sacrifice triggers",
+        "Infinite artifact tokens",
+        "Infinite colored mana",
+        "Infinite power for any creature",
+        "Infinite magecraft triggers",
+        "Infinite Treasure tokens"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have cast your commander from your command zone this game.\nAn additional instant or sorcery in hand with the mana to cast it, or an opponent has cast an as of yet unresolved instant or sorcery spell.",
+      "bracket_tag": "S",
+      "popularity": 9489,
+      "color_identity": "R"
+    },
+    {
+      "id": "147-892",
+      "url": "https://commanderspellbook.com/combo/147-892/",
+      "cards": [
+        "Dualcaster Mage",
+        "Sublime Epiphany"
+      ],
+      "missing_cards": [
+        "Dualcaster Mage"
+      ],
+      "produces": [
+        "Infinite creature tokens",
+        "Infinite creature ETB",
+        "Infinite magecraft triggers",
+        "Infinite card draw for any number of players",
+        "Infinite draw triggers for any number of players"
+      ],
+      "notes": "You may choose more of Sublime Epiphany's modes, if desired.",
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control at least one creature.\nYou have enough mana to cast Sublime Epiphany",
+      "bracket_tag": "S",
+      "popularity": 4816,
+      "color_identity": "UR"
+    },
+    {
+      "id": "610-2655",
+      "url": "https://commanderspellbook.com/combo/610-2655/",
+      "cards": [
+        "Fury Storm",
+        "Archmage Emeritus"
+      ],
+      "missing_cards": [
+        "Fury Storm"
+      ],
+      "produces": [
+        "Infinite card draw",
+        "Near-infinite magecraft triggers"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have cast your commander from your command zone this game.\nAn additional instant or sorcery in hand with the mana to cast it, or an opponent has cast an as of yet unresolved instant or sorcery spell.",
+      "bracket_tag": "S",
+      "popularity": 4272,
+      "color_identity": "UR"
+    },
+    {
+      "id": "60-6452",
+      "url": "https://commanderspellbook.com/combo/60-6452/",
+      "cards": [
+        "Adaptive Training Post",
+        "Expansion // Explosion"
+      ],
+      "missing_cards": [
+        "Adaptive Training Post"
+      ],
+      "produces": [
+        "Infinite magecraft triggers"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have an instant or sorcery card in hand with mana value 4 or less.",
+      "bracket_tag": "E",
+      "popularity": 4018,
+      "color_identity": "UR"
+    },
+    {
+      "id": "60-5959",
+      "url": "https://commanderspellbook.com/combo/60-5959/",
+      "cards": [
+        "Alania, Divergent Storm",
+        "Expansion // Explosion"
+      ],
+      "missing_cards": [
+        "Alania, Divergent Storm"
+      ],
+      "produces": [
+        "Infinite magecraft triggers"
+      ],
+      "notes": null,
+      "easy_prerequisites": "You have not cast an instant or sorcery spell this turn.\nYou have a sorcery card in hand.",
+      "notable_prerequisites": null,
+      "bracket_tag": "E",
+      "popularity": 3962,
+      "color_identity": "UR"
+    },
+    {
+      "id": "60-1534",
+      "url": "https://commanderspellbook.com/combo/60-1534/",
+      "cards": [
+        "Expansion // Explosion",
+        "Twincast"
+      ],
+      "missing_cards": [
+        "Twincast"
+      ],
+      "produces": [
+        "Infinite magecraft triggers"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have a way to cast an additional instant or sorcery, or an opponent is casting one.",
+      "bracket_tag": "E",
+      "popularity": 3726,
+      "color_identity": "UR"
+    },
+    {
+      "id": "147-2234",
+      "url": "https://commanderspellbook.com/combo/147-2234/",
+      "cards": [
+        "Baral's Expertise",
+        "Dualcaster Mage"
+      ],
+      "missing_cards": [
+        "Dualcaster Mage"
+      ],
+      "produces": [
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite magecraft triggers",
+        "Infinite storm count",
+        "Return any number of artifacts and/or creatures to their owners' hands"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "E",
+      "popularity": 3147,
+      "color_identity": "UR"
+    },
+    {
+      "id": "60-6790",
+      "url": "https://commanderspellbook.com/combo/60-6790/",
+      "cards": [
+        "Pyromancer's Goggles",
+        "Expansion // Explosion"
+      ],
+      "missing_cards": [
+        "Pyromancer's Goggles"
+      ],
+      "produces": [
+        "Infinite magecraft triggers"
+      ],
+      "notes": null,
+      "easy_prerequisites": "You have an additional instant or sorcery card in hand with mana value 4 or less.",
+      "notable_prerequisites": null,
+      "bracket_tag": "E",
+      "popularity": 2738,
+      "color_identity": "UR"
+    },
+    {
+      "id": "60-7683",
+      "url": "https://commanderspellbook.com/combo/60-7683/",
+      "cards": [
+        "Prismari, the Inspiration",
+        "Expansion // Explosion"
+      ],
+      "missing_cards": [
+        "Prismari, the Inspiration"
+      ],
+      "produces": [
+        "Infinite magecraft triggers"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have another instant or sorcery card in hand with the mana to cast it and applicable target(s) if needed.",
+      "bracket_tag": "E",
+      "popularity": 2071,
+      "color_identity": "UR"
+    },
+    {
+      "id": "141-892",
+      "url": "https://commanderspellbook.com/combo/141-892/",
+      "cards": [
+        "Naru Meha, Master Wizard",
+        "Sublime Epiphany"
+      ],
+      "missing_cards": [
+        "Naru Meha, Master Wizard"
+      ],
+      "produces": [
+        "Infinite death triggers",
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite magecraft triggers",
+        "Infinite card draw for any number of players",
+        "Infinite draw triggers for any number of players"
+      ],
+      "notes": "You may choose more modes from Sublime Epiphany when casting it, if desired.",
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control at least one creature.\nYou have enough mana to cast Sublime Epiphany",
+      "bracket_tag": "S",
+      "popularity": 1830,
+      "color_identity": "U"
+    },
+    {
+      "id": "3011-5206",
+      "url": "https://commanderspellbook.com/combo/3011-5206/",
+      "cards": [
+        "Heartless Hidetsugu",
+        "Curse of Bloodletting"
+      ],
+      "missing_cards": [
+        "Heartless Hidetsugu"
+      ],
+      "produces": [
+        "Near-infinite damage",
+        "Target opponent loses the game"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Curse of Bloodletting attached to an opponent with an even life total.\nHeartless Hidetsugu does not have summoning sickness.",
+      "bracket_tag": "S",
+      "popularity": 1363,
+      "color_identity": "R"
+    },
+    {
+      "id": "2091-4560",
+      "url": "https://commanderspellbook.com/combo/2091-4560/",
+      "cards": [
+        "Soulfire Grand Master",
+        "Mana Geyser"
+      ],
+      "missing_cards": [
+        "Soulfire Grand Master"
+      ],
+      "produces": [
+        "Infinite storm count",
+        "Infinite red mana",
+        "Infinite magecraft triggers"
+      ],
+      "notes": "If opponents control ten or more tapped lands, this combo nets infinite red mana.",
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Opponents control at least nine tapped lands.",
+      "bracket_tag": "E",
+      "popularity": 1134,
+      "color_identity": "URW"
+    },
+    {
+      "id": "60-109",
+      "url": "https://commanderspellbook.com/combo/60-109/",
+      "cards": [
+        "Expansion // Explosion",
+        "Fork"
+      ],
+      "missing_cards": [
+        "Fork"
+      ],
+      "produces": [
+        "Infinite magecraft triggers"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You have a way to cast an additional instant or sorcery, or an opponent is casting one.",
+      "bracket_tag": "E",
+      "popularity": 1133,
+      "color_identity": "UR"
+    },
+    {
+      "id": "60-2634",
+      "url": "https://commanderspellbook.com/combo/60-2634/",
+      "cards": [
+        "Rootha, Mercurial Artist",
+        "Expansion // Explosion"
+      ],
+      "missing_cards": [
+        "Rootha, Mercurial Artist"
+      ],
+      "produces": [
+        "Infinite magecraft triggers"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "E",
+      "popularity": 731,
+      "color_identity": "UR"
+    },
+    {
+      "id": "1858-4280-5195",
+      "url": "https://commanderspellbook.com/combo/1858-4280-5195/",
+      "cards": [
+        "Veyran, Voice of Duality",
+        "Storm-Kiln Artist",
+        "View from Above"
+      ],
+      "missing_cards": [
+        "View from Above"
+      ],
+      "produces": [
+        "Infinite artifact ETB",
+        "Infinite artifact LTB",
+        "Infinitely large creature until end of turn",
+        "Infinite magecraft triggers",
+        "Infinite storm count"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control a white permanent.",
+      "bracket_tag": "E",
+      "popularity": 502,
+      "color_identity": "UR"
+    },
+    {
+      "id": "3903-4422",
+      "url": "https://commanderspellbook.com/combo/3903-4422/",
+      "cards": [
+        "Knowledge Pool",
+        "Curse of Exhaustion"
+      ],
+      "missing_cards": [
+        "Knowledge Pool"
+      ],
+      "produces": [
+        "Exile all spells target opponent casts from their hand",
+        "Target opponent can only cast one spell per turn",
+        "Lock"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "Curse of Exhaustion attached to an opponent.",
+      "bracket_tag": "S",
+      "popularity": 249,
+      "color_identity": "W"
+    },
+    {
+      "id": "3542-5921",
+      "url": "https://commanderspellbook.com/combo/3542-5921/",
+      "cards": [
+        "Mirror Room // Fractured Realm",
+        "Palinchron"
+      ],
+      "missing_cards": [
+        "Palinchron"
+      ],
+      "produces": [
+        "Infinite creature LTB",
+        "Infinite creature ETB",
+        "Infinite storm count",
+        "Infinite mana lands you control can produce",
+        "Infinite untap of lands you control"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": "You control up to seven lands that can tap to produce at least {4}{U}{U}.",
+      "bracket_tag": "S",
+      "popularity": 240,
+      "color_identity": "U"
+    },
+    {
+      "id": "2084-5726",
+      "url": "https://commanderspellbook.com/combo/2084-5726/",
+      "cards": [
+        "Mirror-Mad Phantasm",
+        "Three Steps Ahead"
+      ],
+      "missing_cards": [
+        "Mirror-Mad Phantasm"
+      ],
+      "produces": [
+        "Infinite self-mill"
+      ],
+      "notes": null,
+      "easy_prerequisites": null,
+      "notable_prerequisites": null,
+      "bracket_tag": "R",
+      "popularity": 124,
+      "color_identity": "U"
+    },
+    {
+      "id": "1228-3860",
+      "url": "https://commanderspellbook.com/combo/1228-3860/",
+      "cards": [
+        "Goblin Sharpshooter",
+        "Overwhelming Splendor"
+      ],
+      "missing_cards": [
+        "Goblin Sharpshooter"
+      ],
+      "produces": [
+        "Destroy all creatures opponents control",
+        "Destroy each creature that enters the battlefield under an opponent's control",
+        "Lock"
+      ],
+      "notes": null,
+      "easy_prerequisites": "Goblin Sharpshooter does not have summoning sickness.",
+      "notable_prerequisites": null,
+      "bracket_tag": "S",
+      "popularity": 23,
+      "color_identity": "RW"
+    }
+  ]
+}
