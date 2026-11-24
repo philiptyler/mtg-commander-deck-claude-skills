@@ -36,6 +36,14 @@ CATEGORY_QUERIES = {
     "tutors": '(o:"search your library for a card" or o:"search your library for a creature card" '
               'or o:"search your library for an artifact card")',
     "protection": '(o:hexproof or o:indestructible or o:"protection from")',
+    # Mirrors analyze_deck.py's own `curse` category exactly - a direct
+    # Scryfall type query (Curses are structurally marked `Enchantment —
+    # Aura Curse`), not an oracle-text guess, so this has the same
+    # effectively-zero false-positive risk as the analyze_deck.py check it
+    # mirrors. Added sourcing candidates for a Curses-matter deck (Shiko
+    # and Narset, Unified) whose owner specifically wanted "is there a
+    # strong Curse I'm missing" answered with search, not a guess.
+    "curse": "t:curse",
     # Not one of analyze_deck.py's own categories - deliberately so, per
     # review-commander-deck's SKILL.md: "taps an opponent's creature" is a
     # deck-specific build-around (a tap-matters/stax-adjacent commander),

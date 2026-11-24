@@ -1,0 +1,297 @@
+{
+  "tribal_type": "Human",
+  "candidates": [
+    {
+      "name": "Dualcaster Mage",
+      "mana_cost": "{1}{R}{R}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Human Wizard",
+      "oracle_text": "Flash\nWhen this creature enters, copy target instant or sorcery spell. You may choose new targets for the copy.",
+      "color_identity": [
+        "R"
+      ],
+      "usd": "4.35",
+      "game_changer": false,
+      "combo_count": 2,
+      "free_combo_count": 1,
+      "prerequisites": [
+        {
+          "url": "https://commanderspellbook.com/combo/147-892/",
+          "notable": "You control at least one creature.\nYou have enough mana to cast Sublime Epiphany",
+          "easy": null
+        }
+      ],
+      "produces": [
+        "Infinite card draw for any number of players",
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite creature tokens",
+        "Infinite draw triggers for any number of players",
+        "Infinite magecraft triggers",
+        "Infinite storm count",
+        "Return any number of artifacts and/or creatures to their owners' hands"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/147-892/",
+        "https://commanderspellbook.com/combo/147-2234/"
+      ],
+      "tribal_match": true
+    },
+    {
+      "name": "Naru Meha, Master Wizard",
+      "mana_cost": "{2}{U}{U}",
+      "cmc": 4.0,
+      "type_line": "Legendary Creature \u2014 Human Wizard",
+      "oracle_text": "Flash\nWhen Naru Meha enters, copy target instant or sorcery spell you control. You may choose new targets for the copy.\nOther Wizards you control get +1/+1.",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "1.04",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 0,
+      "prerequisites": [
+        {
+          "url": "https://commanderspellbook.com/combo/141-892/",
+          "notable": "You control at least one creature.\nYou have enough mana to cast Sublime Epiphany",
+          "easy": null
+        }
+      ],
+      "produces": [
+        "Infinite card draw for any number of players",
+        "Infinite creature ETB",
+        "Infinite creature LTB",
+        "Infinite death triggers",
+        "Infinite draw triggers for any number of players",
+        "Infinite magecraft triggers"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/141-892/"
+      ],
+      "tribal_match": true
+    },
+    {
+      "name": "Soulfire Grand Master",
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Creature \u2014 Human Monk",
+      "oracle_text": "Lifelink\nInstant and sorcery spells you control have lifelink.\n{2}{U/R}{U/R}: The next time you cast an instant or sorcery spell from your hand this turn, put that card into your hand instead of into your graveyard as it resolves.",
+      "color_identity": [
+        "R",
+        "U",
+        "W"
+      ],
+      "usd": "0.86",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 0,
+      "prerequisites": [
+        {
+          "url": "https://commanderspellbook.com/combo/2091-4560/",
+          "notable": "Opponents control at least nine tapped lands.",
+          "easy": null
+        }
+      ],
+      "produces": [
+        "Infinite magecraft triggers",
+        "Infinite red mana",
+        "Infinite storm count"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/2091-4560/"
+      ],
+      "tribal_match": true
+    },
+    {
+      "name": "Hullbreaker Horror",
+      "mana_cost": "{5}{U}{U}",
+      "cmc": 7.0,
+      "type_line": "Creature \u2014 Kraken Horror",
+      "oracle_text": "Flash\nThis spell can't be countered.\nWhenever you cast a spell, choose up to one \u2014\n\u2022 Return target spell you don't control to its owner's hand.\n\u2022 Return target nonland permanent to its owner's hand.",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "6.24",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 1,
+      "prerequisites": [],
+      "produces": [
+        "Infinite colorless mana",
+        "Infinite storm count"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/513-5034--46/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Mycosynth Lattice",
+      "mana_cost": "{6}",
+      "cmc": 6.0,
+      "type_line": "Artifact",
+      "oracle_text": "All permanents are artifacts in addition to their other types.\nAll cards that aren't on the battlefield, spells, and permanents are colorless.\nPlayers may spend mana as though it were mana of any color.",
+      "color_identity": [],
+      "usd": "35.52",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 1,
+      "prerequisites": [],
+      "produces": [
+        "Destroy all permanents opponents control",
+        "Mass Land Denial"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/2552-3263/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Rootha, Mercurial Artist",
+      "mana_cost": "{1}{U}{R}",
+      "cmc": 3.0,
+      "type_line": "Legendary Creature \u2014 Orc Shaman",
+      "oracle_text": "{2}, Return Rootha to its owner's hand: Copy target instant or sorcery spell you control. You may choose new targets for the copy.",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "usd": "0.28",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 1,
+      "prerequisites": [],
+      "produces": [
+        "Infinite magecraft triggers"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/60-2634/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Mirror-Mad Phantasm",
+      "mana_cost": "{3}{U}{U}",
+      "cmc": 5.0,
+      "type_line": "Creature \u2014 Spirit",
+      "oracle_text": "Flying\n{1}{U}: This creature's owner shuffles it into their library. If that player does, they reveal cards from the top of that library until a card named Mirror-Mad Phantasm is revealed. The player puts that card onto the battlefield and all other cards revealed this way into their graveyard.",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "0.74",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 1,
+      "prerequisites": [],
+      "produces": [
+        "Infinite self-mill"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/2084-5726/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Fury Storm",
+      "mana_cost": "{2}{R}{R}",
+      "cmc": 4.0,
+      "type_line": "Instant",
+      "oracle_text": "When you cast this spell, copy it for each time you've cast your commander from the command zone this game. You may choose new targets for the copies.\nCopy target instant or sorcery spell. You may choose new targets for the copy.",
+      "color_identity": [
+        "R"
+      ],
+      "usd": "5.60",
+      "game_changer": false,
+      "combo_count": 2,
+      "free_combo_count": 0,
+      "prerequisites": [
+        {
+          "url": "https://commanderspellbook.com/combo/2655-5195/",
+          "notable": "You have cast your commander from your command zone this game.\nAn additional instant or sorcery in hand with the mana to cast it, or an opponent has cast an as of yet unresolved instant or sorcery spell.",
+          "easy": null
+        },
+        {
+          "url": "https://commanderspellbook.com/combo/610-2655/",
+          "notable": "You have cast your commander from your command zone this game.\nAn additional instant or sorcery in hand with the mana to cast it, or an opponent has cast an as of yet unresolved instant or sorcery spell.",
+          "easy": null
+        }
+      ],
+      "produces": [
+        "Infinite Treasure tokens",
+        "Infinite artifact ETB",
+        "Infinite artifact LTB",
+        "Infinite artifact sacrifice triggers",
+        "Infinite artifact tokens",
+        "Infinite card draw",
+        "Infinite colored mana",
+        "Infinite magecraft triggers",
+        "Infinite power for any creature",
+        "Near-infinite magecraft triggers"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/2655-5195/",
+        "https://commanderspellbook.com/combo/610-2655/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Tidespout Tyrant",
+      "mana_cost": "{5}{U}{U}{U}",
+      "cmc": 8.0,
+      "type_line": "Creature \u2014 Djinn",
+      "oracle_text": "Flying\nWhenever you cast a spell, return target permanent to its owner's hand.",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "2.48",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 0,
+      "prerequisites": [
+        {
+          "url": "https://commanderspellbook.com/combo/542-5034/",
+          "notable": "You control a nontoken permanent that can be cast using {C}.",
+          "easy": null
+        }
+      ],
+      "produces": [
+        "Infinite colorless mana",
+        "Infinite storm count"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/542-5034/"
+      ],
+      "tribal_match": false
+    },
+    {
+      "name": "Reiterate",
+      "mana_cost": "{1}{R}{R}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "oracle_text": "Buyback {3} (You may pay an additional {3} as you cast this spell. If you do, put this card into your hand as it resolves.)\nCopy target instant or sorcery spell. You may choose new targets for the copy.",
+      "color_identity": [
+        "R"
+      ],
+      "usd": "19.63",
+      "game_changer": false,
+      "combo_count": 1,
+      "free_combo_count": 0,
+      "prerequisites": [
+        {
+          "url": "https://commanderspellbook.com/combo/2091-3368/",
+          "notable": "Your opponents collectively control at least six tapped lands.",
+          "easy": null
+        }
+      ],
+      "produces": [
+        "Infinite magecraft triggers",
+        "Infinite red mana",
+        "Infinite storm count"
+      ],
+      "combo_urls": [
+        "https://commanderspellbook.com/combo/2091-3368/"
+      ],
+      "tribal_match": false
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "cut": "Fellwar Stone",
+  "add": "Curse of the Pierced Heart",
+  "average_cmc_before": 3.29,
+  "average_cmc_after": 3.29,
+  "average_cmc_delta": 0.0,
+  "typical_average_cmc_before": 3.29,
+  "typical_average_cmc_after": 3.29,
+  "typical_average_cmc_delta": 0.0,
+  "pct_cmc_le_3_delta": 0.0,
+  "typical_pct_cmc_le_3_delta": 0.0,
+  "bracket_before": "2 (Core) or 1 (Exhibition)",
+  "bracket_after": "2 (Core) or 1 (Exhibition)",
+  "category_changes": {
+    "curse": {
+      "added": [
+        "Curse of the Pierced Heart"
+      ],
+      "removed": []
+    },
+    "ramp": {
+      "added": [],
+      "removed": [
+        "Fellwar Stone"
+      ]
+    }
+  }
+}

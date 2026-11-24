@@ -1,0 +1,209 @@
+{
+  "category": "curse",
+  "category_saturation": null,
+  "tribal_type": "Human",
+  "query": "id<=RUW f:commander -is:funny -t:land t:curse",
+  "commander_color_identity": [
+    "R",
+    "U",
+    "W"
+  ],
+  "undersupplied_curve_buckets": [
+    "4",
+    "5",
+    "6",
+    "7+"
+  ],
+  "candidates": [
+    {
+      "name": "Curse of Echoes",
+      "mana_cost": "{4}{U}",
+      "cmc": 5.0,
+      "type_line": "Enchantment \u2014 Aura Curse",
+      "oracle_text": "Enchant player\nWhenever enchanted player casts an instant or sorcery spell, each other player may copy that spell and may choose new targets for the copy they control.",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "0.45",
+      "edhrec_rank": 10058,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Curse of Conformity",
+      "mana_cost": "{4}{W}",
+      "cmc": 5.0,
+      "type_line": "Enchantment \u2014 Aura Curse",
+      "oracle_text": "Enchant player\nNonlegendary creatures enchanted player controls have base power and toughness 3/3 and lose all creature types.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "0.36",
+      "edhrec_rank": 16716,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": true,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Fraying Sanity",
+      "mana_cost": "{2}{U}",
+      "cmc": 3.0,
+      "type_line": "Enchantment \u2014 Aura Curse",
+      "oracle_text": "Enchant player\nAt the beginning of each end step, enchanted player mills X cards, where X is the number of cards put into their graveyard from anywhere this turn.",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "0.61",
+      "edhrec_rank": 2968,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Faithbound Judge // Sinner's Judgment",
+      "mana_cost": "{1}{W}{W}",
+      "cmc": 3.0,
+      "type_line": "Creature \u2014 Spirit Soldier // Enchantment \u2014 Aura Curse",
+      "oracle_text": "Defender, flying, vigilance\nAt the beginning of your upkeep, if this creature has two or fewer judgment counters on it, put a judgment counter on it.\nAs long as this creature has three or more judgment counters on it, it can attack as though it didn't have defender.\nDisturb {5}{W}{W}\nEnchant player\nAt the beginning of your upkeep, put a judgment counter on this Aura. Then if there are three or more judgment counters on it, enchanted player loses the game.\nIf Sinner's Judgment would be put into a graveyard from anywhere, exile it instead.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "1.15",
+      "edhrec_rank": 11601,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Curse of the Nightly Hunt",
+      "mana_cost": "{2}{R}",
+      "cmc": 3.0,
+      "type_line": "Enchantment \u2014 Aura Curse",
+      "oracle_text": "Enchant player\nCreatures enchanted player controls attack each combat if able.",
+      "color_identity": [
+        "R"
+      ],
+      "usd": "0.36",
+      "edhrec_rank": 11888,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Curse of Vitality",
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Enchantment \u2014 Aura Curse",
+      "oracle_text": "Enchant player\nWhenever enchanted player is attacked, you gain 2 life. Each opponent attacking that player does the same.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "1.12",
+      "edhrec_rank": 12444,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Curse of Stalked Prey",
+      "mana_cost": "{1}{R}",
+      "cmc": 2.0,
+      "type_line": "Enchantment \u2014 Aura Curse",
+      "oracle_text": "Enchant player\nWhenever a creature deals combat damage to enchanted player, put a +1/+1 counter on that creature.",
+      "color_identity": [
+        "R"
+      ],
+      "usd": "0.71",
+      "edhrec_rank": 12527,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Curse of the Pierced Heart",
+      "mana_cost": "{1}{R}",
+      "cmc": 2.0,
+      "type_line": "Enchantment \u2014 Aura Curse",
+      "oracle_text": "Enchant player\nAt the beginning of enchanted player's upkeep, this Aura deals 1 damage to that player or a planeswalker that player controls.",
+      "color_identity": [
+        "R"
+      ],
+      "usd": "0.33",
+      "edhrec_rank": 12917,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Curse of the Bloody Tome",
+      "mana_cost": "{2}{U}",
+      "cmc": 3.0,
+      "type_line": "Enchantment \u2014 Aura Curse",
+      "oracle_text": "Enchant player\nAt the beginning of enchanted player's upkeep, that player mills two cards.",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "0.26",
+      "edhrec_rank": 12995,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Radiant Grace // Radiant Restraints",
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Enchantment \u2014 Aura // Enchantment \u2014 Aura Curse",
+      "oracle_text": "Enchant creature\nEnchanted creature gets +1/+0 and has vigilance.\nWhen enchanted creature dies, return this card to the battlefield transformed under your control attached to target opponent.\nEnchant player\nCreatures enchanted player controls enter tapped.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "0.24",
+      "edhrec_rank": 13210,
+      "game_changer": false,
+      "is_instant": false,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    }
+  ]
+}

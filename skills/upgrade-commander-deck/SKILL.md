@@ -56,9 +56,15 @@ ask repeatedly.
 
 1. **Parse the request:** how many swaps (N — ask if not given), an
    optional focus category (`ramp`, `removal`, `board_wipe`, `card_draw`,
-   `tutors`, `protection`, `tap_synergy`, or general), and an optional
-   budget (max USD per card). If the user names specific cards to cut,
-   treat those as fixed — don't second-guess them.
+   `tutors`, `protection`, `tap_synergy`, `curse`, or general), and an
+   optional budget (max USD per card). If the user names specific cards to
+   cut, treat those as fixed — don't second-guess them.
+
+   `curse` is a straight mirror of `analyze_deck.py`'s own `curse`
+   category — a direct `t:curse` Scryfall type query, not an oracle-text
+   guess, so it carries the same near-zero false-positive risk. Added
+   answering a direct ask from a Curses-deck owner ("is there a strong
+   Curse I'm missing") with a real search instead of a memory-based guess.
 
    `tap_synergy` (cards that tap an opponent's creature) exists because a
    deck's build-around isn't always one of the generic categories

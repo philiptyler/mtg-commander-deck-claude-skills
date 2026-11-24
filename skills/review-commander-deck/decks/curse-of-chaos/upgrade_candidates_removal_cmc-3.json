@@ -1,0 +1,308 @@
+{
+  "category": "removal",
+  "category_saturation": {
+    "category": "targeted_removal",
+    "count": 10,
+    "target_range": [
+      8,
+      10
+    ],
+    "status": "within"
+  },
+  "tribal_type": "Human",
+  "query": "id<=RUW f:commander -is:funny -t:land (o:\"destroy target creature\" or o:\"exile target creature\" or o:\"destroy target permanent\" or o:\"exile target permanent\" or o:\"deals damage to target creature\" or o:\"deals damage to any target\") cmc<=3",
+  "commander_color_identity": [
+    "R",
+    "U",
+    "W"
+  ],
+  "undersupplied_curve_buckets": [
+    "4",
+    "5",
+    "6",
+    "7+"
+  ],
+  "candidates": [
+    {
+      "name": "Path to Exile",
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Exile target creature. Its controller may search their library for a basic land card, put that card onto the battlefield tapped, then shuffle.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "0.99",
+      "edhrec_rank": 15,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Generous Gift",
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "oracle_text": "Destroy target permanent. Its controller creates a 3/3 green Elephant creature token.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "0.78",
+      "edhrec_rank": 61,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Pongify",
+      "mana_cost": "{U}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Destroy target creature. It can't be regenerated. Its controller creates a 3/3 green Ape creature token.",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "2.84",
+      "edhrec_rank": 155,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Rapid Hybridization",
+      "mana_cost": "{U}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Destroy target creature. It can't be regenerated. That creature's controller creates a 3/3 green Frog Lizard creature token.",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "0.79",
+      "edhrec_rank": 207,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Reality Shift",
+      "mana_cost": "{1}{U}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "oracle_text": "Exile target creature. Its controller manifests the top card of their library. (That player puts the top card of their library onto the battlefield face down as a 2/2 creature. If it's a creature card, it can be turned face up any time for its mana cost.)",
+      "color_identity": [
+        "U"
+      ],
+      "usd": "0.30",
+      "edhrec_rank": 283,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Pyroblast",
+      "mana_cost": "{R}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Choose one \u2014\n\u2022 Counter target spell if it's blue.\n\u2022 Destroy target permanent if it's blue.",
+      "color_identity": [
+        "R"
+      ],
+      "usd": "10.66",
+      "edhrec_rank": 473,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Get Lost",
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "oracle_text": "Destroy target creature, enchantment, or planeswalker. Its controller creates two Map tokens. (They're artifacts with \"{1}, {T}, Sacrifice this token: Target creature you control explores. Activate only as a sorcery.\")",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "3.62",
+      "edhrec_rank": 1816,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Wild Magic Surge",
+      "mana_cost": "{R}{R}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "oracle_text": "Destroy target permanent an opponent controls. Its controller reveals cards from the top of their library until they reveal a permanent card that shares a card type with that permanent. They put that card onto the battlefield and the rest on the bottom of their library in a random order.",
+      "color_identity": [
+        "R"
+      ],
+      "usd": "2.01",
+      "edhrec_rank": 1937,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Erode",
+      "mana_cost": "{W}",
+      "cmc": 1.0,
+      "type_line": "Instant",
+      "oracle_text": "Destroy target creature or planeswalker. Its controller may search their library for a basic land card, put it onto the battlefield tapped, then shuffle.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "6.82",
+      "edhrec_rank": 1944,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Warping Wail",
+      "mana_cost": "{1}{C}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "oracle_text": "({C} represents colorless mana.)\nChoose one \u2014\n\u2022 Exile target creature with power or toughness 1 or less.\n\u2022 Counter target sorcery spell.\n\u2022 Create a 1/1 colorless Eldrazi Scion creature token. It has \"Sacrifice this token: Add {C}.\"",
+      "color_identity": [],
+      "usd": "1.16",
+      "edhrec_rank": 2034,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Flicker of Fate",
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "oracle_text": "Exile target creature or enchantment, then return it to the battlefield under its owner's control.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "0.29",
+      "edhrec_rank": 2101,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Kozilek's Command",
+      "mana_cost": "{X}{C}{C}",
+      "cmc": 2.0,
+      "type_line": "Kindred Instant \u2014 Eldrazi",
+      "oracle_text": "Choose two \u2014\n\u2022 Target player creates X 0/1 colorless Eldrazi Spawn creature tokens with \"Sacrifice this token: Add {C}.\"\n\u2022 Target player scries X, then draws a card.\n\u2022 Exile target creature with mana value X or less.\n\u2022 Exile up to X target cards from graveyards.",
+      "color_identity": [],
+      "usd": "7.46",
+      "edhrec_rank": 2115,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Will of the Mardu",
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Instant",
+      "oracle_text": "Choose one. If you control a commander as you cast this spell, you may choose both instead.\n\u2022 Create a number of 1/1 red Warrior creature tokens equal to the number of creatures target player controls.\n\u2022 Will of the Mardu deals damage to target creature equal to the number of creatures you control.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "4.84",
+      "edhrec_rank": 2236,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Crib Swap",
+      "mana_cost": "{2}{W}",
+      "cmc": 3.0,
+      "type_line": "Kindred Instant \u2014 Shapeshifter",
+      "oracle_text": "Changeling (This card is every creature type.)\nExile target creature. Its controller creates a 1/1 colorless Shapeshifter creature token with changeling.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "0.21",
+      "edhrec_rank": 2466,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    },
+    {
+      "name": "Valorous Stance",
+      "mana_cost": "{1}{W}",
+      "cmc": 2.0,
+      "type_line": "Instant",
+      "oracle_text": "Choose one \u2014\n\u2022 Target creature gains indestructible until end of turn. (Damage and effects that say \"destroy\" don't destroy it.)\n\u2022 Destroy target creature with toughness 4 or greater.",
+      "color_identity": [
+        "W"
+      ],
+      "usd": "0.22",
+      "edhrec_rank": 2632,
+      "game_changer": false,
+      "is_instant": true,
+      "completes_combo": false,
+      "combo_details": [],
+      "fills_curve_gap": false,
+      "conditional_discount": false,
+      "tribal_match": false
+    }
+  ]
+}
